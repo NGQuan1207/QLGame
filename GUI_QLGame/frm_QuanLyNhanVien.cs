@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace GUI_QLGame
 {
-    public partial class Form2 : Form
+    public partial class frm_QuanLyNhanVien : Form
     {
-        public Form2()
+        public frm_QuanLyNhanVien()
         {
             InitializeComponent();
         }

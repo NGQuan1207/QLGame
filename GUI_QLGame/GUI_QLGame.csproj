@@ -46,17 +46,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="frm_QuanLyNhanVien.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="frm_QuanLyNhanVien.Designer.cs">
+      <DependentUpon>frm_QuanLyNhanVien.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form2.cs">
+    <Compile Include="frm_DanhSachKH.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form2.Designer.cs">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <Compile Include="frm_DanhSachKH.Designer.cs">
+      <DependentUpon>frm_DanhSachKH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_ChiTietKH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_ChiTietKH.Designer.cs">
+      <DependentUpon>frm_ChiTietKH.cs</DependentUpon>
     </Compile>
     <Compile Include="Frm_BaoCaoThongKe.cs">
       <SubType>Form</SubType>
@@ -90,14 +96,20 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="frm_QuanLyNhanVien.resx">
+      <DependentUpon>frm_QuanLyNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_ChiTietKH.resx">
+      <DependentUpon>frm_ChiTietKH.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_BaoCaoThongKe.resx">
       <DependentUpon>Frm_BaoCaoThongKe.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_BaoHanh.resx">
       <DependentUpon>Frm_BaoHanh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_DanhSachKH.resx">
+      <DependentUpon>frm_DanhSachKH.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_LenDon.resx">
       <DependentUpon>Frm_LenDon.cs</DependentUpon>
