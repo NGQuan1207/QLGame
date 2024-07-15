@@ -49,7 +49,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(583, 265);
+            this.pictureBox2.Location = new System.Drawing.Point(607, 299);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(43, 44);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -59,7 +59,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(583, 169);
+            this.pictureBox1.Location = new System.Drawing.Point(607, 203);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(43, 44);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -68,7 +68,7 @@
             // 
             // btn_quenmatkhau
             // 
-            this.btn_quenmatkhau.Location = new System.Drawing.Point(855, 366);
+            this.btn_quenmatkhau.Location = new System.Drawing.Point(879, 400);
             this.btn_quenmatkhau.Name = "btn_quenmatkhau";
             this.btn_quenmatkhau.Size = new System.Drawing.Size(128, 33);
             this.btn_quenmatkhau.TabIndex = 40;
@@ -77,7 +77,7 @@
             // 
             // btn_thoat
             // 
-            this.btn_thoat.Location = new System.Drawing.Point(763, 426);
+            this.btn_thoat.Location = new System.Drawing.Point(787, 460);
             this.btn_thoat.Name = "btn_thoat";
             this.btn_thoat.Size = new System.Drawing.Size(105, 33);
             this.btn_thoat.TabIndex = 39;
@@ -86,7 +86,7 @@
             // 
             // btn_dangnhap
             // 
-            this.btn_dangnhap.Location = new System.Drawing.Point(646, 366);
+            this.btn_dangnhap.Location = new System.Drawing.Point(670, 400);
             this.btn_dangnhap.Name = "btn_dangnhap";
             this.btn_dangnhap.Size = new System.Drawing.Size(128, 33);
             this.btn_dangnhap.TabIndex = 38;
@@ -95,7 +95,7 @@
             // 
             // txt_ID
             // 
-            this.txt_ID.Location = new System.Drawing.Point(646, 169);
+            this.txt_ID.Location = new System.Drawing.Point(670, 203);
             this.txt_ID.Multiline = true;
             this.txt_ID.Name = "txt_ID";
             this.txt_ID.Size = new System.Drawing.Size(337, 44);
@@ -103,7 +103,7 @@
             // 
             // txt_matkhau
             // 
-            this.txt_matkhau.Location = new System.Drawing.Point(646, 265);
+            this.txt_matkhau.Location = new System.Drawing.Point(670, 299);
             this.txt_matkhau.Multiline = true;
             this.txt_matkhau.Name = "txt_matkhau";
             this.txt_matkhau.Size = new System.Drawing.Size(337, 44);
@@ -113,7 +113,9 @@
             // 
             this.lbl_tennhom.AutoSize = true;
             this.lbl_tennhom.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_tennhom.Location = new System.Drawing.Point(179, 109);
+            this.lbl_tennhom.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lbl_tennhom.Image = ((System.Drawing.Image)(resources.GetObject("lbl_tennhom.Image")));
+            this.lbl_tennhom.Location = new System.Drawing.Point(200, 373);
             this.lbl_tennhom.Name = "lbl_tennhom";
             this.lbl_tennhom.Size = new System.Drawing.Size(136, 34);
             this.lbl_tennhom.TabIndex = 34;
@@ -122,8 +124,9 @@
             // 
             // pb_logo
             // 
+            this.pb_logo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pb_logo.BackgroundImage")));
             this.pb_logo.Image = ((System.Drawing.Image)(resources.GetObject("pb_logo.Image")));
-            this.pb_logo.Location = new System.Drawing.Point(72, 226);
+            this.pb_logo.Location = new System.Drawing.Point(102, 67);
             this.pb_logo.Name = "pb_logo";
             this.pb_logo.Size = new System.Drawing.Size(337, 247);
             this.pb_logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -133,7 +136,7 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(514, -3);
+            this.pictureBox3.Location = new System.Drawing.Point(-7, 0);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(565, 615);
             this.pictureBox3.TabIndex = 43;
@@ -143,8 +146,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Image = ((System.Drawing.Image)(resources.GetObject("label1.Image")));
-            this.label1.Location = new System.Drawing.Point(707, 84);
+            this.label1.Location = new System.Drawing.Point(731, 118);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(196, 35);
             this.label1.TabIndex = 44;
