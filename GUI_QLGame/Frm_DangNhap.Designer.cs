@@ -38,15 +38,18 @@
             this.txt_matkhau = new System.Windows.Forms.TextBox();
             this.lbl_tennhom = new System.Windows.Forms.Label();
             this.pb_logo = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_logo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(92, 349);
+            this.pictureBox2.Location = new System.Drawing.Point(597, 265);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(43, 44);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -56,7 +59,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(92, 279);
+            this.pictureBox1.Location = new System.Drawing.Point(597, 169);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(43, 44);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -65,16 +68,16 @@
             // 
             // btn_quenmatkhau
             // 
-            this.btn_quenmatkhau.Location = new System.Drawing.Point(361, 413);
+            this.btn_quenmatkhau.Location = new System.Drawing.Point(869, 366);
             this.btn_quenmatkhau.Name = "btn_quenmatkhau";
-            this.btn_quenmatkhau.Size = new System.Drawing.Size(128, 32);
+            this.btn_quenmatkhau.Size = new System.Drawing.Size(128, 33);
             this.btn_quenmatkhau.TabIndex = 40;
             this.btn_quenmatkhau.Text = "Quên mật khẩu";
             this.btn_quenmatkhau.UseVisualStyleBackColor = true;
             // 
             // btn_thoat
             // 
-            this.btn_thoat.Location = new System.Drawing.Point(262, 452);
+            this.btn_thoat.Location = new System.Drawing.Point(777, 426);
             this.btn_thoat.Name = "btn_thoat";
             this.btn_thoat.Size = new System.Drawing.Size(105, 33);
             this.btn_thoat.TabIndex = 39;
@@ -83,16 +86,16 @@
             // 
             // btn_dangnhap
             // 
-            this.btn_dangnhap.Location = new System.Drawing.Point(155, 413);
+            this.btn_dangnhap.Location = new System.Drawing.Point(660, 366);
             this.btn_dangnhap.Name = "btn_dangnhap";
-            this.btn_dangnhap.Size = new System.Drawing.Size(114, 33);
+            this.btn_dangnhap.Size = new System.Drawing.Size(128, 33);
             this.btn_dangnhap.TabIndex = 38;
             this.btn_dangnhap.Text = "Đăng Nhập";
             this.btn_dangnhap.UseVisualStyleBackColor = true;
             // 
             // txt_ID
             // 
-            this.txt_ID.Location = new System.Drawing.Point(155, 279);
+            this.txt_ID.Location = new System.Drawing.Point(660, 169);
             this.txt_ID.Multiline = true;
             this.txt_ID.Name = "txt_ID";
             this.txt_ID.Size = new System.Drawing.Size(337, 44);
@@ -100,7 +103,7 @@
             // 
             // txt_matkhau
             // 
-            this.txt_matkhau.Location = new System.Drawing.Point(155, 349);
+            this.txt_matkhau.Location = new System.Drawing.Point(660, 265);
             this.txt_matkhau.Multiline = true;
             this.txt_matkhau.Name = "txt_matkhau";
             this.txt_matkhau.Size = new System.Drawing.Size(337, 44);
@@ -109,29 +112,51 @@
             // lbl_tennhom
             // 
             this.lbl_tennhom.AutoSize = true;
-            this.lbl_tennhom.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_tennhom.Location = new System.Drawing.Point(171, 26);
+            this.lbl_tennhom.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_tennhom.Location = new System.Drawing.Point(179, 109);
             this.lbl_tennhom.Name = "lbl_tennhom";
-            this.lbl_tennhom.Size = new System.Drawing.Size(84, 23);
+            this.lbl_tennhom.Size = new System.Drawing.Size(136, 34);
             this.lbl_tennhom.TabIndex = 34;
-            this.lbl_tennhom.Text = "Nhóm 3";
+            this.lbl_tennhom.Text = "NHÓM 3";
+            this.lbl_tennhom.Click += new System.EventHandler(this.lbl_tennhom_Click);
             // 
             // pb_logo
             // 
             this.pb_logo.Image = ((System.Drawing.Image)(resources.GetObject("pb_logo.Image")));
-            this.pb_logo.Location = new System.Drawing.Point(155, 12);
+            this.pb_logo.Location = new System.Drawing.Point(72, 226);
             this.pb_logo.Name = "pb_logo";
             this.pb_logo.Size = new System.Drawing.Size(337, 247);
             this.pb_logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pb_logo.TabIndex = 35;
             this.pb_logo.TabStop = false;
             // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(514, -3);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(565, 615);
+            this.pictureBox3.TabIndex = 43;
+            this.pictureBox3.TabStop = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Image = ((System.Drawing.Image)(resources.GetObject("label1.Image")));
+            this.label1.Location = new System.Drawing.Point(721, 84);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(196, 35);
+            this.label1.TabIndex = 44;
+            this.label1.Text = "ĐĂNG NHẬP";
+            // 
             // Frm_DangNhap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.ClientSize = new System.Drawing.Size(648, 519);
+            this.ClientSize = new System.Drawing.Size(1081, 613);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btn_quenmatkhau);
@@ -141,12 +166,15 @@
             this.Controls.Add(this.txt_matkhau);
             this.Controls.Add(this.lbl_tennhom);
             this.Controls.Add(this.pb_logo);
+            this.Controls.Add(this.pictureBox3);
             this.Name = "Frm_DangNhap";
             this.Text = "Frm_DangNhap";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.Frm_DangNhap_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_logo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -163,5 +191,7 @@
         private System.Windows.Forms.TextBox txt_matkhau;
         private System.Windows.Forms.Label lbl_tennhom;
         private System.Windows.Forms.PictureBox pb_logo;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Label label1;
     }
 }

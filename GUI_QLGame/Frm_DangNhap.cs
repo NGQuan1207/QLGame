@@ -14,7 +14,18 @@ namespace GUI_QLGame
     {
         public Frm_DangNhap()
         {
+            pb_logo.BackColor = Color.Transparent;
             InitializeComponent();
+        }
+
+        private void Frm_DangNhap_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbl_tennhom_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
