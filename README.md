@@ -8,7 +8,7 @@
 
 4 Bao hanh  : Bảo
 
-5 Chi tiet KH 
+5 Chi tiet KH : Khoa
 
 6 DS khach hang: Dương
 
