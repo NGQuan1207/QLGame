@@ -10,6 +10,6 @@
 
 5 Chi tiet KH 
 
-6 DS khach hang 
+6 DS khach hang: Dương
 
 7 Hoa Don :
