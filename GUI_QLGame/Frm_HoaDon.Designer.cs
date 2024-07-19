@@ -29,33 +29,33 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_HoaDon));
-            this.DtGV_InHoaDon = new System.Windows.Forms.DataGridView();
+            this.dataG_HoaDon = new System.Windows.Forms.DataGridView();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.mENUToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.txt_MaHoaDon = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.DtGV_InHoaDon)).BeginInit();
+            this.date_TimHoaDon = new System.Windows.Forms.DateTimePicker();
+            this.label5 = new System.Windows.Forms.Label();
+            this.btn_timHD = new System.Windows.Forms.Button();
+            this.btn_InHoaDon = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dataG_HoaDon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // DtGV_InHoaDon
+            // dataG_HoaDon
             // 
-            this.DtGV_InHoaDon.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DtGV_InHoaDon.Location = new System.Drawing.Point(12, 220);
-            this.DtGV_InHoaDon.Name = "DtGV_InHoaDon";
-            this.DtGV_InHoaDon.RowHeadersWidth = 51;
-            this.DtGV_InHoaDon.RowTemplate.Height = 24;
-            this.DtGV_InHoaDon.Size = new System.Drawing.Size(1104, 419);
-            this.DtGV_InHoaDon.TabIndex = 12;
+            this.dataG_HoaDon.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataG_HoaDon.Location = new System.Drawing.Point(12, 220);
+            this.dataG_HoaDon.Name = "dataG_HoaDon";
+            this.dataG_HoaDon.RowHeadersWidth = 51;
+            this.dataG_HoaDon.RowTemplate.Height = 24;
+            this.dataG_HoaDon.Size = new System.Drawing.Size(1104, 419);
+            this.dataG_HoaDon.TabIndex = 12;
             // 
             // pictureBox1
             // 
@@ -100,49 +100,27 @@
             // 
             this.groupBox1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.groupBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("groupBox1.BackgroundImage")));
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.txt_MaHoaDon);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.dateTimePicker1);
+            this.groupBox1.Controls.Add(this.date_TimHoaDon);
             this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.button1);
+            this.groupBox1.Controls.Add(this.btn_timHD);
             this.groupBox1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.groupBox1.Location = new System.Drawing.Point(508, 72);
+            this.groupBox1.Location = new System.Drawing.Point(508, 56);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(608, 132);
             this.groupBox1.TabIndex = 25;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Tìm kiếm";
             // 
-            // label5
+            // txt_MaHoaDon
             // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label5.Image = ((System.Drawing.Image)(resources.GetObject("label5.Image")));
-            this.label5.Location = new System.Drawing.Point(17, 33);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(65, 18);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "Ngày lập";
-            // 
-            // button1
-            // 
-            this.button1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button1.Location = new System.Drawing.Point(458, 46);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(134, 46);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "TÌM";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(130, 30);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(300, 22);
-            this.dateTimePicker1.TabIndex = 8;
-            this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
+            this.txt_MaHoaDon.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_MaHoaDon.Location = new System.Drawing.Point(130, 68);
+            this.txt_MaHoaDon.Name = "txt_MaHoaDon";
+            this.txt_MaHoaDon.Size = new System.Drawing.Size(300, 28);
+            this.txt_MaHoaDon.TabIndex = 10;
+            this.txt_MaHoaDon.Text = "Mã nhân viên";
             // 
             // label2
             // 
@@ -157,25 +135,47 @@
             this.label2.TabIndex = 9;
             this.label2.Text = "Mã nhân viên";
             // 
-            // textBox1
+            // date_TimHoaDon
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(130, 68);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(300, 28);
-            this.textBox1.TabIndex = 10;
-            this.textBox1.Text = "Mã nhân viên";
+            this.date_TimHoaDon.Location = new System.Drawing.Point(130, 30);
+            this.date_TimHoaDon.Name = "date_TimHoaDon";
+            this.date_TimHoaDon.Size = new System.Drawing.Size(300, 22);
+            this.date_TimHoaDon.TabIndex = 8;
+            this.date_TimHoaDon.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
-            // button2
+            // label5
             // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button2.Location = new System.Drawing.Point(167, 114);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(160, 46);
-            this.button2.TabIndex = 11;
-            this.button2.Text = "In Hóa Đơn";
-            this.button2.UseVisualStyleBackColor = true;
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label5.Image = ((System.Drawing.Image)(resources.GetObject("label5.Image")));
+            this.label5.Location = new System.Drawing.Point(17, 33);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(65, 18);
+            this.label5.TabIndex = 4;
+            this.label5.Text = "Ngày lập";
+            // 
+            // btn_timHD
+            // 
+            this.btn_timHD.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_timHD.Location = new System.Drawing.Point(458, 46);
+            this.btn_timHD.Name = "btn_timHD";
+            this.btn_timHD.Size = new System.Drawing.Size(134, 46);
+            this.btn_timHD.TabIndex = 0;
+            this.btn_timHD.Text = "TÌM";
+            this.btn_timHD.UseVisualStyleBackColor = true;
+            // 
+            // btn_InHoaDon
+            // 
+            this.btn_InHoaDon.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_InHoaDon.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_InHoaDon.Location = new System.Drawing.Point(167, 102);
+            this.btn_InHoaDon.Name = "btn_InHoaDon";
+            this.btn_InHoaDon.Size = new System.Drawing.Size(160, 46);
+            this.btn_InHoaDon.TabIndex = 11;
+            this.btn_InHoaDon.Text = "In Hóa Đơn";
+            this.btn_InHoaDon.UseVisualStyleBackColor = true;
             // 
             // Frm_HoaDon
             // 
@@ -183,17 +183,17 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.ClientSize = new System.Drawing.Size(1128, 651);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btn_InHoaDon);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.DtGV_InHoaDon);
+            this.Controls.Add(this.dataG_HoaDon);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.pictureBox1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Frm_HoaDon";
             this.Text = "Frm_HoaDon";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            ((System.ComponentModel.ISupportInitialize)(this.DtGV_InHoaDon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataG_HoaDon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
@@ -205,17 +205,17 @@
         }
 
         #endregion
-        private System.Windows.Forms.DataGridView DtGV_InHoaDon;
+        private System.Windows.Forms.DataGridView dataG_HoaDon;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem mENUToolStripMenuItem;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker date_TimHoaDon;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btn_timHD;
+        private System.Windows.Forms.TextBox txt_MaHoaDon;
+        private System.Windows.Forms.Button btn_InHoaDon;
     }
 }

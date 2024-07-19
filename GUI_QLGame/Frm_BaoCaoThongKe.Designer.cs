@@ -33,38 +33,38 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.mENUToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txt_Thunhap = new System.Windows.Forms.TextBox();
+            this.txt_TongSP = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.combb_DateThunhap = new System.Windows.Forms.ComboBox();
+            this.combb_DateSP = new System.Windows.Forms.ComboBox();
             this.btn_xuatfile = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.label4 = new System.Windows.Forms.Label();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.label5 = new System.Windows.Forms.Label();
+            this.combb_LocGia = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.comb_LocLoaiSP = new System.Windows.Forms.ComboBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.date_locSP = new System.Windows.Forms.DateTimePicker();
+            this.btn_LocSP = new System.Windows.Forms.Button();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.combb_Trangthai = new System.Windows.Forms.ComboBox();
+            this.combb_LocGiathue = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
+            this.btn_locSPthue = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
-            this.comboBox6 = new System.Windows.Forms.ComboBox();
+            this.date_locSPthue = new System.Windows.Forms.DateTimePicker();
+            this.comb_LocLoaiSPthue = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.button3 = new System.Windows.Forms.Button();
-            this.comboBox7 = new System.Windows.Forms.ComboBox();
+            this.dataG_SPdaBan = new System.Windows.Forms.DataGridView();
+            this.dataG_SPdaThue = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataG_SPdaBan)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataG_SPdaThue)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -106,25 +106,25 @@
             this.mENUToolStripMenuItem.Size = new System.Drawing.Size(65, 24);
             this.mENUToolStripMenuItem.Text = "MENU";
             // 
-            // textBox1
+            // txt_Thunhap
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(156, 84);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(243, 30);
-            this.textBox1.TabIndex = 15;
-            this.textBox1.Text = "Thu Nhập";
+            this.txt_Thunhap.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_Thunhap.Location = new System.Drawing.Point(156, 84);
+            this.txt_Thunhap.Name = "txt_Thunhap";
+            this.txt_Thunhap.ReadOnly = true;
+            this.txt_Thunhap.Size = new System.Drawing.Size(243, 30);
+            this.txt_Thunhap.TabIndex = 15;
+            this.txt_Thunhap.Text = "Thu Nhập";
             // 
-            // textBox2
+            // txt_TongSP
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(156, 131);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(243, 30);
-            this.textBox2.TabIndex = 16;
-            this.textBox2.Text = "Tổng SP đã bán";
+            this.txt_TongSP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_TongSP.Location = new System.Drawing.Point(156, 131);
+            this.txt_TongSP.Name = "txt_TongSP";
+            this.txt_TongSP.ReadOnly = true;
+            this.txt_TongSP.Size = new System.Drawing.Size(243, 30);
+            this.txt_TongSP.TabIndex = 16;
+            this.txt_TongSP.Text = "Tổng SP đã bán";
             // 
             // label2
             // 
@@ -150,35 +150,35 @@
             this.label3.TabIndex = 18;
             this.label3.Text = "Tổng SP bán";
             // 
-            // comboBox1
+            // combb_DateThunhap
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.combb_DateThunhap.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.combb_DateThunhap.FormattingEnabled = true;
+            this.combb_DateThunhap.Items.AddRange(new object[] {
             "7 ngày trước",
             "30 ngày trước",
             "90 ngày trước",
             "1 năm trước"});
-            this.comboBox1.Location = new System.Drawing.Point(405, 84);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(140, 33);
-            this.comboBox1.TabIndex = 19;
-            this.comboBox1.Text = "X ngày trước";
+            this.combb_DateThunhap.Location = new System.Drawing.Point(405, 84);
+            this.combb_DateThunhap.Name = "combb_DateThunhap";
+            this.combb_DateThunhap.Size = new System.Drawing.Size(160, 33);
+            this.combb_DateThunhap.TabIndex = 19;
+            this.combb_DateThunhap.Text = "X ngày trước";
             // 
-            // comboBox2
+            // combb_DateSP
             // 
-            this.comboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
+            this.combb_DateSP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.combb_DateSP.FormattingEnabled = true;
+            this.combb_DateSP.Items.AddRange(new object[] {
             "7 ngày trước",
             "30 ngày trước",
             "90 ngày trước",
             "1 năm trước"});
-            this.comboBox2.Location = new System.Drawing.Point(405, 128);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(140, 33);
-            this.comboBox2.TabIndex = 20;
-            this.comboBox2.Text = "X ngày trước";
+            this.combb_DateSP.Location = new System.Drawing.Point(405, 128);
+            this.combb_DateSP.Name = "combb_DateSP";
+            this.combb_DateSP.Size = new System.Drawing.Size(160, 33);
+            this.combb_DateSP.TabIndex = 20;
+            this.combb_DateSP.Text = "X ngày trước";
             // 
             // btn_xuatfile
             // 
@@ -194,13 +194,13 @@
             // 
             this.groupBox1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.groupBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("groupBox1.BackgroundImage")));
-            this.groupBox1.Controls.Add(this.comboBox4);
+            this.groupBox1.Controls.Add(this.combb_LocGia);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.comboBox3);
+            this.groupBox1.Controls.Add(this.comb_LocLoaiSP);
             this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.dateTimePicker1);
-            this.groupBox1.Controls.Add(this.button1);
+            this.groupBox1.Controls.Add(this.date_locSP);
+            this.groupBox1.Controls.Add(this.btn_LocSP);
             this.groupBox1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.groupBox1.Location = new System.Drawing.Point(11, 167);
             this.groupBox1.Name = "groupBox1";
@@ -209,96 +209,14 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Lọc SP đã bán";
             // 
-            // groupBox2
+            // combb_LocGia
             // 
-            this.groupBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("groupBox2.BackgroundImage")));
-            this.groupBox2.Controls.Add(this.comboBox7);
-            this.groupBox2.Controls.Add(this.comboBox5);
-            this.groupBox2.Controls.Add(this.label7);
-            this.groupBox2.Controls.Add(this.button3);
-            this.groupBox2.Controls.Add(this.label8);
-            this.groupBox2.Controls.Add(this.dateTimePicker2);
-            this.groupBox2.Controls.Add(this.comboBox6);
-            this.groupBox2.Controls.Add(this.label9);
-            this.groupBox2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.groupBox2.Location = new System.Drawing.Point(596, 167);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(578, 132);
-            this.groupBox2.TabIndex = 23;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Lọc sản phẩm thuê";
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(11, 305);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(580, 286);
-            this.dataGridView1.TabIndex = 24;
-            // 
-            // dataGridView2
-            // 
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(595, 305);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.RowHeadersWidth = 51;
-            this.dataGridView2.RowTemplate.Height = 24;
-            this.dataGridView2.Size = new System.Drawing.Size(580, 286);
-            this.dataGridView2.TabIndex = 25;
-            // 
-            // button1
-            // 
-            this.button1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button1.Location = new System.Drawing.Point(420, 46);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(134, 46);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "LỌC";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(75, 21);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(313, 22);
-            this.dateTimePicker1.TabIndex = 1;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label4.Image = ((System.Drawing.Image)(resources.GetObject("label4.Image")));
-            this.label4.Location = new System.Drawing.Point(27, 24);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(42, 18);
-            this.label4.TabIndex = 2;
-            this.label4.Text = "Ngày";
-            // 
-            // comboBox3
-            // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(75, 58);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(313, 24);
-            this.comboBox3.TabIndex = 3;
-            this.comboBox3.Text = "LOẠI";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label5.Image = ((System.Drawing.Image)(resources.GetObject("label5.Image")));
-            this.label5.Location = new System.Drawing.Point(9, 60);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(60, 18);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "Loại SP";
+            this.combb_LocGia.FormattingEnabled = true;
+            this.combb_LocGia.Location = new System.Drawing.Point(75, 96);
+            this.combb_LocGia.Name = "combb_LocGia";
+            this.combb_LocGia.Size = new System.Drawing.Size(313, 24);
+            this.combb_LocGia.TabIndex = 6;
+            this.combb_LocGia.Text = "GIÁ";
             // 
             // label6
             // 
@@ -313,23 +231,94 @@
             this.label6.TabIndex = 5;
             this.label6.Text = "Giá";
             // 
-            // comboBox4
+            // label5
             // 
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(75, 96);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(313, 24);
-            this.comboBox4.TabIndex = 6;
-            this.comboBox4.Text = "GIÁ";
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label5.Image = ((System.Drawing.Image)(resources.GetObject("label5.Image")));
+            this.label5.Location = new System.Drawing.Point(9, 60);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(60, 18);
+            this.label5.TabIndex = 4;
+            this.label5.Text = "Loại SP";
             // 
-            // comboBox5
+            // comb_LocLoaiSP
             // 
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Location = new System.Drawing.Point(76, 99);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(313, 24);
-            this.comboBox5.TabIndex = 13;
-            this.comboBox5.Text = "GIÁ";
+            this.comb_LocLoaiSP.FormattingEnabled = true;
+            this.comb_LocLoaiSP.Location = new System.Drawing.Point(75, 58);
+            this.comb_LocLoaiSP.Name = "comb_LocLoaiSP";
+            this.comb_LocLoaiSP.Size = new System.Drawing.Size(313, 24);
+            this.comb_LocLoaiSP.TabIndex = 3;
+            this.comb_LocLoaiSP.Text = "LOẠI";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label4.Image = ((System.Drawing.Image)(resources.GetObject("label4.Image")));
+            this.label4.Location = new System.Drawing.Point(27, 24);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(42, 18);
+            this.label4.TabIndex = 2;
+            this.label4.Text = "Ngày";
+            // 
+            // date_locSP
+            // 
+            this.date_locSP.Location = new System.Drawing.Point(75, 21);
+            this.date_locSP.Name = "date_locSP";
+            this.date_locSP.Size = new System.Drawing.Size(313, 22);
+            this.date_locSP.TabIndex = 1;
+            // 
+            // btn_LocSP
+            // 
+            this.btn_LocSP.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_LocSP.Location = new System.Drawing.Point(420, 46);
+            this.btn_LocSP.Name = "btn_LocSP";
+            this.btn_LocSP.Size = new System.Drawing.Size(134, 46);
+            this.btn_LocSP.TabIndex = 0;
+            this.btn_LocSP.Text = "LỌC";
+            this.btn_LocSP.UseVisualStyleBackColor = true;
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("groupBox2.BackgroundImage")));
+            this.groupBox2.Controls.Add(this.combb_Trangthai);
+            this.groupBox2.Controls.Add(this.combb_LocGiathue);
+            this.groupBox2.Controls.Add(this.label7);
+            this.groupBox2.Controls.Add(this.btn_locSPthue);
+            this.groupBox2.Controls.Add(this.label8);
+            this.groupBox2.Controls.Add(this.date_locSPthue);
+            this.groupBox2.Controls.Add(this.comb_LocLoaiSPthue);
+            this.groupBox2.Controls.Add(this.label9);
+            this.groupBox2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.groupBox2.Location = new System.Drawing.Point(596, 167);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(578, 132);
+            this.groupBox2.TabIndex = 23;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Lọc sản phẩm thuê";
+            // 
+            // combb_Trangthai
+            // 
+            this.combb_Trangthai.FormattingEnabled = true;
+            this.combb_Trangthai.Location = new System.Drawing.Point(438, 27);
+            this.combb_Trangthai.Name = "combb_Trangthai";
+            this.combb_Trangthai.Size = new System.Drawing.Size(95, 24);
+            this.combb_Trangthai.TabIndex = 14;
+            this.combb_Trangthai.Text = "Trạng thái";
+            // 
+            // combb_LocGiathue
+            // 
+            this.combb_LocGiathue.FormattingEnabled = true;
+            this.combb_LocGiathue.Location = new System.Drawing.Point(76, 99);
+            this.combb_LocGiathue.Name = "combb_LocGiathue";
+            this.combb_LocGiathue.Size = new System.Drawing.Size(313, 24);
+            this.combb_LocGiathue.TabIndex = 13;
+            this.combb_LocGiathue.Text = "GIÁ";
             // 
             // label7
             // 
@@ -344,6 +333,16 @@
             this.label7.TabIndex = 12;
             this.label7.Text = "Giá";
             // 
+            // btn_locSPthue
+            // 
+            this.btn_locSPthue.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_locSPthue.Location = new System.Drawing.Point(419, 74);
+            this.btn_locSPthue.Name = "btn_locSPthue";
+            this.btn_locSPthue.Size = new System.Drawing.Size(134, 46);
+            this.btn_locSPthue.TabIndex = 7;
+            this.btn_locSPthue.Text = "LỌC";
+            this.btn_locSPthue.UseVisualStyleBackColor = true;
+            // 
             // label8
             // 
             this.label8.AutoSize = true;
@@ -357,14 +356,21 @@
             this.label8.TabIndex = 11;
             this.label8.Text = "Loại SP";
             // 
-            // comboBox6
+            // date_locSPthue
             // 
-            this.comboBox6.FormattingEnabled = true;
-            this.comboBox6.Location = new System.Drawing.Point(76, 61);
-            this.comboBox6.Name = "comboBox6";
-            this.comboBox6.Size = new System.Drawing.Size(313, 24);
-            this.comboBox6.TabIndex = 10;
-            this.comboBox6.Text = "LOẠI";
+            this.date_locSPthue.Location = new System.Drawing.Point(76, 24);
+            this.date_locSPthue.Name = "date_locSPthue";
+            this.date_locSPthue.Size = new System.Drawing.Size(313, 22);
+            this.date_locSPthue.TabIndex = 8;
+            // 
+            // comb_LocLoaiSPthue
+            // 
+            this.comb_LocLoaiSPthue.FormattingEnabled = true;
+            this.comb_LocLoaiSPthue.Location = new System.Drawing.Point(76, 61);
+            this.comb_LocLoaiSPthue.Name = "comb_LocLoaiSPthue";
+            this.comb_LocLoaiSPthue.Size = new System.Drawing.Size(313, 24);
+            this.comb_LocLoaiSPthue.TabIndex = 10;
+            this.comb_LocLoaiSPthue.Text = "LOẠI";
             // 
             // label9
             // 
@@ -379,31 +385,25 @@
             this.label9.TabIndex = 9;
             this.label9.Text = "Ngày";
             // 
-            // dateTimePicker2
+            // dataG_SPdaBan
             // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(76, 24);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(313, 22);
-            this.dateTimePicker2.TabIndex = 8;
+            this.dataG_SPdaBan.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataG_SPdaBan.Location = new System.Drawing.Point(11, 305);
+            this.dataG_SPdaBan.Name = "dataG_SPdaBan";
+            this.dataG_SPdaBan.RowHeadersWidth = 51;
+            this.dataG_SPdaBan.RowTemplate.Height = 24;
+            this.dataG_SPdaBan.Size = new System.Drawing.Size(580, 286);
+            this.dataG_SPdaBan.TabIndex = 24;
             // 
-            // button3
+            // dataG_SPdaThue
             // 
-            this.button3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button3.Location = new System.Drawing.Point(419, 74);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(134, 46);
-            this.button3.TabIndex = 7;
-            this.button3.Text = "LỌC";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // comboBox7
-            // 
-            this.comboBox7.FormattingEnabled = true;
-            this.comboBox7.Location = new System.Drawing.Point(438, 27);
-            this.comboBox7.Name = "comboBox7";
-            this.comboBox7.Size = new System.Drawing.Size(95, 24);
-            this.comboBox7.TabIndex = 14;
-            this.comboBox7.Text = "Trạng thái";
+            this.dataG_SPdaThue.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataG_SPdaThue.Location = new System.Drawing.Point(595, 305);
+            this.dataG_SPdaThue.Name = "dataG_SPdaThue";
+            this.dataG_SPdaThue.RowHeadersWidth = 51;
+            this.dataG_SPdaThue.RowTemplate.Height = 24;
+            this.dataG_SPdaThue.Size = new System.Drawing.Size(580, 286);
+            this.dataG_SPdaThue.TabIndex = 25;
             // 
             // Frm_BaoCaoThongKe
             // 
@@ -411,17 +411,17 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.ClientSize = new System.Drawing.Size(1186, 603);
-            this.Controls.Add(this.dataGridView2);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dataG_SPdaThue);
+            this.Controls.Add(this.dataG_SPdaBan);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btn_xuatfile);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.combb_DateSP);
+            this.Controls.Add(this.combb_DateThunhap);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txt_TongSP);
+            this.Controls.Add(this.txt_Thunhap);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.pictureBox1);
@@ -436,8 +436,8 @@
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataG_SPdaBan)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataG_SPdaThue)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -448,31 +448,31 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem mENUToolStripMenuItem;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txt_Thunhap;
+        private System.Windows.Forms.TextBox txt_TongSP;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox combb_DateThunhap;
+        private System.Windows.Forms.ComboBox combb_DateSP;
         private System.Windows.Forms.Button btn_xuatfile;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.DateTimePicker date_locSP;
+        private System.Windows.Forms.Button btn_LocSP;
+        private System.Windows.Forms.DataGridView dataG_SPdaBan;
+        private System.Windows.Forms.DataGridView dataG_SPdaThue;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ComboBox comboBox4;
+        private System.Windows.Forms.ComboBox combb_LocGia;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.ComboBox comboBox7;
-        private System.Windows.Forms.ComboBox comboBox5;
+        private System.Windows.Forms.ComboBox comb_LocLoaiSP;
+        private System.Windows.Forms.ComboBox combb_Trangthai;
+        private System.Windows.Forms.ComboBox combb_LocGiathue;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btn_locSPthue;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
-        private System.Windows.Forms.ComboBox comboBox6;
+        private System.Windows.Forms.DateTimePicker date_locSPthue;
+        private System.Windows.Forms.ComboBox comb_LocLoaiSPthue;
         private System.Windows.Forms.Label label9;
     }
 }

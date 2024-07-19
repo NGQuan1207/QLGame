@@ -56,15 +56,15 @@
             this.btn_LenDon = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lable_ttnhanvien = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.picb_hinhNV = new System.Windows.Forms.PictureBox();
+            this.txt_TenNV = new System.Windows.Forms.TextBox();
+            this.txt_MaNV = new System.Windows.Forms.TextBox();
+            this.txt_ChuavuNV = new System.Windows.Forms.TextBox();
+            this.txt_CCCDnv = new System.Windows.Forms.TextBox();
+            this.txt_ngaysinh = new System.Windows.Forms.TextBox();
+            this.txt_gender = new System.Windows.Forms.TextBox();
+            this.txt_sdtNV = new System.Windows.Forms.TextBox();
+            this.txt_diachiNV = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -72,7 +72,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picb_hinhNV)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -305,93 +305,93 @@
             this.lable_ttnhanvien.TabIndex = 13;
             this.lable_ttnhanvien.Text = "Thông tin nhân viên";
             // 
-            // pictureBox2
+            // picb_hinhNV
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(703, 128);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(137, 179);
-            this.pictureBox2.TabIndex = 14;
-            this.pictureBox2.TabStop = false;
+            this.picb_hinhNV.Location = new System.Drawing.Point(703, 128);
+            this.picb_hinhNV.Name = "picb_hinhNV";
+            this.picb_hinhNV.Size = new System.Drawing.Size(137, 179);
+            this.picb_hinhNV.TabIndex = 14;
+            this.picb_hinhNV.TabStop = false;
             // 
-            // textBox1
+            // txt_TenNV
             // 
-            this.textBox1.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(882, 135);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(293, 39);
-            this.textBox1.TabIndex = 15;
-            this.textBox1.Text = "Tên nhân viên";
+            this.txt_TenNV.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_TenNV.Location = new System.Drawing.Point(882, 135);
+            this.txt_TenNV.Name = "txt_TenNV";
+            this.txt_TenNV.ReadOnly = true;
+            this.txt_TenNV.Size = new System.Drawing.Size(293, 39);
+            this.txt_TenNV.TabIndex = 15;
+            this.txt_TenNV.Text = "Tên nhân viên";
             // 
-            // textBox2
+            // txt_MaNV
             // 
-            this.textBox2.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(882, 200);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(293, 39);
-            this.textBox2.TabIndex = 16;
-            this.textBox2.Text = "Mã nhân viên";
+            this.txt_MaNV.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_MaNV.Location = new System.Drawing.Point(882, 200);
+            this.txt_MaNV.Name = "txt_MaNV";
+            this.txt_MaNV.ReadOnly = true;
+            this.txt_MaNV.Size = new System.Drawing.Size(293, 39);
+            this.txt_MaNV.TabIndex = 16;
+            this.txt_MaNV.Text = "Mã nhân viên";
             // 
-            // textBox3
+            // txt_ChuavuNV
             // 
-            this.textBox3.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(882, 268);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.ReadOnly = true;
-            this.textBox3.Size = new System.Drawing.Size(293, 39);
-            this.textBox3.TabIndex = 17;
-            this.textBox3.Text = "Chức vụ";
+            this.txt_ChuavuNV.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_ChuavuNV.Location = new System.Drawing.Point(882, 268);
+            this.txt_ChuavuNV.Name = "txt_ChuavuNV";
+            this.txt_ChuavuNV.ReadOnly = true;
+            this.txt_ChuavuNV.Size = new System.Drawing.Size(293, 39);
+            this.txt_ChuavuNV.TabIndex = 17;
+            this.txt_ChuavuNV.Text = "Chức vụ";
             // 
-            // textBox4
+            // txt_CCCDnv
             // 
-            this.textBox4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(854, 420);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.ReadOnly = true;
-            this.textBox4.Size = new System.Drawing.Size(293, 30);
-            this.textBox4.TabIndex = 18;
-            this.textBox4.Text = "CCCD";
+            this.txt_CCCDnv.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_CCCDnv.Location = new System.Drawing.Point(854, 420);
+            this.txt_CCCDnv.Name = "txt_CCCDnv";
+            this.txt_CCCDnv.ReadOnly = true;
+            this.txt_CCCDnv.Size = new System.Drawing.Size(293, 30);
+            this.txt_CCCDnv.TabIndex = 18;
+            this.txt_CCCDnv.Text = "CCCD";
             // 
-            // textBox5
+            // txt_ngaysinh
             // 
-            this.textBox5.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(854, 471);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.ReadOnly = true;
-            this.textBox5.Size = new System.Drawing.Size(293, 30);
-            this.textBox5.TabIndex = 19;
-            this.textBox5.Text = "Ngày sinh";
+            this.txt_ngaysinh.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_ngaysinh.Location = new System.Drawing.Point(854, 471);
+            this.txt_ngaysinh.Name = "txt_ngaysinh";
+            this.txt_ngaysinh.ReadOnly = true;
+            this.txt_ngaysinh.Size = new System.Drawing.Size(293, 30);
+            this.txt_ngaysinh.TabIndex = 19;
+            this.txt_ngaysinh.Text = "Ngày sinh";
             // 
-            // textBox6
+            // txt_gender
             // 
-            this.textBox6.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(854, 520);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.ReadOnly = true;
-            this.textBox6.Size = new System.Drawing.Size(293, 30);
-            this.textBox6.TabIndex = 20;
-            this.textBox6.Text = "Phái";
+            this.txt_gender.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_gender.Location = new System.Drawing.Point(854, 520);
+            this.txt_gender.Name = "txt_gender";
+            this.txt_gender.ReadOnly = true;
+            this.txt_gender.Size = new System.Drawing.Size(293, 30);
+            this.txt_gender.TabIndex = 20;
+            this.txt_gender.Text = "Phái";
             // 
-            // textBox7
+            // txt_sdtNV
             // 
-            this.textBox7.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox7.Location = new System.Drawing.Point(854, 372);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.ReadOnly = true;
-            this.textBox7.Size = new System.Drawing.Size(293, 30);
-            this.textBox7.TabIndex = 21;
-            this.textBox7.Text = "Sđt";
+            this.txt_sdtNV.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_sdtNV.Location = new System.Drawing.Point(854, 372);
+            this.txt_sdtNV.Name = "txt_sdtNV";
+            this.txt_sdtNV.ReadOnly = true;
+            this.txt_sdtNV.Size = new System.Drawing.Size(293, 30);
+            this.txt_sdtNV.TabIndex = 21;
+            this.txt_sdtNV.Text = "Sđt";
             // 
-            // textBox8
+            // txt_diachiNV
             // 
-            this.textBox8.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox8.Location = new System.Drawing.Point(854, 567);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.ReadOnly = true;
-            this.textBox8.Size = new System.Drawing.Size(293, 30);
-            this.textBox8.TabIndex = 22;
-            this.textBox8.Text = "Địa chỉ";
+            this.txt_diachiNV.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_diachiNV.Location = new System.Drawing.Point(854, 567);
+            this.txt_diachiNV.Name = "txt_diachiNV";
+            this.txt_diachiNV.ReadOnly = true;
+            this.txt_diachiNV.Size = new System.Drawing.Size(293, 30);
+            this.txt_diachiNV.TabIndex = 22;
+            this.txt_diachiNV.Text = "Địa chỉ";
             // 
             // label1
             // 
@@ -464,15 +464,15 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox8);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.txt_diachiNV);
+            this.Controls.Add(this.txt_sdtNV);
+            this.Controls.Add(this.txt_gender);
+            this.Controls.Add(this.txt_ngaysinh);
+            this.Controls.Add(this.txt_CCCDnv);
+            this.Controls.Add(this.txt_ChuavuNV);
+            this.Controls.Add(this.txt_MaNV);
+            this.Controls.Add(this.txt_TenNV);
+            this.Controls.Add(this.picb_hinhNV);
             this.Controls.Add(this.lable_ttnhanvien);
             this.Controls.Add(this.btn_LenDon);
             this.Controls.Add(this.btn_BaocaoThongKe);
@@ -490,7 +490,7 @@
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picb_hinhNV)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -525,15 +525,15 @@
         private System.Windows.Forms.Button btn_LenDon;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label lable_ttnhanvien;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.PictureBox picb_hinhNV;
+        private System.Windows.Forms.TextBox txt_TenNV;
+        private System.Windows.Forms.TextBox txt_MaNV;
+        private System.Windows.Forms.TextBox txt_ChuavuNV;
+        private System.Windows.Forms.TextBox txt_CCCDnv;
+        private System.Windows.Forms.TextBox txt_ngaysinh;
+        private System.Windows.Forms.TextBox txt_gender;
+        private System.Windows.Forms.TextBox txt_sdtNV;
+        private System.Windows.Forms.TextBox txt_diachiNV;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
