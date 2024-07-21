@@ -151,5 +151,10 @@ namespace GUI_QLGame
                 txt_TinhTrang.Text = row.Cells["TinhTrang"].Value.ToString();
             }
         }
+
+        private void dtgv_Baohanh_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

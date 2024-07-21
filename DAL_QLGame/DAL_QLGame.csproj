@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DAL_BaoHanh.cs" />
+    <Compile Include="DAL_ChiTietKhachHang.cs" />
     <Compile Include="DAL_NhanVien.cs" />
     <Compile Include="DataAccess.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -46,5 +46,24 @@ namespace GUI_QLGame
         {
 
         }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void btn_Sua_Click(object sender, EventArgs e)
+        {
+
+        }
+        static void Main(string[] args)
+        {
+           
+        }
+
+        private void frm_ChiTietKH_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
