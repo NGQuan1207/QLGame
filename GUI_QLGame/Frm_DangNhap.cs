@@ -101,7 +101,7 @@ namespace GUI_QLGame
                 MailMessage Msg = new MailMessage();
                 Msg.Body = "Chào anh/ chị. Mật khẩu mới: " + matkhau;
                 Msg.To.Add(email);
-                Msg.From = new MailAddress("tuongdgps38065@gmail.com");
+                Msg.From = new MailAddress("baoquy1400@gmail.com");
                 Msg.Subject = "Bạn đã sử dụng tính năng quên mật khẩu";
 
                 SmtpClient client = new SmtpClient("smtp.gmail.com", 587);
@@ -141,6 +141,16 @@ namespace GUI_QLGame
             {
                 MessageBox.Show("Bạn cần nhập email nhận thông tin hồi phục mật khẩu");
             }
+        }
+
+        private void btn_thoat_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt_ID_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
