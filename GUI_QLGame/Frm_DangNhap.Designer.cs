@@ -74,6 +74,7 @@
             this.btn_quenmatkhau.TabIndex = 40;
             this.btn_quenmatkhau.Text = "Quên mật khẩu";
             this.btn_quenmatkhau.UseVisualStyleBackColor = true;
+            this.btn_quenmatkhau.Click += new System.EventHandler(this.btn_quenmatkhau_Click);
             // 
             // btn_thoat
             // 
@@ -92,6 +93,7 @@
             this.btn_dangnhap.TabIndex = 38;
             this.btn_dangnhap.Text = "Đăng Nhập";
             this.btn_dangnhap.UseVisualStyleBackColor = true;
+            this.btn_dangnhap.Click += new System.EventHandler(this.btn_dangnhap_Click);
             // 
             // txt_ID
             // 

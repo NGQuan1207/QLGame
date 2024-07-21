@@ -169,5 +169,15 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BUS_QLGame\BUS_QLGame.csproj">
+      <Project>{b8d9a8b2-d6f2-4571-ba2b-cf2477b275d2}</Project>
+      <Name>BUS_QLGame</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DTO_QLGame\DTO_QLGame.csproj">
+      <Project>{6af12bd4-f9b4-4936-949c-dbefad3bee35}</Project>
+      <Name>DTO_QLGame</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
