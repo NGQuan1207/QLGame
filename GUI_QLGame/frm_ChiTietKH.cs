@@ -56,12 +56,14 @@ namespace GUI_QLGame
         {
 
         }
-        static void Main(string[] args)
-        {
-           
-        }
+    
 
         private void frm_ChiTietKH_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
 
         }
