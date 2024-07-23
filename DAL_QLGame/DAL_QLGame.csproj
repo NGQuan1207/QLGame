@@ -43,8 +43,11 @@
   <ItemGroup>
     <Compile Include="DAL_BaoHanh.cs" />
     <Compile Include="DAL_ChiTietKhachHang.cs" />
+    <Compile Include="DAL_HoaDon.cs" />
+    <Compile Include="DAL_KhachHang.cs" />
     <Compile Include="DAL_NhanVien.cs" />
     <Compile Include="DataAccess.cs" />
+    <Compile Include="KHConnect.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Connect.cs" />
   </ItemGroup>

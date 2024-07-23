@@ -11,7 +11,7 @@ namespace DAL_QLGame
     {
         public static SqlConnection connect()
         {
-            SqlConnection con = new SqlConnection(@"Data Source=LOIBACH\NVB;Initial Catalog=QL_ThietBiGame;Integrated Security=True;Encrypt=False");
+            SqlConnection con = new SqlConnection(@"Data Source=LAPTOP-PDIC30NO\MISASME2019;Initial Catalog=QL_ThietBiGame3;Integrated Security=True;Encrypt=False");
             return con;
         }
     }

@@ -6,54 +6,63 @@ using System.Threading.Tasks;
 
 namespace DTO_QLGame
 {
-    public class DTO_ChiTietKhachHang
+    public class DTO_ChiTietKH
     {
+        public string mactkh;
         public string makhachhang;
         public string tenkh;
         public string diachi;
         public string dienthoai;
-        public string macthd;
+        public string mahd;
         public string maphieuthue;
-        public int trangthai;
 
-        public string MaKH {
+        public string MaCTKH
+        {
+            get => mactkh;
+            set => mactkh = value;
+        }
+        public string MaKH
+        {
             get => makhachhang;
             set => makhachhang = value;
         }
-        public string TenKH {  
+        public string TenKH
+        {
             get => tenkh;
             set => tenkh = value;
         }
-        public string DiaChi { 
+        public string DiaChi
+        {
             get => diachi;
             set => diachi = value;
         }
-        public string SDT {  
+        public string SDT
+        {
             get => dienthoai;
             set => dienthoai = value;
         }
-        public string MaCTHD { 
-            get => macthd;
-            set => macthd = value; 
+        public string MaHD
+        {
+            get => mahd;
+            set => mahd = value;
         }
-        public string MaPhieuThue {
+        public string MaPhieuThue
+        {
             get => maphieuthue;
             set => maphieuthue = value;
         }
-        public int TrangThai { 
-            get => trangthai;
-            set => trangthai = value;
-        }
-        public DTO_ChiTietKhachHang() { }
-        public DTO_ChiTietKhachHang(string makhachhang, string tenkh, string diachi, string dienthoai, string macthd, string maphieuthue, int trangthai)
+
+        public DTO_ChiTietKH() { }
+        public DTO_ChiTietKH(string mactkh, string makhachhang, string tenkh, string diachi, string dienthoai, string mahd, string maphieuthue)
         {
+            this.MaCTKH = mactkh;
             this.MaKH = makhachhang;
             this.TenKH = tenkh;
             this.DiaChi = diachi;
             this.SDT = dienthoai;
-            this.MaCTHD = macthd;
+            this.MaHD = mahd;
             this.MaPhieuThue = maphieuthue;
-            this.TrangThai = trangthai;
+
         }
     }
 }

@@ -12,40 +12,68 @@ namespace DAL_QLGame
 {
     public class DAL_ChiTietKhachHang
     {
-        public static bool UpdateKhachHang(string maKH, string tenKH, string diaChi, string sdt, string email, int trangThai)
+        public static DataTable ListCTKhachHang()
         {
-            try
+            using (SqlConnection con = DataAccess.connect())
+            using (SqlCommand cmd = new SqlCommand("ListChiTietKhachHang", con))
             {
-                using (SqlConnection con = DataAccess.connect())
+                con.Open();
+                cmd.CommandType = CommandType.StoredProcedure;
+                DataTable ListCt = new DataTable();
+                ListCt.Load(cmd.ExecuteReader());
+                return ListCt;
+            }
+        }
+        public static DataTable TimHoaDon(string makh)
+        {
+            using (SqlConnection con = DataAccess.connect())
+            using (SqlCommand cmd = new SqlCommand("TimHoaDonTheoMaKH", con))
+            {
+                con.Open();
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@MaKH", makh);
+                /* DataTable TimKH = new DataTable();
+                 TimKH.Load(cmd.ExecuteReader());
+                 return TimKH;
+             }*/
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+                return dt;
+            }
+        }
+        public static DataTable TimKhachHang(string makh)
+        {
+            DataTable dtKhachHang = new DataTable();
+            using (SqlConnection con = DataAccess.connect())
+            using (SqlCommand cmd = new SqlCommand("TimKH", con))
+            {
                 {
-                    con.Open();
-                    using (SqlCommand cmd = new SqlCommand("UpdateKhachHang", con))
-                    {
-                        cmd.CommandType = CommandType.StoredProcedure;
-
-                        // Thêm các tham số cho stored procedure
-                        cmd.Parameters.AddWithValue("@MaKH", maKH);
-                        cmd.Parameters.AddWithValue("@TenKH", tenKH);
-                        cmd.Parameters.AddWithValue("@DiaChi", diaChi);
-                        cmd.Parameters.AddWithValue("@SDT", sdt);
-                        cmd.Parameters.AddWithValue("@Email", email);
-                        cmd.Parameters.AddWithValue("@TrangThai", trangThai);
-
-                        int rowsAffected = cmd.ExecuteNonQuery();
-                        return rowsAffected > 0; // Trả về true nếu cập nhật thành công
-
-                    }
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+                    adapter.Fill(dtKhachHang);
                 }
-
-
             }
-               catch (Exception ex)
+             return dtKhachHang;
+        }
+        public static bool Execute(string storedProcedureName, params SqlParameter[] parameters)
+        {
+            using (SqlConnection con = DataAccess.connect())
+            using (SqlCommand cmd = con.CreateCommand())
             {
-                // Xử lý ngoại lệ (nếu có)
-                Console.WriteLine("đã xảy ra lỗi: " + ex.Message);
-                return false;
-            }
+                con.Open();
+                cmd.CommandText = storedProcedureName;
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddRange(parameters);
 
+                if (cmd.ExecuteNonQuery() > 0)
+                    return true;
+            }
+            return false;
+        }
+        public static bool XoaHoaDon(string mahoadon)
+        {
+            return Execute("XoaBaohanh", new SqlParameter("@mabaohanh", mahoadon));
         }
     }
 }
