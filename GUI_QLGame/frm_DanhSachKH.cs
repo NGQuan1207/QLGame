@@ -164,9 +164,8 @@ namespace GUI_QLGame
 
         private void btnChiTietKhachHang_Click(object sender, EventArgs e)
         {
-            frm_ChiTietKH khach = new frm_ChiTietKH();
-            khach.ShowDialog();
-            this.Close();
+            frm_ChiTietKH ctkh = new frm_ChiTietKH(selectedMaKH, txtTenKhachHang.Text, txtDiaChi.Text, txtSDT.Text);
+            ctkh.ShowDialog();
         }
 
         private void btnThem_Click(object sender, EventArgs e)

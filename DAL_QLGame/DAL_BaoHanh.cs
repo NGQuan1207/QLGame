@@ -10,69 +10,97 @@ using System.Security.Policy;
 
 namespace DAL_QLGame
 {
-    public class DAL_BaoHanh
+    public class DAL_BaoHanh : Connect
     {
-
-
-        public static DataTable LoadListBaoHanh()
+        public DataTable LoadListBaoHanh()
         {
-            using (SqlConnection con = DataAccess.connect())
-            using (SqlCommand cmd = new SqlCommand("DanhSachBaoHanh", con))
+            using (_conn)
             {
-                con.Open();
+                SqlCommand cmd = new SqlCommand("DanhSachBaoHanh", _conn);
                 cmd.CommandType = CommandType.StoredProcedure;
                 DataTable ListKH = new DataTable();
-                ListKH.Load(cmd.ExecuteReader());
+                try
+                {
+                    _conn.Open();
+                    ListKH.Load(cmd.ExecuteReader());
+                }
+                catch (Exception ex)    
+                {
+                    throw new Exception("Có lỗi xảy ra: " + ex.Message);
+                }
+                finally
+                {
+                    _conn.Close();
+                }
                 return ListKH;
             }
         }
 
-        public static DataTable TimBaoHanh(string tim)
+        public DataTable TimBaoHanh(string tim)
         {
-            using (SqlConnection con = DataAccess.connect())
-            using (SqlCommand cmd = new SqlCommand("TimKiemBaoHanh", con))
+            using (_conn)
             {
-                con.Open();
+                SqlCommand cmd = new SqlCommand("TimKiemBaoHanh", _conn);
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.AddWithValue("@kiem", tim);
                 DataTable TimNV = new DataTable();
-                TimNV.Load(cmd.ExecuteReader());
-                con.Close();
+                try
+                {
+                    _conn.Open();
+                    TimNV.Load(cmd.ExecuteReader());
+                }
+                catch (Exception ex)
+                {
+                    throw new Exception("Có lỗi xảy ra: " + ex.Message);
+                }
+                finally
+                {
+                    _conn.Close();
+                }
                 return TimNV;
             }
         }
-        public static bool Execute(string storedProcedureName, params SqlParameter[] parameters)
+
+        public bool Execute(string storedProcedureName, params SqlParameter[] parameters)
         {
-            using (SqlConnection con = DataAccess.connect())
-            using (SqlCommand cmd = con.CreateCommand())
+            using (_conn)
             {
-                con.Open();
-                cmd.CommandText = storedProcedureName;
+                SqlCommand cmd = new SqlCommand(storedProcedureName, _conn);
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.AddRange(parameters);
-
-                if (cmd.ExecuteNonQuery() > 0)
-                    return true;
+                try
+                {
+                    _conn.Open();
+                    return cmd.ExecuteNonQuery() > 0;
+                }
+                catch (Exception ex)
+                {
+                    throw new Exception("Có lỗi xảy ra: " + ex.Message);
+                }
+                finally
+                {
+                    _conn.Close();
+                }
             }
-            return false;
         }
-        public static bool ThemBaoHanh(DTO_BaoHanh baohanh)
+
+        public bool ThemBaoHanh(DTO_BaoHanh baohanh)
         {
             SqlParameter[] parameters =
             {
-               
                 new SqlParameter("@MaSP", baohanh.MaSP),
                 new SqlParameter("@MaKH", baohanh.MaKH),
                 new SqlParameter("@startdate", baohanh.Startdate),
                 new SqlParameter("@enddate", baohanh.Enddate),
-                 new SqlParameter("@TinhTrang", baohanh.TinhTrang)
+                new SqlParameter("@TinhTrang", baohanh.TinhTrang)
             };
             return Execute("ThemBaoHanh", parameters);
         }
 
-        public static bool XoaBaoHanh(string mabaohanh)
+        public bool XoaBaoHanh(string mabaohanh)
         {
             return Execute("XoaBaohanh", new SqlParameter("@mabaohanh", mabaohanh));
         }
     }
 }
+

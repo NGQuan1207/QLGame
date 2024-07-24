@@ -13,24 +13,28 @@ namespace BUS_QLGame
 {
     public class BUS_BaoHanh
     {
-
-
         public static DataTable LoadListBaoHanh()
         {
-            return DAL_BaoHanh.LoadListBaoHanh();
+            DAL_BaoHanh dalBaoHanh = new DAL_BaoHanh();
+            return dalBaoHanh.LoadListBaoHanh();
         }
+
         public static DataTable TimBaoHanh(string tim)
         {
-            return DAL_BaoHanh.TimBaoHanh(tim);
+            DAL_BaoHanh dalBaoHanh = new DAL_BaoHanh();
+            return dalBaoHanh.TimBaoHanh(tim);
         }
 
         public static bool ThemBaoHanh(DTO_BaoHanh baohanh)
         {
-            return DAL_BaoHanh.ThemBaoHanh(baohanh);
+            DAL_BaoHanh dalBaoHanh = new DAL_BaoHanh();
+            return dalBaoHanh.ThemBaoHanh(baohanh);
         }
+
         public static bool XoaBaoHanh(string mabaohanh)
         {
-            return DAL_BaoHanh.XoaBaoHanh(mabaohanh);
+            DAL_BaoHanh dalBaoHanh = new DAL_BaoHanh();
+            return dalBaoHanh.XoaBaoHanh(mabaohanh);
         }
     }
 }

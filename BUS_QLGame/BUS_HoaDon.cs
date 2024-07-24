@@ -13,12 +13,14 @@ namespace BUS_QLGame
     {
         public static DataTable TimHoaDon(string makh)
         {
-            return DAL_ChiTietKhachHang.TimHoaDon(makh);
+            DAL_HoaDon dalhoadon = new DAL_HoaDon();
+            return dalhoadon.TimHoaDon(makh);
         }
 
         public static bool XoaHoaDon(string mahoadon)
         {
-            return DAL_HoaDon.XoaHoaDon(mahoadon);
+            DAL_HoaDon dalhoadon = new DAL_HoaDon();
+            return dalhoadon.XoaHoaDon(mahoadon);
         }
     }
    

@@ -10,11 +10,11 @@ using System.Security.Policy;
 
 namespace DAL_QLGame
 {
-    public class DAL_ChiTietKhachHang
+    public class DAL_ChiTietKhachHang : Connect
     {
-        public static DataTable ListCTKhachHang()
+        public DataTable ListCTKhachHang()
         {
-            using (SqlConnection con = DataAccess.connect())
+            using (SqlConnection con = new SqlConnection(_conn.ConnectionString))
             using (SqlCommand cmd = new SqlCommand("ListChiTietKhachHang", con))
             {
                 con.Open();
@@ -24,41 +24,39 @@ namespace DAL_QLGame
                 return ListCt;
             }
         }
-        public static DataTable TimHoaDon(string makh)
+
+        public DataTable TimKhachHang(string makh)
         {
-            using (SqlConnection con = DataAccess.connect())
+            using (SqlConnection con = new SqlConnection(_conn.ConnectionString))
+            using (SqlCommand cmd = new SqlCommand("TimKH", con))
+            {
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@MaKH", makh);
+                SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+                DataTable dtKhachHang = new DataTable();
+                adapter.Fill(dtKhachHang);
+                return dtKhachHang;
+            }
+        }
+
+        public DataTable TimHoaDon(string makh)
+        {
+            using (SqlConnection con = new SqlConnection(_conn.ConnectionString))
             using (SqlCommand cmd = new SqlCommand("TimHoaDonTheoMaKH", con))
             {
                 con.Open();
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.AddWithValue("@MaKH", makh);
-                /* DataTable TimKH = new DataTable();
-                 TimKH.Load(cmd.ExecuteReader());
-                 return TimKH;
-             }*/
                 SqlDataAdapter da = new SqlDataAdapter(cmd);
                 DataTable dt = new DataTable();
                 da.Fill(dt);
                 return dt;
             }
         }
-        public static DataTable TimKhachHang(string makh)
+
+        public bool Execute(string storedProcedureName, params SqlParameter[] parameters)
         {
-            DataTable dtKhachHang = new DataTable();
-            using (SqlConnection con = DataAccess.connect())
-            using (SqlCommand cmd = new SqlCommand("TimKH", con))
-            {
-                {
-                    cmd.CommandType = CommandType.StoredProcedure;
-                    SqlDataAdapter adapter = new SqlDataAdapter(cmd);
-                    adapter.Fill(dtKhachHang);
-                }
-            }
-             return dtKhachHang;
-        }
-        public static bool Execute(string storedProcedureName, params SqlParameter[] parameters)
-        {
-            using (SqlConnection con = DataAccess.connect())
+            using (SqlConnection con = new SqlConnection(_conn.ConnectionString))
             using (SqlCommand cmd = con.CreateCommand())
             {
                 con.Open();
@@ -66,14 +64,13 @@ namespace DAL_QLGame
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.AddRange(parameters);
 
-                if (cmd.ExecuteNonQuery() > 0)
-                    return true;
+                return cmd.ExecuteNonQuery() > 0;
             }
-            return false;
         }
-        public static bool XoaHoaDon(string mahoadon)
+
+        public bool XoaHoaDon(string mahoadon)
         {
-            return Execute("XoaBaohanh", new SqlParameter("@mabaohanh", mahoadon));
+            return Execute("XoaHD", new SqlParameter("@MaHD", mahoadon));
         }
     }
 }

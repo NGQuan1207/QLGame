@@ -15,16 +15,19 @@ namespace BUS_QLGame
     {
         public static object ListCTKhachHang()
         {
-            return DAL_ChiTietKhachHang.ListCTKhachHang();
+            DAL_ChiTietKhachHang chitietkh = new DAL_ChiTietKhachHang();
+            return chitietkh.ListCTKhachHang();
         }
 
         public static DataTable TimHoaDon(string makh)
         {
-            return DAL_ChiTietKhachHang.TimHoaDon(makh);
+            DAL_ChiTietKhachHang chitietkh = new DAL_ChiTietKhachHang();
+            return chitietkh.TimHoaDon(makh);
         }
         public static DataTable TimKhachHang(string makh)
         {
-            return DAL_ChiTietKhachHang.TimKhachHang(makh);
+            DAL_ChiTietKhachHang chitietkh = new DAL_ChiTietKhachHang();
+            return chitietkh.TimKhachHang(makh);
         }
        
     }

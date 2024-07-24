@@ -10,7 +10,7 @@ namespace DAL_QLGame
 {
     public class Connect
     {
-            protected SqlConnection _conn = new SqlConnection("Data Source=LAPTOP-ADNOPDCB\\SQLEXPRESS;Initial Catalog=QL_ThietBiGame;" +
-            "Integrated Security=True;");
+            protected SqlConnection _conn = new SqlConnection("Data Source=LOIBACH\\NVB;Initial Catalog=QL_ThietBiGame;" +
+            "Integrated Security=True;Encrypt=False");
     }
 }

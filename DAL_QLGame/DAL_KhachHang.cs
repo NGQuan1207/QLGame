@@ -6,7 +6,7 @@ using System.Data.SqlClient;
 
 namespace DAL_QLGame
 {
-    public class DAL_KhachHang : KHConnect
+    public class DAL_KhachHang : Connect
     {
         public DataTable GetKhachHang()
         {

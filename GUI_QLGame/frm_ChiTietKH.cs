@@ -15,10 +15,19 @@ namespace GUI_QLGame
 {
     public partial class frm_ChiTietKH : Form
     {
+        private string MaKH, HoTen, DiaChi, SDT;
         DTO_ChiTietKH ctkh = new DTO_ChiTietKH();
         public frm_ChiTietKH()
         {
             InitializeComponent();
+        }
+        public frm_ChiTietKH(string maKH, string Hoten, string Diachi, string Dienthoai)
+        {
+            InitializeComponent();
+            this.MaKH = maKH;
+            this.HoTen = Hoten;
+            this.DiaChi = Diachi;
+            this.SDT = Dienthoai;
         }
         private void TaiHoadonh()
         {
@@ -57,21 +66,9 @@ namespace GUI_QLGame
                 dtgv_hoadon.Columns[4].HeaderText = "Thành Tiền";
                 dtgv_hoadon.Columns[5].HeaderText = "Trạng Thái";
             }
-            if (!string.IsNullOrEmpty(txt_makh.Text.Trim()))
-            {
-                LoadCustomerData(txt_makh.Text.Trim());
-            }
-            else
-            {
-                // Clear textboxes if txt_makh is empty
-                txt_tenkh.Clear();
-                txt_diachi.Clear();
-                txt_dienthoai.Clear();
-                txt_hoadon.Clear();
-                txt_mathue.Clear();
-            }
+            
         }
-        private void LoadCustomerData(string maKH)
+       /* private void LoadCustomerData(string maKH)
         {
             string connectionString = "Data Source=LAPTOP-PDIC30NO\\MISASME2019;Initial Catalog=QL_ThietBiGame3;Integrated Security=True;Encrypt=False"; // Cập nhật với chuỗi kết nối của bạn
             string query = "GetKhachHangByMaKH"; // Tên của stored procedure
@@ -109,7 +106,7 @@ namespace GUI_QLGame
                 }
             }
 
-        }
+        }*/
 
 
         private void textBox2_TextChanged(object sender, EventArgs e)
@@ -145,7 +142,10 @@ namespace GUI_QLGame
 
         private void frm_ChiTietKH_Load(object sender, EventArgs e)
         {
-
+            txt_makh.Text = MaKH;
+            txt_tenkh.Text = HoTen;
+            txt_diachi.Text = DiaChi;
+            txt_dienthoai.Text = SDT;
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -180,12 +180,12 @@ namespace GUI_QLGame
             string mahoadon = txt_hoadon.Text;
             if (BUS_HoaDon.XoaHoaDon(mahoadon))
             {
-                MessageBox.Show("Xóa bảo hành thành công", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Xóa Hóa Đơn thành công", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 TaiHoadonh(); // Cập nhật lại danh sách bảo hành
             }
             else
             {
-                MessageBox.Show("Xóa bảo hành thất bại", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Xóa Hóa Đơn thất bại", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
