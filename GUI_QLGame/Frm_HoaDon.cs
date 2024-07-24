@@ -26,5 +26,10 @@ namespace GUI_QLGame
         {
 
         }
+
+        private void dataG_HoaDon_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

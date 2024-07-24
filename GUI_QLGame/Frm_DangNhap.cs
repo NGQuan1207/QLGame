@@ -152,5 +152,15 @@ namespace GUI_QLGame
         {
 
         }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt_matkhau_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

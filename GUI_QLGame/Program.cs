@@ -16,7 +16,7 @@ namespace GUI_QLGame
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frm_ChiTietKH());
+            Application.Run(new Frm_DangNhap());
         }
     }
 }
