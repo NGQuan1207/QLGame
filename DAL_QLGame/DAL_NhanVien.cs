@@ -80,5 +80,62 @@ namespace DAL_QLGame
             finally { _conn.Close(); }
             return false;
         }
+        public DataTable GetNhanVienByEmail(string email)
+        {
+
+            try
+            {
+                _conn.Open();
+                //connection = new SqlConnection(_conn);
+                SqlCommand command = new SqlCommand("LayThongTinNhanVien", _conn);
+                command.CommandType = CommandType.StoredProcedure;
+                command.Parameters.AddWithValue("@email", email);
+                SqlDataAdapter adt = new SqlDataAdapter(command);
+                DataTable dt = new DataTable();
+                adt.Fill(dt);
+                return dt;
+            }
+            catch (Exception ex)
+            {
+                // Log the exception (optional)
+                throw new ApplicationException("Lỗi khi lấy thông tin nhân viên: " + ex.Message);
+            }
+            finally
+            {
+                if (_conn != null && _conn.State == ConnectionState.Open)
+                {
+                    _conn.Close();
+                }
+            }
+
+        }
+
+
+
+        public bool ValidateUser(string email, string password)
+        {
+
+            try
+            {
+                _conn.Open();
+                string query = "SELECT COUNT(1) FROM NhanVien WHERE Email = @email";
+                SqlCommand command = new SqlCommand(query, _conn);
+                command.Parameters.AddWithValue("@Email", email);
+                int count = Convert.ToInt32(command.ExecuteScalar());
+                return count == 1;
+            }
+            catch (Exception ex)
+            {
+                // Log the exception (optional)
+                throw new ApplicationException("Lỗi khi xác thực người dùng: " + ex.Message);
+            }
+            finally
+            {
+                if (_conn != null && _conn.State == ConnectionState.Open)
+                {
+                    _conn.Close();
+                }
+            }
+        }
     }
 }

@@ -28,6 +28,7 @@ namespace GUI_QLGame
         Frm_LenDon ld;
         Frm_SanPham sp;
         Frm_SanPhamThue spt;
+        frm_chu c;
 
         BUS_Nhanvien busNV = new BUS_Nhanvien();
 
@@ -81,12 +82,11 @@ namespace GUI_QLGame
                 báoCáoToolStripMenuItem.Visible = true;
                 đăngNhậpToolStripMenuItem.Enabled = false;
                 grb_form.Visible = true;
-                grb_thongtinnhanvien.Visible = true;
-                pictureBox1.Visible = true;
-                if (int.Parse(dn.vaitro) == 0)
-                {
-                    VaiTroNv();
-                }
+                
+                //if (int.Parse(dn.vaitro) == 0)
+                //{
+                //    VaiTroNv();
+                //}
                 
 
             }
@@ -99,8 +99,7 @@ namespace GUI_QLGame
                 báoCáoToolStripMenuItem.Visible = false;
                 đăngNhậpToolStripMenuItem.Enabled = true;
                 grb_form.Visible = false;
-                grb_thongtinnhanvien.Visible = false;
-                pictureBox1.Visible = false;
+                
             }
         }
         private void Frm_DangNhap_FormClosed(object sender, FormClosedEventArgs e)
@@ -139,9 +138,11 @@ namespace GUI_QLGame
             dn = new Frm_DangNhap();
             if (!CheckExistForm("Frm_DangNhap"))
             {
-                dn.MdiParent = this;
+                //dn.MdiParent = this;
                 dn.Show();
                 dn.FormClosed += new FormClosedEventHandler(Frm_DangNhap_FormClosed);
+                session = 1;
+                ResetValue();
             }
             else
             {
@@ -382,6 +383,21 @@ namespace GUI_QLGame
             else
             {
                 ActiveChildForm("Frm_LenDon");
+            }
+        }
+
+        private void thôngTinToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (!CheckExistForm("frm_Chu"))
+            {
+                c = new frm_chu();
+                //c.MdiParent = this;
+                c.Show();
+                c.FormClosed += new FormClosedEventHandler(Frm_DangNhap_FormClosed);
+            }
+            else
+            {
+                ActiveChildForm("frm_Chu");
             }
         }
     }

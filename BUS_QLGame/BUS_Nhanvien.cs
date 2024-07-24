@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
@@ -39,6 +40,43 @@ namespace BUS_QLGame
         public bool TaoMatKhau(string email, string password) 
         {
             return dalNhanvien.TaoMatKhau(email, password);
+        }
+        private DAL_NhanVien nhanVienDAL = new DAL_NhanVien();
+
+        public DataTable GetNhanVienByEmail(string email)
+        {
+            try
+            {
+                return nhanVienDAL.GetNhanVienByEmail(email);
+            }
+            catch (ApplicationException ex)
+            {
+                // Log the exception (optional)
+                throw ex;
+            }
+            catch (Exception ex)
+            {
+                // Log the exception (optional)
+                throw new ApplicationException("Lỗi không xác định trong BUS: " + ex.Message);
+            }
+        }
+
+        public bool ValidateUser(string email, string password)
+        {
+            try
+            {
+                return nhanVienDAL.ValidateUser(email, password);
+            }
+            catch (ApplicationException ex)
+            {
+                // Log the exception (optional)
+                throw ex;
+            }
+            catch (Exception ex)
+            {
+                // Log the exception (optional)
+                throw new ApplicationException("Lỗi không xác định trong BUS: " + ex.Message);
+            }
         }
 
     }

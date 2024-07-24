@@ -19,6 +19,7 @@ namespace GUI_QLGame
         BUS_Nhanvien busnv = new BUS_Nhanvien();
 
         public string vaitro {  get; set; }
+        public static string mail;
         public Frm_DangNhap()
         {
             //pb_logo.BackColor = Color.Transparent;
@@ -43,6 +44,7 @@ namespace GUI_QLGame
                 DTO_NhanVien nv = new DTO_NhanVien();
                 nv.email = txt_ID.Text;
                 nv.matkhau = busnv.encryption(txt_matkhau.Text);
+                mail = nv.email;
 
                 if (busnv.NhanVienDangNhap(nv)) // successfull login
                 {
