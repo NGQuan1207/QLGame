@@ -14,3 +14,6 @@
 6 DS khach hang: Dương
 
 7 Hoa Don : Quân
+
+
+Kích cỡ form: 1920, 1020
