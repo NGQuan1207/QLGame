@@ -42,12 +42,12 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dgv_GioHang = new System.Windows.Forms.DataGridView();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.txt_TongTien = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.txt_GiamGia = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.txt_ThanhToan = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.txt_GiamGia = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txt_TongTien = new System.Windows.Forms.TextBox();
             this.date_ngayketthuc = new System.Windows.Forms.DateTimePicker();
             this.label9 = new System.Windows.Forms.Label();
             this.txt_MaGiamGia = new System.Windows.Forms.TextBox();
@@ -93,7 +93,7 @@
             this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label1.Location = new System.Drawing.Point(12, 38);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(176, 39);
+            this.label1.Size = new System.Drawing.Size(171, 38);
             this.label1.TabIndex = 26;
             this.label1.Text = "LÊN ĐƠN";
             // 
@@ -216,46 +216,6 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Thông tin hóa đơn";
             // 
-            // txt_TongTien
-            // 
-            this.txt_TongTien.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_TongTien.Location = new System.Drawing.Point(168, 51);
-            this.txt_TongTien.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txt_TongTien.Name = "txt_TongTien";
-            this.txt_TongTien.ReadOnly = true;
-            this.txt_TongTien.Size = new System.Drawing.Size(281, 34);
-            this.txt_TongTien.TabIndex = 51;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(19, 54);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(124, 29);
-            this.label6.TabIndex = 51;
-            this.label6.Text = "Tổng tiền";
-            // 
-            // txt_GiamGia
-            // 
-            this.txt_GiamGia.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_GiamGia.Location = new System.Drawing.Point(168, 116);
-            this.txt_GiamGia.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txt_GiamGia.Name = "txt_GiamGia";
-            this.txt_GiamGia.ReadOnly = true;
-            this.txt_GiamGia.Size = new System.Drawing.Size(281, 34);
-            this.txt_GiamGia.TabIndex = 52;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(19, 119);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(117, 29);
-            this.label7.TabIndex = 53;
-            this.label7.Text = "Giảm giá";
-            // 
             // label8
             // 
             this.label8.AutoSize = true;
@@ -275,6 +235,46 @@
             this.txt_ThanhToan.ReadOnly = true;
             this.txt_ThanhToan.Size = new System.Drawing.Size(281, 34);
             this.txt_ThanhToan.TabIndex = 55;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(19, 119);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(117, 29);
+            this.label7.TabIndex = 53;
+            this.label7.Text = "Giảm giá";
+            // 
+            // txt_GiamGia
+            // 
+            this.txt_GiamGia.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_GiamGia.Location = new System.Drawing.Point(168, 116);
+            this.txt_GiamGia.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txt_GiamGia.Name = "txt_GiamGia";
+            this.txt_GiamGia.ReadOnly = true;
+            this.txt_GiamGia.Size = new System.Drawing.Size(281, 34);
+            this.txt_GiamGia.TabIndex = 52;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(19, 54);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(124, 29);
+            this.label6.TabIndex = 51;
+            this.label6.Text = "Tổng tiền";
+            // 
+            // txt_TongTien
+            // 
+            this.txt_TongTien.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_TongTien.Location = new System.Drawing.Point(168, 51);
+            this.txt_TongTien.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txt_TongTien.Name = "txt_TongTien";
+            this.txt_TongTien.ReadOnly = true;
+            this.txt_TongTien.Size = new System.Drawing.Size(281, 34);
+            this.txt_TongTien.TabIndex = 51;
             // 
             // date_ngayketthuc
             // 
@@ -390,7 +390,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Frm_LenDon";
-            this.Text = "Frm_LenDon";
+            this.Text = "Lên Đơn";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.dgv_SanphamLenDon)).EndInit();
             this.groupBox1.ResumeLayout(false);
