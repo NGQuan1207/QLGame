@@ -61,5 +61,10 @@ namespace GUI_QLGame
         {
 
         }
+
+        private void Frm_LenDon_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

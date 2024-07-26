@@ -16,5 +16,10 @@ namespace GUI_QLGame
         {
             InitializeComponent();
         }
+
+        private void frm_QuanLyNhanVien_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

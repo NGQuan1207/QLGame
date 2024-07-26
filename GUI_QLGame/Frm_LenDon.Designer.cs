@@ -69,7 +69,7 @@
             // 
             this.dgv_SanphamLenDon.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_SanphamLenDon.Location = new System.Drawing.Point(8, 24);
-            this.dgv_SanphamLenDon.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgv_SanphamLenDon.Margin = new System.Windows.Forms.Padding(2);
             this.dgv_SanphamLenDon.Name = "dgv_SanphamLenDon";
             this.dgv_SanphamLenDon.RowHeadersWidth = 62;
             this.dgv_SanphamLenDon.RowTemplate.Height = 28;
@@ -80,7 +80,7 @@
             // 
             this.txt_tenKH.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_tenKH.Location = new System.Drawing.Point(264, 90);
-            this.txt_tenKH.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_tenKH.Margin = new System.Windows.Forms.Padding(2);
             this.txt_tenKH.Name = "txt_tenKH";
             this.txt_tenKH.Size = new System.Drawing.Size(463, 28);
             this.txt_tenKH.TabIndex = 27;
@@ -113,7 +113,7 @@
             // 
             this.date_Ngay.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.date_Ngay.Location = new System.Drawing.Point(264, 206);
-            this.date_Ngay.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.date_Ngay.Margin = new System.Windows.Forms.Padding(2);
             this.date_Ngay.Name = "date_Ngay";
             this.date_Ngay.Size = new System.Drawing.Size(463, 28);
             this.date_Ngay.TabIndex = 41;
@@ -137,7 +137,7 @@
             "Đơn Mua",
             "Đơn Thuê"});
             this.combb_Loaidon.Location = new System.Drawing.Point(264, 150);
-            this.combb_Loaidon.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.combb_Loaidon.Margin = new System.Windows.Forms.Padding(2);
             this.combb_Loaidon.Name = "combb_Loaidon";
             this.combb_Loaidon.Size = new System.Drawing.Size(463, 30);
             this.combb_Loaidon.TabIndex = 43;
@@ -158,7 +158,7 @@
             // 
             this.txt_maNV.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_maNV.Location = new System.Drawing.Point(264, 315);
-            this.txt_maNV.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_maNV.Margin = new System.Windows.Forms.Padding(2);
             this.txt_maNV.Name = "txt_maNV";
             this.txt_maNV.Size = new System.Drawing.Size(463, 28);
             this.txt_maNV.TabIndex = 45;
@@ -179,9 +179,9 @@
             this.groupBox1.Controls.Add(this.dgv_SanphamLenDon);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(2, 366);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox1.Size = new System.Drawing.Size(760, 431);
             this.groupBox1.TabIndex = 48;
             this.groupBox1.TabStop = false;
@@ -192,9 +192,9 @@
             this.groupBox2.Controls.Add(this.dgv_GioHang);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(766, 366);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox2.Size = new System.Drawing.Size(651, 431);
             this.groupBox2.TabIndex = 49;
             this.groupBox2.TabStop = false;
@@ -204,7 +204,7 @@
             // 
             this.dgv_GioHang.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_GioHang.Location = new System.Drawing.Point(12, 23);
-            this.dgv_GioHang.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgv_GioHang.Margin = new System.Windows.Forms.Padding(2);
             this.dgv_GioHang.Name = "dgv_GioHang";
             this.dgv_GioHang.RowHeadersWidth = 62;
             this.dgv_GioHang.RowTemplate.Height = 28;
@@ -221,9 +221,9 @@
             this.groupBox3.Controls.Add(this.txt_TongTien);
             this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox3.Location = new System.Drawing.Point(1066, 33);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox3.Size = new System.Drawing.Size(352, 211);
             this.groupBox3.TabIndex = 50;
             this.groupBox3.TabStop = false;
@@ -244,7 +244,7 @@
             // 
             this.txt_ThanhToan.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_ThanhToan.Location = new System.Drawing.Point(126, 150);
-            this.txt_ThanhToan.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_ThanhToan.Margin = new System.Windows.Forms.Padding(2);
             this.txt_ThanhToan.Name = "txt_ThanhToan";
             this.txt_ThanhToan.ReadOnly = true;
             this.txt_ThanhToan.Size = new System.Drawing.Size(212, 28);
@@ -265,7 +265,7 @@
             // 
             this.txt_GiamGia.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_GiamGia.Location = new System.Drawing.Point(126, 94);
-            this.txt_GiamGia.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_GiamGia.Margin = new System.Windows.Forms.Padding(2);
             this.txt_GiamGia.Name = "txt_GiamGia";
             this.txt_GiamGia.ReadOnly = true;
             this.txt_GiamGia.Size = new System.Drawing.Size(212, 28);
@@ -286,7 +286,7 @@
             // 
             this.txt_TongTien.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_TongTien.Location = new System.Drawing.Point(126, 41);
-            this.txt_TongTien.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_TongTien.Margin = new System.Windows.Forms.Padding(2);
             this.txt_TongTien.Name = "txt_TongTien";
             this.txt_TongTien.ReadOnly = true;
             this.txt_TongTien.Size = new System.Drawing.Size(212, 28);
@@ -296,7 +296,7 @@
             // 
             this.date_ngayketthuc.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.date_ngayketthuc.Location = new System.Drawing.Point(264, 260);
-            this.date_ngayketthuc.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.date_ngayketthuc.Margin = new System.Windows.Forms.Padding(2);
             this.date_ngayketthuc.Name = "date_ngayketthuc";
             this.date_ngayketthuc.Size = new System.Drawing.Size(463, 28);
             this.date_ngayketthuc.TabIndex = 56;
@@ -316,7 +316,7 @@
             // 
             this.txt_MaGiamGia.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_MaGiamGia.Location = new System.Drawing.Point(1207, 264);
-            this.txt_MaGiamGia.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_MaGiamGia.Margin = new System.Windows.Forms.Padding(2);
             this.txt_MaGiamGia.Name = "txt_MaGiamGia";
             this.txt_MaGiamGia.Size = new System.Drawing.Size(212, 28);
             this.txt_MaGiamGia.TabIndex = 56;
@@ -336,7 +336,7 @@
             // 
             this.btn_LenDon.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_LenDon.Location = new System.Drawing.Point(794, 124);
-            this.btn_LenDon.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_LenDon.Margin = new System.Windows.Forms.Padding(2);
             this.btn_LenDon.Name = "btn_LenDon";
             this.btn_LenDon.Size = new System.Drawing.Size(226, 56);
             this.btn_LenDon.TabIndex = 58;
@@ -347,7 +347,7 @@
             // 
             this.btn_LenDonvaIn.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_LenDonvaIn.Location = new System.Drawing.Point(794, 232);
-            this.btn_LenDonvaIn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_LenDonvaIn.Margin = new System.Windows.Forms.Padding(2);
             this.btn_LenDonvaIn.Name = "btn_LenDonvaIn";
             this.btn_LenDonvaIn.Size = new System.Drawing.Size(226, 56);
             this.btn_LenDonvaIn.TabIndex = 59;
@@ -358,7 +358,7 @@
             // 
             this.btn_ApDung.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_ApDung.Location = new System.Drawing.Point(1124, 308);
-            this.btn_ApDung.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_ApDung.Margin = new System.Windows.Forms.Padding(2);
             this.btn_ApDung.Name = "btn_ApDung";
             this.btn_ApDung.Size = new System.Drawing.Size(209, 46);
             this.btn_ApDung.TabIndex = 60;
@@ -411,10 +411,11 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Frm_LenDon";
             this.Text = "Lên Đơn";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.Frm_LenDon_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_SanphamLenDon)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);

@@ -32,7 +32,6 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btn_quenmatkhau = new System.Windows.Forms.Button();
-            this.btn_thoat = new System.Windows.Forms.Button();
             this.btn_dangnhap = new System.Windows.Forms.Button();
             this.txt_ID = new System.Windows.Forms.TextBox();
             this.txt_matkhau = new System.Windows.Forms.TextBox();
@@ -83,18 +82,6 @@
             this.btn_quenmatkhau.Text = "Quên mật khẩu";
             this.btn_quenmatkhau.UseVisualStyleBackColor = true;
             this.btn_quenmatkhau.Click += new System.EventHandler(this.btn_quenmatkhau_Click);
-            // 
-            // btn_thoat
-            // 
-            this.btn_thoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_thoat.Location = new System.Drawing.Point(1255, 685);
-            this.btn_thoat.Margin = new System.Windows.Forms.Padding(2);
-            this.btn_thoat.Name = "btn_thoat";
-            this.btn_thoat.Size = new System.Drawing.Size(138, 54);
-            this.btn_thoat.TabIndex = 39;
-            this.btn_thoat.Text = "Thoát";
-            this.btn_thoat.UseVisualStyleBackColor = true;
-            this.btn_thoat.Click += new System.EventHandler(this.btn_thoat_Click);
             // 
             // btn_dangnhap
             // 
@@ -204,7 +191,6 @@
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btn_quenmatkhau);
-            this.Controls.Add(this.btn_thoat);
             this.Controls.Add(this.btn_dangnhap);
             this.Controls.Add(this.txt_ID);
             this.Controls.Add(this.txt_matkhau);
@@ -231,7 +217,6 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btn_quenmatkhau;
-        private System.Windows.Forms.Button btn_thoat;
         private System.Windows.Forms.Button btn_dangnhap;
         private System.Windows.Forms.TextBox txt_ID;
         private System.Windows.Forms.TextBox txt_matkhau;

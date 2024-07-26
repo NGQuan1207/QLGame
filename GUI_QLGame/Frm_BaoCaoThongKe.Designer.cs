@@ -98,7 +98,7 @@
             // 
             this.txt_Thunhap.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_Thunhap.Location = new System.Drawing.Point(117, 68);
-            this.txt_Thunhap.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_Thunhap.Margin = new System.Windows.Forms.Padding(2);
             this.txt_Thunhap.Name = "txt_Thunhap";
             this.txt_Thunhap.ReadOnly = true;
             this.txt_Thunhap.Size = new System.Drawing.Size(183, 26);
@@ -109,7 +109,7 @@
             // 
             this.txt_TongSP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_TongSP.Location = new System.Drawing.Point(117, 106);
-            this.txt_TongSP.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_TongSP.Margin = new System.Windows.Forms.Padding(2);
             this.txt_TongSP.Name = "txt_TongSP";
             this.txt_TongSP.ReadOnly = true;
             this.txt_TongSP.Size = new System.Drawing.Size(183, 26);
@@ -150,7 +150,7 @@
             "90 ngày trước",
             "1 năm trước"});
             this.combb_DateThunhap.Location = new System.Drawing.Point(304, 68);
-            this.combb_DateThunhap.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.combb_DateThunhap.Margin = new System.Windows.Forms.Padding(2);
             this.combb_DateThunhap.Name = "combb_DateThunhap";
             this.combb_DateThunhap.Size = new System.Drawing.Size(121, 28);
             this.combb_DateThunhap.TabIndex = 19;
@@ -166,7 +166,7 @@
             "90 ngày trước",
             "1 năm trước"});
             this.combb_DateSP.Location = new System.Drawing.Point(304, 104);
-            this.combb_DateSP.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.combb_DateSP.Margin = new System.Windows.Forms.Padding(2);
             this.combb_DateSP.Name = "combb_DateSP";
             this.combb_DateSP.Size = new System.Drawing.Size(121, 28);
             this.combb_DateSP.TabIndex = 20;
@@ -176,7 +176,7 @@
             // 
             this.btn_xuatfile.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_xuatfile.Location = new System.Drawing.Point(576, 68);
-            this.btn_xuatfile.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_xuatfile.Margin = new System.Windows.Forms.Padding(2);
             this.btn_xuatfile.Name = "btn_xuatfile";
             this.btn_xuatfile.Size = new System.Drawing.Size(147, 52);
             this.btn_xuatfile.TabIndex = 21;
@@ -195,9 +195,9 @@
             this.groupBox1.Controls.Add(this.btn_LocSP);
             this.groupBox1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.groupBox1.Location = new System.Drawing.Point(8, 136);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox1.Size = new System.Drawing.Size(434, 107);
             this.groupBox1.TabIndex = 22;
             this.groupBox1.TabStop = false;
@@ -207,7 +207,7 @@
             // 
             this.combb_LocGia.FormattingEnabled = true;
             this.combb_LocGia.Location = new System.Drawing.Point(56, 78);
-            this.combb_LocGia.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.combb_LocGia.Margin = new System.Windows.Forms.Padding(2);
             this.combb_LocGia.Name = "combb_LocGia";
             this.combb_LocGia.Size = new System.Drawing.Size(236, 21);
             this.combb_LocGia.TabIndex = 6;
@@ -243,7 +243,7 @@
             // 
             this.comb_LocLoaiSP.FormattingEnabled = true;
             this.comb_LocLoaiSP.Location = new System.Drawing.Point(56, 47);
-            this.comb_LocLoaiSP.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comb_LocLoaiSP.Margin = new System.Windows.Forms.Padding(2);
             this.comb_LocLoaiSP.Name = "comb_LocLoaiSP";
             this.comb_LocLoaiSP.Size = new System.Drawing.Size(236, 21);
             this.comb_LocLoaiSP.TabIndex = 3;
@@ -265,7 +265,7 @@
             // date_locSP
             // 
             this.date_locSP.Location = new System.Drawing.Point(56, 17);
-            this.date_locSP.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.date_locSP.Margin = new System.Windows.Forms.Padding(2);
             this.date_locSP.Name = "date_locSP";
             this.date_locSP.Size = new System.Drawing.Size(236, 20);
             this.date_locSP.TabIndex = 1;
@@ -274,7 +274,7 @@
             // 
             this.btn_LocSP.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btn_LocSP.Location = new System.Drawing.Point(315, 37);
-            this.btn_LocSP.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_LocSP.Margin = new System.Windows.Forms.Padding(2);
             this.btn_LocSP.Name = "btn_LocSP";
             this.btn_LocSP.Size = new System.Drawing.Size(100, 37);
             this.btn_LocSP.TabIndex = 0;
@@ -293,9 +293,9 @@
             this.groupBox2.Controls.Add(this.label9);
             this.groupBox2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.groupBox2.Location = new System.Drawing.Point(447, 136);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox2.Size = new System.Drawing.Size(434, 107);
             this.groupBox2.TabIndex = 23;
             this.groupBox2.TabStop = false;
@@ -305,7 +305,7 @@
             // 
             this.combb_Trangthai.FormattingEnabled = true;
             this.combb_Trangthai.Location = new System.Drawing.Point(328, 22);
-            this.combb_Trangthai.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.combb_Trangthai.Margin = new System.Windows.Forms.Padding(2);
             this.combb_Trangthai.Name = "combb_Trangthai";
             this.combb_Trangthai.Size = new System.Drawing.Size(72, 21);
             this.combb_Trangthai.TabIndex = 14;
@@ -315,7 +315,7 @@
             // 
             this.combb_LocGiathue.FormattingEnabled = true;
             this.combb_LocGiathue.Location = new System.Drawing.Point(57, 80);
-            this.combb_LocGiathue.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.combb_LocGiathue.Margin = new System.Windows.Forms.Padding(2);
             this.combb_LocGiathue.Name = "combb_LocGiathue";
             this.combb_LocGiathue.Size = new System.Drawing.Size(236, 21);
             this.combb_LocGiathue.TabIndex = 13;
@@ -338,7 +338,7 @@
             // 
             this.btn_locSPthue.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btn_locSPthue.Location = new System.Drawing.Point(314, 60);
-            this.btn_locSPthue.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_locSPthue.Margin = new System.Windows.Forms.Padding(2);
             this.btn_locSPthue.Name = "btn_locSPthue";
             this.btn_locSPthue.Size = new System.Drawing.Size(100, 37);
             this.btn_locSPthue.TabIndex = 7;
@@ -361,7 +361,7 @@
             // date_locSPthue
             // 
             this.date_locSPthue.Location = new System.Drawing.Point(57, 20);
-            this.date_locSPthue.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.date_locSPthue.Margin = new System.Windows.Forms.Padding(2);
             this.date_locSPthue.Name = "date_locSPthue";
             this.date_locSPthue.Size = new System.Drawing.Size(236, 20);
             this.date_locSPthue.TabIndex = 8;
@@ -370,7 +370,7 @@
             // 
             this.comb_LocLoaiSPthue.FormattingEnabled = true;
             this.comb_LocLoaiSPthue.Location = new System.Drawing.Point(57, 50);
-            this.comb_LocLoaiSPthue.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comb_LocLoaiSPthue.Margin = new System.Windows.Forms.Padding(2);
             this.comb_LocLoaiSPthue.Name = "comb_LocLoaiSPthue";
             this.comb_LocLoaiSPthue.Size = new System.Drawing.Size(236, 21);
             this.comb_LocLoaiSPthue.TabIndex = 10;
@@ -393,7 +393,7 @@
             // 
             this.dataG_SPdaBan.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataG_SPdaBan.Location = new System.Drawing.Point(8, 248);
-            this.dataG_SPdaBan.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataG_SPdaBan.Margin = new System.Windows.Forms.Padding(2);
             this.dataG_SPdaBan.Name = "dataG_SPdaBan";
             this.dataG_SPdaBan.RowHeadersWidth = 51;
             this.dataG_SPdaBan.RowTemplate.Height = 24;
@@ -404,7 +404,7 @@
             // 
             this.dataG_SPdaThue.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataG_SPdaThue.Location = new System.Drawing.Point(446, 248);
-            this.dataG_SPdaThue.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataG_SPdaThue.Margin = new System.Windows.Forms.Padding(2);
             this.dataG_SPdaThue.Name = "dataG_SPdaThue";
             this.dataG_SPdaThue.RowHeadersWidth = 51;
             this.dataG_SPdaThue.RowTemplate.Height = 24;
@@ -431,9 +431,10 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Frm_BaoCaoThongKe";
             this.Text = "Báo Cáo Thống Kê";
+            this.Load += new System.EventHandler(this.Frm_BaoCaoThongKe_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.groupBox1.ResumeLayout(false);

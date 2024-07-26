@@ -46,7 +46,7 @@ namespace GUI_QLGame
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Lỗi không xác định: " + ex.Message);
+                MessageBox.Show("Lỗi không xác định: " + ex.Message,"Thông Báo");
             }
         }
 

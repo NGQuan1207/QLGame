@@ -21,5 +21,10 @@ namespace GUI_QLGame
         {
 
         }
+
+        private void Frm_BaoCaoThongKe_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
