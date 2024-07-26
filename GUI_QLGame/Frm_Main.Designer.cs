@@ -200,7 +200,7 @@
             // báoCáoToolStripMenuItem
             // 
             this.báoCáoToolStripMenuItem.Name = "báoCáoToolStripMenuItem";
-            this.báoCáoToolStripMenuItem.Size = new System.Drawing.Size(118, 22);
+            this.báoCáoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.báoCáoToolStripMenuItem.Text = "Báo Cáo";
             this.báoCáoToolStripMenuItem.Click += new System.EventHandler(this.báoCáoToolStripMenuItem_Click);
             // 
@@ -214,7 +214,7 @@
             // 
             this.btn_DSkhachhang.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_DSkhachhang.Location = new System.Drawing.Point(3, 30);
-            this.btn_DSkhachhang.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_DSkhachhang.Margin = new System.Windows.Forms.Padding(2);
             this.btn_DSkhachhang.Name = "btn_DSkhachhang";
             this.btn_DSkhachhang.Size = new System.Drawing.Size(190, 52);
             this.btn_DSkhachhang.TabIndex = 4;
@@ -226,7 +226,7 @@
             // 
             this.btn_Hoadon.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Hoadon.Location = new System.Drawing.Point(3, 118);
-            this.btn_Hoadon.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_Hoadon.Margin = new System.Windows.Forms.Padding(2);
             this.btn_Hoadon.Name = "btn_Hoadon";
             this.btn_Hoadon.Size = new System.Drawing.Size(190, 52);
             this.btn_Hoadon.TabIndex = 5;
@@ -238,7 +238,7 @@
             // 
             this.btn_SanPham.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_SanPham.Location = new System.Drawing.Point(3, 206);
-            this.btn_SanPham.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_SanPham.Margin = new System.Windows.Forms.Padding(2);
             this.btn_SanPham.Name = "btn_SanPham";
             this.btn_SanPham.Size = new System.Drawing.Size(190, 52);
             this.btn_SanPham.TabIndex = 6;
@@ -250,7 +250,7 @@
             // 
             this.btn_SanPhamchothue.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_SanPhamchothue.Location = new System.Drawing.Point(3, 298);
-            this.btn_SanPhamchothue.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_SanPhamchothue.Margin = new System.Windows.Forms.Padding(2);
             this.btn_SanPhamchothue.Name = "btn_SanPhamchothue";
             this.btn_SanPhamchothue.Size = new System.Drawing.Size(190, 52);
             this.btn_SanPhamchothue.TabIndex = 7;
@@ -262,7 +262,7 @@
             // 
             this.btn_QLnhanvien.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_QLnhanvien.Location = new System.Drawing.Point(230, 30);
-            this.btn_QLnhanvien.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_QLnhanvien.Margin = new System.Windows.Forms.Padding(2);
             this.btn_QLnhanvien.Name = "btn_QLnhanvien";
             this.btn_QLnhanvien.Size = new System.Drawing.Size(190, 52);
             this.btn_QLnhanvien.TabIndex = 8;
@@ -274,7 +274,7 @@
             // 
             this.button2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.Location = new System.Drawing.Point(230, 118);
-            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(190, 52);
             this.button2.TabIndex = 9;
@@ -286,7 +286,7 @@
             // 
             this.btn_BaocaoThongKe.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_BaocaoThongKe.Location = new System.Drawing.Point(230, 206);
-            this.btn_BaocaoThongKe.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_BaocaoThongKe.Margin = new System.Windows.Forms.Padding(2);
             this.btn_BaocaoThongKe.Name = "btn_BaocaoThongKe";
             this.btn_BaocaoThongKe.Size = new System.Drawing.Size(190, 52);
             this.btn_BaocaoThongKe.TabIndex = 10;
@@ -298,7 +298,7 @@
             // 
             this.btn_LenDon.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_LenDon.Location = new System.Drawing.Point(230, 298);
-            this.btn_LenDon.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_LenDon.Margin = new System.Windows.Forms.Padding(2);
             this.btn_LenDon.Name = "btn_LenDon";
             this.btn_LenDon.Size = new System.Drawing.Size(190, 52);
             this.btn_LenDon.TabIndex = 11;
@@ -318,9 +318,9 @@
             this.grb_form.Controls.Add(this.btn_Hoadon);
             this.grb_form.Controls.Add(this.btn_DSkhachhang);
             this.grb_form.Location = new System.Drawing.Point(26, 80);
-            this.grb_form.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.grb_form.Margin = new System.Windows.Forms.Padding(2);
             this.grb_form.Name = "grb_form";
-            this.grb_form.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.grb_form.Padding = new System.Windows.Forms.Padding(2);
             this.grb_form.Size = new System.Drawing.Size(429, 401);
             this.grb_form.TabIndex = 28;
             this.grb_form.TabStop = false;
@@ -347,9 +347,10 @@
             this.Controls.Add(this.pb_logo);
             this.Controls.Add(this.grb_form);
             this.Controls.Add(this.menuStrip1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Frm_Main";
             this.Text = "Trang Chủ";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Frm_Main_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();

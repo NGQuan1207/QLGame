@@ -26,5 +26,10 @@ namespace GUI_QLGame
         {
 
         }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
