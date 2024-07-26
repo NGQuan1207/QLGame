@@ -25,10 +25,6 @@ namespace GUI_QLGame
         {
             LoadEmployeeData();
         }
-        private void frm_chu_Load(object sender, EventArgs e)
-        {
-            ResetValue();
-        }
         private void LoadEmployeeData()
         {
 
@@ -52,6 +48,11 @@ namespace GUI_QLGame
             {
                 MessageBox.Show("Lỗi không xác định: " + ex.Message);
             }
+        }
+
+        private void frm_chu_Load_1(object sender, EventArgs e)
+        {
+            ResetValue();
         }
     }
 }

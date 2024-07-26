@@ -8,6 +8,7 @@ namespace DTO_QLGame
 {
     public class DTO_NhanVien
     {
+        private string MaNV
         private string TenNV;
         private string Phai;
         private DateTime NgaySinh;
@@ -18,6 +19,11 @@ namespace DTO_QLGame
         private string ChucVu;
         private string MatKhau;
         private int TrangThai;
+
+        public string Manv
+        {
+            get; set;
+        }
 
         public string Tennv
         {
@@ -55,10 +61,10 @@ namespace DTO_QLGame
             get; set;
         }
 
-        //public string chucvu
-        //{
-        //   get {}
-        //}
+        public string chucvu
+        {
+            get; set;
+        }
 
         public string matkhau
         {

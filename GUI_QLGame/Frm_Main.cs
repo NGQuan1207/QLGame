@@ -388,7 +388,7 @@ namespace GUI_QLGame
 
         private void thôngTinToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (!CheckExistForm("frm_Chu"))
+            if (!CheckExistForm("frm_chu"))
             {
                 c = new frm_chu();
                 //c.MdiParent = this;
@@ -397,7 +397,7 @@ namespace GUI_QLGame
             }
             else
             {
-                ActiveChildForm("frm_Chu");
+                ActiveChildForm("frm_chu");
             }
         }
     }

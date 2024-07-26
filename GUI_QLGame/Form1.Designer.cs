@@ -263,9 +263,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(703, 689);
             this.Controls.Add(this.grb_thongtinnhanvien);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frm_chu";
             this.Text = "Hồ Sơ Nhân Viên";
+            this.Load += new System.EventHandler(this.frm_chu_Load_1);
             this.grb_thongtinnhanvien.ResumeLayout(false);
             this.grb_thongtinnhanvien.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picb_hinhNV)).EndInit();
