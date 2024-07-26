@@ -1,4 +1,5 @@
 ﻿using BUS_QLGame;
+using BUS_QLGame.BUS_QLGame;
 using DTO_QLGame;
 using System;
 using System.Collections.Generic;
@@ -20,6 +21,7 @@ namespace GUI_QLGame
         {
             InitializeComponent();
             Load += new EventHandler(Frm_KhachHang_Load);
+            dtgDanhSachKH.CellDoubleClick += dtgDanhSachKH_CellDoubleClick;
         }
         private void Frm_KhachHang_Load(object sender, EventArgs e)
         {
@@ -108,7 +110,6 @@ namespace GUI_QLGame
         {
 
         }
-
         private void dtgDanhSachKH_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
@@ -145,7 +146,7 @@ namespace GUI_QLGame
                 return;
             }
 
-            // Use individual parameters instead of DTO_KhachHang object
+            // Sử dụng các tham số riêng thay vì đối tượng DTO_KhachHang
             string tenKhachHang = txtTenKhachHang.Text;
             string diaChi = txtDiaChi.Text;
             string sdt = txtSDT.Text;
@@ -154,7 +155,7 @@ namespace GUI_QLGame
             {
                 MessageBox.Show("Cập nhật thành công");
                 ResetValues();
-                LoadGridView_Khach(); // refresh DataGridView
+                LoadGridView_Khach(); // làm mới DataGridView
             }
             else
             {
@@ -182,19 +183,31 @@ namespace GUI_QLGame
                 txtSDT.Focus();
                 return;
             }
+            // Kiểm tra số điện thoại trùng lặp trong DataGridView
+            foreach (DataGridViewRow row in dtgDanhSachKH.Rows)
+            {
+                if (row.Cells["SDT"].Value != null && row.Cells["SDT"].Value.ToString() == txtSDT.Text.Trim())
+                {
+                    MessageBox.Show("Số điện thoại đã tồn tại.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+            }
 
-            DTO_KhachHang kh = new DTO_KhachHang("", txtTenKhachHang.Text, txtDiaChi.Text, txtSDT.Text); // Assuming MaKH is auto-generated in DB
+            DTO_KhachHang kh = new DTO_KhachHang("", txtTenKhachHang.Text, txtDiaChi.Text, txtSDT.Text); // Giả sử MaKH được tạo tự động trong CSDL
             if (busKH.InsertKhach(kh))
             {
                 MessageBox.Show("Thêm thành công");
                 ResetValues();
-                LoadGridView_Khach(); // refresh DataGridView
+                LoadGridView_Khach(); // làm mới DataGridView
             }
             else
             {
                 MessageBox.Show("Thêm không thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+
+
 
         private void label4_Click(object sender, EventArgs e)
         {
@@ -231,7 +244,7 @@ namespace GUI_QLGame
                 {
                     MessageBox.Show("Xóa thành công");
                     ResetValues();
-                    LoadGridView_Khach(); // refresh DataGridView
+                    LoadGridView_Khach(); // làm mới DataGridView
                 }
                 else
                 {
@@ -286,6 +299,24 @@ namespace GUI_QLGame
             txtLocSDT.Text = "Nhập số điện thoại khach hàng";
             txtLocSDT.BackColor = Color.LightGray;
             ResetValues();
+        }
+        private void dtgDanhSachKH_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                DataGridViewRow row = dtgDanhSachKH.Rows[e.RowIndex];
+                selectedMaKH = row.Cells[0].Value.ToString();
+                string tenKhachHang = row.Cells[1].Value.ToString();
+                string diaChi = row.Cells[2].Value.ToString();
+                string sdt = row.Cells[3].Value.ToString();
+
+                frm_ChiTietKH ctkh = new frm_ChiTietKH(selectedMaKH, tenKhachHang, diaChi, sdt);
+                ctkh.ShowDialog();
+            }
+        }
+        private void dtgDanhSachKH_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

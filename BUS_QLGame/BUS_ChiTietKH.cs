@@ -29,6 +29,6 @@ namespace BUS_QLGame
             DAL_ChiTietKhachHang chitietkh = new DAL_ChiTietKhachHang();
             return chitietkh.TimKhachHang(makh);
         }
-       
+
     }
 }

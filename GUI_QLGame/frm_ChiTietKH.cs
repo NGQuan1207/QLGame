@@ -15,6 +15,7 @@ namespace GUI_QLGame
 {
     public partial class frm_ChiTietKH : Form
     {
+        private string selectedMaKH; // Biến lưu mã khách hàng đã chọn
         private string MaKH, HoTen, DiaChi, SDT;
         DTO_ChiTietKH ctkh = new DTO_ChiTietKH();
         public frm_ChiTietKH()
@@ -32,13 +33,12 @@ namespace GUI_QLGame
         private void TaiHoadonh()
         {
             dtgv_hoadon.DataSource = BUS_ChiTietKH.ListCTKhachHang();
-            dtgv_hoadon.Columns[0].HeaderText = "Mã CTKH";
-            dtgv_hoadon.Columns[1].HeaderText = "Mã KH";
-            dtgv_hoadon.Columns[2].HeaderText = "Tên KH";
-            dtgv_hoadon.Columns[3].HeaderText = "Địa Chỉ";
-            dtgv_hoadon.Columns[4].HeaderText = "Điện Thoại";
-            dtgv_hoadon.Columns[5].HeaderText = "Mã Hóa Đơn";
-            dtgv_hoadon.Columns[6].HeaderText = "Mã Phiếu Thuê";
+            dtgv_hoadon.Columns[0].HeaderText = "Mã Hóa Đơn";
+            dtgv_hoadon.Columns[1].HeaderText = "Mã Khách Hàng";
+            dtgv_hoadon.Columns[2].HeaderText = "Mã Nhân Viên";
+            dtgv_hoadon.Columns[3].HeaderText = "Ngày Lập";
+            dtgv_hoadon.Columns[4].HeaderText = "Thành Tiền";
+            dtgv_hoadon.Columns[5].HeaderText = "Trạng Thái";
         }
         private void GiaTriBanDau()
         {
@@ -66,47 +66,47 @@ namespace GUI_QLGame
                 dtgv_hoadon.Columns[4].HeaderText = "Thành Tiền";
                 dtgv_hoadon.Columns[5].HeaderText = "Trạng Thái";
             }
-            
+
         }
-       /* private void LoadCustomerData(string maKH)
-        {
-            string connectionString = "Data Source=LAPTOP-PDIC30NO\\MISASME2019;Initial Catalog=QL_ThietBiGame3;Integrated Security=True;Encrypt=False"; // Cập nhật với chuỗi kết nối của bạn
-            string query = "GetKhachHangByMaKH"; // Tên của stored procedure
+        /* private void LoadCustomerData(string maKH)
+         {
+             string connectionString = "Data Source=LAPTOP-PDIC30NO\\MISASME2019;Initial Catalog=QL_ThietBiGame3;Integrated Security=True;Encrypt=False"; // Cập nhật với chuỗi kết nối của bạn
+             string query = "GetKhachHangByMaKH"; // Tên của stored procedure
 
-            using (SqlConnection conn = new SqlConnection(connectionString))
-            {
-                using (SqlCommand cmd = new SqlCommand(query, conn))
-                {
-                    cmd.CommandType = CommandType.StoredProcedure;
-                    cmd.Parameters.AddWithValue("@MaKH", maKH);
+             using (SqlConnection conn = new SqlConnection(connectionString))
+             {
+                 using (SqlCommand cmd = new SqlCommand(query, conn))
+ {
+                     cmd.CommandType = CommandType.StoredProcedure;
+                     cmd.Parameters.AddWithValue("@MaKH", maKH);
 
-                    SqlDataAdapter da = new SqlDataAdapter(cmd);
-                    DataTable dt = new DataTable();
-                    da.Fill(dt);
+                     SqlDataAdapter da = new SqlDataAdapter(cmd);
+                     DataTable dt = new DataTable();
+                     da.Fill(dt);
 
-                    if (dt.Rows.Count > 0)
-                    {
-                        DataRow row = dt.Rows[0];
-                        txt_makh.Text = row["MaKH"].ToString();
-                        txt_tenkh.Text = row["TenKH"].ToString();
-                        txt_diachi.Text = row["DiaChi"].ToString();
-                        txt_dienthoai.Text = row["SDT"].ToString();
-                        txt_hoadon.Text = row["MaCTHD"].ToString();
-                        txt_mathue.Text = row["MaPhieuThue"].ToString();
-                    }
-                    else
-                    {
-                        // Clear textboxes if no data found
-                        txt_tenkh.Clear();
-                        txt_diachi.Clear();
-                        txt_dienthoai.Clear();
-                        txt_hoadon.Clear();
-                        txt_mathue.Clear();
-                    }
-                }
-            }
+                     if (dt.Rows.Count > 0)
+                     {
+                         DataRow row = dt.Rows[0];
+                         txt_makh.Text = row["MaKH"].ToString();
+                         txt_tenkh.Text = row["TenKH"].ToString();
+                         txt_diachi.Text = row["DiaChi"].ToString();
+                         txt_dienthoai.Text = row["SDT"].ToString();
+                         txt_hoadon.Text = row["MaCTHD"].ToString();
+                         txt_mathue.Text = row["MaPhieuThue"].ToString();
+                     }
+                     else
+                     {
+                         // Clear textboxes if no data found
+                         txt_tenkh.Clear();
+                         txt_diachi.Clear();
+                         txt_dienthoai.Clear();
+                         txt_hoadon.Clear();
+                         txt_mathue.Clear();
+                     }
+                 }
+             }
 
-        }*/
+         }*/
 
 
         private void textBox2_TextChanged(object sender, EventArgs e)
@@ -138,7 +138,7 @@ namespace GUI_QLGame
         {
 
         }
-    
+
 
         private void frm_ChiTietKH_Load(object sender, EventArgs e)
         {
@@ -162,7 +162,14 @@ namespace GUI_QLGame
 
         private void dtgv_hoadon_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-           
+            if (e.RowIndex >= 0)
+            {
+                DataGridViewRow row = dtgv_hoadon.Rows[e.RowIndex];
+                selectedMaKH = row.Cells[0].Value.ToString();
+                txt_hoadon.Text = row.Cells[0].Value.ToString();
+                btn_QuayLai.Enabled = true;
+                btn_sua.Enabled = true;
+            }
         }
 
         private void dtgv_kh_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -172,7 +179,7 @@ namespace GUI_QLGame
 
         private void dtgv_kh_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-           
+
         }
 
         private void btn_xoa_Click(object sender, EventArgs e)

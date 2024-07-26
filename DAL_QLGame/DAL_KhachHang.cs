@@ -131,6 +131,55 @@ namespace DAL_QLGame
                 _conn.Close();
             }
         }
+        public class DataProvider
+        {
+            private static DataProvider instance;
+            private string connectionString = "your_connection_string_here"; // Thay thế bằng chuỗi kết nối thực tế
+
+            public static DataProvider Instance
+            {
+                get { if (instance == null) instance = new DataProvider(); return instance; }
+                private set { instance = value; }
+            }
+
+            public object ExecuteScalar(string query, SqlParameter[] parameters = null)
+            {
+                object result = null;
+
+                using (SqlConnection connection = new SqlConnection("Data Source=DUONGPX;Initial Catalog=QL_ThietBiGame3;Integrated Security=True;Encrypt=False"))
+                {
+                    connection.Open();
+                    using (SqlCommand command = new SqlCommand(query, connection))
+                    {
+                        if (parameters != null)
+                        {
+                            command.Parameters.AddRange(parameters);
+                        }
+
+                        result = command.ExecuteScalar();
+                    }
+                }
+
+                return result;
+            }
+        }
+
+        public bool IsPhoneNumberUnique(string sdt)
+        {
+            string query = "SELECT COUNT(*) FROM KhachHang WHERE SDT = @SDT";
+            SqlParameter[] parameters = new SqlParameter[]
+            {
+        new SqlParameter("@SDT", SqlDbType.VarChar) { Value = sdt }
+            };
+
+            object result = DataProvider.Instance.ExecuteScalar(query, parameters);
+            int count = result != null ? Convert.ToInt32(result) : 0;
+
+            return count == 0;
+        }
+
+
+
 
 
     }

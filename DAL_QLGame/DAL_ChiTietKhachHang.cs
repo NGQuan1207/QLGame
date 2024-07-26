@@ -15,7 +15,7 @@ namespace DAL_QLGame
         public DataTable ListCTKhachHang()
         {
             using (SqlConnection con = new SqlConnection(_conn.ConnectionString))
-            using (SqlCommand cmd = new SqlCommand("ListChiTietKhachHang", con))
+            using (SqlCommand cmd = new SqlCommand("ListHoaDon", con))
             {
                 con.Open();
                 cmd.CommandType = CommandType.StoredProcedure;
