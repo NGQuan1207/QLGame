@@ -48,7 +48,7 @@
             // 
             this.dataG_HoaDon.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataG_HoaDon.Location = new System.Drawing.Point(9, 179);
-            this.dataG_HoaDon.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataG_HoaDon.Margin = new System.Windows.Forms.Padding(2);
             this.dataG_HoaDon.Name = "dataG_HoaDon";
             this.dataG_HoaDon.RowHeadersWidth = 51;
             this.dataG_HoaDon.RowTemplate.Height = 24;
@@ -96,9 +96,9 @@
             this.groupBox1.Controls.Add(this.btn_timHD);
             this.groupBox1.ForeColor = System.Drawing.Color.LightSkyBlue;
             this.groupBox1.Location = new System.Drawing.Point(381, 46);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox1.Size = new System.Drawing.Size(456, 107);
             this.groupBox1.TabIndex = 25;
             this.groupBox1.TabStop = false;
@@ -108,7 +108,7 @@
             // 
             this.txt_MaHoaDon.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_MaHoaDon.Location = new System.Drawing.Point(98, 55);
-            this.txt_MaHoaDon.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_MaHoaDon.Margin = new System.Windows.Forms.Padding(2);
             this.txt_MaHoaDon.Name = "txt_MaHoaDon";
             this.txt_MaHoaDon.Size = new System.Drawing.Size(226, 24);
             this.txt_MaHoaDon.TabIndex = 10;
@@ -130,7 +130,7 @@
             // date_TimHoaDon
             // 
             this.date_TimHoaDon.Location = new System.Drawing.Point(98, 24);
-            this.date_TimHoaDon.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.date_TimHoaDon.Margin = new System.Windows.Forms.Padding(2);
             this.date_TimHoaDon.Name = "date_TimHoaDon";
             this.date_TimHoaDon.Size = new System.Drawing.Size(226, 20);
             this.date_TimHoaDon.TabIndex = 8;
@@ -153,7 +153,7 @@
             // 
             this.btn_timHD.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btn_timHD.Location = new System.Drawing.Point(344, 37);
-            this.btn_timHD.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_timHD.Margin = new System.Windows.Forms.Padding(2);
             this.btn_timHD.Name = "btn_timHD";
             this.btn_timHD.Size = new System.Drawing.Size(100, 37);
             this.btn_timHD.TabIndex = 0;
@@ -165,7 +165,7 @@
             this.btn_InHoaDon.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_InHoaDon.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btn_InHoaDon.Location = new System.Drawing.Point(125, 83);
-            this.btn_InHoaDon.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_InHoaDon.Margin = new System.Windows.Forms.Padding(2);
             this.btn_InHoaDon.Name = "btn_InHoaDon";
             this.btn_InHoaDon.Size = new System.Drawing.Size(120, 37);
             this.btn_InHoaDon.TabIndex = 11;
@@ -184,10 +184,9 @@
             this.Controls.Add(this.dataG_HoaDon);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Frm_HoaDon";
             this.Text = "Hóa Đơn";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Frm_HoaDon_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataG_HoaDon)).EndInit();
             this.menuStrip1.ResumeLayout(false);

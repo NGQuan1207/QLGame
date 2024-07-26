@@ -20,6 +20,7 @@ namespace GUI_QLGame
         {
             InitializeComponent();
             this.IsMdiContainer = true;
+            picb_hinhNV.Image = Image.FromFile("img/anh.jpg");
         }
         private void ResetValue()
         {

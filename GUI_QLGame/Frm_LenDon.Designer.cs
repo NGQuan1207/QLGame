@@ -414,7 +414,6 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Frm_LenDon";
             this.Text = "Lên Đơn";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Frm_LenDon_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_SanphamLenDon)).EndInit();
             this.groupBox1.ResumeLayout(false);

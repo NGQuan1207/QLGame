@@ -156,5 +156,10 @@ namespace GUI_QLGame
         {
 
         }
+
+        private void btn_LamMoi_Click(object sender, EventArgs e)
+        {
+            GiaTriBanDau();
+        }
     }
 }

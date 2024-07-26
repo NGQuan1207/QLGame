@@ -362,7 +362,6 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frm_QuanLyNhanVien";
             this.Text = "Quản Lý Nhân Viên";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frm_QuanLyNhanVien_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbHinhAnh)).EndInit();

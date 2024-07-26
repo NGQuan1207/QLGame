@@ -66,9 +66,9 @@
             this.grb_thongtinnhanvien.Controls.Add(this.picb_hinhNV);
             this.grb_thongtinnhanvien.Controls.Add(this.lable_ttnhanvien);
             this.grb_thongtinnhanvien.Location = new System.Drawing.Point(25, 11);
-            this.grb_thongtinnhanvien.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.grb_thongtinnhanvien.Margin = new System.Windows.Forms.Padding(2);
             this.grb_thongtinnhanvien.Name = "grb_thongtinnhanvien";
-            this.grb_thongtinnhanvien.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.grb_thongtinnhanvien.Padding = new System.Windows.Forms.Padding(2);
             this.grb_thongtinnhanvien.Size = new System.Drawing.Size(434, 495);
             this.grb_thongtinnhanvien.TabIndex = 33;
             this.grb_thongtinnhanvien.TabStop = false;
@@ -138,7 +138,7 @@
             // 
             this.txt_diachiNV.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_diachiNV.Location = new System.Drawing.Point(146, 424);
-            this.txt_diachiNV.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_diachiNV.Margin = new System.Windows.Forms.Padding(2);
             this.txt_diachiNV.Name = "txt_diachiNV";
             this.txt_diachiNV.ReadOnly = true;
             this.txt_diachiNV.Size = new System.Drawing.Size(221, 26);
@@ -149,7 +149,7 @@
             // 
             this.txt_sdtNV.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_sdtNV.Location = new System.Drawing.Point(146, 266);
-            this.txt_sdtNV.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_sdtNV.Margin = new System.Windows.Forms.Padding(2);
             this.txt_sdtNV.Name = "txt_sdtNV";
             this.txt_sdtNV.ReadOnly = true;
             this.txt_sdtNV.Size = new System.Drawing.Size(221, 26);
@@ -160,7 +160,7 @@
             // 
             this.txt_gender.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_gender.Location = new System.Drawing.Point(146, 386);
-            this.txt_gender.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_gender.Margin = new System.Windows.Forms.Padding(2);
             this.txt_gender.Name = "txt_gender";
             this.txt_gender.ReadOnly = true;
             this.txt_gender.Size = new System.Drawing.Size(221, 26);
@@ -171,7 +171,7 @@
             // 
             this.txt_ngaysinh.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_ngaysinh.Location = new System.Drawing.Point(146, 346);
-            this.txt_ngaysinh.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_ngaysinh.Margin = new System.Windows.Forms.Padding(2);
             this.txt_ngaysinh.Name = "txt_ngaysinh";
             this.txt_ngaysinh.ReadOnly = true;
             this.txt_ngaysinh.Size = new System.Drawing.Size(221, 26);
@@ -182,7 +182,7 @@
             // 
             this.txt_CCCDnv.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_CCCDnv.Location = new System.Drawing.Point(146, 305);
-            this.txt_CCCDnv.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_CCCDnv.Margin = new System.Windows.Forms.Padding(2);
             this.txt_CCCDnv.Name = "txt_CCCDnv";
             this.txt_CCCDnv.ReadOnly = true;
             this.txt_CCCDnv.Size = new System.Drawing.Size(221, 26);
@@ -193,7 +193,7 @@
             // 
             this.txt_ChuavuNV.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_ChuavuNV.Location = new System.Drawing.Point(166, 181);
-            this.txt_ChuavuNV.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_ChuavuNV.Margin = new System.Windows.Forms.Padding(2);
             this.txt_ChuavuNV.Name = "txt_ChuavuNV";
             this.txt_ChuavuNV.ReadOnly = true;
             this.txt_ChuavuNV.Size = new System.Drawing.Size(221, 32);
@@ -204,7 +204,7 @@
             // 
             this.txt_MaNV.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_MaNV.Location = new System.Drawing.Point(166, 126);
-            this.txt_MaNV.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_MaNV.Margin = new System.Windows.Forms.Padding(2);
             this.txt_MaNV.Name = "txt_MaNV";
             this.txt_MaNV.ReadOnly = true;
             this.txt_MaNV.Size = new System.Drawing.Size(221, 32);
@@ -215,7 +215,7 @@
             // 
             this.txt_TenNV.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_TenNV.Location = new System.Drawing.Point(166, 73);
-            this.txt_TenNV.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_TenNV.Margin = new System.Windows.Forms.Padding(2);
             this.txt_TenNV.Name = "txt_TenNV";
             this.txt_TenNV.ReadOnly = true;
             this.txt_TenNV.Size = new System.Drawing.Size(221, 32);
@@ -225,9 +225,10 @@
             // picb_hinhNV
             // 
             this.picb_hinhNV.Location = new System.Drawing.Point(32, 67);
-            this.picb_hinhNV.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.picb_hinhNV.Margin = new System.Windows.Forms.Padding(2);
             this.picb_hinhNV.Name = "picb_hinhNV";
             this.picb_hinhNV.Size = new System.Drawing.Size(103, 145);
+            this.picb_hinhNV.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picb_hinhNV.TabIndex = 14;
             this.picb_hinhNV.TabStop = false;
             // 

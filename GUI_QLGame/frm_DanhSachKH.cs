@@ -153,7 +153,7 @@ namespace GUI_QLGame
 
             if (busKH.UpdateKhach(selectedMaKH, tenKhachHang, diaChi, sdt))
             {
-                MessageBox.Show("Cập nhật thành công");
+                MessageBox.Show("Cập nhật thành công", "Thông báo");
                 ResetValues();
                 LoadGridView_Khach(); // làm mới DataGridView
             }

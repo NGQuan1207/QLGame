@@ -139,7 +139,7 @@ namespace GUI_QLGame
             if (!CheckExistForm("Frm_DangNhap"))
             {
                 //dn.MdiParent = this;
-                dn.Show();
+                dn.ShowDialog();
                 dn.FormClosed += new FormClosedEventHandler(Frm_DangNhap_FormClosed);
                 session = 1;
                 ResetValue();
@@ -162,7 +162,7 @@ namespace GUI_QLGame
             {
                 ctkh = new frm_ChiTietKH();
                 //ctkh.MdiParent = this;
-                ctkh.Show();
+                ctkh.ShowDialog();
                 ctkh.FormClosed += new FormClosedEventHandler(Frm_DangNhap_FormClosed);
             }
             else
@@ -177,7 +177,7 @@ namespace GUI_QLGame
             {
                 nv = new frm_QuanLyNhanVien();
                 //nv.MdiParent = this;
-                nv.Show();
+                nv.ShowDialog();
                 nv.FormClosed += new FormClosedEventHandler(Frm_DangNhap_FormClosed);
             }
             else
@@ -192,7 +192,7 @@ namespace GUI_QLGame
             {
                 spt = new Frm_SanPhamThue();
                 //spt.MdiParent = this;
-                spt.Show();
+                spt.ShowDialog();
                 spt.FormClosed += new FormClosedEventHandler(Frm_DangNhap_FormClosed);
             }
             else
@@ -207,7 +207,7 @@ namespace GUI_QLGame
             {
                 hd = new Frm_HoaDon();
                 //hd.MdiParent = this;
-                hd.Show();
+                hd.ShowDialog();
                 hd.FormClosed += new FormClosedEventHandler(Frm_DangNhap_FormClosed);
             }
             else
@@ -222,7 +222,7 @@ namespace GUI_QLGame
             {
                 ld = new Frm_LenDon();
                 //ld.MdiParent = this;
-                ld.Show();
+                ld.ShowDialog();
                 ld.FormClosed += new FormClosedEventHandler(Frm_DangNhap_FormClosed);
             }
             else
@@ -237,7 +237,7 @@ namespace GUI_QLGame
             {
                 bctk = new Frm_BaoCaoThongKe();
                 //bctk.MdiParent = this;
-                bctk.Show();
+                bctk.ShowDialog();
                 bctk.FormClosed += new FormClosedEventHandler(Frm_DangNhap_FormClosed);
             }
             else
@@ -252,7 +252,7 @@ namespace GUI_QLGame
             {
                 sp = new Frm_SanPham();
                 //sp.MdiParent = this;
-                sp.Show();
+                sp.ShowDialog(); ;
                 sp.FormClosed += new FormClosedEventHandler(Frm_DangNhap_FormClosed);
             }
             else
@@ -272,7 +272,7 @@ namespace GUI_QLGame
             {
                 kh = new frm_DanhSachKH();
                 //kh.MdiParent = this;
-                kh.Show();
+                kh.ShowDialog();
                 kh.FormClosed += new FormClosedEventHandler(Frm_DangNhap_FormClosed);
             }
             else
@@ -287,7 +287,7 @@ namespace GUI_QLGame
             {
                 nv = new frm_QuanLyNhanVien();
                 //nv.MdiParent = this;
-                nv.Show();
+                nv.ShowDialog();
                 nv.FormClosed += new FormClosedEventHandler(Frm_DangNhap_FormClosed);
             }
             else
@@ -302,7 +302,7 @@ namespace GUI_QLGame
             {
                 hd = new Frm_HoaDon();
                 //hd.MdiParent = this;
-                hd.Show();
+                hd.ShowDialog();
                 hd.FormClosed += new FormClosedEventHandler(Frm_DangNhap_FormClosed);
             }
             else
@@ -317,7 +317,7 @@ namespace GUI_QLGame
             {
                 bh = new Frm_BaoHanh();
                 //bh.MdiParent = this;
-                bh.Show();
+                bh.ShowDialog();
                 bh.FormClosed += new FormClosedEventHandler(Frm_DangNhap_FormClosed);
             }
             else
@@ -332,7 +332,7 @@ namespace GUI_QLGame
             {
                 sp = new Frm_SanPham();
                 //sp.MdiParent = this;
-                sp.Show();
+                sp.ShowDialog();
                 sp.FormClosed += new FormClosedEventHandler(Frm_DangNhap_FormClosed);
             }
             else
@@ -347,7 +347,7 @@ namespace GUI_QLGame
             {
                 spt = new Frm_SanPhamThue();
                 //spt.MdiParent = this;
-                spt.Show();
+                spt.ShowDialog();
                 spt.FormClosed += new FormClosedEventHandler(Frm_DangNhap_FormClosed);
             }
             else
@@ -362,7 +362,7 @@ namespace GUI_QLGame
             {
                 bctk = new Frm_BaoCaoThongKe();
                 //bctk.MdiParent = this;
-                bctk.Show();
+                bctk.ShowDialog();
                 bctk.FormClosed += new FormClosedEventHandler(Frm_DangNhap_FormClosed);
             }
             else
@@ -377,7 +377,7 @@ namespace GUI_QLGame
             {
                 ld = new Frm_LenDon();
                 //ld.MdiParent = this;
-                ld.Show();
+                ld.ShowDialog();
                 ld.FormClosed += new FormClosedEventHandler(Frm_DangNhap_FormClosed);
             }
             else
@@ -392,7 +392,7 @@ namespace GUI_QLGame
             {
                 c = new frm_chu();
                 //c.MdiParent = this;
-                c.Show();
+                c.ShowDialog();
                 c.FormClosed += new FormClosedEventHandler(Frm_DangNhap_FormClosed);
             }
             else

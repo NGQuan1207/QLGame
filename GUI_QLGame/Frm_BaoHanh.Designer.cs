@@ -50,6 +50,7 @@
             this.btn_ThemBH = new System.Windows.Forms.Button();
             this.btn_XoaBH = new System.Windows.Forms.Button();
             this.btn_Thoat = new System.Windows.Forms.Button();
+            this.btn_LamMoi = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgv_Baohanh)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -89,7 +90,7 @@
             // 
             this.dtgv_Baohanh.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgv_Baohanh.Location = new System.Drawing.Point(24, 67);
-            this.dtgv_Baohanh.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dtgv_Baohanh.Margin = new System.Windows.Forms.Padding(2);
             this.dtgv_Baohanh.Name = "dtgv_Baohanh";
             this.dtgv_Baohanh.RowHeadersWidth = 51;
             this.dtgv_Baohanh.RowTemplate.Height = 24;
@@ -105,9 +106,9 @@
             this.groupBox1.Controls.Add(this.btn_TimBaoHanh);
             this.groupBox1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.groupBox1.Location = new System.Drawing.Point(24, 374);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox1.Size = new System.Drawing.Size(512, 60);
             this.groupBox1.TabIndex = 23;
             this.groupBox1.TabStop = false;
@@ -125,7 +126,7 @@
             // 
             this.btn_TimBaoHanh.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btn_TimBaoHanh.Location = new System.Drawing.Point(399, 17);
-            this.btn_TimBaoHanh.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_TimBaoHanh.Margin = new System.Windows.Forms.Padding(2);
             this.btn_TimBaoHanh.Name = "btn_TimBaoHanh";
             this.btn_TimBaoHanh.Size = new System.Drawing.Size(100, 37);
             this.btn_TimBaoHanh.TabIndex = 0;
@@ -253,7 +254,7 @@
             // 
             // btn_Thoat
             // 
-            this.btn_Thoat.Location = new System.Drawing.Point(832, 394);
+            this.btn_Thoat.Location = new System.Drawing.Point(910, 397);
             this.btn_Thoat.Name = "btn_Thoat";
             this.btn_Thoat.Size = new System.Drawing.Size(75, 23);
             this.btn_Thoat.TabIndex = 38;
@@ -261,12 +262,23 @@
             this.btn_Thoat.UseVisualStyleBackColor = true;
             this.btn_Thoat.Click += new System.EventHandler(this.btn_Thoat_Click);
             // 
+            // btn_LamMoi
+            // 
+            this.btn_LamMoi.Location = new System.Drawing.Point(750, 398);
+            this.btn_LamMoi.Name = "btn_LamMoi";
+            this.btn_LamMoi.Size = new System.Drawing.Size(75, 23);
+            this.btn_LamMoi.TabIndex = 39;
+            this.btn_LamMoi.Text = "Làm Mới";
+            this.btn_LamMoi.UseVisualStyleBackColor = true;
+            this.btn_LamMoi.Click += new System.EventHandler(this.btn_LamMoi_Click);
+            // 
             // Frm_BaoHanh
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSkyBlue;
             this.ClientSize = new System.Drawing.Size(1051, 444);
+            this.Controls.Add(this.btn_LamMoi);
             this.Controls.Add(this.btn_Thoat);
             this.Controls.Add(this.btn_XoaBH);
             this.Controls.Add(this.btn_ThemBH);
@@ -287,7 +299,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Frm_BaoHanh";
             this.Text = "Bảo Hành";
             this.Load += new System.EventHandler(this.Frm_BaoHanh_Load);
@@ -324,5 +336,6 @@
         private System.Windows.Forms.Button btn_ThemBH;
         private System.Windows.Forms.Button btn_XoaBH;
         private System.Windows.Forms.Button btn_Thoat;
+        private System.Windows.Forms.Button btn_LamMoi;
     }
 }
