@@ -239,12 +239,12 @@
             // dgv_thue
             // 
             this.dgv_thue.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_thue.Location = new System.Drawing.Point(93, 210);
+            this.dgv_thue.Location = new System.Drawing.Point(42, 210);
             this.dgv_thue.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dgv_thue.Name = "dgv_thue";
             this.dgv_thue.RowHeadersWidth = 62;
             this.dgv_thue.RowTemplate.Height = 28;
-            this.dgv_thue.Size = new System.Drawing.Size(758, 203);
+            this.dgv_thue.Size = new System.Drawing.Size(809, 203);
             this.dgv_thue.TabIndex = 57;
             // 
             // radioButton2

@@ -238,12 +238,12 @@
             // dgv_sanpham
             // 
             this.dgv_sanpham.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_sanpham.Location = new System.Drawing.Point(99, 219);
+            this.dgv_sanpham.Location = new System.Drawing.Point(37, 219);
             this.dgv_sanpham.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dgv_sanpham.Name = "dgv_sanpham";
             this.dgv_sanpham.RowHeadersWidth = 62;
             this.dgv_sanpham.RowTemplate.Height = 28;
-            this.dgv_sanpham.Size = new System.Drawing.Size(758, 203);
+            this.dgv_sanpham.Size = new System.Drawing.Size(820, 203);
             this.dgv_sanpham.TabIndex = 58;
             // 
             // radioButton2
@@ -303,7 +303,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.label1.BackColor = System.Drawing.Color.LightSkyBlue;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label1.Location = new System.Drawing.Point(52, 0);
@@ -318,7 +318,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.ClientSize = new System.Drawing.Size(890, 422);
+            this.ClientSize = new System.Drawing.Size(890, 441);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
