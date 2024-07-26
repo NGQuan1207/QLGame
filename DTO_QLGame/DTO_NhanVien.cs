@@ -8,7 +8,7 @@ namespace DTO_QLGame
 {
     public class DTO_NhanVien
     {
-        private string MaNV
+        private string MaNV;
         private string TenNV;
         private string Phai;
         private DateTime NgaySinh;

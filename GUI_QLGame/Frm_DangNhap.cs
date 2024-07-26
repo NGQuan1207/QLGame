@@ -17,15 +17,20 @@ namespace GUI_QLGame
     public partial class Frm_DangNhap : Form
     {
         BUS_Nhanvien busnv = new BUS_Nhanvien();
-
+        private bool isPasswordHidden = true;
         public string vaitro {  get; set; }
         public static string mail;
         public Frm_DangNhap()
         {
             //pb_logo.BackColor = Color.Transparent;
             InitializeComponent();
-        }
 
+            txt_matkhau.UseSystemPasswordChar = false;
+            
+            pb_matkhau.Image = Image.FromFile("img/hide.png"); 
+            pb_matkhau.SizeMode = PictureBoxSizeMode.StretchImage;
+        }
+            
         private void Frm_DangNhap_Load(object sender, EventArgs e)
         {
             //Fm_Main.session = 0; // not yet login
@@ -55,12 +60,12 @@ namespace GUI_QLGame
                     //MessageBox.Show("Đăng nhập thành công");
                     //FmMain.session = 1; // cập nhật trạng thái đã đăng nhập thành công
                     //this.Close();
-                    MessageBox.Show("Đăng nhập thành công");
+                    MessageBox.Show("Đăng nhập thành công", "Thông Báo");
                     this.Close();
                 }
                 else
                 {
-                    MessageBox.Show("Đăng nhập không thành công, kiểm tra lại email hoặc mật khẩu");
+                    MessageBox.Show("Đăng nhập không thành công, kiểm tra lại email hoặc mật khẩu", "Thông Báo");
                     txt_ID.Text = null;
                     txt_matkhau.Text = null;
                     txt_ID.Focus();
@@ -136,18 +141,20 @@ namespace GUI_QLGame
                 }
                 else
                 {
-                    MessageBox.Show("Email không tồn tại, vui lòng nhập lại email");
+                    MessageBox.Show("Email không tồn tại, vui lòng nhập lại email","Thông Báo");
+               
                 }
             }
             else
             {
-                MessageBox.Show("Bạn cần nhập email nhận thông tin hồi phục mật khẩu");
+                MessageBox.Show("Bạn cần nhập email nhận thông tin hồi phục mật khẩu", "Thông Báo");
             }
         }
 
         private void btn_thoat_Click(object sender, EventArgs e)
         {
-
+            Frm_Main frm_Main = new Frm_Main();
+            frm_Main.Close();
         }
 
         private void txt_ID_TextChanged(object sender, EventArgs e)
@@ -161,6 +168,36 @@ namespace GUI_QLGame
         }
 
         private void txt_matkhau_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pb_matkhau_Click(object sender, EventArgs e)
+        {
+            if (isPasswordHidden)
+            {
+                txt_matkhau.UseSystemPasswordChar = true;
+                pb_matkhau.Image = Image.FromFile("img/view.png"); 
+            }
+            else
+            {
+                txt_matkhau.UseSystemPasswordChar = false;
+                pb_matkhau.Image = Image.FromFile("img/hide.png"); 
+            }
+            isPasswordHidden = !isPasswordHidden;
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }
