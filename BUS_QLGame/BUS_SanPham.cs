@@ -19,11 +19,11 @@ namespace BUS_QLGame
             return dalSanPham.LoadListSanPham();
         }
 
-       /* public static DataTable TimBaoHanh(string tim)
+        public static DataTable TimSanPham(string tim)
         {
             DAL_SanPham dalSanPham = new DAL_SanPham();
             return dalSanPham.TimSanPham(tim);
-        }*/
+        }
 
         public static bool ThemSanPham(DTO_SanPham sanpham)
         {
@@ -37,10 +37,10 @@ namespace BUS_QLGame
             return dalSanPham.XoaSanPham(masanpham);
         }
 
-        public static bool SuaSanPham(string tensp, string loaisp, string hinhanh, string ghichu)
+        public static bool SuaSanPham(string masp,string tensp, string loaisp, string hinhanh, string ghichu)
         {
             DAL_SanPham dalSanPham = new DAL_SanPham();
-            return dalSanPham.SuaSanPham(tensp, loaisp, hinhanh, ghichu);
+            return dalSanPham.SuaSanPham(masp,tensp, loaisp, hinhanh, ghichu);
         }
     }
 }

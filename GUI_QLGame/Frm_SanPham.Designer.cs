@@ -44,23 +44,26 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btn_sua = new System.Windows.Forms.Button();
             this.txt_HinhAnh = new System.Windows.Forms.TextBox();
+            this.txt_Tim = new System.Windows.Forms.TextBox();
+            this.btn_Tim = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pb_SanPham)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_sanpham)).BeginInit();
             this.SuspendLayout();
             // 
             // pb_SanPham
             // 
-            this.pb_SanPham.Location = new System.Drawing.Point(319, 50);
+            this.pb_SanPham.Location = new System.Drawing.Point(319, 41);
             this.pb_SanPham.Margin = new System.Windows.Forms.Padding(2);
             this.pb_SanPham.Name = "pb_SanPham";
-            this.pb_SanPham.Size = new System.Drawing.Size(120, 123);
+            this.pb_SanPham.Size = new System.Drawing.Size(120, 132);
+            this.pb_SanPham.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pb_SanPham.TabIndex = 67;
             this.pb_SanPham.TabStop = false;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(265, 53);
+            this.label6.Location = new System.Drawing.Point(265, 49);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(50, 13);
@@ -109,25 +112,25 @@
             // 
             // btn_xoa
             // 
-            this.btn_xoa.Location = new System.Drawing.Point(470, 93);
+            this.btn_xoa.Location = new System.Drawing.Point(470, 68);
             this.btn_xoa.Margin = new System.Windows.Forms.Padding(2);
             this.btn_xoa.Name = "btn_xoa";
             this.btn_xoa.Size = new System.Drawing.Size(104, 24);
             this.btn_xoa.TabIndex = 60;
             this.btn_xoa.Text = "Xóa";
             this.btn_xoa.UseVisualStyleBackColor = true;
-            this.btn_xoa.Click += new System.EventHandler(this.btn_xoa_Click);
+            this.btn_xoa.Click += new System.EventHandler(this.btn_xoa_Click_1);
             // 
             // btn_them
             // 
-            this.btn_them.Location = new System.Drawing.Point(470, 63);
+            this.btn_them.Location = new System.Drawing.Point(470, 38);
             this.btn_them.Margin = new System.Windows.Forms.Padding(2);
             this.btn_them.Name = "btn_them";
             this.btn_them.Size = new System.Drawing.Size(104, 24);
             this.btn_them.TabIndex = 59;
             this.btn_them.Text = "Thêm";
             this.btn_them.UseVisualStyleBackColor = true;
-            this.btn_them.Click += new System.EventHandler(this.btn_them_Click);
+            this.btn_them.Click += new System.EventHandler(this.btn_them_Click_1);
             // 
             // dgv_sanpham
             // 
@@ -188,12 +191,13 @@
             // 
             // btn_sua
             // 
-            this.btn_sua.Location = new System.Drawing.Point(470, 122);
+            this.btn_sua.Location = new System.Drawing.Point(470, 97);
             this.btn_sua.Name = "btn_sua";
             this.btn_sua.Size = new System.Drawing.Size(104, 23);
             this.btn_sua.TabIndex = 68;
             this.btn_sua.Text = "Sửa";
             this.btn_sua.UseVisualStyleBackColor = true;
+            this.btn_sua.Click += new System.EventHandler(this.btn_sua_Click_1);
             // 
             // txt_HinhAnh
             // 
@@ -202,12 +206,31 @@
             this.txt_HinhAnh.Size = new System.Drawing.Size(120, 20);
             this.txt_HinhAnh.TabIndex = 69;
             // 
+            // txt_Tim
+            // 
+            this.txt_Tim.Location = new System.Drawing.Point(470, 178);
+            this.txt_Tim.Name = "txt_Tim";
+            this.txt_Tim.Size = new System.Drawing.Size(104, 20);
+            this.txt_Tim.TabIndex = 70;
+            // 
+            // btn_Tim
+            // 
+            this.btn_Tim.Location = new System.Drawing.Point(470, 152);
+            this.btn_Tim.Name = "btn_Tim";
+            this.btn_Tim.Size = new System.Drawing.Size(104, 23);
+            this.btn_Tim.TabIndex = 71;
+            this.btn_Tim.Text = "Tìm Kiếm";
+            this.btn_Tim.UseVisualStyleBackColor = true;
+            this.btn_Tim.Click += new System.EventHandler(this.btn_Tim_Click_1);
+            // 
             // Frm_SanPham
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSkyBlue;
             this.ClientSize = new System.Drawing.Size(631, 441);
+            this.Controls.Add(this.btn_Tim);
+            this.Controls.Add(this.txt_Tim);
             this.Controls.Add(this.txt_HinhAnh);
             this.Controls.Add(this.btn_sua);
             this.Controls.Add(this.pb_SanPham);
@@ -253,5 +276,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btn_sua;
         private System.Windows.Forms.TextBox txt_HinhAnh;
+        private System.Windows.Forms.TextBox txt_Tim;
+        private System.Windows.Forms.Button btn_Tim;
     }
 }

@@ -77,7 +77,7 @@ namespace DAL_QLGame
             return Execute("XoaSanPham", new SqlParameter("@masp",masanpham));
         }
 
-        public bool SuaSanPham(string tensp, string loaisp, string hinhanh, string ghichu)
+        public bool SuaSanPham(string masp,string tensp, string loaisp, string hinhanh, string ghichu)
         {
             try
             {
@@ -88,8 +88,10 @@ namespace DAL_QLGame
                     CommandText = "SuaSanPham",
                     Connection = _conn
                 };
-                cmd.Parameters.AddWithValue("@Masp", tensp);
-                cmd.Parameters.AddWithValue("@TenSp", loaisp);
+
+                cmd.Parameters.AddWithValue("@Masp", masp);
+                cmd.Parameters.AddWithValue("@tensp", tensp);
+                cmd.Parameters.AddWithValue("@loaisp", loaisp);
                 cmd.Parameters.AddWithValue("@HinhAnh", hinhanh);
                 cmd.Parameters.AddWithValue("@GhiChu", ghichu);
 
@@ -102,6 +104,31 @@ namespace DAL_QLGame
             finally
             {
                 _conn.Close();
+            }
+        }
+
+        public DataTable TimSanPham(string tim)
+        {
+            using (_conn)
+            {
+                SqlCommand cmd = new SqlCommand("TimKiemSanPham", _conn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@kiem", tim);
+                DataTable Tim = new DataTable();
+                try
+                {
+                    _conn.Open();
+                    Tim.Load(cmd.ExecuteReader());
+                }
+                catch (Exception ex)
+                {
+                    throw new Exception("Có lỗi xảy ra: " + ex.Message);
+                }
+                finally
+                {
+                    _conn.Close();
+                }
+                return Tim;
             }
         }
     }
