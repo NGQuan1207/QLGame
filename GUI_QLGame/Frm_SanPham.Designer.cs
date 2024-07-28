@@ -46,6 +46,11 @@
             this.txt_HinhAnh = new System.Windows.Forms.TextBox();
             this.txt_Tim = new System.Windows.Forms.TextBox();
             this.btn_Tim = new System.Windows.Forms.Button();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.openFileDialog2 = new System.Windows.Forms.OpenFileDialog();
+            this.openFileDialog3 = new System.Windows.Forms.OpenFileDialog();
+            this.openFileDialog4 = new System.Windows.Forms.OpenFileDialog();
+            this.btn_ChonHinh = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pb_SanPham)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_sanpham)).BeginInit();
             this.SuspendLayout();
@@ -223,12 +228,39 @@
             this.btn_Tim.UseVisualStyleBackColor = true;
             this.btn_Tim.Click += new System.EventHandler(this.btn_Tim_Click_1);
             // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            // 
+            // openFileDialog2
+            // 
+            this.openFileDialog2.FileName = "openFileDialog2";
+            // 
+            // openFileDialog3
+            // 
+            this.openFileDialog3.FileName = "openFileDialog3";
+            // 
+            // openFileDialog4
+            // 
+            this.openFileDialog4.FileName = "openFileDialog4";
+            // 
+            // btn_ChonHinh
+            // 
+            this.btn_ChonHinh.Location = new System.Drawing.Point(283, 178);
+            this.btn_ChonHinh.Name = "btn_ChonHinh";
+            this.btn_ChonHinh.Size = new System.Drawing.Size(30, 23);
+            this.btn_ChonHinh.TabIndex = 72;
+            this.btn_ChonHinh.Text = "button1";
+            this.btn_ChonHinh.UseVisualStyleBackColor = true;
+            this.btn_ChonHinh.Click += new System.EventHandler(this.btn_ChonHinh_Click);
+            // 
             // Frm_SanPham
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSkyBlue;
             this.ClientSize = new System.Drawing.Size(631, 441);
+            this.Controls.Add(this.btn_ChonHinh);
             this.Controls.Add(this.btn_Tim);
             this.Controls.Add(this.txt_Tim);
             this.Controls.Add(this.txt_HinhAnh);
@@ -278,5 +310,10 @@
         private System.Windows.Forms.TextBox txt_HinhAnh;
         private System.Windows.Forms.TextBox txt_Tim;
         private System.Windows.Forms.Button btn_Tim;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.OpenFileDialog openFileDialog2;
+        private System.Windows.Forms.OpenFileDialog openFileDialog3;
+        private System.Windows.Forms.OpenFileDialog openFileDialog4;
+        private System.Windows.Forms.Button btn_ChonHinh;
     }
 }

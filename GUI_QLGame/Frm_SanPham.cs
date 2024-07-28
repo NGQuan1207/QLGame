@@ -47,7 +47,7 @@ namespace GUI_QLGame
                 txt_loaisp.Text = dgv_sanpham.CurrentRow.Cells["LoaiSP"].Value.ToString();
                 txt_ghichu.Text = dgv_sanpham.CurrentRow.Cells["GhiChu"].Value.ToString();
                 txt_HinhAnh.Text = dgv_sanpham.CurrentRow.Cells["HinhAnh"].Value.ToString();
-        
+
             }
             string imagePath = dgv_sanpham.CurrentRow.Cells["HinhAnh"].Value.ToString();
             if (!string.IsNullOrEmpty(imagePath) && File.Exists(imagePath))
@@ -59,9 +59,9 @@ namespace GUI_QLGame
                 pb_SanPham.Image = null; // Hoặc một hình ảnh mặc định nếu không tìm thấy tệp
             }
         }
-   
 
-            void GiaTriBanDau()
+
+        void GiaTriBanDau()
         {
             txt_masp.Text = null;
             txt_tensp.Text = null;
@@ -71,12 +71,12 @@ namespace GUI_QLGame
 
         }
 
-       
+
 
         private void dgv_sanpham_CellClick(object sender, DataGridViewCellEventArgs e)
         {
 
-            if (e.RowIndex >= 0) 
+            if (e.RowIndex >= 0)
             {
                 DataGridViewRow row = dgv_sanpham.Rows[e.RowIndex];
                 txt_masp.Text = row.Cells["MaSp"].Value.ToString();
@@ -84,7 +84,7 @@ namespace GUI_QLGame
                 txt_loaisp.Text = row.Cells["LoaiSP"].Value.ToString();
                 txt_HinhAnh.Text = row.Cells["HinhAnh"].Value.ToString();
                 txt_ghichu.Text = row.Cells["GhiChu"].Value.ToString();
-               
+
             }
         }
 
@@ -93,7 +93,7 @@ namespace GUI_QLGame
             HienThongTin();
         }
 
-      
+
 
         private void btn_them_Click_1(object sender, EventArgs e)
         {
@@ -106,7 +106,7 @@ namespace GUI_QLGame
             if (BUS_SanPham.ThemSanPham(sanpham))
             {
                 MessageBox.Show("Thêm sản phẩm thành công", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                taibaohanh(); 
+                taibaohanh();
             }
             else
             {
@@ -142,7 +142,7 @@ namespace GUI_QLGame
             if (BUS_SanPham.SuaSanPham(masp, tensp, loaisp, hinhanh, ghichu))
             {
                 MessageBox.Show("Sửa sản phẩm thành công", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                taibaohanh(); 
+                taibaohanh();
             }
             else
             {
@@ -166,6 +166,34 @@ namespace GUI_QLGame
             }
 
             GiaTriBanDau();
+        }
+
+        private void btn_ChonHinh_Click(object sender, EventArgs e)
+        {
+            using (OpenFileDialog openFileDialog = new OpenFileDialog())
+            {
+                openFileDialog.InitialDirectory = "C:\\Users\\Lap4all\\source\\repos";
+                openFileDialog.Filter = "Image files (*.jpg, *.jpeg, *.png) | *.jpg; *.jpeg; *.png";
+                openFileDialog.FilterIndex = 2;
+                openFileDialog.RestoreDirectory = true;
+
+                if (openFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                   
+                    string filePath = openFileDialog.FileName;
+                    txt_HinhAnh.Text = filePath;
+
+                    
+                    if (File.Exists(filePath))
+                    {
+                        pb_SanPham.Image = Image.FromFile(filePath);
+                    }
+                    else
+                    {
+                        pb_SanPham.Image = null; 
+                    }
+                }
+            }
         }
     }
 }
