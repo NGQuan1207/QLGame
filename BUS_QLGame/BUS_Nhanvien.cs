@@ -79,5 +79,24 @@ namespace BUS_QLGame
             }
         }
 
+        public bool InsertNhanVien(DTO_NhanVien nv)
+        {
+            return dalNhanvien.InsertNhanVien(nv);
+        }
+
+        public bool UpdateNhanVien(DTO_NhanVien nv)
+        {
+            return dalNhanvien.UpdateNhanVien(nv);
+        }
+
+        public bool DeleteNhanVien(DTO_NhanVien nv)
+        {
+            return dalNhanvien.DeleteNhanVien(nv);
+        }
+
+        public bool SreachNhanVien(DTO_NhanVien nv)
+        {
+            return dalNhanvien.SreachNhanVien(nv);
+        }
     }
 }

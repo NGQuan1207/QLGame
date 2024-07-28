@@ -137,5 +137,113 @@ namespace DAL_QLGame
                 }
             }
         }
+
+        public bool InsertNhanVien(DTO_NhanVien nv)
+        {
+            try
+            {
+                _conn.Open();
+                SqlCommand cmd = new SqlCommand();
+                cmd.Connection = _conn;
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.CommandText = "themNhanVien";
+                cmd.Parameters.AddWithValue("MaNV", nv.Manv);
+                cmd.Parameters.AddWithValue("TenNV", nv.Tennv);
+                cmd.Parameters.AddWithValue("NgaySinh", nv.ngaysinh);
+                cmd.Parameters.AddWithValue("CCCD", nv.cccd);
+                cmd.Parameters.AddWithValue("SDT", nv.sdt);
+                cmd.Parameters.AddWithValue("phai", nv.phai);
+                cmd.Parameters.AddWithValue("ChucVu", nv.chucvu);
+                cmd.Parameters.AddWithValue("DiaChi", nv.diachi);
+                cmd.Parameters.AddWithValue("MatKhau", nv.matkhau);
+                cmd.Parameters.AddWithValue("TrangThai", nv.trangthai);
+                if (cmd.ExecuteNonQuery() > 0)
+                {
+                    return true;
+                }
+                return false;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally { _conn.Close(); }
+        }
+
+        public bool UpdateNhanVien(DTO_NhanVien nv)
+        {
+            try
+            {
+                _conn.Open();
+                SqlCommand cmd = new SqlCommand();
+                cmd.Connection = _conn;
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.CommandText = "suaNhanVien";
+                cmd.Parameters.AddWithValue("MaNV", nv.Manv);
+                cmd.Parameters.AddWithValue("TenNV", nv.Tennv);
+                cmd.Parameters.AddWithValue("NgaySinh", nv.ngaysinh);
+                cmd.Parameters.AddWithValue("CCCD", nv.cccd);
+                cmd.Parameters.AddWithValue("SDT", nv.sdt);
+                cmd.Parameters.AddWithValue("phai", nv.phai);
+                cmd.Parameters.AddWithValue("ChucVu", nv.chucvu);
+                cmd.Parameters.AddWithValue("DiaChi", nv.diachi);
+                cmd.Parameters.AddWithValue("MatKhau", nv.matkhau);
+                cmd.Parameters.AddWithValue("TrangThai", nv.trangthai);
+                if (cmd.ExecuteNonQuery() > 0)
+                {
+                    return true;
+                }
+                return false;
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+            finally
+            {
+                _conn.Close();
+            }
+        }
+
+        public bool DeleteNhanVien(DTO_NhanVien nv)
+        {
+            try
+            {
+                _conn.Open();
+                SqlCommand cmd = new SqlCommand();
+                cmd.Connection = _conn;
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.CommandText = "xoaNhanVien";
+                cmd.Parameters.AddWithValue("MaNV", nv.Manv);
+                if (cmd.ExecuteNonQuery() > 0)
+                {
+                    return true;
+                }
+                return false;
+            }
+            finally { _conn.Close(); }
+        }
+
+        public bool SreachNhanVien(DTO_NhanVien nv)
+        {
+            try
+            {
+                _conn.Open();
+                SqlCommand cmd = new SqlCommand();
+                cmd.Connection = _conn;
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.CommandText = "timKiemNhanVien";
+                cmd.Parameters.AddWithValue("MaNV", nv.Manv);
+                cmd.Parameters.AddWithValue("TenNV", nv.Tennv);
+                if (cmd.ExecuteNonQuery() > 0)
+                {
+                    return true;
+                }
+                return false;
+            }
+            finally { _conn.Close(); }
+
+        }
     }
 }
