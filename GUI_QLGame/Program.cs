@@ -16,7 +16,11 @@ namespace GUI_QLGame
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Frm_SanPham());
+            //Application.Run(new Frm_SanPham());
+            Application.Run(new frm_QuanLyNhanVien());
+            //Application.Run(new Frm_Main());
+
+
         }
     }
 }

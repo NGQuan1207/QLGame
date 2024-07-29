@@ -94,9 +94,13 @@ namespace BUS_QLGame
             return dalNhanvien.DeleteNhanVien(nv);
         }
 
-        public bool SreachNhanVien(DTO_NhanVien nv)
+        public bool SreachNhanVien(DTO_NhanVien nv )
         {
             return dalNhanvien.SreachNhanVien(nv);
+        }
+        public DataTable getNhanVien()
+        {
+            return dalNhanvien.getNhanVien();
         }
     }
 }

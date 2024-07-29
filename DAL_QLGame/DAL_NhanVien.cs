@@ -243,7 +243,22 @@ namespace DAL_QLGame
                 return false;
             }
             finally { _conn.Close(); }
+        }
 
+        public DataTable getNhanVien()
+        {
+            try
+            {
+                _conn.Open();
+                SqlCommand cmd = new SqlCommand();
+                cmd.Connection = _conn;
+                cmd.CommandText = "listNhanVien";
+                cmd.CommandType = CommandType.StoredProcedure;
+                DataTable dt = new DataTable();
+                dt.Load(cmd.ExecuteReader());
+                return dt;
+            }
+            finally { _conn.Close(); }
         }
     }
 }
