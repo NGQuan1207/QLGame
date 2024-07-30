@@ -36,7 +36,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btn_loc = new System.Windows.Forms.Button();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.txt_Tim = new System.Windows.Forms.TextBox();
             this.btn_xoa = new System.Windows.Forms.Button();
             this.btn_them = new System.Windows.Forms.Button();
             this.dgv_thue = new System.Windows.Forms.DataGridView();
@@ -109,7 +109,7 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.btn_loc);
-            this.groupBox1.Controls.Add(this.textBox8);
+            this.groupBox1.Controls.Add(this.txt_Tim);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(665, 119);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -130,14 +130,15 @@
             this.btn_loc.TabIndex = 44;
             this.btn_loc.Text = "Lọc";
             this.btn_loc.UseVisualStyleBackColor = false;
+            this.btn_loc.Click += new System.EventHandler(this.btn_loc_Click);
             // 
-            // textBox8
+            // txt_Tim
             // 
-            this.textBox8.Location = new System.Drawing.Point(28, 47);
-            this.textBox8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(191, 30);
-            this.textBox8.TabIndex = 30;
+            this.txt_Tim.Location = new System.Drawing.Point(28, 47);
+            this.txt_Tim.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txt_Tim.Name = "txt_Tim";
+            this.txt_Tim.Size = new System.Drawing.Size(191, 30);
+            this.txt_Tim.TabIndex = 30;
             // 
             // btn_xoa
             // 
@@ -148,6 +149,7 @@
             this.btn_xoa.TabIndex = 59;
             this.btn_xoa.Text = "Xóa";
             this.btn_xoa.UseVisualStyleBackColor = true;
+            this.btn_xoa.Click += new System.EventHandler(this.btn_xoa_Click);
             // 
             // btn_them
             // 
@@ -158,6 +160,7 @@
             this.btn_them.TabIndex = 58;
             this.btn_them.Text = "Thêm";
             this.btn_them.UseVisualStyleBackColor = true;
+            this.btn_them.Click += new System.EventHandler(this.btn_them_Click);
             // 
             // dgv_thue
             // 
@@ -169,6 +172,9 @@
             this.dgv_thue.RowTemplate.Height = 28;
             this.dgv_thue.Size = new System.Drawing.Size(1079, 250);
             this.dgv_thue.TabIndex = 57;
+            this.dgv_thue.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_thue_CellClick);
+            this.dgv_thue.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_thue_CellContentClick);
+            this.dgv_thue.SelectionChanged += new System.EventHandler(this.dgv_thue_SelectionChanged);
             // 
             // txt_loaisp
             // 
@@ -222,6 +228,7 @@
             this.btn_sua.TabIndex = 67;
             this.btn_sua.Text = "Sửa";
             this.btn_sua.UseVisualStyleBackColor = true;
+            this.btn_sua.Click += new System.EventHandler(this.btn_sua_Click);
             // 
             // btn_chonanh
             // 
@@ -231,6 +238,7 @@
             this.btn_chonanh.TabIndex = 68;
             this.btn_chonanh.Text = "chọn ảnh";
             this.btn_chonanh.UseVisualStyleBackColor = true;
+            this.btn_chonanh.Click += new System.EventHandler(this.btn_chonanh_Click);
             // 
             // Frm_SanPhamThue
             // 
@@ -258,6 +266,7 @@
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Frm_SanPhamThue";
             this.Text = "Sản Phẩm Thuê";
+            this.Load += new System.EventHandler(this.Frm_SanPhamThue_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -277,7 +286,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button btn_loc;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox txt_Tim;
         private System.Windows.Forms.Button btn_xoa;
         private System.Windows.Forms.Button btn_them;
         private System.Windows.Forms.DataGridView dgv_thue;
