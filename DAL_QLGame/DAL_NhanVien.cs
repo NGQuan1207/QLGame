@@ -147,16 +147,15 @@ namespace DAL_QLGame
                 cmd.Connection = _conn;
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.CommandText = "themNhanVien";
-                cmd.Parameters.AddWithValue("MaNV", nv.Manv);
-                cmd.Parameters.AddWithValue("TenNV", nv.Tennv);
-                cmd.Parameters.AddWithValue("NgaySinh", nv.ngaysinh);
-                cmd.Parameters.AddWithValue("CCCD", nv.cccd);
-                cmd.Parameters.AddWithValue("SDT", nv.sdt);
-                cmd.Parameters.AddWithValue("phai", nv.phai);
-                cmd.Parameters.AddWithValue("ChucVu", nv.chucvu);
-                cmd.Parameters.AddWithValue("DiaChi", nv.diachi);
-                cmd.Parameters.AddWithValue("MatKhau", nv.matkhau);
-                cmd.Parameters.AddWithValue("TrangThai", nv.trangthai);
+                cmd.Parameters.AddWithValue("@MaNV", nv.Manv);
+                cmd.Parameters.AddWithValue("@TenNV", nv.Tennv);
+                cmd.Parameters.AddWithValue("@Phai", nv.phai);
+                cmd.Parameters.AddWithValue("@NgaySinh", nv.ngaysinh);
+                cmd.Parameters.AddWithValue("@EmaiL", nv.email);
+                cmd.Parameters.AddWithValue("@CCCD", nv.cccd);
+                cmd.Parameters.AddWithValue("@SDT", nv.sdt);
+                cmd.Parameters.AddWithValue("@DiaChi", nv.diachi);
+                cmd.Parameters.AddWithValue("@ChucVu", nv.chucvu);
                 if (cmd.ExecuteNonQuery() > 0)
                 {
                     return true;
@@ -179,21 +178,22 @@ namespace DAL_QLGame
                 cmd.Connection = _conn;
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.CommandText = "suaNhanVien";
-                cmd.Parameters.AddWithValue("MaNV", nv.Manv);
-                cmd.Parameters.AddWithValue("TenNV", nv.Tennv);
-                cmd.Parameters.AddWithValue("NgaySinh", nv.ngaysinh);
-                cmd.Parameters.AddWithValue("CCCD", nv.cccd);
-                cmd.Parameters.AddWithValue("SDT", nv.sdt);
-                cmd.Parameters.AddWithValue("phai", nv.phai);
-                cmd.Parameters.AddWithValue("ChucVu", nv.chucvu);
-                cmd.Parameters.AddWithValue("DiaChi", nv.diachi);
-                cmd.Parameters.AddWithValue("MatKhau", nv.matkhau);
-                cmd.Parameters.AddWithValue("TrangThai", nv.trangthai);
+                cmd.Parameters.AddWithValue("@MaNV", nv.Manv);
+                cmd.Parameters.AddWithValue("@TenNV", nv.Tennv);
+                cmd.Parameters.AddWithValue("@Phai", nv.phai);
+                cmd.Parameters.AddWithValue("@NgaySinh", nv.ngaysinh);
+                cmd.Parameters.AddWithValue("@CCCD", nv.cccd);
+                cmd.Parameters.AddWithValue("@SDT", nv.sdt);
+                cmd.Parameters.AddWithValue("@DiaChi", nv.diachi);
+                cmd.Parameters.AddWithValue("@ChucVu", nv.chucvu);
+                
+                //cmd.Parameters.AddWithValue("MatKhau", nv.matkhau);
+                //cmd.Parameters.AddWithValue("TrangThai", nv.trangthai);
                 if (cmd.ExecuteNonQuery() > 0)
                 {
                     return true;
                 }
-                return false;
+                
             }
             catch (Exception ex)
             {
@@ -204,9 +204,10 @@ namespace DAL_QLGame
             {
                 _conn.Close();
             }
+            return false;
         }
 
-        public bool DeleteNhanVien(DTO_NhanVien nv)
+        public bool DeleteNhanVien(string id)
         {
             try
             {
@@ -215,14 +216,15 @@ namespace DAL_QLGame
                 cmd.Connection = _conn;
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.CommandText = "xoaNhanVien";
-                cmd.Parameters.AddWithValue("MaNV", nv.Manv);
+                cmd.Parameters.AddWithValue("@MaNV", id);
                 if (cmd.ExecuteNonQuery() > 0)
                 {
                     return true;
                 }
-                return false;
+                
             }
             finally { _conn.Close(); }
+            return false;
         }
 
         public bool SreachNhanVien(DTO_NhanVien nv)

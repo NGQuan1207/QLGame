@@ -48,7 +48,6 @@
             this.rdbNu = new System.Windows.Forms.RadioButton();
             this.txt_tennv = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.dt_ngaysinh = new System.Windows.Forms.DateTimePicker();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.txt_cccd = new System.Windows.Forms.TextBox();
@@ -56,6 +55,7 @@
             this.txt_email = new System.Windows.Forms.TextBox();
             this.btn_luu = new System.Windows.Forms.Button();
             this.ptbHinhAnh = new System.Windows.Forms.PictureBox();
+            this.txt_ngaysinh = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_nv)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbHinhAnh)).BeginInit();
             this.SuspendLayout();
@@ -83,12 +83,13 @@
             this.btnSua.TabIndex = 50;
             this.btnSua.Text = "Sửa";
             this.btnSua.UseVisualStyleBackColor = false;
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
             // btnThem
             // 
             this.btnThem.BackColor = System.Drawing.SystemColors.ControlLight;
             this.btnThem.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThem.Location = new System.Drawing.Point(1086, 442);
+            this.btnThem.Location = new System.Drawing.Point(1075, 442);
             this.btnThem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(177, 64);
@@ -254,15 +255,6 @@
             this.label10.TabIndex = 55;
             this.label10.Text = "Tên NV";
             // 
-            // dt_ngaysinh
-            // 
-            this.dt_ngaysinh.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dt_ngaysinh.Location = new System.Drawing.Point(168, 290);
-            this.dt_ngaysinh.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dt_ngaysinh.Name = "dt_ngaysinh";
-            this.dt_ngaysinh.Size = new System.Drawing.Size(451, 38);
-            this.dt_ngaysinh.TabIndex = 57;
-            // 
             // label8
             // 
             this.label8.AutoSize = true;
@@ -335,19 +327,28 @@
             this.ptbHinhAnh.TabIndex = 47;
             this.ptbHinhAnh.TabStop = false;
             // 
+            // txt_ngaysinh
+            // 
+            this.txt_ngaysinh.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_ngaysinh.Location = new System.Drawing.Point(181, 286);
+            this.txt_ngaysinh.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txt_ngaysinh.Name = "txt_ngaysinh";
+            this.txt_ngaysinh.Size = new System.Drawing.Size(438, 38);
+            this.txt_ngaysinh.TabIndex = 64;
+            // 
             // frm_QuanLyNhanVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSkyBlue;
             this.ClientSize = new System.Drawing.Size(1901, 974);
+            this.Controls.Add(this.txt_ngaysinh);
             this.Controls.Add(this.btn_luu);
             this.Controls.Add(this.txt_email);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.txt_cccd);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.dt_ngaysinh);
             this.Controls.Add(this.txt_tennv);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.dgv_nv);
@@ -399,7 +400,6 @@
         private System.Windows.Forms.RadioButton rdbNu;
         private System.Windows.Forms.TextBox txt_tennv;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.DateTimePicker dt_ngaysinh;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox txt_cccd;
@@ -407,5 +407,6 @@
         private System.Windows.Forms.TextBox txt_email;
         private System.Windows.Forms.Button btn_luu;
         private System.Windows.Forms.PictureBox ptbHinhAnh;
+        private System.Windows.Forms.TextBox txt_ngaysinh;
     }
 }

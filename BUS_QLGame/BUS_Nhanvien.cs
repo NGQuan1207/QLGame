@@ -89,7 +89,7 @@ namespace BUS_QLGame
             return dalNhanvien.UpdateNhanVien(nv);
         }
 
-        public bool DeleteNhanVien(DTO_NhanVien nv)
+        public bool DeleteNhanVien(string nv)
         {
             return dalNhanvien.DeleteNhanVien(nv);
         }

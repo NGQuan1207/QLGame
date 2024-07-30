@@ -11,7 +11,7 @@ namespace DTO_QLGame
         private string MaNV;
         private string TenNV;
         private string Phai;
-        private DateTime NgaySinh;
+        private string NgaySinh;
         private string Email;
         private string CCCD;
         private string SDT;
@@ -22,63 +22,76 @@ namespace DTO_QLGame
 
         public string Manv
         {
-            get; set;
+            get { return MaNV; }
+            set { value = MaNV; }
         }
 
         public string Tennv
         {
-            get; set;
+            get {return TenNV; }
+            set { value = TenNV; }
         }
 
         public string phai
         {
-            get; set;
+            get { return Phai; }
+            set {  Phai = value; }
         }
 
-        public DateTime ngaysinh
+        public string ngaysinh
         {
-            get; set;
+            get { return NgaySinh; }
+            set {  NgaySinh = value; }
         }
 
         public string email
         {
-            get; set;
+            get { return Email; }
+            set { Email = value; }
         }
 
         public string cccd
         {
 
-            get; set;
+            get {return CCCD; }
+            set {cccd = value; }
         }
 
         public string sdt
         {
-            get; set;
+            get { return SDT; }
+            set { sdt = value; }
         }
 
         public string diachi
         {
-            get; set;
+            get { return DiaChi; }
+            set { diachi = value; }
         }
 
         public string chucvu
         {
-            get; set;
+            get { return ChucVu; }
+            set { chucvu = value; }
         }
 
         public string matkhau
         {
-            get; set;
+            get { return MatKhau; }
+            set { matkhau = value; }
         }
 
         public int trangthai
         {
-            get; set;
+            get { return TrangThai; }
+            set { trangthai = value; }
         }
 
-        public DTO_NhanVien (string tenNV, string phai, DateTime ngaySinh, string email, 
-            string cCCD, string sDT, string diaChi, string chucVu, string matKhau, int trangThai)
+        public DTO_NhanVien (string manv
+            ,string tenNV, string phai, string ngaySinh, string email, 
+            string cCCD, string sDT, string diaChi, string chucVu)
         {
+            this.MaNV = manv;
             this.TenNV = tenNV;
             this.Phai = phai;
             this.NgaySinh = ngaySinh;
@@ -87,8 +100,7 @@ namespace DTO_QLGame
             this.SDT = sDT;
             this.DiaChi = diaChi;
             this.ChucVu = chucVu;
-            this.MatKhau = matKhau;
-            this.TrangThai = trangThai;
+            //this.TrangThai = trangThai;
         }
 
         public DTO_NhanVien() { }
