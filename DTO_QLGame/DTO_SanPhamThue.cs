@@ -49,7 +49,7 @@ namespace DTO_QLGame
         }
         public DTO_SanPhamThue() { }
 
-        public DTO_SanPhamThue(string maspt, string tenspt, string loaisp/*, string hinhanh*/, string ghichu, int trangthai)
+        public DTO_SanPhamThue(string maspt, string tenspt, string loaisp, string hinhanh, string ghichu, int trangthai)
         {
 
             this.MaSPT = maspt;
@@ -59,7 +59,7 @@ namespace DTO_QLGame
             this.GhiChu = ghichu;
             this.Trangthai = trangthai;
         }
-        public DTO_SanPhamThue(string maspt, string tenspt, string loaisp/*, string hinhanh*/, string ghichu)
+        public DTO_SanPhamThue(string maspt, string tenspt, string loaisp, string hinhanh, string ghichu)
         {
 
             this.MaSPT = maspt;
@@ -69,15 +69,15 @@ namespace DTO_QLGame
             this.GhiChu = ghichu;
 
         }
-        public DTO_SanPhamThue(string tenspt, string loaisp/*, string hinhanh*/, string ghichu)
+        /*public DTO_SanPhamThue(string tenspt, string loaisp, string hinhanh, string ghichu)
         {
 
 
             this.TenSPT = tenspt;
             this.Loaisp = loaisp;
-            //this.Hinhanh = hinhanh;
+            this.Hinhanh = hinhanh;
             this.GhiChu = ghichu;
 
-        }
+        }*/
     }
 }

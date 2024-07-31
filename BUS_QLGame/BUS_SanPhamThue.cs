@@ -35,10 +35,10 @@ namespace BUS_QLGame
             return dalSanPham.XoaSanPhamThue(masanpham);
         }
 
-        public static bool SuaSanPhamThue(string masp, string tensp, string loaisp/*, string hinhanh*/, string ghichu)
+        public static bool SuaSanPhamThue(string maspt, string tenspt, string loaisp, string hinhanh, string ghichu)
         {
             DAL_SanPhamThue dalSanPham = new DAL_SanPhamThue();
-            return dalSanPham.SuaSanPhamThue(masp, tensp, loaisp,/* hinhanh,*/ ghichu);
+            return dalSanPham.SuaSanPhamThue(maspt, tenspt, loaisp, hinhanh, ghichu);
         }
     }
 }

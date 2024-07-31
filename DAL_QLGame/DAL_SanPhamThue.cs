@@ -9,8 +9,10 @@ using DTO_QLGame;
 
 namespace DAL_QLGame
 {
+
     public class DAL_SanPhamThue : Connect
     {
+
         public DataTable LoadListSanPham()
         {
             using (_conn)
@@ -58,25 +60,27 @@ namespace DAL_QLGame
             }
         }
 
-        public bool ThemSanPhamThue(DTO_SanPhamThue sanpham)
+        public bool ThemSanPhamThue(DTO_SanPhamThue sanphamthue)
         {
             SqlParameter[] parameters =
             {
-                new SqlParameter("@TenSPT", sanpham.TenSPT),
-                new SqlParameter("@LoaiSP", sanpham.Loaisp),
-                //new SqlParameter("@Hinhanh",sanpham.Hinhanh),
-                new SqlParameter("@ghichu", sanpham.GhiChu),
+                new SqlParameter("@MaSPThue", sanphamthue.MaSPT),
+                new SqlParameter("@TenSPThue", sanphamthue.TenSPT),
+                new SqlParameter("@LoaiSP", sanphamthue.Loaisp),
+                new SqlParameter("@Hinhanh",sanphamthue.Hinhanh),
+                new SqlParameter("@ghichu", sanphamthue.GhiChu),
 
             };
-            return Execute("themsanpham", parameters);
+            return Execute("ThemSanPhamThue", parameters);
+
         }
 
         public bool XoaSanPhamThue(string masanphamthue)
         {
-            return Execute("XoaSanPham", new SqlParameter("@maspt", masanphamthue));
+            return Execute("XoaSanPhamThue", new SqlParameter("@maspthue", masanphamthue));
         }
 
-        public bool SuaSanPhamThue(string maspt, string tenspt, string loaisp, /*string hinhanh,*/ string ghichu)
+        public bool SuaSanPhamThue(string maspt, string tenspt, string loaisp, string hinhanh, string ghichu)
         {
             try
             {
@@ -88,17 +92,17 @@ namespace DAL_QLGame
                     Connection = _conn
                 };
 
-                cmd.Parameters.AddWithValue("@Maspt", maspt);
-                cmd.Parameters.AddWithValue("@tenspt", tenspt);
+                cmd.Parameters.AddWithValue("@MaSPThue", maspt);
+                cmd.Parameters.AddWithValue("@tenSPThue", tenspt);
                 cmd.Parameters.AddWithValue("@loaisp", loaisp);
-                //cmd.Parameters.AddWithValue("@HinhAnh", hinhanh);
+                cmd.Parameters.AddWithValue("@HinhAnh", hinhanh);
                 cmd.Parameters.AddWithValue("@GhiChu", ghichu);
 
                 return cmd.ExecuteNonQuery() > 0;
             }
             catch (Exception)
             {
-                return false;
+                return true;
             }
             finally
             {

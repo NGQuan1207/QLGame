@@ -78,7 +78,7 @@ namespace DTO_QLGame
         public string matkhau
         {
             get { return MatKhau; }
-            set { matkhau = value; }
+            set { MatKhau = value; }
         }
 
         public int trangthai
