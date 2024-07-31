@@ -11,6 +11,8 @@ namespace DTO_QLGame
         string masp;
         string tensp;
         string loaisp;
+        int soluong;
+        int gia;
         string hinhanh;
         string ghichu;
         int trangthai;
@@ -32,6 +34,16 @@ namespace DTO_QLGame
             get { return loaisp; }
         }
 
+        public int SoLuong
+        {
+            set { soluong = value; }
+            get { return soluong; }
+        }
+        public int Gia
+        {
+            set { gia = value; }
+            get { return gia; }
+        }
         public string Hinhanh
         {
             set { hinhanh = value; }
@@ -49,32 +61,38 @@ namespace DTO_QLGame
         }
         public DTO_SanPham() { }
 
-        public DTO_SanPham(string masp, string tensp, string loaisp, string hinhanh, string ghichu, int trangthai)
+        public DTO_SanPham(string masp, string tensp, string loaisp,int soluong,int gia, string hinhanh, string ghichu, int trangthai)
         {
            
              this.MaSP = masp;
             this.TenSP = tensp;
             this.Loaisp = loaisp;
+            this.SoLuong=soluong;
+            this.Gia = gia;
             this.Hinhanh = hinhanh;
             this.GhiChu = ghichu;
             this.Trangthai = trangthai;
         }
-        public DTO_SanPham(string masp, string tensp, string loaisp, string hinhanh, string ghichu)
+        public DTO_SanPham(string masp, string tensp, string loaisp, int soluong, int gia, string hinhanh, string ghichu)
         {
 
             this.MaSP = masp;
             this.TenSP = tensp;
             this.Loaisp = loaisp;
+            this.SoLuong = soluong;
+            this.Gia = gia;
             this.Hinhanh = hinhanh;
             this.GhiChu = ghichu;
        
         }
-        public DTO_SanPham( string tensp, string loaisp, string hinhanh, string ghichu)
+        public DTO_SanPham( string tensp, string loaisp, int soluong, int gia, string hinhanh, string ghichu)
         {
 
            
             this.TenSP = tensp;
             this.Loaisp = loaisp;
+            this.SoLuong = soluong;
+            this.Gia = gia;
             this.Hinhanh = hinhanh;
             this.GhiChu = ghichu;
 

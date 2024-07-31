@@ -34,8 +34,10 @@ namespace GUI_QLGame
             dgv_sanpham.Columns[0].HeaderText = "Mã Sản Phẩm";
             dgv_sanpham.Columns[1].HeaderText = "Tên Sản Phẩm";
             dgv_sanpham.Columns[2].HeaderText = "Loại Sản Phẩm";
-            dgv_sanpham.Columns[3].HeaderText = "Hình ảnh";
-            dgv_sanpham.Columns[4].HeaderText = "Ghi chú";
+            dgv_sanpham.Columns[3].HeaderText = "Số Lượng";
+            dgv_sanpham.Columns[4].HeaderText = "Giá";
+            dgv_sanpham.Columns[5].HeaderText = "Hình ảnh";
+            dgv_sanpham.Columns[6].HeaderText = "Ghi chú";
         }
 
         void HienThongTin()
@@ -45,6 +47,8 @@ namespace GUI_QLGame
                 txt_masp.Text = dgv_sanpham.CurrentRow.Cells["MaSP"].Value.ToString();
                 txt_tensp.Text = dgv_sanpham.CurrentRow.Cells["TenSP"].Value.ToString();
                 txt_loaisp.Text = dgv_sanpham.CurrentRow.Cells["LoaiSP"].Value.ToString();
+                txt_SoLuong.Text = dgv_sanpham.CurrentRow.Cells["SoLuong"].Value.ToString();
+                txt_Gia.Text = dgv_sanpham.CurrentRow.Cells["Gia"].Value.ToString();
                 txt_ghichu.Text = dgv_sanpham.CurrentRow.Cells["GhiChu"].Value.ToString();
                 txt_HinhAnh.Text = dgv_sanpham.CurrentRow.Cells["HinhAnh"].Value.ToString();
 
@@ -66,6 +70,8 @@ namespace GUI_QLGame
             txt_masp.Text = null;
             txt_tensp.Text = null;
             txt_loaisp.Text = null;
+            txt_SoLuong.Text=null;
+            txt_Gia.Text = null;
             txt_ghichu.Text = null;
             txt_HinhAnh.Text = null;
 
@@ -82,6 +88,8 @@ namespace GUI_QLGame
                 txt_masp.Text = row.Cells["MaSp"].Value.ToString();
                 txt_tensp.Text = row.Cells["TenSP"].Value.ToString();
                 txt_loaisp.Text = row.Cells["LoaiSP"].Value.ToString();
+                txt_SoLuong.Text = row.Cells["SoLuong"].Value.ToString();
+                txt_Gia.Text = row.Cells["Gia"].Value.ToString();
                 txt_HinhAnh.Text = row.Cells["HinhAnh"].Value.ToString();
                 txt_ghichu.Text = row.Cells["GhiChu"].Value.ToString();
 
@@ -99,9 +107,11 @@ namespace GUI_QLGame
         {
             string tensp = txt_tensp.Text;
             string loaisp = txt_loaisp.Text;
+            int soluong = int.Parse(txt_SoLuong.Text);
+            int gia = int.Parse(txt_Gia.Text);
             string ghichu = txt_ghichu.Text;
             string hinhanh = txt_HinhAnh.Text;
-            DTO_SanPham sanpham = new DTO_SanPham(tensp, loaisp, ghichu, hinhanh);
+            DTO_SanPham sanpham = new DTO_SanPham(tensp, loaisp,soluong,gia, ghichu, hinhanh);
 
             if (BUS_SanPham.ThemSanPham(sanpham))
             {
@@ -134,12 +144,14 @@ namespace GUI_QLGame
             string masp = txt_masp.Text;
             string tensp = txt_tensp.Text;
             string loaisp = txt_loaisp.Text;
+            int soluong= int.Parse(txt_SoLuong.Text);
+            int gia= int.Parse(txt_Gia.Text);
             string hinhanh = txt_HinhAnh.Text;
             string ghichu = txt_ghichu.Text;
 
-            DTO_SanPham sanpham = new DTO_SanPham(masp, tensp, loaisp, hinhanh, ghichu);
+            DTO_SanPham sanpham = new DTO_SanPham(masp, tensp, loaisp,soluong,gia, hinhanh, ghichu);
 
-            if (BUS_SanPham.SuaSanPham(masp, tensp, loaisp, hinhanh, ghichu))
+            if (BUS_SanPham.SuaSanPham(masp, tensp, loaisp,soluong,gia, hinhanh, ghichu))
             {
                 MessageBox.Show("Sửa sản phẩm thành công", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 taibaohanh();
@@ -194,6 +206,16 @@ namespace GUI_QLGame
                     }
                 }
             }
+        }
+
+        private void dgv_sanpham_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void btn_LamMoi_Click(object sender, EventArgs e)
+        {
+            GiaTriBanDau();
         }
     }
 }

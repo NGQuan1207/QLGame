@@ -65,6 +65,8 @@ namespace DAL_QLGame
             {
                 new SqlParameter("@TenSp", sanpham.TenSP),
                 new SqlParameter("@LoaiSP", sanpham.Loaisp),
+                new SqlParameter("@SoLuong", sanpham.SoLuong),
+                new SqlParameter("@Gia", sanpham.Gia),
                 new SqlParameter("@Hinhanh",sanpham.Hinhanh),
                 new SqlParameter("@ghichu", sanpham.GhiChu),
                
@@ -77,7 +79,7 @@ namespace DAL_QLGame
             return Execute("XoaSanPham", new SqlParameter("@masp",masanpham));
         }
 
-        public bool SuaSanPham(string masp,string tensp, string loaisp, string hinhanh, string ghichu)
+        public bool SuaSanPham(string masp,string tensp, string loaisp,int soluong,int gia, string hinhanh, string ghichu)
         {
             try
             {
@@ -92,6 +94,8 @@ namespace DAL_QLGame
                 cmd.Parameters.AddWithValue("@Masp", masp);
                 cmd.Parameters.AddWithValue("@tensp", tensp);
                 cmd.Parameters.AddWithValue("@loaisp", loaisp);
+                cmd.Parameters.AddWithValue("@Soluong", soluong);
+                cmd.Parameters.AddWithValue("@Gia", gia);
                 cmd.Parameters.AddWithValue("@HinhAnh", hinhanh);
                 cmd.Parameters.AddWithValue("@GhiChu", ghichu);
 

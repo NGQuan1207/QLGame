@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pb_SanPham = new System.Windows.Forms.PictureBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -51,24 +50,20 @@
             this.openFileDialog3 = new System.Windows.Forms.OpenFileDialog();
             this.openFileDialog4 = new System.Windows.Forms.OpenFileDialog();
             this.btn_ChonHinh = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_SanPham)).BeginInit();
+            this.pb_SanPham = new System.Windows.Forms.PictureBox();
+            this.txt_SoLuong = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.txt_Gia = new System.Windows.Forms.TextBox();
+            this.btn_LamMoi = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_sanpham)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_SanPham)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pb_SanPham
-            // 
-            this.pb_SanPham.Location = new System.Drawing.Point(319, 41);
-            this.pb_SanPham.Margin = new System.Windows.Forms.Padding(2);
-            this.pb_SanPham.Name = "pb_SanPham";
-            this.pb_SanPham.Size = new System.Drawing.Size(120, 132);
-            this.pb_SanPham.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pb_SanPham.TabIndex = 67;
-            this.pb_SanPham.TabStop = false;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(265, 49);
+            this.label6.Location = new System.Drawing.Point(458, 49);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(50, 13);
@@ -117,7 +112,7 @@
             // 
             // btn_xoa
             // 
-            this.btn_xoa.Location = new System.Drawing.Point(470, 68);
+            this.btn_xoa.Location = new System.Drawing.Point(663, 68);
             this.btn_xoa.Margin = new System.Windows.Forms.Padding(2);
             this.btn_xoa.Name = "btn_xoa";
             this.btn_xoa.Size = new System.Drawing.Size(104, 24);
@@ -128,7 +123,7 @@
             // 
             // btn_them
             // 
-            this.btn_them.Location = new System.Drawing.Point(470, 38);
+            this.btn_them.Location = new System.Drawing.Point(663, 38);
             this.btn_them.Margin = new System.Windows.Forms.Padding(2);
             this.btn_them.Name = "btn_them";
             this.btn_them.Size = new System.Drawing.Size(104, 24);
@@ -145,8 +140,9 @@
             this.dgv_sanpham.Name = "dgv_sanpham";
             this.dgv_sanpham.RowHeadersWidth = 62;
             this.dgv_sanpham.RowTemplate.Height = 28;
-            this.dgv_sanpham.Size = new System.Drawing.Size(569, 203);
+            this.dgv_sanpham.Size = new System.Drawing.Size(731, 203);
             this.dgv_sanpham.TabIndex = 58;
+            this.dgv_sanpham.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_sanpham_CellContentDoubleClick);
             // 
             // txt_loaisp
             // 
@@ -196,7 +192,7 @@
             // 
             // btn_sua
             // 
-            this.btn_sua.Location = new System.Drawing.Point(470, 97);
+            this.btn_sua.Location = new System.Drawing.Point(663, 97);
             this.btn_sua.Name = "btn_sua";
             this.btn_sua.Size = new System.Drawing.Size(104, 23);
             this.btn_sua.TabIndex = 68;
@@ -206,21 +202,21 @@
             // 
             // txt_HinhAnh
             // 
-            this.txt_HinhAnh.Location = new System.Drawing.Point(319, 178);
+            this.txt_HinhAnh.Location = new System.Drawing.Point(512, 178);
             this.txt_HinhAnh.Name = "txt_HinhAnh";
             this.txt_HinhAnh.Size = new System.Drawing.Size(120, 20);
             this.txt_HinhAnh.TabIndex = 69;
             // 
             // txt_Tim
             // 
-            this.txt_Tim.Location = new System.Drawing.Point(470, 178);
+            this.txt_Tim.Location = new System.Drawing.Point(663, 178);
             this.txt_Tim.Name = "txt_Tim";
             this.txt_Tim.Size = new System.Drawing.Size(104, 20);
             this.txt_Tim.TabIndex = 70;
             // 
             // btn_Tim
             // 
-            this.btn_Tim.Location = new System.Drawing.Point(470, 152);
+            this.btn_Tim.Location = new System.Drawing.Point(663, 152);
             this.btn_Tim.Name = "btn_Tim";
             this.btn_Tim.Size = new System.Drawing.Size(104, 23);
             this.btn_Tim.TabIndex = 71;
@@ -246,20 +242,77 @@
             // 
             // btn_ChonHinh
             // 
-            this.btn_ChonHinh.Location = new System.Drawing.Point(283, 178);
+            this.btn_ChonHinh.Location = new System.Drawing.Point(476, 178);
             this.btn_ChonHinh.Name = "btn_ChonHinh";
             this.btn_ChonHinh.Size = new System.Drawing.Size(30, 23);
             this.btn_ChonHinh.TabIndex = 72;
-            this.btn_ChonHinh.Text = "button1";
+            this.btn_ChonHinh.Text = "Mở";
             this.btn_ChonHinh.UseVisualStyleBackColor = true;
             this.btn_ChonHinh.Click += new System.EventHandler(this.btn_ChonHinh_Click);
+            // 
+            // pb_SanPham
+            // 
+            this.pb_SanPham.Location = new System.Drawing.Point(512, 41);
+            this.pb_SanPham.Margin = new System.Windows.Forms.Padding(2);
+            this.pb_SanPham.Name = "pb_SanPham";
+            this.pb_SanPham.Size = new System.Drawing.Size(120, 132);
+            this.pb_SanPham.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pb_SanPham.TabIndex = 67;
+            this.pb_SanPham.TabStop = false;
+            // 
+            // txt_SoLuong
+            // 
+            this.txt_SoLuong.Location = new System.Drawing.Point(310, 46);
+            this.txt_SoLuong.Name = "txt_SoLuong";
+            this.txt_SoLuong.Size = new System.Drawing.Size(126, 20);
+            this.txt_SoLuong.TabIndex = 73;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(255, 49);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(49, 13);
+            this.label7.TabIndex = 74;
+            this.label7.Text = "Số lương";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(255, 96);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(23, 13);
+            this.label8.TabIndex = 76;
+            this.label8.Text = "Giá";
+            // 
+            // txt_Gia
+            // 
+            this.txt_Gia.Location = new System.Drawing.Point(310, 93);
+            this.txt_Gia.Name = "txt_Gia";
+            this.txt_Gia.Size = new System.Drawing.Size(126, 20);
+            this.txt_Gia.TabIndex = 75;
+            // 
+            // btn_LamMoi
+            // 
+            this.btn_LamMoi.Location = new System.Drawing.Point(663, 123);
+            this.btn_LamMoi.Name = "btn_LamMoi";
+            this.btn_LamMoi.Size = new System.Drawing.Size(104, 23);
+            this.btn_LamMoi.TabIndex = 77;
+            this.btn_LamMoi.Text = "Làm Mới";
+            this.btn_LamMoi.UseVisualStyleBackColor = true;
+            this.btn_LamMoi.Click += new System.EventHandler(this.btn_LamMoi_Click);
             // 
             // Frm_SanPham
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.ClientSize = new System.Drawing.Size(631, 441);
+            this.ClientSize = new System.Drawing.Size(808, 441);
+            this.Controls.Add(this.btn_LamMoi);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.txt_Gia);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.txt_SoLuong);
             this.Controls.Add(this.btn_ChonHinh);
             this.Controls.Add(this.btn_Tim);
             this.Controls.Add(this.txt_Tim);
@@ -283,8 +336,8 @@
             this.Name = "Frm_SanPham";
             this.Text = "Sản Phẩm";
             this.Load += new System.EventHandler(this.Frm_SanPham_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pb_SanPham)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_sanpham)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_SanPham)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -315,5 +368,10 @@
         private System.Windows.Forms.OpenFileDialog openFileDialog3;
         private System.Windows.Forms.OpenFileDialog openFileDialog4;
         private System.Windows.Forms.Button btn_ChonHinh;
+        private System.Windows.Forms.TextBox txt_SoLuong;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox txt_Gia;
+        private System.Windows.Forms.Button btn_LamMoi;
     }
 }
