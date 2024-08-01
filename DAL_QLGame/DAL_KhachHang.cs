@@ -40,7 +40,7 @@ namespace DAL_QLGame
                     CommandText = "InsertKhachHang",
                     Connection = _conn
                 };
-                cmd.Parameters.AddWithValue("@TenKH", khach.HoTen);
+                cmd.Parameters.AddWithValue("@TenKH", khach.TenKH);
                 cmd.Parameters.AddWithValue("@DiaChi", khach.DiaChi);
                 cmd.Parameters.AddWithValue("@SDT", khach.SDT);
 
@@ -134,28 +134,47 @@ namespace DAL_QLGame
         public class DataProvider
         {
             private static DataProvider instance;
-            private string connectionString = "your_connection_string_here"; // Thay thế bằng chuỗi kết nối thực tế
+            private readonly string connectionString;
 
-            public static DataProvider Instance
+            // Private constructor to prevent instantiation from outside
+            private DataProvider()
             {
-                get { if (instance == null) instance = new DataProvider(); return instance; }
-                private set { instance = value; }
+                connectionString = "Data Source=DUONGPX;Initial Catalog=QL_ThietBiGame123;Integrated Security=True;Encrypt=False";
             }
 
+            // Public property to access the single instance
+            public static DataProvider Instance
+            {
+                get
+                {
+                    if (instance == null)
+                    {
+                        instance = new DataProvider();
+                    }
+                    return instance;
+                }
+            }
+
+            // Method to execute a scalar query
             public object ExecuteScalar(string query, SqlParameter[] parameters = null)
             {
                 object result = null;
 
-                using (SqlConnection connection = new SqlConnection("Data Source=DUONGPX;Initial Catalog=QL_ThietBiGame3;Integrated Security=True;Encrypt=False"))
+                // Using statement ensures proper disposal of SqlConnection
+                using (SqlConnection connection = new SqlConnection(connectionString))
                 {
                     connection.Open();
+
+                    // Using statement ensures proper disposal of SqlCommand
                     using (SqlCommand command = new SqlCommand(query, connection))
                     {
+                        // Add parameters if any
                         if (parameters != null)
                         {
                             command.Parameters.AddRange(parameters);
                         }
 
+                        // Execute the query and get the result
                         result = command.ExecuteScalar();
                     }
                 }
@@ -171,7 +190,6 @@ namespace DAL_QLGame
             {
         new SqlParameter("@SDT", SqlDbType.VarChar) { Value = sdt }
             };
-
             object result = DataProvider.Instance.ExecuteScalar(query, parameters);
             int count = result != null ? Convert.ToInt32(result) : 0;
 

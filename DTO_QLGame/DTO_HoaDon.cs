@@ -8,48 +8,58 @@ namespace DTO_QLGame
 {
     public class DTO_HoaDon
     {
+        // Private fields
+        private string mahoaddon;
+        private string makhachhang;
+        private string manhanvien;
+        private DateTime ngaylap;
+        private decimal thanhtien;
+        private int trangthai;
 
-        public string mahoaddon;
-        public string makhachhang;
-        public string manhanvien;
-        public string ngaylap;
-        public int thanhtien;
-        public int trangthai;
-
-
+        // Public properties
         public string MaHD
         {
             get => mahoaddon;
             set => mahoaddon = value;
         }
+
         public string MaKH
         {
             get => makhachhang;
             set => makhachhang = value;
         }
+
         public string MaNV
         {
             get => manhanvien;
             set => manhanvien = value;
         }
-        public string NgayLap
+
+        public DateTime NgayLap
         {
             get => ngaylap;
             set => ngaylap = value;
         }
-        public int ThanhTien
+
+        public decimal ThanhTien
         {
             get => thanhtien;
             set => thanhtien = value;
         }
+
         public int TrangThai
         {
             get => trangthai;
             set => trangthai = value;
         }
 
+        public string TenKH { get; set; }
+
+        // Default constructor
         public DTO_HoaDon() { }
-        public DTO_HoaDon(string mahd, string makh, string manv, string ngaylap, int thanhtien, int trangthai)
+
+        // Parameterized constructor
+        public DTO_HoaDon(string mahd, string makh, string manv, DateTime ngaylap, decimal thanhtien, int trangthai)
         {
             this.MaHD = mahd;
             this.MaKH = makh;
@@ -57,7 +67,6 @@ namespace DTO_QLGame
             this.NgayLap = ngaylap;
             this.ThanhTien = thanhtien;
             this.TrangThai = trangthai;
-
         }
     }
 }

@@ -2,17 +2,40 @@
 {
     public class DTO_KhachHang
     {
-        public string MaKH { get; set; }
-        public string HoTen { get; set; }
-        public string DiaChi { get; set; }
-        public string SDT { get; set; }
+        public string makhachhang;
+        public string tenkhachhang;
+        public string diachi;
+        public string sdt;
 
-        public DTO_KhachHang(string maKH, string hoTen, string diaChi, string sDT)
+        public string MaKH
         {
-            MaKH = maKH;
-            HoTen = hoTen;
-            DiaChi = diaChi;
-            SDT = sDT;
+            get => makhachhang;
+            set => makhachhang = value;
+        }
+        public string TenKH
+        {
+            get => tenkhachhang;
+            set => tenkhachhang = value;
+        }
+        public string DiaChi
+        {
+            get => diachi;
+            set => diachi = value;
+        }
+        public string SDT
+        {
+            get => sdt;
+            set => sdt = value;
+        }
+
+        public DTO_KhachHang() { }
+
+        public DTO_KhachHang(string makh, string tenkh, string diachi, string sdt)
+        {
+            this.MaKH = makh;
+            this.TenKH = tenkh;
+            this.DiaChi = diachi;
+            this.SDT = sdt;
         }
     }
 }
