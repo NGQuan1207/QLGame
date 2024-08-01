@@ -262,5 +262,27 @@ namespace DAL_QLGame
             }
             finally { _conn.Close(); }
         }
+        public bool UpdateMatKhau(string email, string matkhaucu, string matkhaumoi)
+        {
+            try
+            {
+                _conn.Open();
+                SqlCommand cmd = new SqlCommand();
+                cmd.Connection = _conn;
+                cmd.CommandText = "ThayDoimatKhau";
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("Email", email);
+                cmd.Parameters.AddWithValue("@opwd", matkhaucu);
+                cmd.Parameters.AddWithValue("@npwd", matkhaumoi);
+
+                if (cmd.ExecuteNonQuery() > 0)
+                {
+                    return true;
+                }
+                return false;
+            }
+            finally { _conn.Close(); }
+        }
+
     }
 }

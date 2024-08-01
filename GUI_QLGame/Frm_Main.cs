@@ -29,6 +29,8 @@ namespace GUI_QLGame
         Frm_SanPham sp;
         Frm_SanPhamThue spt;
         frm_chu c;
+        Frm_ThayDoiMatKhau tdmk;
+
 
         BUS_Nhanvien busNV = new BUS_Nhanvien();
 
@@ -80,14 +82,14 @@ namespace GUI_QLGame
                 đăngXuấtToolStripMenuItem.Enabled = true;
                 thốngKêToolStripMenuItem.Visible = true;
                 báoCáoToolStripMenuItem.Visible = true;
-                đăngNhậpToolStripMenuItem.Enabled = false;
+             //   đăngNhậpToolStripMenuItem.Enabled = false;
                 grb_form.Visible = true;
-                
+                đổiMậtKhẩuToolStripMenuItem.Enabled = true;
                 //if (int.Parse(dn.vaitro) == 0)
                 //{
                 //    VaiTroNv();
                 //}
-                
+
 
             }
             else
@@ -97,9 +99,10 @@ namespace GUI_QLGame
                 đăngXuấtToolStripMenuItem.Enabled = false;
                 thốngKêToolStripMenuItem.Visible = false;
                 báoCáoToolStripMenuItem.Visible = false;
-                đăngNhậpToolStripMenuItem.Enabled = true;
+               // đăngNhậpToolStripMenuItem.Enabled = true;
                 grb_form.Visible = false;
-                
+                đổiMậtKhẩuToolStripMenuItem.Enabled = false;
+
             }
         }
         private void Frm_DangNhap_FormClosed(object sender, FormClosedEventArgs e)
@@ -400,6 +403,23 @@ namespace GUI_QLGame
                 ActiveChildForm("frm_chu");
             }
         }
+
+        private void đổiMậtKhẩuToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (!CheckExistForm("Frm_ThayDoiMatKhau"))
+            {
+                tdmk = new Frm_ThayDoiMatKhau();
+                //c.MdiParent = this;
+                tdmk.ShowDialog();
+                tdmk.FormClosed += new FormClosedEventHandler(Frm_DangNhap_FormClosed);
+            }
+            else
+            {
+                ActiveChildForm("frm_chu");
+            }
+        }
+
     }
-    
 }
+   
+

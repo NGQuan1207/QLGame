@@ -102,5 +102,10 @@ namespace BUS_QLGame
         {
             return dalNhanvien.getNhanVien();
         }
+        public bool UpdateMatKhau(string email, string matkhaucu, string matkhaumoi)
+        {
+            return dalNhanvien.UpdateMatKhau(email, matkhaucu, matkhaumoi);
+        }
+
     }
 }

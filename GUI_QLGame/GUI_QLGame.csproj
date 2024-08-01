@@ -118,6 +118,12 @@
     <Compile Include="Frm_SanPhamThue.Designer.cs">
       <DependentUpon>Frm_SanPhamThue.cs</DependentUpon>
     </Compile>
+    <Compile Include="Frm_ThayDoiMatKhau.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_ThayDoiMatKhau.Designer.cs">
+      <DependentUpon>Frm_ThayDoiMatKhau.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -155,6 +161,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_SanPhamThue.resx">
       <DependentUpon>Frm_SanPhamThue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_ThayDoiMatKhau.resx">
+      <DependentUpon>Frm_ThayDoiMatKhau.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
