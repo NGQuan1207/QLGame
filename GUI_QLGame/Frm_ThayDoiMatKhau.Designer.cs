@@ -172,6 +172,7 @@
             this.Controls.Add(this.txt_email);
             this.Name = "Frm_ThayDoiMatKhau";
             this.Text = "Thay Đổi Mật Khẩu";
+            this.Load += new System.EventHandler(this.Frm_ThayDoiMatKhau_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picImgDN)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

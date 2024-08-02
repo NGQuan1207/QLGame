@@ -6,7 +6,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using DTO_QLGame;
-using DAL_QLGame;
 
 namespace BUS_QLGame
 {

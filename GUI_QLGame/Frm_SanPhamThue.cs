@@ -10,6 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static DTO_QLGame.DTO_ChiTietSPThue;
 
 namespace GUI_QLGame
 {
@@ -204,6 +205,11 @@ namespace GUI_QLGame
                     }
                 }
             }
+        }
+
+        private void dgv_thue_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            
         }
     }
 }

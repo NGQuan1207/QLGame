@@ -217,5 +217,10 @@ namespace GUI_QLGame
         {
             GiaTriBanDau();
         }
+
+        private void txt_masp_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -23,7 +23,6 @@ namespace GUI_QLGame
         public Frm_ThayDoiMatKhau()
         {
             InitializeComponent();
-            txt_email.Enabled = true;
         }
 
         private void btn_DoiMK_Click(object sender, EventArgs e)
@@ -60,6 +59,7 @@ namespace GUI_QLGame
                             DN.SendMail(Frm_DangNhap.mail, txt_nhapmatkhaumoi.Text);
                             MessageBox.Show("Cập nhật mật khẩu thành công, bạn cần phải đăng nhập lại");
                             this.Close();
+                            
                         }
                         else
                         {
@@ -78,7 +78,11 @@ namespace GUI_QLGame
                 }
             }
         }
-
+        
+        private void Frm_ThayDoiMatKhau_Load(object sender, EventArgs e)
+        {
+           
+        }
     }
 }
 

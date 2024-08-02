@@ -9,9 +9,8 @@ using DTO_QLGame;
 
 namespace DAL_QLGame
 {
-    public class DAL_ChiTietSanPham:Connect
+    public class DAL_ChiTietSPT : Connect
     {
-
         public DataTable GetChiTietSanPham()
         {
             try
@@ -20,7 +19,7 @@ namespace DAL_QLGame
                 SqlCommand cmd = new SqlCommand
                 {
                     CommandType = CommandType.StoredProcedure,
-                    CommandText = "List_ChiTietSP",
+                    CommandText = "ListChiTietSPThue",
                     Connection = _conn
                 };
                 DataTable dt = new DataTable();
