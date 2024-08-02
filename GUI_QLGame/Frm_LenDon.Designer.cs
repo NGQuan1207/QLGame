@@ -297,6 +297,8 @@
             this.txt_maNV.Name = "txt_maNV";
             this.txt_maNV.Size = new System.Drawing.Size(463, 28);
             this.txt_maNV.TabIndex = 74;
+            this.txt_maNV.Text = "NV003";
+            this.txt_maNV.TextChanged += new System.EventHandler(this.txt_maNV_TextChanged_1);
             // 
             // label3
             // 

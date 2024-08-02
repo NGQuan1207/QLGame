@@ -497,5 +497,10 @@ namespace GUI_QLGame
         {
 
         }
+
+        private void txt_maNV_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

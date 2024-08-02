@@ -95,5 +95,10 @@ namespace GUI_QLGame
                 dtgv_hoadon.Columns[5].HeaderText = "Trạng Thái";
             }
         }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }

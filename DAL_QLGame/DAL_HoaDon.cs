@@ -176,5 +176,6 @@ namespace DAL_QLGame
                 return ListCt;
             }
         }
+
     }
 }

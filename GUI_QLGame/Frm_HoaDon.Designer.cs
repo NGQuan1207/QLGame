@@ -55,7 +55,6 @@
             this.dtgv_hoadon.RowTemplate.Height = 24;
             this.dtgv_hoadon.Size = new System.Drawing.Size(828, 340);
             this.dtgv_hoadon.TabIndex = 12;
-        
             this.dtgv_hoadon.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataG_HoaDon_CellContentClick);
             // 
             // menuStrip1
@@ -114,7 +113,6 @@
             this.txt_MaHoaDon.Name = "txt_MaHoaDon";
             this.txt_MaHoaDon.Size = new System.Drawing.Size(226, 24);
             this.txt_MaHoaDon.TabIndex = 10;
-            this.txt_MaHoaDon.Text = "Mã nhân viên";
             this.txt_MaHoaDon.TextChanged += new System.EventHandler(this.txt_MaHoaDon_TextChanged);
             // 
             // label2
