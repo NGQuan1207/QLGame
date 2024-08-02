@@ -15,6 +15,9 @@ namespace DTO_QLGame
         private DateTime ngaylap;
         private decimal thanhtien;
         private int trangthai;
+        private string tenSanPham;
+        private int soLuong;
+        private decimal tongTien; // New field for total amount
 
         // Public properties
         public string MaHD
@@ -55,18 +58,45 @@ namespace DTO_QLGame
 
         public string TenKH { get; set; }
 
+        public string TenSanPham
+        {
+            get => tenSanPham;
+            set => tenSanPham = value;
+        }
+
+        public int SoLuong
+        {
+            get => soLuong;
+            set => soLuong = value;
+        }
+
+        public string SDT { get; set; }
+        public string DiaChi { get; set; }
+
+        public decimal TongTien // New property for total amount
+        {
+            get => tongTien;
+            set => tongTien = value;
+        }
+
         // Default constructor
         public DTO_HoaDon() { }
 
         // Parameterized constructor
         public DTO_HoaDon(string mahd, string makh, string manv, DateTime ngaylap, decimal thanhtien, int trangthai)
         {
-            this.MaHD = mahd;
-            this.MaKH = makh;
-            this.MaNV = manv;
-            this.NgayLap = ngaylap;
-            this.ThanhTien = thanhtien;
-            this.TrangThai = trangthai;
+            MaHD = mahd;
+            MaKH = makh;
+            MaNV = manv;
+            NgayLap = ngaylap;
+            ThanhTien = thanhtien;
+            TrangThai = trangthai;
+        }
+
+        public DTO_HoaDon(string tenSanPham, int soLuong)
+        {
+            TenSanPham = tenSanPham;
+            SoLuong = soLuong;
         }
     }
 }

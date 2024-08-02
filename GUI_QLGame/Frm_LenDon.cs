@@ -254,6 +254,28 @@ namespace GUI_QLGame
         private void btn_LenDon_Click_1(object sender, EventArgs e)
         {
 
+            // Kiểm tra thông tin bắt buộc
+            if (string.IsNullOrEmpty(txt_tenKH.Text))
+            {
+                MessageBox.Show("Vui lòng nhập tên khách hàng.");
+                return;
+            }
+            if (string.IsNullOrEmpty(txtDiaChi.Text))
+            {
+                MessageBox.Show("Vui lòng nhập địa chỉ.");
+                return;
+            }
+            if (string.IsNullOrEmpty(txtSDT.Text))
+            {
+                MessageBox.Show("Vui lòng nhập số điện thoại.");
+                return;
+            }
+            if (dgv_GioHang.Rows.Count == 0)
+            {
+                MessageBox.Show("Vui lòng chọn ít nhất một sản phẩm.");
+                return;
+            }
+
             try
             {
                 DTO_KhachHang khachHang = new DTO_KhachHang
@@ -269,7 +291,6 @@ namespace GUI_QLGame
                     NgayLap = date_Ngay.Value
                 };
 
-                // Validate and convert ThanhTien
                 if (decimal.TryParse(txt_TongTien.Text, out decimal thanhTien))
                 {
                     hoaDon.ThanhTien = thanhTien;
@@ -277,35 +298,82 @@ namespace GUI_QLGame
                 else
                 {
                     MessageBox.Show("Giá trị tổng tiền không hợp lệ.");
-                    return; // Exit if conversion fails
+                    return;
                 }
 
-                string maKH = InsertKhachHang(khachHang);
+                string maKH = lendon.CheckIfCustomerExists(khachHang.TenKH, khachHang.DiaChi, khachHang.SDT);
                 if (!string.IsNullOrEmpty(maKH))
                 {
+                    // Khách hàng đã tồn tại
                     hoaDon.MaKH = maKH;
-                    bool result = ThemHoaDon(hoaDon);
-                    if (result)
+                }
+                else
+                {
+                    // Thêm mới khách hàng
+                    maKH = InsertKhachHang(khachHang);
+                    if (!string.IsNullOrEmpty(maKH))
                     {
-                        MessageBox.Show("Hóa đơn và khách hàng đã được thêm thành công.");
-                        HoaDonAdded?.Invoke(this, hoaDon); // Raise event if needed
+                        hoaDon.MaKH = maKH;
                     }
                     else
                     {
-                        MessageBox.Show("Thêm hóa đơn thất bại.");
+                        MessageBox.Show("Thêm khách hàng thất bại.");
+                        return;
+                    }
+                }
+
+                hoaDon.TenKH = khachHang.TenKH;
+                hoaDon.DiaChi = khachHang.DiaChi;
+                hoaDon.SDT = khachHang.SDT;
+
+                bool result = ThemHoaDon(hoaDon);
+                if (result)
+                {
+                    MessageBox.Show("Hóa đơn và khách hàng đã được thêm thành công.");
+                    HoaDonAdded?.Invoke(this, hoaDon);
+                    ShowBill(hoaDon);
+                  
+
+                    // Update product quantity
+                    UpdateProductQuantityInGrid();
+
+                    // Add the bill to frm_HoaDon
+                    Frm_HoaDon frmHoaDon = Application.OpenForms.OfType<Frm_HoaDon>().FirstOrDefault();
+                    if (frmHoaDon != null)
+                    {
+                       /* frmHoaDon.AddBill(hoaDon);*/
                     }
                 }
                 else
                 {
-                    MessageBox.Show("Thêm khách hàng thất bại.");
+                    MessageBox.Show("Thêm hóa đơn thất bại.");
                 }
             }
             catch (Exception ex)
             {
                 MessageBox.Show($"Đã xảy ra lỗi: {ex.Message}");
             }
-            ShowDanhSachKH();
-            /*ShowHoaDon();*/
+        }
+        private void ShowBill(DTO_HoaDon hoaDon)
+        {
+            List<DTO_HoaDon> chiTietHoaDons = new List<DTO_HoaDon>();
+
+            foreach (DataGridViewRow row in dgv_GioHang.Rows)
+            {
+                if (row.Cells["MaSP"].Value != null)
+                {
+                    chiTietHoaDons.Add(new DTO_HoaDon
+                    {
+                        TenSanPham = row.Cells["TenSP"].Value.ToString(),
+                        SoLuong = int.Parse(row.Cells["SoLuong"].Value.ToString()),
+                        ThanhTien = decimal.Parse(row.Cells["ThanhTien"].Value.ToString())
+                    });
+                }
+            }
+
+            Bill billForm = new Bill();
+            billForm.SetBillDetails(hoaDon.TenKH, hoaDon.SDT, hoaDon.DiaChi, chiTietHoaDons);
+            billForm.Show();
         }
 
         private void dgv_SanphamLenDon_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -393,8 +461,39 @@ namespace GUI_QLGame
                 UpdateTongTien();
             }
         }
+        private void UpdateProductQuantityInGrid()
+        {
+            foreach (DataGridViewRow gioHangRow in dgv_GioHang.Rows)
+            {
+                if (gioHangRow.Cells["MaSP"].Value != null)
+                {
+                    string maSP = gioHangRow.Cells["MaSP"].Value.ToString();
+                    int quantityInCart = int.Parse(gioHangRow.Cells["SoLuong"].Value.ToString());
+
+                    foreach (DataGridViewRow sanPhamRow in dgv_SanphamLenDon.Rows)
+                    {
+                        if (sanPhamRow.Cells["MaSP"].Value != null && sanPhamRow.Cells["MaSP"].Value.ToString() == maSP)
+                        {
+                            int currentQuantity = int.Parse(sanPhamRow.Cells["SoLuong"].Value.ToString());
+                            sanPhamRow.Cells["SoLuong"].Value = currentQuantity - quantityInCart;
+                            break;
+                        }
+                    }
+                }
+            }
+        }
 
         private void btn_ApDung_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_LenDonvaIn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Frm_LenDon_Load_1(object sender, EventArgs e)
         {
 
         }

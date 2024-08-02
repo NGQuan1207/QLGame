@@ -60,6 +60,27 @@ namespace GUI_QLGame
             }
         }
 
-       
+     /*   public void AddBill(DTO_HoaDon hoaDon)
+        {
+            DataTable dt = (DataTable)dtgv_hoadon.DataSource;
+            if (dt == null)
+            {
+                dt = new DataTable();
+                dt.Columns.Add("MaHD");
+                dt.Columns.Add("MaKH");
+                dt.Columns.Add("MaNV");
+                dt.Columns.Add("NgayLap");
+                dt.Columns.Add("ThanhTien");
+                dataG_HoaDon.DataSource = dt;
+            }
+
+            DataRow newRow = dt.dtgv_hoadon();
+            newRow["MaHD"] = hoaDon.MaHD; // Ensure you set MaHD after inserting it into the database
+            newRow["MaKH"] = hoaDon.MaKH;
+            newRow["MaNV"] = hoaDon.MaNV;
+            newRow["NgayLap"] = hoaDon.NgayLap;
+            newRow["ThanhTien"] = hoaDon.ThanhTien;
+            dt.Rows.Add(newRow);
+        }*/
     }
 }
