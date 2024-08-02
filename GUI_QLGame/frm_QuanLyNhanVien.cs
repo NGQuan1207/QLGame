@@ -28,13 +28,13 @@ namespace GUI_QLGame
             dgv_nv.DataSource = busNhanVIen.getNhanVien();
             dgv_nv.Columns[0].HeaderText = "Mã Nhân Viên";
             dgv_nv.Columns[1].HeaderText = "Tên Nhân Viên";
-            dgv_nv.Columns[2].HeaderText = "Email";
+            dgv_nv.Columns[2].HeaderText = "Phái";
             dgv_nv.Columns[3].HeaderText = "Ngày sinh";
-            dgv_nv.Columns[4].HeaderText = "CCCD";
-            dgv_nv.Columns[5].HeaderText = "Số Điện Thoại";
-            dgv_nv.Columns[6].HeaderText = "Phái";
-            dgv_nv.Columns[7].HeaderText = "Chức vụ";
-            dgv_nv.Columns[8].HeaderText = "Địa Chỉ"; 
+            dgv_nv.Columns[4].HeaderText = "Email";
+            dgv_nv.Columns[5].HeaderText = "CCCD";
+            dgv_nv.Columns[6].HeaderText = "Số Điện Thoại";
+            dgv_nv.Columns[7].HeaderText = "Địa Chỉ";
+            dgv_nv.Columns[8].HeaderText = "Chức vụ";
         }
         private void frm_QuanLyNhanVien_Load(object sender, EventArgs e)
         {
@@ -46,10 +46,10 @@ namespace GUI_QLGame
             if (dgv_nv.Rows.Count >= 0)
             {
                 DataGridViewRow row = dgv_nv.Rows[e.RowIndex];
-                txt_email.Text = row.Cells["Email"].Value.ToString();
                 txt_manv.Text = row.Cells["MaNV"].Value.ToString();
                 txt_tennv.Text = row.Cells["TenNV"].Value.ToString();
                 txt_ngaysinh.Text = row.Cells["NgaySinh"].Value.ToString();
+                txt_email.Text = row.Cells["Email"].Value.ToString();
                 txt_cccd.Text = row.Cells["CCCD"].Value.ToString();
                 txt_sdt.Text = row.Cells["SDT"].Value.ToString();
                 txt_chucvu.Text = row.Cells["ChucVu"].Value.ToString();
