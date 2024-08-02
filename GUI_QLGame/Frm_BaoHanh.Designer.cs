@@ -51,6 +51,7 @@
             this.btn_XoaBH = new System.Windows.Forms.Button();
             this.btn_Thoat = new System.Windows.Forms.Button();
             this.btn_LamMoi = new System.Windows.Forms.Button();
+            this.btn_Sua = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgv_Baohanh)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -272,12 +273,23 @@
             this.btn_LamMoi.UseVisualStyleBackColor = true;
             this.btn_LamMoi.Click += new System.EventHandler(this.btn_LamMoi_Click);
             // 
+            // btn_Sua
+            // 
+            this.btn_Sua.Location = new System.Drawing.Point(829, 374);
+            this.btn_Sua.Name = "btn_Sua";
+            this.btn_Sua.Size = new System.Drawing.Size(75, 23);
+            this.btn_Sua.TabIndex = 41;
+            this.btn_Sua.Text = "Sửa";
+            this.btn_Sua.UseVisualStyleBackColor = true;
+            this.btn_Sua.Click += new System.EventHandler(this.btn_Sua_Click);
+            // 
             // Frm_BaoHanh
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSkyBlue;
             this.ClientSize = new System.Drawing.Size(1051, 444);
+            this.Controls.Add(this.btn_Sua);
             this.Controls.Add(this.btn_LamMoi);
             this.Controls.Add(this.btn_Thoat);
             this.Controls.Add(this.btn_XoaBH);
@@ -337,5 +349,6 @@
         private System.Windows.Forms.Button btn_XoaBH;
         private System.Windows.Forms.Button btn_Thoat;
         private System.Windows.Forms.Button btn_LamMoi;
+        private System.Windows.Forms.Button btn_Sua;
     }
 }

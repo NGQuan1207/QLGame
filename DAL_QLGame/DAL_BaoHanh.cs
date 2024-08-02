@@ -101,6 +101,37 @@ namespace DAL_QLGame
         {
             return Execute("XoaBaohanh", new SqlParameter("@mabaohanh", mabaohanh));
         }
+
+        public bool SuaBaoHanh(string mabaohanh, string masp, string makh, string startdate, string enddate, string tinhtrang)
+        {
+            try
+            {
+                _conn.Open();
+                SqlCommand cmd = new SqlCommand
+                {
+                    CommandType = CommandType.StoredProcedure,
+                    CommandText = "SuaBaoHanh",
+                    Connection = _conn
+                };
+                cmd.Parameters.AddWithValue("@mabaohanh", mabaohanh);
+                cmd.Parameters.AddWithValue("@Masp", masp);
+
+                cmd.Parameters.AddWithValue("@makh", makh);
+                cmd.Parameters.AddWithValue("@startdate", startdate);
+                cmd.Parameters.AddWithValue("@enddate", enddate);
+                cmd.Parameters.AddWithValue("@tinhtrang", tinhtrang);
+
+                return cmd.ExecuteNonQuery() > 0;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+            finally
+            {
+                _conn.Close();
+            }
+        }
     }
 }
 

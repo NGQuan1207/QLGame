@@ -161,5 +161,29 @@ namespace GUI_QLGame
         {
             GiaTriBanDau();
         }
+
+        private void btn_Sua_Click(object sender, EventArgs e)
+        {
+            string mabh = txt_MaBaoHanh.Text;
+            string masp = txt_MaSP.Text;
+            string makh = txt_MaKH.Text;
+            string batdau = txt_BatDau.Text;
+            string ketthuc = txt_KetThuc.Text;
+            string tinhtrang = txt_TinhTrang.Text;
+
+
+            DTO_BaoHanh sanpham = new DTO_BaoHanh(mabh, masp, makh, batdau, ketthuc, tinhtrang);
+
+
+            if (BUS_BaoHanh.SuaBaoHanh(mabh, masp, makh, batdau, ketthuc, tinhtrang))
+            {
+                MessageBox.Show("Sửa Bảo Hành thành công", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                taibaohanh();
+            }
+            else
+            {
+                MessageBox.Show("Sửa Bảo Hành thất bại", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
 }

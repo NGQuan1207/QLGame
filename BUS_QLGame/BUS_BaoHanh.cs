@@ -36,5 +36,10 @@ namespace BUS_QLGame
             DAL_BaoHanh dalBaoHanh = new DAL_BaoHanh();
             return dalBaoHanh.XoaBaoHanh(mabaohanh);
         }
+        public static bool SuaBaoHanh(string mabaohanh, string masp, string makh, string startdate, string enddate, string tinhtrang)
+        {
+            DAL_BaoHanh dalbaohanh = new DAL_BaoHanh();
+            return dalbaohanh.SuaBaoHanh(mabaohanh, masp, makh, startdate, enddate, tinhtrang);
+        }
     }
 }
