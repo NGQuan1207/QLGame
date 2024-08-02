@@ -46,6 +46,7 @@
             // 
             // dataG_HoaDon
             // 
+            this.dataG_HoaDon.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataG_HoaDon.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataG_HoaDon.Location = new System.Drawing.Point(9, 179);
             this.dataG_HoaDon.Margin = new System.Windows.Forms.Padding(2);

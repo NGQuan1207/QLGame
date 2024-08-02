@@ -72,6 +72,7 @@
             // 
             // dtgv_hoadon
             // 
+            this.dtgv_hoadon.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dtgv_hoadon.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgv_hoadon.Location = new System.Drawing.Point(9, 291);
             this.dtgv_hoadon.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);

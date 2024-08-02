@@ -89,6 +89,7 @@
             // 
             // dtgv_Baohanh
             // 
+            this.dtgv_Baohanh.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dtgv_Baohanh.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgv_Baohanh.Location = new System.Drawing.Point(24, 67);
             this.dtgv_Baohanh.Margin = new System.Windows.Forms.Padding(2);
