@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataG_HoaDon = new System.Windows.Forms.DataGridView();
+            this.dtgv_hoadon = new System.Windows.Forms.DataGridView();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.mENUToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label1 = new System.Windows.Forms.Label();
@@ -39,23 +39,24 @@
             this.label5 = new System.Windows.Forms.Label();
             this.btn_timHD = new System.Windows.Forms.Button();
             this.btn_InHoaDon = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataG_HoaDon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgv_hoadon)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // dataG_HoaDon
+            // dtgv_hoadon
             // 
-            this.dataG_HoaDon.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataG_HoaDon.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataG_HoaDon.Location = new System.Drawing.Point(9, 179);
-            this.dataG_HoaDon.Margin = new System.Windows.Forms.Padding(2);
-            this.dataG_HoaDon.Name = "dataG_HoaDon";
-            this.dataG_HoaDon.RowHeadersWidth = 51;
-            this.dataG_HoaDon.RowTemplate.Height = 24;
-            this.dataG_HoaDon.Size = new System.Drawing.Size(828, 340);
-            this.dataG_HoaDon.TabIndex = 12;
-            this.dataG_HoaDon.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataG_HoaDon_CellContentClick);
+            this.dtgv_hoadon.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dtgv_hoadon.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgv_hoadon.Location = new System.Drawing.Point(9, 179);
+            this.dtgv_hoadon.Margin = new System.Windows.Forms.Padding(2);
+            this.dtgv_hoadon.Name = "dtgv_hoadon";
+            this.dtgv_hoadon.RowHeadersWidth = 51;
+            this.dtgv_hoadon.RowTemplate.Height = 24;
+            this.dtgv_hoadon.Size = new System.Drawing.Size(828, 340);
+            this.dtgv_hoadon.TabIndex = 12;
+        
+            this.dtgv_hoadon.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataG_HoaDon_CellContentClick);
             // 
             // menuStrip1
             // 
@@ -114,6 +115,7 @@
             this.txt_MaHoaDon.Size = new System.Drawing.Size(226, 24);
             this.txt_MaHoaDon.TabIndex = 10;
             this.txt_MaHoaDon.Text = "Mã nhân viên";
+            this.txt_MaHoaDon.TextChanged += new System.EventHandler(this.txt_MaHoaDon_TextChanged);
             // 
             // label2
             // 
@@ -182,14 +184,14 @@
             this.Controls.Add(this.btn_InHoaDon);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.dataG_HoaDon);
+            this.Controls.Add(this.dtgv_hoadon);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Frm_HoaDon";
             this.Text = "Hóa Đơn";
             this.Load += new System.EventHandler(this.Frm_HoaDon_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataG_HoaDon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgv_hoadon)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.groupBox1.ResumeLayout(false);
@@ -200,7 +202,7 @@
         }
 
         #endregion
-        private System.Windows.Forms.DataGridView dataG_HoaDon;
+        private System.Windows.Forms.DataGridView dtgv_hoadon;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem mENUToolStripMenuItem;
         private System.Windows.Forms.Label label1;

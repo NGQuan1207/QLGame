@@ -46,6 +46,28 @@ namespace BUS_QLGame
             DAL_HoaDon dalhoadon = new DAL_HoaDon();
             return dalhoadon.ThemHoaDon(hd);
         }
+        public static DataTable SearchHoaDon(string manv)
+        {
+            DAL_HoaDon dalhoadon = new DAL_HoaDon();
+            return dalhoadon.SearchHoaDon(manv);
+        }
+
+        public static object ListHoaDon(DateTime startDate, DateTime endDate)
+        {
+            DAL_HoaDon dALHoaDon = new DAL_HoaDon();
+            return dALHoaDon.ListHoaDon();
+        }
+        public static object ListHoaDon()
+        {
+            DAL_HoaDon dALHoaDon = new DAL_HoaDon();
+            return dALHoaDon.ListHoaDon();
+        }
+        private DAL_HoaDon dalHoaDon = new DAL_HoaDon();
+
+        public DataTable TinhTongThuNhap(DateTime startDate, DateTime endDate)
+        {
+            return dalHoaDon.TinhTongThanhTien(startDate, endDate);
+        }
     }
    
 }

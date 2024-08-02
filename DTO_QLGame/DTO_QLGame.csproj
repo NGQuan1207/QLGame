@@ -49,6 +49,7 @@
     <Compile Include="DTO_KhachHang.cs" />
     <Compile Include="DTO_LenDon.cs" />
     <Compile Include="DTO_NhanVien.cs" />
+    <Compile Include="DTO_PhieuThue.cs" />
     <Compile Include="DTO_SanPham.cs" />
     <Compile Include="DTO_SanPhamThue.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -1,4 +1,6 @@
-﻿using System;
+﻿using BUS_QLGame;
+using DTO_QLGame;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,7 +18,17 @@ namespace GUI_QLGame
         {
             InitializeComponent();
         }
+        private string selectedMaKH;
+        private void TaiHoadon()
+        {
+            dtgv_hoadon.DataSource = BUS_HoaDon.ListHoaDon();
+            dtgv_hoadon.Columns[0].HeaderText = "Mã Hóa Đơn";
+            dtgv_hoadon.Columns[1].HeaderText = "Mã Khách Hàng";
+            dtgv_hoadon.Columns[2].HeaderText = "Mã Nhân Viên";
+            dtgv_hoadon.Columns[3].HeaderText = "Ngày Lập";
+            dtgv_hoadon.Columns[4].HeaderText = "Thành Tiền";
 
+        }
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
         {
 
@@ -24,12 +36,30 @@ namespace GUI_QLGame
 
         private void Frm_HoaDon_Load(object sender, EventArgs e)
         {
-
+            TaiHoadon();
         }
 
         private void dataG_HoaDon_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }
+
+        private void txt_MaHoaDon_TextChanged(object sender, EventArgs e)
+        {
+            string manv = txt_MaHoaDon.Text;
+            if (!string.IsNullOrEmpty(manv))
+            {
+                DataTable dtHoaDon = BUS_HoaDon.SearchHoaDon(manv);
+                dtgv_hoadon.DataSource = dtHoaDon;
+                // Điều chỉnh lại tên cột nếu cần thiết
+                dtgv_hoadon.Columns[0].HeaderText = "Mã Hóa Đơn";
+                dtgv_hoadon.Columns[1].HeaderText = "Mã Khách Hàng";
+                dtgv_hoadon.Columns[2].HeaderText = "Mã Nhân Viên";
+                dtgv_hoadon.Columns[3].HeaderText = "Ngày Lập";
+                dtgv_hoadon.Columns[4].HeaderText = "Thành Tiền";
+            }
+        }
+
+       
     }
 }

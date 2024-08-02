@@ -42,5 +42,19 @@ namespace BUS_QLGame
             DAL_SanPham dalSanPham = new DAL_SanPham();
             return dalSanPham.SuaSanPham(masp,tensp, loaisp,soluong,gia, hinhanh, ghichu);
         }
+        public static DataTable ListSPThue()
+        {
+            DAL_SanPham dalSanPhamT = new DAL_SanPham();
+            return dalSanPhamT.ListSPThue();
+        }
+        public static DataTable TimSanPhamThue(string maSPThue)
+        {
+            return new DAL_SanPham().TimSanPhamThue(maSPThue);
+        }
+        public DataTable TinhTongSP(DateTime startDate, DateTime endDate)
+        {
+            DAL_SanPham dALSanPhamT = new DAL_SanPham();
+            return dALSanPhamT.TinhTongSP(startDate, endDate);
+        }
     }
 }

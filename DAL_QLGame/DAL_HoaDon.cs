@@ -124,5 +124,57 @@ namespace DAL_QLGame
                 return result > 0;
             }
         }
+        public DataTable TinhTongThanhTien(DateTime startDate, DateTime endDate)
+        {
+            using (_conn)
+            {
+                SqlCommand cmd = new SqlCommand("TinhTongThanhTien", _conn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@StartDate", startDate);
+                cmd.Parameters.AddWithValue("@EndDate", endDate);
+
+                DataTable dt = new DataTable();
+                try
+                {
+                    _conn.Open();
+                    dt.Load(cmd.ExecuteReader());
+                }
+                catch (Exception ex)
+                {
+                    throw new Exception("Có lỗi xảy ra: " + ex.Message);
+                }
+                finally
+                {
+                    _conn.Close();
+                }
+                return dt;
+            }
+        }
+        public DataTable SearchHoaDon(string manv)
+        {
+            using (SqlConnection con = _conn)
+            using (SqlCommand cmd = new SqlCommand("timhoadon", con))
+            {
+                con.Open();
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@manv", manv);
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+                return dt;
+            }
+        }
+        public DataTable ListHoaDon()
+        {
+            using (SqlConnection con = new SqlConnection(_conn.ConnectionString))
+            using (SqlCommand cmd = new SqlCommand("ListHoaDon", con))
+            {
+                con.Open();
+                cmd.CommandType = CommandType.StoredProcedure;
+                DataTable ListCt = new DataTable();
+                ListCt.Load(cmd.ExecuteReader());
+                return ListCt;
+            }
+        }
     }
 }

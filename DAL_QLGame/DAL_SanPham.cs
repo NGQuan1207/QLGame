@@ -135,5 +135,70 @@ namespace DAL_QLGame
                 return Tim;
             }
         }
+        public DataTable ListSPThue()
+        {
+            using (_conn)
+            {
+                SqlCommand cmd = new SqlCommand("DanhSachSanPhamThue", _conn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                DataTable ListSPT = new DataTable();
+                try
+                {
+                    _conn.Open();
+                    ListSPT.Load(cmd.ExecuteReader());
+                }
+                catch (Exception ex)
+                {
+                    throw new Exception("Có lỗi xảy ra: " + ex.Message);
+                }
+                finally
+                {
+                    _conn.Close();
+                }
+                return ListSPT;
+            }
+        }
+
+        public DataTable TimSanPhamThue(string maSPThue)
+        {
+            using (SqlConnection con = _conn)
+            using (SqlCommand cmd = new SqlCommand("TimSanPhamThue", con))
+            {
+                con.Open();
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@MaSPThue", maSPThue);
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+                return dt;
+            }
+        }
+        public DataTable TinhTongSP(DateTime startDate, DateTime endDate)
+        {
+            using (_conn)
+            {
+                SqlCommand cmd = new SqlCommand("TinhSoLuongHoaDon", _conn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@StartDate", startDate);
+                cmd.Parameters.AddWithValue("@EndDate", endDate);
+
+                DataTable dt = new DataTable();
+                try
+                {
+                    _conn.Open();
+                    dt.Load(cmd.ExecuteReader());
+                }
+                catch (Exception ex)
+                {
+                    throw new Exception("Có lỗi xảy ra: " + ex.Message);
+                }
+                finally
+                {
+                    _conn.Close();
+                }
+                return dt;
+            }
+        }
+
     }
 }

@@ -38,7 +38,18 @@ namespace GUI_QLGame
             dtgv_hoadon.Columns[2].HeaderText = "Mã Nhân Viên";
             dtgv_hoadon.Columns[3].HeaderText = "Ngày Lập";
             dtgv_hoadon.Columns[4].HeaderText = "Thành Tiền";
-            dtgv_hoadon.Columns[5].HeaderText = "Trạng Thái";
+            
+        }
+        private void TaiPhieuThue()
+        {
+            dtgv_phieuthue.DataSource = BUS_ChiTietKH.ListCTKhachHang();
+            dtgv_phieuthue.Columns[0].HeaderText = "Mã Phiếu Thuê";
+            dtgv_phieuthue.Columns[1].HeaderText = "Mã SP Thuê";
+            dtgv_phieuthue.Columns[2].HeaderText = "Mã Khách Hàng";
+            dtgv_phieuthue.Columns[3].HeaderText = " Ngày Đầu";
+            dtgv_phieuthue.Columns[4].HeaderText = " Ngày Trả";
+            
+
         }
         private void GiaTriBanDau()
         {
@@ -65,6 +76,20 @@ namespace GUI_QLGame
                 dtgv_hoadon.Columns[3].HeaderText = "Ngày Lập";
                 dtgv_hoadon.Columns[4].HeaderText = "Thành Tiền";
                 dtgv_hoadon.Columns[5].HeaderText = "Trạng Thái";
+            }
+            string maphieuthue = txt_makh.Text;
+            if (!string.IsNullOrEmpty(maphieuthue))
+            {
+                DataTable dtPhieuThue = BUS_PhieuThue.TimPhieuthue(maphieuthue);
+                dtgv_phieuthue.DataSource = dtPhieuThue;
+                // Điều chỉnh lại tên cột nếu cần thiết
+                dtgv_phieuthue.Columns[0].HeaderText = "Mã Phiếu Thuê";
+                dtgv_phieuthue.Columns[1].HeaderText = "Mã SP Thuê";
+                dtgv_phieuthue.Columns[2].HeaderText = "Mã Khách Hàng";
+                dtgv_phieuthue.Columns[3].HeaderText = " Ngày Đầu";
+                dtgv_phieuthue.Columns[4].HeaderText = " Ngày Trả";
+                dtgv_phieuthue.Columns[5].HeaderText = "Tiền Cọc";
+
             }
 
         }
@@ -142,6 +167,8 @@ namespace GUI_QLGame
 
         private void frm_ChiTietKH_Load(object sender, EventArgs e)
         {
+            TaiHoadonh();
+            TaiPhieuThue();
             txt_makh.Text = MaKH;
             txt_tenkh.Text = HoTen;
             txt_diachi.Text = DiaChi;
@@ -157,7 +184,7 @@ namespace GUI_QLGame
         {
             frm_DanhSachKH khachhang = new frm_DanhSachKH();
             khachhang.ShowDialog();
-            this.Close();
+            this.Hide();
         }
 
         private void dtgv_hoadon_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -168,13 +195,39 @@ namespace GUI_QLGame
                 selectedMaKH = row.Cells[0].Value.ToString();
                 txt_hoadon.Text = row.Cells[0].Value.ToString();
                 btn_QuayLai.Enabled = true;
-                btn_sua.Enabled = true;
+                
             }
         }
 
         private void dtgv_kh_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void dtgv_phieuthue_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                DataGridViewRow row = dtgv_phieuthue.Rows[e.RowIndex];
+                selectedMaKH = row.Cells[0].Value.ToString();
+                txt_mathue.Text = row.Cells[0].Value.ToString();
+                btn_QuayLai.Enabled = true;
+
+            }
+        }
+
+        private void btn_xoaphieu_Click(object sender, EventArgs e)
+        {
+            string maphieuthue = txt_mathue.Text;
+            if (BUS_PhieuThue.XoaPhieuThue(maphieuthue))
+            {
+                MessageBox.Show("Xóa thành công", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                TaiPhieuThue(); // Cập nhật lại danh sách bảo hành
+            }
+            else
+            {
+                MessageBox.Show("Xóa thất bại", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void dtgv_kh_CellClick(object sender, DataGridViewCellEventArgs e)

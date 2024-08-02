@@ -42,26 +42,24 @@
             this.combb_LocGia = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.comb_LocLoaiSP = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.date_locSP = new System.Windows.Forms.DateTimePicker();
-            this.btn_LocSP = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.combb_Trangthai = new System.Windows.Forms.ComboBox();
-            this.combb_LocGiathue = new System.Windows.Forms.ComboBox();
-            this.btn_locSPthue = new System.Windows.Forms.Button();
-            this.date_locSPthue = new System.Windows.Forms.DateTimePicker();
-            this.comb_LocLoaiSPthue = new System.Windows.Forms.ComboBox();
-            this.dataG_SPdaBan = new System.Windows.Forms.DataGridView();
-            this.dataG_SPdaThue = new System.Windows.Forms.DataGridView();
             this.label7 = new System.Windows.Forms.Label();
+            this.combb_Trangthai = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
+            this.combb_LocGiathue = new System.Windows.Forms.ComboBox();
+            this.date_locSPthue = new System.Windows.Forms.DateTimePicker();
+            this.dtgv_hoadon = new System.Windows.Forms.DataGridView();
+            this.dtgv_spthue = new System.Windows.Forms.DataGridView();
+            this.txt_maspt = new System.Windows.Forms.TextBox();
+            this.txt_hoadon = new System.Windows.Forms.TextBox();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataG_SPdaBan)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataG_SPdaThue)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgv_hoadon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgv_spthue)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -195,13 +193,12 @@
             // 
             this.groupBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.groupBox1.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.groupBox1.Controls.Add(this.txt_hoadon);
             this.groupBox1.Controls.Add(this.combb_LocGia);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.comb_LocLoaiSP);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.date_locSP);
-            this.groupBox1.Controls.Add(this.btn_LocSP);
             this.groupBox1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.groupBox1.Location = new System.Drawing.Point(11, 315);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
@@ -215,10 +212,10 @@
             // combb_LocGia
             // 
             this.combb_LocGia.FormattingEnabled = true;
-            this.combb_LocGia.Location = new System.Drawing.Point(96, 96);
+            this.combb_LocGia.Location = new System.Drawing.Point(109, 96);
             this.combb_LocGia.Margin = new System.Windows.Forms.Padding(2);
             this.combb_LocGia.Name = "combb_LocGia";
-            this.combb_LocGia.Size = new System.Drawing.Size(669, 21);
+            this.combb_LocGia.Size = new System.Drawing.Size(656, 21);
             this.combb_LocGia.TabIndex = 6;
             this.combb_LocGia.Text = "GIÁ";
             // 
@@ -242,22 +239,12 @@
             this.label5.BackColor = System.Drawing.Color.LightSkyBlue;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label5.Location = new System.Drawing.Point(6, 69);
+            this.label5.Location = new System.Drawing.Point(4, 73);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(67, 18);
+            this.label5.Size = new System.Drawing.Size(100, 18);
             this.label5.TabIndex = 4;
-            this.label5.Text = "Loại SP";
-            // 
-            // comb_LocLoaiSP
-            // 
-            this.comb_LocLoaiSP.FormattingEnabled = true;
-            this.comb_LocLoaiSP.Location = new System.Drawing.Point(96, 65);
-            this.comb_LocLoaiSP.Margin = new System.Windows.Forms.Padding(2);
-            this.comb_LocLoaiSP.Name = "comb_LocLoaiSP";
-            this.comb_LocLoaiSP.Size = new System.Drawing.Size(669, 21);
-            this.comb_LocLoaiSP.TabIndex = 3;
-            this.comb_LocLoaiSP.Text = "LOẠI";
+            this.label5.Text = "Mã Hóa đơn";
             // 
             // label4
             // 
@@ -274,34 +261,22 @@
             // 
             // date_locSP
             // 
-            this.date_locSP.Location = new System.Drawing.Point(96, 38);
+            this.date_locSP.Location = new System.Drawing.Point(109, 38);
             this.date_locSP.Margin = new System.Windows.Forms.Padding(2);
             this.date_locSP.Name = "date_locSP";
-            this.date_locSP.Size = new System.Drawing.Size(669, 20);
+            this.date_locSP.Size = new System.Drawing.Size(656, 20);
             this.date_locSP.TabIndex = 1;
-            // 
-            // btn_LocSP
-            // 
-            this.btn_LocSP.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btn_LocSP.Location = new System.Drawing.Point(790, 57);
-            this.btn_LocSP.Margin = new System.Windows.Forms.Padding(2);
-            this.btn_LocSP.Name = "btn_LocSP";
-            this.btn_LocSP.Size = new System.Drawing.Size(100, 37);
-            this.btn_LocSP.TabIndex = 0;
-            this.btn_LocSP.Text = "LỌC";
-            this.btn_LocSP.UseVisualStyleBackColor = true;
             // 
             // groupBox2
             // 
             this.groupBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.groupBox2.Controls.Add(this.txt_maspt);
             this.groupBox2.Controls.Add(this.label7);
             this.groupBox2.Controls.Add(this.combb_Trangthai);
             this.groupBox2.Controls.Add(this.label8);
             this.groupBox2.Controls.Add(this.label9);
             this.groupBox2.Controls.Add(this.combb_LocGiathue);
-            this.groupBox2.Controls.Add(this.btn_locSPthue);
             this.groupBox2.Controls.Add(this.date_locSPthue);
-            this.groupBox2.Controls.Add(this.comb_LocLoaiSPthue);
             this.groupBox2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.groupBox2.Location = new System.Drawing.Point(935, 315);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
@@ -311,82 +286,6 @@
             this.groupBox2.TabIndex = 23;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Lọc sản phẩm thuê";
-            // 
-            // combb_Trangthai
-            // 
-            this.combb_Trangthai.FormattingEnabled = true;
-            this.combb_Trangthai.Items.AddRange(new object[] {
-            "Đang thuê",
-            "Đã hết hạn"});
-            this.combb_Trangthai.Location = new System.Drawing.Point(788, 41);
-            this.combb_Trangthai.Margin = new System.Windows.Forms.Padding(2);
-            this.combb_Trangthai.Name = "combb_Trangthai";
-            this.combb_Trangthai.Size = new System.Drawing.Size(72, 21);
-            this.combb_Trangthai.TabIndex = 14;
-            this.combb_Trangthai.Text = "Trạng thái";
-            // 
-            // combb_LocGiathue
-            // 
-            this.combb_LocGiathue.FormattingEnabled = true;
-            this.combb_LocGiathue.Location = new System.Drawing.Point(118, 98);
-            this.combb_LocGiathue.Margin = new System.Windows.Forms.Padding(2);
-            this.combb_LocGiathue.Name = "combb_LocGiathue";
-            this.combb_LocGiathue.Size = new System.Drawing.Size(633, 21);
-            this.combb_LocGiathue.TabIndex = 13;
-            this.combb_LocGiathue.Text = "GIÁ";
-            // 
-            // btn_locSPthue
-            // 
-            this.btn_locSPthue.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btn_locSPthue.Location = new System.Drawing.Point(774, 79);
-            this.btn_locSPthue.Margin = new System.Windows.Forms.Padding(2);
-            this.btn_locSPthue.Name = "btn_locSPthue";
-            this.btn_locSPthue.Size = new System.Drawing.Size(100, 37);
-            this.btn_locSPthue.TabIndex = 7;
-            this.btn_locSPthue.Text = "LỌC";
-            this.btn_locSPthue.UseVisualStyleBackColor = true;
-            // 
-            // date_locSPthue
-            // 
-            this.date_locSPthue.Location = new System.Drawing.Point(118, 38);
-            this.date_locSPthue.Margin = new System.Windows.Forms.Padding(2);
-            this.date_locSPthue.Name = "date_locSPthue";
-            this.date_locSPthue.Size = new System.Drawing.Size(633, 20);
-            this.date_locSPthue.TabIndex = 8;
-            // 
-            // comb_LocLoaiSPthue
-            // 
-            this.comb_LocLoaiSPthue.FormattingEnabled = true;
-            this.comb_LocLoaiSPthue.Location = new System.Drawing.Point(118, 68);
-            this.comb_LocLoaiSPthue.Margin = new System.Windows.Forms.Padding(2);
-            this.comb_LocLoaiSPthue.Name = "comb_LocLoaiSPthue";
-            this.comb_LocLoaiSPthue.Size = new System.Drawing.Size(633, 21);
-            this.comb_LocLoaiSPthue.TabIndex = 10;
-            this.comb_LocLoaiSPthue.Text = "LOẠI";
-            // 
-            // dataG_SPdaBan
-            // 
-            this.dataG_SPdaBan.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.dataG_SPdaBan.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataG_SPdaBan.Location = new System.Drawing.Point(11, 473);
-            this.dataG_SPdaBan.Margin = new System.Windows.Forms.Padding(2);
-            this.dataG_SPdaBan.Name = "dataG_SPdaBan";
-            this.dataG_SPdaBan.RowHeadersWidth = 51;
-            this.dataG_SPdaBan.RowTemplate.Height = 24;
-            this.dataG_SPdaBan.Size = new System.Drawing.Size(908, 317);
-            this.dataG_SPdaBan.TabIndex = 24;
-            // 
-            // dataG_SPdaThue
-            // 
-            this.dataG_SPdaThue.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.dataG_SPdaThue.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataG_SPdaThue.Location = new System.Drawing.Point(935, 473);
-            this.dataG_SPdaThue.Margin = new System.Windows.Forms.Padding(2);
-            this.dataG_SPdaThue.Name = "dataG_SPdaThue";
-            this.dataG_SPdaThue.RowHeadersWidth = 51;
-            this.dataG_SPdaThue.RowTemplate.Height = 24;
-            this.dataG_SPdaThue.Size = new System.Drawing.Size(898, 317);
-            this.dataG_SPdaThue.TabIndex = 25;
             // 
             // label7
             // 
@@ -401,6 +300,19 @@
             this.label7.TabIndex = 9;
             this.label7.Text = "Giá";
             // 
+            // combb_Trangthai
+            // 
+            this.combb_Trangthai.FormattingEnabled = true;
+            this.combb_Trangthai.Items.AddRange(new object[] {
+            "Đang thuê",
+            "Đã hết hạn"});
+            this.combb_Trangthai.Location = new System.Drawing.Point(788, 41);
+            this.combb_Trangthai.Margin = new System.Windows.Forms.Padding(2);
+            this.combb_Trangthai.Name = "combb_Trangthai";
+            this.combb_Trangthai.Size = new System.Drawing.Size(72, 21);
+            this.combb_Trangthai.TabIndex = 14;
+            this.combb_Trangthai.Text = "Trạng thái";
+            // 
             // label8
             // 
             this.label8.AutoSize = true;
@@ -410,9 +322,9 @@
             this.label8.Location = new System.Drawing.Point(37, 70);
             this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(67, 18);
+            this.label8.Size = new System.Drawing.Size(54, 18);
             this.label8.TabIndex = 8;
-            this.label8.Text = "Loại SP";
+            this.label8.Text = "Mã sp";
             // 
             // label9
             // 
@@ -427,14 +339,73 @@
             this.label9.TabIndex = 7;
             this.label9.Text = "Ngày";
             // 
+            // combb_LocGiathue
+            // 
+            this.combb_LocGiathue.FormattingEnabled = true;
+            this.combb_LocGiathue.Location = new System.Drawing.Point(118, 98);
+            this.combb_LocGiathue.Margin = new System.Windows.Forms.Padding(2);
+            this.combb_LocGiathue.Name = "combb_LocGiathue";
+            this.combb_LocGiathue.Size = new System.Drawing.Size(633, 21);
+            this.combb_LocGiathue.TabIndex = 13;
+            this.combb_LocGiathue.Text = "GIÁ";
+            // 
+            // date_locSPthue
+            // 
+            this.date_locSPthue.Location = new System.Drawing.Point(118, 38);
+            this.date_locSPthue.Margin = new System.Windows.Forms.Padding(2);
+            this.date_locSPthue.Name = "date_locSPthue";
+            this.date_locSPthue.Size = new System.Drawing.Size(633, 20);
+            this.date_locSPthue.TabIndex = 8;
+            // 
+            // dtgv_hoadon
+            // 
+            this.dtgv_hoadon.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.dtgv_hoadon.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dtgv_hoadon.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgv_hoadon.Location = new System.Drawing.Point(11, 473);
+            this.dtgv_hoadon.Margin = new System.Windows.Forms.Padding(2);
+            this.dtgv_hoadon.Name = "dtgv_hoadon";
+            this.dtgv_hoadon.RowHeadersWidth = 51;
+            this.dtgv_hoadon.RowTemplate.Height = 24;
+            this.dtgv_hoadon.Size = new System.Drawing.Size(908, 317);
+            this.dtgv_hoadon.TabIndex = 24;
+            // 
+            // dtgv_spthue
+            // 
+            this.dtgv_spthue.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.dtgv_spthue.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgv_spthue.Location = new System.Drawing.Point(935, 473);
+            this.dtgv_spthue.Margin = new System.Windows.Forms.Padding(2);
+            this.dtgv_spthue.Name = "dtgv_spthue";
+            this.dtgv_spthue.RowHeadersWidth = 51;
+            this.dtgv_spthue.RowTemplate.Height = 24;
+            this.dtgv_spthue.Size = new System.Drawing.Size(898, 317);
+            this.dtgv_spthue.TabIndex = 25;
+            // 
+            // txt_maspt
+            // 
+            this.txt_maspt.Location = new System.Drawing.Point(118, 71);
+            this.txt_maspt.Name = "txt_maspt";
+            this.txt_maspt.Size = new System.Drawing.Size(633, 20);
+            this.txt_maspt.TabIndex = 15;
+            this.txt_maspt.TextChanged += new System.EventHandler(this.txt_maspt_TextChanged);
+            // 
+            // txt_hoadon
+            // 
+            this.txt_hoadon.Location = new System.Drawing.Point(109, 71);
+            this.txt_hoadon.Name = "txt_hoadon";
+            this.txt_hoadon.Size = new System.Drawing.Size(656, 20);
+            this.txt_hoadon.TabIndex = 16;
+            this.txt_hoadon.TextChanged += new System.EventHandler(this.txt_hoadon_TextChanged);
+            // 
             // Frm_BaoCaoThongKe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSkyBlue;
             this.ClientSize = new System.Drawing.Size(1844, 801);
-            this.Controls.Add(this.dataG_SPdaThue);
-            this.Controls.Add(this.dataG_SPdaBan);
+            this.Controls.Add(this.dtgv_spthue);
+            this.Controls.Add(this.dtgv_hoadon);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btn_xuatfile);
@@ -458,8 +429,8 @@
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataG_SPdaBan)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataG_SPdaThue)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgv_hoadon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgv_spthue)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -479,21 +450,19 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.DateTimePicker date_locSP;
-        private System.Windows.Forms.Button btn_LocSP;
-        private System.Windows.Forms.DataGridView dataG_SPdaBan;
-        private System.Windows.Forms.DataGridView dataG_SPdaThue;
+        private System.Windows.Forms.DataGridView dtgv_hoadon;
+        private System.Windows.Forms.DataGridView dtgv_spthue;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ComboBox combb_LocGia;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ComboBox comb_LocLoaiSP;
         private System.Windows.Forms.ComboBox combb_Trangthai;
         private System.Windows.Forms.ComboBox combb_LocGiathue;
-        private System.Windows.Forms.Button btn_locSPthue;
         private System.Windows.Forms.DateTimePicker date_locSPthue;
-        private System.Windows.Forms.ComboBox comb_LocLoaiSPthue;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TextBox txt_hoadon;
+        private System.Windows.Forms.TextBox txt_maspt;
     }
 }
