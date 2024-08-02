@@ -17,9 +17,11 @@ namespace GUI_QLGame
     public partial class Frm_SanPhamThue : Form
     {
         DTO_SanPhamThue sanphamthue = new DTO_SanPhamThue();
+        
         public Frm_SanPhamThue()
         {
             InitializeComponent();
+            dgv_thue.CellDoubleClick += dgv_thue_CellDoubleClick;
         }
 
         private void Frm_SanPhamThue_Load(object sender, EventArgs e)
@@ -209,6 +211,19 @@ namespace GUI_QLGame
 
         private void dgv_thue_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
+            if (e.RowIndex >= 0)
+            {
+                DataGridViewRow row = dgv_thue.Rows[e.RowIndex];
+                txt_masp.Text = row.Cells["MaSPThue"].Value.ToString();
+                txt_tensp.Text = row.Cells["TenSPThue"].Value.ToString();
+                txt_loaisp.Text = row.Cells["LoaiSP"].Value.ToString();
+                txt_HinhAnh.Text = row.Cells["HinhAnh"].Value.ToString();
+                txt_ghichu.Text = row.Cells["GhiChu"].Value.ToString();
+                this.Close();
+                Frm_ChiTietSanPhamThue ctspt = new Frm_ChiTietSanPhamThue();
+                ctspt.ShowDialog();
+                
+            }
             
         }
     }

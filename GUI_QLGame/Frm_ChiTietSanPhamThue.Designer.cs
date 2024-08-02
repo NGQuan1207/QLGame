@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.btn_sua = new System.Windows.Forms.Button();
-            this.btn_xoa = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -46,24 +45,14 @@
             // btn_sua
             // 
             this.btn_sua.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_sua.Location = new System.Drawing.Point(825, 23);
+            this.btn_sua.Location = new System.Drawing.Point(825, 53);
             this.btn_sua.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_sua.Name = "btn_sua";
             this.btn_sua.Size = new System.Drawing.Size(207, 63);
             this.btn_sua.TabIndex = 40;
             this.btn_sua.Text = "Sửa";
             this.btn_sua.UseVisualStyleBackColor = true;
-            // 
-            // btn_xoa
-            // 
-            this.btn_xoa.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_xoa.Location = new System.Drawing.Point(825, 103);
-            this.btn_xoa.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btn_xoa.Name = "btn_xoa";
-            this.btn_xoa.Size = new System.Drawing.Size(207, 63);
-            this.btn_xoa.TabIndex = 39;
-            this.btn_xoa.Text = "Xóa";
-            this.btn_xoa.UseVisualStyleBackColor = true;
+            this.btn_sua.Click += new System.EventHandler(this.btn_sua_Click);
             // 
             // label6
             // 
@@ -112,7 +101,7 @@
             // btn_QuayLai
             // 
             this.btn_QuayLai.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_QuayLai.Location = new System.Drawing.Point(825, 184);
+            this.btn_QuayLai.Location = new System.Drawing.Point(825, 154);
             this.btn_QuayLai.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_QuayLai.Name = "btn_QuayLai";
             this.btn_QuayLai.Size = new System.Drawing.Size(207, 63);
@@ -178,7 +167,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1243, 661);
             this.Controls.Add(this.btn_sua);
-            this.Controls.Add(this.btn_xoa);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label3);
@@ -201,7 +189,6 @@
         #endregion
 
         private System.Windows.Forms.Button btn_sua;
-        private System.Windows.Forms.Button btn_xoa;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label3;

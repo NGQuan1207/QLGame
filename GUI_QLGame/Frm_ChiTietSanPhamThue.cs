@@ -21,7 +21,7 @@ namespace GUI_QLGame
         public Frm_ChiTietSanPhamThue()
         {
             InitializeComponent();
-            dtgv_chitietsanphamthue.CellDoubleClick += dtgv_chitietsanphamthue_CellDoubleClic;
+            
         }
         public Frm_ChiTietSanPhamThue(string maCTSPT, string maSPT, string soLuong, string gia)
         {
@@ -50,6 +50,9 @@ namespace GUI_QLGame
         private void btn_QuayLai_Click(object sender, EventArgs e)
         {
             this.Close();
+            Frm_SanPhamThue sanPhamThue = new Frm_SanPhamThue();
+            sanPhamThue.ShowDialog();
+            
         }
 
         private void dtgv_chitietsanphamthue_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
@@ -72,6 +75,52 @@ namespace GUI_QLGame
             
         }
 
+        private void btn_sua_Click(object sender, EventArgs e)
+        {
+            string mactspt = txt_mactspt.Text;
+            string maspt = txt_maspt.Text;
+            int soluong;
+            int gia;
+            // Kiểm tra và chuyển đổi số lượng
+            if (int.TryParse(txt_soluong.Text, out soluong))
+            {
+                // Chuyển đổi thành công, bạn có thể sử dụng biến soluong
+            }
+            else
+            {
+                // Xử lý lỗi khi chuyển đổi thất bại
+                MessageBox.Show("Số lượng không hợp lệ.");
+            }
+
+            // Kiểm tra và chuyển đổi giá
+            if (int.TryParse(txt_gia.Text, out gia))
+            {
+                // Chuyển đổi thành công, bạn có thể sử dụng biến gia
+            }
+            else
+            {
+                // Xử lý lỗi khi chuyển đổi thất bại
+                MessageBox.Show("Giá không hợp lệ.");
+            }
+
+            DTO_ChiTietSPThue sanphamthue = new DTO_ChiTietSPThue();
+
+            if (BUS_ChiTietSPT.SuaChiTietSPT(mactspt, maspt, soluong, gia))
+            {
+                /*MessageBox.Show("Sửa sản phẩm thành công", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                taibaohanh();*/
+                MessageBox.Show("Sửa sản phẩm thất bại", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                TaiHoadonh();
+            }
+            else
+            {
+                /*MessageBox.Show("Sửa sản phẩm thất bại", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                taibaohanh();*/
+                MessageBox.Show("Sửa sản phẩm thành công", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                TaiHoadonh();
+            }
+        }
+
         private void TaiHoadonh()
         {
             dtgv_chitietsanphamthue.DataSource = chitietspt.GetChiTietSanPham();
@@ -85,7 +134,6 @@ namespace GUI_QLGame
         {
             txt_mactspt.Text = null;
             txt_soluong.Text = null;
-            
             txt_maspt.Text = null;
             txt_gia.Text = null;
             

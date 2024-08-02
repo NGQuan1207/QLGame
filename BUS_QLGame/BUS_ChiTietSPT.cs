@@ -17,5 +17,10 @@ namespace BUS_QLGame
         {
             return dal_ChiTietSPT.GetChiTietSanPham();
         }
+        public static bool SuaChiTietSPT(string mactspt, string maspt, int soluong, int gia)
+        {
+            DAL_ChiTietSPT dalSanPham = new DAL_ChiTietSPT();
+            return dalSanPham.SuaChiTietSPT(mactspt, maspt, soluong, gia);
+        }
     }
 }
