@@ -39,13 +39,13 @@
             this.combb_DateSP = new System.Windows.Forms.ComboBox();
             this.btn_xuatfile = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txt_hoadon = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.txt_maspt = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.dtgv_hoadon = new System.Windows.Forms.DataGridView();
             this.dtgv_spthue = new System.Windows.Forms.DataGridView();
-            this.txt_maspt = new System.Windows.Forms.TextBox();
-            this.txt_hoadon = new System.Windows.Forms.TextBox();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -59,7 +59,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(16, -50);
+            this.label1.Location = new System.Drawing.Point(16, -23);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(256, 33);
@@ -88,7 +88,7 @@
             // 
             this.txt_Thunhap.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txt_Thunhap.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_Thunhap.Location = new System.Drawing.Point(265, 37);
+            this.txt_Thunhap.Location = new System.Drawing.Point(265, 64);
             this.txt_Thunhap.Margin = new System.Windows.Forms.Padding(2);
             this.txt_Thunhap.Name = "txt_Thunhap";
             this.txt_Thunhap.ReadOnly = true;
@@ -100,7 +100,7 @@
             // 
             this.txt_TongSP.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txt_TongSP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_TongSP.Location = new System.Drawing.Point(265, 129);
+            this.txt_TongSP.Location = new System.Drawing.Point(265, 156);
             this.txt_TongSP.Margin = new System.Windows.Forms.Padding(2);
             this.txt_TongSP.Name = "txt_TongSP";
             this.txt_TongSP.ReadOnly = true;
@@ -114,7 +114,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label2.Location = new System.Drawing.Point(111, 33);
+            this.label2.Location = new System.Drawing.Point(111, 60);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(122, 29);
@@ -127,7 +127,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label3.Location = new System.Drawing.Point(68, 123);
+            this.label3.Location = new System.Drawing.Point(68, 150);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(165, 29);
@@ -144,7 +144,7 @@
             "30 ngày trước",
             "90 ngày trước",
             "1 năm trước"});
-            this.combb_DateThunhap.Location = new System.Drawing.Point(655, 35);
+            this.combb_DateThunhap.Location = new System.Drawing.Point(655, 62);
             this.combb_DateThunhap.Margin = new System.Windows.Forms.Padding(2);
             this.combb_DateThunhap.Name = "combb_DateThunhap";
             this.combb_DateThunhap.Size = new System.Drawing.Size(264, 28);
@@ -161,7 +161,7 @@
             "30 ngày trước",
             "90 ngày trước",
             "1 năm trước"});
-            this.combb_DateSP.Location = new System.Drawing.Point(655, 127);
+            this.combb_DateSP.Location = new System.Drawing.Point(655, 154);
             this.combb_DateSP.Margin = new System.Windows.Forms.Padding(2);
             this.combb_DateSP.Name = "combb_DateSP";
             this.combb_DateSP.Size = new System.Drawing.Size(264, 28);
@@ -172,7 +172,7 @@
             // 
             this.btn_xuatfile.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btn_xuatfile.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_xuatfile.Location = new System.Drawing.Point(1319, 37);
+            this.btn_xuatfile.Location = new System.Drawing.Point(1319, 64);
             this.btn_xuatfile.Margin = new System.Windows.Forms.Padding(2);
             this.btn_xuatfile.Name = "btn_xuatfile";
             this.btn_xuatfile.Size = new System.Drawing.Size(147, 52);
@@ -187,7 +187,7 @@
             this.groupBox1.Controls.Add(this.txt_hoadon);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.groupBox1.Location = new System.Drawing.Point(22, 194);
+            this.groupBox1.Location = new System.Drawing.Point(22, 221);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
@@ -196,6 +196,14 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Tìm";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // txt_hoadon
+            // 
+            this.txt_hoadon.Location = new System.Drawing.Point(134, 18);
+            this.txt_hoadon.Name = "txt_hoadon";
+            this.txt_hoadon.Size = new System.Drawing.Size(758, 20);
+            this.txt_hoadon.TabIndex = 16;
+            this.txt_hoadon.TextChanged += new System.EventHandler(this.txt_hoadon_TextChanged);
             // 
             // label5
             // 
@@ -216,7 +224,7 @@
             this.groupBox2.Controls.Add(this.txt_maspt);
             this.groupBox2.Controls.Add(this.label8);
             this.groupBox2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.groupBox2.Location = new System.Drawing.Point(946, 194);
+            this.groupBox2.Location = new System.Drawing.Point(946, 221);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
@@ -224,6 +232,14 @@
             this.groupBox2.TabIndex = 23;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Tìm";
+            // 
+            // txt_maspt
+            // 
+            this.txt_maspt.Location = new System.Drawing.Point(93, 18);
+            this.txt_maspt.Name = "txt_maspt";
+            this.txt_maspt.Size = new System.Drawing.Size(786, 20);
+            this.txt_maspt.TabIndex = 15;
+            this.txt_maspt.TextChanged += new System.EventHandler(this.txt_maspt_TextChanged);
             // 
             // label8
             // 
@@ -243,7 +259,7 @@
             this.dtgv_hoadon.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dtgv_hoadon.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dtgv_hoadon.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgv_hoadon.Location = new System.Drawing.Point(22, 260);
+            this.dtgv_hoadon.Location = new System.Drawing.Point(22, 287);
             this.dtgv_hoadon.Margin = new System.Windows.Forms.Padding(2);
             this.dtgv_hoadon.Name = "dtgv_hoadon";
             this.dtgv_hoadon.RowHeadersWidth = 51;
@@ -255,7 +271,7 @@
             // 
             this.dtgv_spthue.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dtgv_spthue.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgv_spthue.Location = new System.Drawing.Point(946, 260);
+            this.dtgv_spthue.Location = new System.Drawing.Point(946, 287);
             this.dtgv_spthue.Margin = new System.Windows.Forms.Padding(2);
             this.dtgv_spthue.Name = "dtgv_spthue";
             this.dtgv_spthue.RowHeadersWidth = 51;
@@ -263,28 +279,12 @@
             this.dtgv_spthue.Size = new System.Drawing.Size(898, 317);
             this.dtgv_spthue.TabIndex = 25;
             // 
-            // txt_maspt
-            // 
-            this.txt_maspt.Location = new System.Drawing.Point(93, 18);
-            this.txt_maspt.Name = "txt_maspt";
-            this.txt_maspt.Size = new System.Drawing.Size(786, 20);
-            this.txt_maspt.TabIndex = 15;
-            this.txt_maspt.TextChanged += new System.EventHandler(this.txt_maspt_TextChanged);
-            // 
-            // txt_hoadon
-            // 
-            this.txt_hoadon.Location = new System.Drawing.Point(134, 18);
-            this.txt_hoadon.Name = "txt_hoadon";
-            this.txt_hoadon.Size = new System.Drawing.Size(758, 20);
-            this.txt_hoadon.TabIndex = 16;
-            this.txt_hoadon.TextChanged += new System.EventHandler(this.txt_hoadon_TextChanged);
-            // 
             // Frm_BaoCaoThongKe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.ClientSize = new System.Drawing.Size(1844, 606);
+            this.ClientSize = new System.Drawing.Size(1844, 661);
             this.Controls.Add(this.dtgv_spthue);
             this.Controls.Add(this.dtgv_hoadon);
             this.Controls.Add(this.groupBox2);
