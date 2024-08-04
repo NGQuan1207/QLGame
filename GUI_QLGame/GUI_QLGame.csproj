@@ -70,6 +70,12 @@
     <Compile Include="Frm_BaoCaoThongKe_GU.Designer.cs">
       <DependentUpon>Frm_BaoCaoThongKe_GU.cs</DependentUpon>
     </Compile>
+    <Compile Include="Frm_BaoHanh_GU.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_BaoHanh_GU.Designer.cs">
+      <DependentUpon>Frm_BaoHanh_GU.cs</DependentUpon>
+    </Compile>
     <Compile Include="Frm_ChiTietSanPhamThue.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -158,6 +164,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_BaoCaoThongKe_GU.resx">
       <DependentUpon>Frm_BaoCaoThongKe_GU.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_BaoHanh_GU.resx">
+      <DependentUpon>Frm_BaoHanh_GU.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_ChiTietSanPhamThue.resx">
       <DependentUpon>Frm_ChiTietSanPhamThue.cs</DependentUpon>
