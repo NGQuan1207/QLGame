@@ -89,5 +89,10 @@ namespace GUI_QLGame
             lbl_SoLuong3.Text = string.Empty;
             lbl_ThanhTien3.Text = string.Empty;
         }
+
+        private void Bill_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

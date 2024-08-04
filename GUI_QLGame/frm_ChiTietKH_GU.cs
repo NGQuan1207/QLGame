@@ -16,5 +16,10 @@ namespace GUI_QLGame
         {
             InitializeComponent();
         }
+
+        private void frm_ChiTietKH_GU_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -46,8 +46,7 @@ namespace GUI_QLGame
         {
             taibaocao();
             TaiHoadonh();
-            txt_Thunhap.Text = "50000"; // Thu nhập cố định
-            txt_TongSP.Text = "150"; // Tổng sản phẩm cố định
+           
         }
 
         private void label6_Click(object sender, EventArgs e)
@@ -97,6 +96,26 @@ namespace GUI_QLGame
         }
 
         private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void combb_DateThunhap_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void combb_DateSP_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt_Thunhap_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt_TongSP_TextChanged(object sender, EventArgs e)
         {
 
         }
