@@ -124,6 +124,12 @@
     <Compile Include="Frm_HoaDon.Designer.cs">
       <DependentUpon>Frm_HoaDon.cs</DependentUpon>
     </Compile>
+    <Compile Include="Frm_HoaDon_GU.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_HoaDon_GU.Designer.cs">
+      <DependentUpon>Frm_HoaDon_GU.cs</DependentUpon>
+    </Compile>
     <Compile Include="Frm_Main.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -221,6 +227,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_HoaDon.resx">
       <DependentUpon>Frm_HoaDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_HoaDon_GU.resx">
+      <DependentUpon>Frm_HoaDon_GU.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_Main.resx">
       <DependentUpon>Frm_Main.cs</DependentUpon>
