@@ -12,6 +12,7 @@ namespace GUI_QLGame
 {
     public partial class Frm_ChiTietSanPhamThue_GU : Form
     {
+
         public Frm_ChiTietSanPhamThue_GU()
         {
             InitializeComponent();

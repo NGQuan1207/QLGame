@@ -81,7 +81,7 @@
             this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(585, 216);
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(299, 56);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
             this.guna2HtmlLabel2.Size = new System.Drawing.Size(133, 35);
             this.guna2HtmlLabel2.TabIndex = 3;
@@ -93,7 +93,7 @@
             this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.guna2HtmlLabel3.Location = new System.Drawing.Point(500, 304);
+            this.guna2HtmlLabel3.Location = new System.Drawing.Point(214, 144);
             this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
             this.guna2HtmlLabel3.Size = new System.Drawing.Size(218, 35);
             this.guna2HtmlLabel3.TabIndex = 4;
@@ -118,7 +118,7 @@
             "30 ngầy trước",
             "90 ngày trước",
             "Tổng"});
-            this.combb_DateThunhap.Location = new System.Drawing.Point(1189, 218);
+            this.combb_DateThunhap.Location = new System.Drawing.Point(903, 58);
             this.combb_DateThunhap.Name = "combb_DateThunhap";
             this.combb_DateThunhap.Size = new System.Drawing.Size(229, 36);
             this.combb_DateThunhap.StartIndex = 0;
@@ -144,7 +144,7 @@
             "30 ngầy trước",
             "90 ngày trước",
             "Tổng"});
-            this.combb_DateSP.Location = new System.Drawing.Point(1189, 306);
+            this.combb_DateSP.Location = new System.Drawing.Point(903, 146);
             this.combb_DateSP.Name = "combb_DateSP";
             this.combb_DateSP.Size = new System.Drawing.Size(229, 36);
             this.combb_DateSP.StartIndex = 0;
@@ -167,7 +167,7 @@
             this.guna2Button1.HoverState.BorderColor = System.Drawing.SystemColors.Highlight;
             this.guna2Button1.HoverState.FillColor = System.Drawing.SystemColors.ActiveCaption;
             this.guna2Button1.HoverState.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.Location = new System.Drawing.Point(1596, 238);
+            this.guna2Button1.Location = new System.Drawing.Point(1310, 78);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.Size = new System.Drawing.Size(175, 70);
             this.guna2Button1.TabIndex = 8;
@@ -186,7 +186,7 @@
             this.guna2GroupBox1.CustomBorderColor = System.Drawing.Color.LightSkyBlue;
             this.guna2GroupBox1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2GroupBox1.ForeColor = System.Drawing.Color.Black;
-            this.guna2GroupBox1.Location = new System.Drawing.Point(350, 403);
+            this.guna2GroupBox1.Location = new System.Drawing.Point(64, 243);
             this.guna2GroupBox1.Name = "guna2GroupBox1";
             this.guna2GroupBox1.Size = new System.Drawing.Size(800, 507);
             this.guna2GroupBox1.TabIndex = 9;
@@ -318,7 +318,7 @@
             this.guna2GroupBox2.CustomBorderColor = System.Drawing.Color.LightSkyBlue;
             this.guna2GroupBox2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2GroupBox2.ForeColor = System.Drawing.Color.Black;
-            this.guna2GroupBox2.Location = new System.Drawing.Point(1223, 403);
+            this.guna2GroupBox2.Location = new System.Drawing.Point(937, 243);
             this.guna2GroupBox2.Name = "guna2GroupBox2";
             this.guna2GroupBox2.Size = new System.Drawing.Size(800, 507);
             this.guna2GroupBox2.TabIndex = 10;
@@ -480,8 +480,8 @@
             this.txt_TongSP.HoverState.ForeColor = System.Drawing.SystemColors.Highlight;
             this.txt_TongSP.HoverState.PlaceholderForeColor = System.Drawing.SystemColors.Highlight;
             this.txt_TongSP.IconLeft = ((System.Drawing.Image)(resources.GetObject("txt_TongSP.IconLeft")));
-            this.txt_TongSP.Location = new System.Drawing.Point(742, 304);
-            this.txt_TongSP.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.txt_TongSP.Location = new System.Drawing.Point(456, 144);
+            this.txt_TongSP.Margin = new System.Windows.Forms.Padding(6);
             this.txt_TongSP.Name = "txt_TongSP";
             this.txt_TongSP.PasswordChar = '\0';
             this.txt_TongSP.PlaceholderForeColor = System.Drawing.Color.Silver;
@@ -510,8 +510,8 @@
             this.txt_Thunhap.HoverState.ForeColor = System.Drawing.SystemColors.Highlight;
             this.txt_Thunhap.HoverState.PlaceholderForeColor = System.Drawing.SystemColors.Highlight;
             this.txt_Thunhap.IconLeft = ((System.Drawing.Image)(resources.GetObject("txt_Thunhap.IconLeft")));
-            this.txt_Thunhap.Location = new System.Drawing.Point(742, 216);
-            this.txt_Thunhap.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.txt_Thunhap.Location = new System.Drawing.Point(456, 56);
+            this.txt_Thunhap.Margin = new System.Windows.Forms.Padding(6);
             this.txt_Thunhap.Name = "txt_Thunhap";
             this.txt_Thunhap.PasswordChar = '\0';
             this.txt_Thunhap.PlaceholderForeColor = System.Drawing.Color.Silver;

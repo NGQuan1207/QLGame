@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_BaoHanh_GU));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.btn_Thoat = new Guna.UI2.WinForms.Guna2Button();
             this.guna2GroupBox1 = new Guna.UI2.WinForms.Guna2GroupBox();
@@ -107,7 +107,7 @@
             this.guna2GroupBox1.CustomBorderColor = System.Drawing.Color.LightSkyBlue;
             this.guna2GroupBox1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2GroupBox1.ForeColor = System.Drawing.Color.Black;
-            this.guna2GroupBox1.Location = new System.Drawing.Point(132, 116);
+            this.guna2GroupBox1.Location = new System.Drawing.Point(153, 130);
             this.guna2GroupBox1.Name = "guna2GroupBox1";
             this.guna2GroupBox1.Size = new System.Drawing.Size(813, 697);
             this.guna2GroupBox1.TabIndex = 10;
@@ -135,6 +135,7 @@
             this.btn_timMaKH.TabIndex = 3;
             this.btn_timMaKH.Text = "Tìm";
             this.btn_timMaKH.TextOffset = new System.Drawing.Point(0, -4);
+            this.btn_timMaKH.Click += new System.EventHandler(this.btn_timMaKH_Click);
             // 
             // txt_TimBaoHanh
             // 
@@ -176,27 +177,27 @@
             // 
             // dtgv_Baohanh
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.dtgv_Baohanh.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle16.BackColor = System.Drawing.Color.White;
+            this.dtgv_Baohanh.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle16;
             this.dtgv_Baohanh.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgv_Baohanh.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle17.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle17.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle17.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle17.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgv_Baohanh.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle17;
             this.dtgv_Baohanh.ColumnHeadersHeight = 4;
             this.dtgv_Baohanh.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dtgv_Baohanh.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle18.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle18.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle18.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtgv_Baohanh.DefaultCellStyle = dataGridViewCellStyle18;
             this.dtgv_Baohanh.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dtgv_Baohanh.Location = new System.Drawing.Point(13, 58);
             this.dtgv_Baohanh.Name = "dtgv_Baohanh";
@@ -225,13 +226,14 @@
             this.dtgv_Baohanh.ThemeStyle.RowsStyle.Height = 22;
             this.dtgv_Baohanh.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dtgv_Baohanh.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.dtgv_Baohanh.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgv_Baohanh_CellClick);
             // 
             // guna2HtmlLabel2
             // 
             this.guna2HtmlLabel2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(1074, 138);
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(1095, 152);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
             this.guna2HtmlLabel2.Size = new System.Drawing.Size(152, 31);
             this.guna2HtmlLabel2.TabIndex = 12;
@@ -249,6 +251,7 @@
             this.txt_MaBaoHanh.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.txt_MaBaoHanh.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txt_MaBaoHanh.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_MaBaoHanh.Enabled = false;
             this.txt_MaBaoHanh.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_MaBaoHanh.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold);
             this.txt_MaBaoHanh.HoverState.BorderColor = System.Drawing.Color.Blue;
@@ -256,7 +259,7 @@
             this.txt_MaBaoHanh.HoverState.ForeColor = System.Drawing.SystemColors.ControlText;
             this.txt_MaBaoHanh.HoverState.PlaceholderForeColor = System.Drawing.SystemColors.Highlight;
             this.txt_MaBaoHanh.IconRight = ((System.Drawing.Image)(resources.GetObject("txt_MaBaoHanh.IconRight")));
-            this.txt_MaBaoHanh.Location = new System.Drawing.Point(1233, 134);
+            this.txt_MaBaoHanh.Location = new System.Drawing.Point(1254, 148);
             this.txt_MaBaoHanh.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txt_MaBaoHanh.Name = "txt_MaBaoHanh";
             this.txt_MaBaoHanh.PasswordChar = '\0';
@@ -285,7 +288,7 @@
             this.txt_MaSP.HoverState.ForeColor = System.Drawing.SystemColors.ControlText;
             this.txt_MaSP.HoverState.PlaceholderForeColor = System.Drawing.SystemColors.Highlight;
             this.txt_MaSP.IconRight = ((System.Drawing.Image)(resources.GetObject("txt_MaSP.IconRight")));
-            this.txt_MaSP.Location = new System.Drawing.Point(1233, 214);
+            this.txt_MaSP.Location = new System.Drawing.Point(1254, 228);
             this.txt_MaSP.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txt_MaSP.Name = "txt_MaSP";
             this.txt_MaSP.PasswordChar = '\0';
@@ -300,7 +303,7 @@
             this.guna2HtmlLabel3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel3.Location = new System.Drawing.Point(1070, 219);
+            this.guna2HtmlLabel3.Location = new System.Drawing.Point(1091, 233);
             this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
             this.guna2HtmlLabel3.Size = new System.Drawing.Size(157, 31);
             this.guna2HtmlLabel3.TabIndex = 14;
@@ -326,7 +329,7 @@
             this.txt_MaKH.HoverState.ForeColor = System.Drawing.SystemColors.ControlText;
             this.txt_MaKH.HoverState.PlaceholderForeColor = System.Drawing.SystemColors.Highlight;
             this.txt_MaKH.IconRight = ((System.Drawing.Image)(resources.GetObject("txt_MaKH.IconRight")));
-            this.txt_MaKH.Location = new System.Drawing.Point(1233, 297);
+            this.txt_MaKH.Location = new System.Drawing.Point(1254, 311);
             this.txt_MaKH.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txt_MaKH.Name = "txt_MaKH";
             this.txt_MaKH.PasswordChar = '\0';
@@ -341,7 +344,7 @@
             this.guna2HtmlLabel5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.guna2HtmlLabel5.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel5.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel5.Location = new System.Drawing.Point(1050, 301);
+            this.guna2HtmlLabel5.Location = new System.Drawing.Point(1071, 315);
             this.guna2HtmlLabel5.Name = "guna2HtmlLabel5";
             this.guna2HtmlLabel5.Size = new System.Drawing.Size(177, 31);
             this.guna2HtmlLabel5.TabIndex = 16;
@@ -366,7 +369,7 @@
             this.txt_BatDau.HoverState.ForeColor = System.Drawing.SystemColors.ControlText;
             this.txt_BatDau.HoverState.PlaceholderForeColor = System.Drawing.SystemColors.Highlight;
             this.txt_BatDau.IconRight = ((System.Drawing.Image)(resources.GetObject("txt_BatDau.IconRight")));
-            this.txt_BatDau.Location = new System.Drawing.Point(1233, 374);
+            this.txt_BatDau.Location = new System.Drawing.Point(1254, 388);
             this.txt_BatDau.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txt_BatDau.Name = "txt_BatDau";
             this.txt_BatDau.PasswordChar = '\0';
@@ -381,7 +384,7 @@
             this.guna2HtmlLabel6.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.guna2HtmlLabel6.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel6.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel6.Location = new System.Drawing.Point(1070, 378);
+            this.guna2HtmlLabel6.Location = new System.Drawing.Point(1091, 392);
             this.guna2HtmlLabel6.Name = "guna2HtmlLabel6";
             this.guna2HtmlLabel6.Size = new System.Drawing.Size(156, 31);
             this.guna2HtmlLabel6.TabIndex = 18;
@@ -406,7 +409,7 @@
             this.txt_KetThuc.HoverState.ForeColor = System.Drawing.SystemColors.ControlText;
             this.txt_KetThuc.HoverState.PlaceholderForeColor = System.Drawing.SystemColors.Highlight;
             this.txt_KetThuc.IconRight = ((System.Drawing.Image)(resources.GetObject("txt_KetThuc.IconRight")));
-            this.txt_KetThuc.Location = new System.Drawing.Point(1233, 452);
+            this.txt_KetThuc.Location = new System.Drawing.Point(1254, 466);
             this.txt_KetThuc.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txt_KetThuc.Name = "txt_KetThuc";
             this.txt_KetThuc.PasswordChar = '\0';
@@ -421,7 +424,7 @@
             this.guna2HtmlLabel7.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.guna2HtmlLabel7.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel7.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel7.Location = new System.Drawing.Point(1067, 457);
+            this.guna2HtmlLabel7.Location = new System.Drawing.Point(1088, 471);
             this.guna2HtmlLabel7.Name = "guna2HtmlLabel7";
             this.guna2HtmlLabel7.Size = new System.Drawing.Size(160, 31);
             this.guna2HtmlLabel7.TabIndex = 20;
@@ -432,7 +435,7 @@
             this.guna2HtmlLabel8.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.guna2HtmlLabel8.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel8.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel8.Location = new System.Drawing.Point(1105, 534);
+            this.guna2HtmlLabel8.Location = new System.Drawing.Point(1126, 548);
             this.guna2HtmlLabel8.Name = "guna2HtmlLabel8";
             this.guna2HtmlLabel8.Size = new System.Drawing.Size(121, 31);
             this.guna2HtmlLabel8.TabIndex = 22;
@@ -457,7 +460,7 @@
             this.txt_TinhTrang.HoverState.ForeColor = System.Drawing.SystemColors.ControlText;
             this.txt_TinhTrang.HoverState.PlaceholderForeColor = System.Drawing.SystemColors.Highlight;
             this.txt_TinhTrang.IconRight = ((System.Drawing.Image)(resources.GetObject("txt_TinhTrang.IconRight")));
-            this.txt_TinhTrang.Location = new System.Drawing.Point(1233, 530);
+            this.txt_TinhTrang.Location = new System.Drawing.Point(1254, 544);
             this.txt_TinhTrang.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txt_TinhTrang.Name = "txt_TinhTrang";
             this.txt_TinhTrang.PasswordChar = '\0';
@@ -488,7 +491,7 @@
             this.btn_ThemBH.HoverState.BorderColor = System.Drawing.Color.Black;
             this.btn_ThemBH.HoverState.FillColor = System.Drawing.Color.PaleGreen;
             this.btn_ThemBH.HoverState.ForeColor = System.Drawing.Color.Green;
-            this.btn_ThemBH.Location = new System.Drawing.Point(1110, 652);
+            this.btn_ThemBH.Location = new System.Drawing.Point(1131, 666);
             this.btn_ThemBH.Name = "btn_ThemBH";
             this.btn_ThemBH.Size = new System.Drawing.Size(151, 44);
             this.btn_ThemBH.TabIndex = 24;
@@ -511,11 +514,12 @@
             this.btn_LamMoi.HoverState.BorderColor = System.Drawing.Color.Black;
             this.btn_LamMoi.HoverState.FillColor = System.Drawing.Color.LightSkyBlue;
             this.btn_LamMoi.HoverState.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.btn_LamMoi.Location = new System.Drawing.Point(1361, 747);
+            this.btn_LamMoi.Location = new System.Drawing.Point(1382, 761);
             this.btn_LamMoi.Name = "btn_LamMoi";
             this.btn_LamMoi.Size = new System.Drawing.Size(151, 44);
             this.btn_LamMoi.TabIndex = 25;
             this.btn_LamMoi.Text = "LÀM MỚI";
+            this.btn_LamMoi.Click += new System.EventHandler(this.btn_LamMoi_Click);
             // 
             // btn_XoaBH
             // 
@@ -533,11 +537,12 @@
             this.btn_XoaBH.HoverState.BorderColor = System.Drawing.Color.Black;
             this.btn_XoaBH.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.btn_XoaBH.HoverState.ForeColor = System.Drawing.Color.Crimson;
-            this.btn_XoaBH.Location = new System.Drawing.Point(1110, 747);
+            this.btn_XoaBH.Location = new System.Drawing.Point(1131, 761);
             this.btn_XoaBH.Name = "btn_XoaBH";
             this.btn_XoaBH.Size = new System.Drawing.Size(151, 44);
             this.btn_XoaBH.TabIndex = 26;
             this.btn_XoaBH.Text = "XÓA";
+            this.btn_XoaBH.Click += new System.EventHandler(this.btn_XoaBH_Click);
             // 
             // btn_Sua
             // 
@@ -555,11 +560,12 @@
             this.btn_Sua.HoverState.BorderColor = System.Drawing.Color.Black;
             this.btn_Sua.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.btn_Sua.HoverState.ForeColor = System.Drawing.Color.DarkOrange;
-            this.btn_Sua.Location = new System.Drawing.Point(1361, 652);
+            this.btn_Sua.Location = new System.Drawing.Point(1382, 666);
             this.btn_Sua.Name = "btn_Sua";
             this.btn_Sua.Size = new System.Drawing.Size(151, 44);
             this.btn_Sua.TabIndex = 27;
             this.btn_Sua.Text = "SỬA";
+            this.btn_Sua.Click += new System.EventHandler(this.btn_Sua_Click);
             // 
             // Frm_BaoHanh_GU
             // 
@@ -590,6 +596,7 @@
             this.ShowInTaskbar = false;
             this.Text = "Frm_BaoHanh_GU";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.Frm_BaoHanh_GU_Load);
             this.guna2GroupBox1.ResumeLayout(false);
             this.guna2GroupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgv_Baohanh)).EndInit();
