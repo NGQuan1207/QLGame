@@ -10,6 +10,18 @@ namespace DAL_QLGame
 {
     public class DAL_PhieuThue : Connect
     {
+        public DataTable ListPhieuThue()
+        {
+            using (SqlConnection con = new SqlConnection(_conn.ConnectionString))
+            using (SqlCommand cmd = new SqlCommand("ListPhieuThue", con))
+            {
+                con.Open();
+                cmd.CommandType = CommandType.StoredProcedure;
+                DataTable ListPT = new DataTable();
+                ListPT.Load(cmd.ExecuteReader());
+                return ListPT;
+            }
+        }
         private bool Execute(string storedProcedureName, params SqlParameter[] parameters)
         {
             using (SqlCommand cmd = _conn.CreateCommand())

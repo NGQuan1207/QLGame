@@ -37,10 +37,8 @@ namespace GUI_QLGame
             lbl_mahoadon.Text = mahd;
             lbl_makh.Text = makh;
 
-            // Xóa các nhãn sản phẩm trước đó nếu có
             ClearPreviousProductLabels();
 
-            // Hiển thị chi tiết hóa đơn
             for (int i = 0; i < chiTietHoaDons.Count; i++)
             {
                 DTO_HoaDon chiTiet = chiTietHoaDons[i];
@@ -62,12 +60,13 @@ namespace GUI_QLGame
                         lbl_makh3.Text = chiTiet.MaKH;
                         lbl_thanhtien3.Text = chiTiet.ThanhTien.ToString("N0");
                         break;
-                        // Thêm nhiều case hơn nếu có nhiều nhãn
                 }
             }
 
+            lbl_totalAmount.Text = chiTietHoaDons.Sum(x => x.ThanhTien).ToString("N0");
+
             // Tính và hiển thị tổng số tiền nếu cần
-           /* lbl_totalAmount.Text = chiTietHoaDons.Sum(x => x.ThanhTien).ToString("N0");*/
+            /* lbl_totalAmount.Text = chiTietHoaDons.Sum(x => x.ThanhTien).ToString("N0");*/
         }
         private void ClearPreviousProductLabels()
         {

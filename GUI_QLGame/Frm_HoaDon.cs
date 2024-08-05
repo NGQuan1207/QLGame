@@ -75,27 +75,24 @@ namespace GUI_QLGame
                     });
                 }
             }
-            BillHoaDon billForm = new BillHoaDon();
+            BillHD billForm = new BillHD();
             billForm.Billshow(hoaDon.MaHD, hoaDon.MaKH, chiTietHoaDons);
             billForm.Show();
 
         }
         private void btn_InHoaDon_Click(object sender, EventArgs e)
         {
-            // Lấy thông tin hóa đơn từ DataGridView (Giả sử bạn chọn một dòng từ dtgv_hoadon)
             if (dtgv_hoadon.SelectedRows.Count > 0)
             {
                 DataGridViewRow selectedRow = dtgv_hoadon.SelectedRows[0];
 
-                // Tạo một đối tượng DTO_HoaDon từ dữ liệu của dòng được chọn
                 DTO_HoaDon hoaDon = new DTO_HoaDon
                 {
                     MaHD = selectedRow.Cells["MaHD"].Value.ToString(),
                     MaKH = selectedRow.Cells["MaKH"].Value.ToString(),
-                    // Cần lấy thêm thông tin chi tiết nếu có
+                    ThanhTien = Convert.ToDecimal(selectedRow.Cells["ThanhTien"].Value)
                 };
 
-                // Tạo danh sách chi tiết hóa đơn
                 List<DTO_HoaDon> chiTietHoaDons = new List<DTO_HoaDon>();
                 foreach (DataGridViewRow row in dtgv_hoadon.Rows)
                 {
@@ -105,13 +102,12 @@ namespace GUI_QLGame
                         {
                             MaHD = row.Cells["MaHD"].Value.ToString(),
                             MaKH = row.Cells["MaKH"].Value.ToString(),
-                            // Thêm các thuộc tính khác nếu cần
+                            ThanhTien = Convert.ToDecimal(row.Cells["ThanhTien"].Value)
                         });
                     }
                 }
 
-                // Tạo và hiển thị form BillHoaDon với dữ liệu hóa đơn
-                BillHoaDon billForm = new BillHoaDon();
+                BillHD billForm = new BillHD();
                 billForm.Billshow(hoaDon.MaKH, hoaDon.MaHD, chiTietHoaDons);
                 billForm.Show();
             }
@@ -145,5 +141,5 @@ namespace GUI_QLGame
                newRow["ThanhTien"] = hoaDon.ThanhTien;
                dt.Rows.Add(newRow);
            }*/
-    }
-}
+    
+

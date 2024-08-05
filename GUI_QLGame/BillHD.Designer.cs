@@ -47,6 +47,8 @@
             this.lbl = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.lbl_totalAmount = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lbl_thanhtien3
@@ -228,11 +230,33 @@
             this.label1.TabIndex = 66;
             this.label1.Text = "WE GAME";
             // 
+            // lbl_totalAmount
+            // 
+            this.lbl_totalAmount.AutoSize = true;
+            this.lbl_totalAmount.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_totalAmount.Location = new System.Drawing.Point(701, 638);
+            this.lbl_totalAmount.Name = "lbl_totalAmount";
+            this.lbl_totalAmount.Size = new System.Drawing.Size(36, 37);
+            this.lbl_totalAmount.TabIndex = 86;
+            this.lbl_totalAmount.Text = "0";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(514, 638);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(181, 37);
+            this.label10.TabIndex = 85;
+            this.label10.Text = "Tổng Tiền:";
+            // 
             // BillHD
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 629);
+            this.ClientSize = new System.Drawing.Size(800, 700);
+            this.Controls.Add(this.lbl_totalAmount);
+            this.Controls.Add(this.label10);
             this.Controls.Add(this.lbl_thanhtien3);
             this.Controls.Add(this.lbl_makh3);
             this.Controls.Add(this.lbl_mahd3);
@@ -281,5 +305,7 @@
         private System.Windows.Forms.Label lbl;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lbl_totalAmount;
+        private System.Windows.Forms.Label label10;
     }
 }
