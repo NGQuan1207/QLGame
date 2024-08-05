@@ -142,6 +142,12 @@
     <Compile Include="Frm_Main.Designer.cs">
       <DependentUpon>Frm_Main.cs</DependentUpon>
     </Compile>
+    <Compile Include="Frm_Main_GU.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Main_GU.Designer.cs">
+      <DependentUpon>Frm_Main_GU.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_QuanLyNhanVien.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -242,6 +248,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_Main.resx">
       <DependentUpon>Frm_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Main_GU.resx">
+      <DependentUpon>Frm_Main_GU.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_QuanLyNhanVien.resx">
       <DependentUpon>frm_QuanLyNhanVien.cs</DependentUpon>
