@@ -51,7 +51,7 @@
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(1089, 452);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(32, 36);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -63,7 +63,7 @@
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(1089, 334);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(32, 36);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -75,7 +75,7 @@
             // 
             this.btn_quenmatkhau.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_quenmatkhau.Location = new System.Drawing.Point(1359, 559);
-            this.btn_quenmatkhau.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_quenmatkhau.Margin = new System.Windows.Forms.Padding(2);
             this.btn_quenmatkhau.Name = "btn_quenmatkhau";
             this.btn_quenmatkhau.Size = new System.Drawing.Size(155, 54);
             this.btn_quenmatkhau.TabIndex = 40;
@@ -87,7 +87,7 @@
             // 
             this.btn_dangnhap.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_dangnhap.Location = new System.Drawing.Point(1136, 559);
-            this.btn_dangnhap.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_dangnhap.Margin = new System.Windows.Forms.Padding(2);
             this.btn_dangnhap.Name = "btn_dangnhap";
             this.btn_dangnhap.Size = new System.Drawing.Size(155, 54);
             this.btn_dangnhap.TabIndex = 38;
@@ -99,7 +99,7 @@
             // 
             this.txt_ID.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_ID.Location = new System.Drawing.Point(1136, 334);
-            this.txt_ID.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_ID.Margin = new System.Windows.Forms.Padding(2);
             this.txt_ID.Multiline = true;
             this.txt_ID.Name = "txt_ID";
             this.txt_ID.Size = new System.Drawing.Size(379, 36);
@@ -111,7 +111,7 @@
             // 
             this.txt_matkhau.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_matkhau.Location = new System.Drawing.Point(1136, 453);
-            this.txt_matkhau.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_matkhau.Margin = new System.Windows.Forms.Padding(2);
             this.txt_matkhau.Multiline = true;
             this.txt_matkhau.Name = "txt_matkhau";
             this.txt_matkhau.PasswordChar = '*';
@@ -123,13 +123,13 @@
             // lbl_tennhom
             // 
             this.lbl_tennhom.AutoSize = true;
-            this.lbl_tennhom.Font = new System.Drawing.Font("Arial Rounded MT Bold", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_tennhom.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_tennhom.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lbl_tennhom.Image = ((System.Drawing.Image)(resources.GetObject("lbl_tennhom.Image")));
             this.lbl_tennhom.Location = new System.Drawing.Point(249, 576);
             this.lbl_tennhom.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_tennhom.Name = "lbl_tennhom";
-            this.lbl_tennhom.Size = new System.Drawing.Size(136, 34);
+            this.lbl_tennhom.Size = new System.Drawing.Size(130, 36);
             this.lbl_tennhom.TabIndex = 34;
             this.lbl_tennhom.Text = "NHÓM 3";
             this.lbl_tennhom.Click += new System.EventHandler(this.lbl_tennhom_Click);
@@ -139,7 +139,7 @@
             this.pb_logo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pb_logo.BackgroundImage")));
             this.pb_logo.Image = ((System.Drawing.Image)(resources.GetObject("pb_logo.Image")));
             this.pb_logo.Location = new System.Drawing.Point(150, 294);
-            this.pb_logo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pb_logo.Margin = new System.Windows.Forms.Padding(2);
             this.pb_logo.Name = "pb_logo";
             this.pb_logo.Size = new System.Drawing.Size(335, 268);
             this.pb_logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -151,7 +151,7 @@
             this.pictureBox3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox3.BackgroundImage")));
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
             this.pictureBox3.Location = new System.Drawing.Point(1, 0);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(643, 1087);
             this.pictureBox3.TabIndex = 43;
@@ -197,7 +197,7 @@
             this.Controls.Add(this.lbl_tennhom);
             this.Controls.Add(this.pb_logo);
             this.Controls.Add(this.pictureBox3);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Frm_DangNhap";
             this.Text = "Đăng nhập";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

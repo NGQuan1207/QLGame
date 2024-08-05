@@ -18,7 +18,7 @@ namespace GUI_QLGame
             Application.SetCompatibleTextRenderingDefault(false);
             /*Application.Run(new Frm_SanPham());*/
             /*Application.Run(new frm_QuanLyNhanVien());*/
-            Application.Run(new Frm_BaoCaoThongKe_GU());
+            Application.Run(new Frm_DangNhap_GU());
             /* Application.Run(new Frm_ThayDoiMatKhau());*/
             /*Application.Run(new Frm_ChiTietSanPhamThue());*/
 

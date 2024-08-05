@@ -123,6 +123,17 @@ namespace GUI_QLGame
 
             }
         }
+
+        private void btn_thoat_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt_dienthoai_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
         private void btn_QuayLai_Click(object sender, EventArgs e)
         {
             frm_DanhSachKH khachhang = new frm_DanhSachKH();

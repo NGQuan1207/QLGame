@@ -116,5 +116,10 @@ namespace GUI_QLGame
                 dtgv_hoadon.Columns[5].HeaderText = "Trạng Thái";
             }
         }
+
+        private void dtgv_hoadon_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
