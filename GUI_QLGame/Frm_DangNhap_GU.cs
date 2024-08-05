@@ -22,8 +22,14 @@ namespace GUI_QLGame
             guna2Panel1.BackColor = Color.FromArgb(150,0,0,0);
 
 
+            btn_quenmatkhau.FillColor = Color.FromArgb(170, 0, 0, 0);
             btn_dangnhap.FillColor = Color.FromArgb(170, 0, 0, 0);
             txt_ID.BackColor = Color.FromArgb(200, 0, 0, 0);
+        }
+
+        private void btn_dangnhap_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
