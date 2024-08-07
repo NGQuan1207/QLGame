@@ -83,7 +83,7 @@ namespace GUI_QLGame
 
         private void guna2TextBox2_TextChanged(object sender, EventArgs e)
         {
-            dstring maspt = txt_maspt.Text;
+          string maspt = txt_maspt.Text;
             if (!string.IsNullOrEmpty(maspt))
             {
                 // Thực hiện lọc sản phẩm

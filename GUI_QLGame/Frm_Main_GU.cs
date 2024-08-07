@@ -104,7 +104,7 @@ namespace GUI_QLGame
 
         private void guna2Panel1_Paint(object sender, PaintEventArgs e)
         {
-            guna2Panel1.BackColor = Color.FromArgb(150, 0, 0, 0);
+          /*  guna2Panel1.BackColor = Color.FromArgb(150, 0, 0, 0);*/
 
         }
 
@@ -135,6 +135,12 @@ namespace GUI_QLGame
 
         private void Frm_Main_GU_Load(object sender, EventArgs e)
         {
+
+            guna2Panel1.BackColor = Color.FromArgb(150, 0, 0, 0);
+            pb_logo.BackColor = Color.FromArgb(150, 0, 0, 0);
+
+
+
             ResetValue();
             if (profile == 1) // Nếu vừa cập nhật mật khẩu thì 
                               // phải login lại, mục 'thông tin nhân viên ẩn'
@@ -300,6 +306,11 @@ namespace GUI_QLGame
             {
                 ActiveChildForm("Frm_LenDon_GU");
             }
+        }
+
+        private void pb_logo_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

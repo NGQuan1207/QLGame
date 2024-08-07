@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_HoaDon_GU));
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.btn_QuayLai = new Guna.UI2.WinForms.Guna2Button();
@@ -52,10 +52,9 @@
             // 
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(18, 18);
-            this.guna2HtmlLabel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(12, 12);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(215, 54);
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(146, 35);
             this.guna2HtmlLabel1.TabIndex = 2;
             this.guna2HtmlLabel1.Text = "HÓA ĐƠN";
             // 
@@ -76,10 +75,9 @@
             this.btn_QuayLai.HoverState.BorderColor = System.Drawing.Color.Firebrick;
             this.btn_QuayLai.HoverState.FillColor = System.Drawing.Color.LightCoral;
             this.btn_QuayLai.HoverState.ForeColor = System.Drawing.Color.White;
-            this.btn_QuayLai.Location = new System.Drawing.Point(2508, 18);
-            this.btn_QuayLai.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btn_QuayLai.Location = new System.Drawing.Point(1762, 12);
             this.btn_QuayLai.Name = "btn_QuayLai";
-            this.btn_QuayLai.Size = new System.Drawing.Size(222, 55);
+            this.btn_QuayLai.Size = new System.Drawing.Size(148, 36);
             this.btn_QuayLai.TabIndex = 8;
             this.btn_QuayLai.Text = "Return";
             this.btn_QuayLai.TextOffset = new System.Drawing.Point(0, -4);
@@ -101,10 +99,9 @@
             this.btn_InHoaDon.HoverState.BorderColor = System.Drawing.Color.Black;
             this.btn_InHoaDon.HoverState.FillColor = System.Drawing.Color.LightSkyBlue;
             this.btn_InHoaDon.HoverState.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.btn_InHoaDon.Location = new System.Drawing.Point(368, 169);
-            this.btn_InHoaDon.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btn_InHoaDon.Location = new System.Drawing.Point(-40, 65);
             this.btn_InHoaDon.Name = "btn_InHoaDon";
-            this.btn_InHoaDon.Size = new System.Drawing.Size(471, 146);
+            this.btn_InHoaDon.Size = new System.Drawing.Size(314, 95);
             this.btn_InHoaDon.TabIndex = 27;
             this.btn_InHoaDon.Text = "IN HÓA ĐƠN";
             this.btn_InHoaDon.Click += new System.EventHandler(this.btn_InHoaDon_Click_1);
@@ -119,45 +116,43 @@
             this.guna2GroupBox1.CustomBorderColor = System.Drawing.Color.LightSkyBlue;
             this.guna2GroupBox1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2GroupBox1.ForeColor = System.Drawing.Color.Black;
-            this.guna2GroupBox1.Location = new System.Drawing.Point(249, 457);
-            this.guna2GroupBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.guna2GroupBox1.Location = new System.Drawing.Point(-119, 252);
             this.guna2GroupBox1.Name = "guna2GroupBox1";
-            this.guna2GroupBox1.Size = new System.Drawing.Size(2204, 909);
+            this.guna2GroupBox1.Size = new System.Drawing.Size(1469, 591);
             this.guna2GroupBox1.TabIndex = 28;
             this.guna2GroupBox1.Text = "Danh sách khách hàng";
             this.guna2GroupBox1.Click += new System.EventHandler(this.guna2GroupBox1_Click);
             // 
             // dtgv_hoadon
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.dtgv_hoadon.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
+            this.dtgv_hoadon.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
             this.dtgv_hoadon.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgv_hoadon.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgv_hoadon.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.dtgv_hoadon.ColumnHeadersHeight = 4;
             this.dtgv_hoadon.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dtgv_hoadon.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtgv_hoadon.DefaultCellStyle = dataGridViewCellStyle9;
             this.dtgv_hoadon.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dtgv_hoadon.Location = new System.Drawing.Point(21, 88);
-            this.dtgv_hoadon.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.dtgv_hoadon.Location = new System.Drawing.Point(14, 57);
             this.dtgv_hoadon.Name = "dtgv_hoadon";
             this.dtgv_hoadon.ReadOnly = true;
             this.dtgv_hoadon.RowHeadersVisible = false;
             this.dtgv_hoadon.RowHeadersWidth = 62;
-            this.dtgv_hoadon.Size = new System.Drawing.Size(2158, 795);
+            this.dtgv_hoadon.Size = new System.Drawing.Size(1439, 517);
             this.dtgv_hoadon.TabIndex = 0;
             this.dtgv_hoadon.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dtgv_hoadon.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -194,10 +189,9 @@
             this.guna2GroupBox2.CustomBorderColor = System.Drawing.Color.LightSkyBlue;
             this.guna2GroupBox2.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2GroupBox2.ForeColor = System.Drawing.Color.Black;
-            this.guna2GroupBox2.Location = new System.Drawing.Point(1014, 131);
-            this.guna2GroupBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.guna2GroupBox2.Location = new System.Drawing.Point(391, 40);
             this.guna2GroupBox2.Name = "guna2GroupBox2";
-            this.guna2GroupBox2.Size = new System.Drawing.Size(1438, 251);
+            this.guna2GroupBox2.Size = new System.Drawing.Size(959, 163);
             this.guna2GroupBox2.TabIndex = 31;
             this.guna2GroupBox2.Text = "Tìm kiếm";
             // 
@@ -206,10 +200,9 @@
             this.guna2HtmlLabel3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel3.Location = new System.Drawing.Point(26, 91);
-            this.guna2HtmlLabel3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.guna2HtmlLabel3.Location = new System.Drawing.Point(17, 59);
             this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
-            this.guna2HtmlLabel3.Size = new System.Drawing.Size(138, 39);
+            this.guna2HtmlLabel3.Size = new System.Drawing.Size(96, 27);
             this.guna2HtmlLabel3.TabIndex = 32;
             this.guna2HtmlLabel3.Text = "Ngày lập";
             // 
@@ -218,10 +211,9 @@
             this.guna2HtmlLabel2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(26, 163);
-            this.guna2HtmlLabel2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(17, 106);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            this.guna2HtmlLabel2.Size = new System.Drawing.Size(231, 42);
+            this.guna2HtmlLabel2.Size = new System.Drawing.Size(156, 31);
             this.guna2HtmlLabel2.TabIndex = 31;
             this.guna2HtmlLabel2.Text = "Mã nhân viên";
             // 
@@ -234,12 +226,11 @@
             this.date_TimHoaDon.FillColor = System.Drawing.Color.White;
             this.date_TimHoaDon.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
             this.date_TimHoaDon.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.date_TimHoaDon.Location = new System.Drawing.Point(178, 83);
-            this.date_TimHoaDon.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.date_TimHoaDon.Location = new System.Drawing.Point(119, 54);
             this.date_TimHoaDon.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.date_TimHoaDon.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.date_TimHoaDon.Name = "date_TimHoaDon";
-            this.date_TimHoaDon.Size = new System.Drawing.Size(986, 54);
+            this.date_TimHoaDon.Size = new System.Drawing.Size(657, 35);
             this.date_TimHoaDon.TabIndex = 30;
             this.date_TimHoaDon.Value = new System.DateTime(2024, 8, 5, 11, 17, 29, 867);
             // 
@@ -259,10 +250,9 @@
             this.btn_timHD.HoverState.BorderColor = System.Drawing.SystemColors.HotTrack;
             this.btn_timHD.HoverState.FillColor = System.Drawing.Color.LightSkyBlue;
             this.btn_timHD.HoverState.ForeColor = System.Drawing.Color.White;
-            this.btn_timHD.Location = new System.Drawing.Point(1196, 112);
-            this.btn_timHD.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btn_timHD.Location = new System.Drawing.Point(797, 73);
             this.btn_timHD.Name = "btn_timHD";
-            this.btn_timHD.Size = new System.Drawing.Size(219, 72);
+            this.btn_timHD.Size = new System.Drawing.Size(146, 47);
             this.btn_timHD.TabIndex = 29;
             this.btn_timHD.Text = "TÌM";
             // 
@@ -284,27 +274,26 @@
             this.txt_MaHoaDon.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_MaHoaDon.HoverState.PlaceholderForeColor = System.Drawing.Color.DodgerBlue;
             this.txt_MaHoaDon.IconRight = ((System.Drawing.Image)(resources.GetObject("txt_MaHoaDon.IconRight")));
-            this.txt_MaHoaDon.Location = new System.Drawing.Point(270, 163);
-            this.txt_MaHoaDon.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.txt_MaHoaDon.Location = new System.Drawing.Point(180, 106);
+            this.txt_MaHoaDon.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txt_MaHoaDon.Name = "txt_MaHoaDon";
             this.txt_MaHoaDon.PasswordChar = '\0';
             this.txt_MaHoaDon.PlaceholderText = "Mã nhân viên";
             this.txt_MaHoaDon.SelectedText = "";
-            this.txt_MaHoaDon.Size = new System.Drawing.Size(894, 48);
+            this.txt_MaHoaDon.Size = new System.Drawing.Size(596, 31);
             this.txt_MaHoaDon.TabIndex = 28;
             this.txt_MaHoaDon.TextChanged += new System.EventHandler(this.txt_MaHoaDon_TextChanged);
             // 
             // Frm_HoaDon_GU
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1924, 1050);
+            this.ClientSize = new System.Drawing.Size(1373, 876);
             this.Controls.Add(this.guna2GroupBox2);
             this.Controls.Add(this.guna2GroupBox1);
             this.Controls.Add(this.btn_InHoaDon);
             this.Controls.Add(this.btn_QuayLai);
             this.Controls.Add(this.guna2HtmlLabel1);
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Frm_HoaDon_GU";
             this.Text = "Frm_HoaDon_GU";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
