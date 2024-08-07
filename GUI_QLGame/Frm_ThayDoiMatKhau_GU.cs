@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace GUI_QLGame
 {
-    public partial class Frm_SanPham_GU : Form
+    public partial class Frm_ThayDoiMatKhau_GU : Form
     {
-        public Frm_SanPham_GU()
+        public Frm_ThayDoiMatKhau_GU()
         {
             InitializeComponent();
-        }
-
-        private void Frm_SanPham_GU_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

@@ -55,9 +55,9 @@
             this.btn_xoa = new Guna.UI2.WinForms.Guna2Button();
             this.btn_them = new Guna.UI2.WinForms.Guna2Button();
             this.guna2GroupBox2 = new Guna.UI2.WinForms.Guna2GroupBox();
+            this.dgv_sanpham = new Guna.UI2.WinForms.Guna2DataGridView();
             this.btn_Tim = new Guna.UI2.WinForms.Guna2Button();
             this.txt_Tim = new Guna.UI2.WinForms.Guna2TextBox();
-            this.dgv_sanpham = new Guna.UI2.WinForms.Guna2DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.pb_SanPham)).BeginInit();
             this.guna2GroupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_sanpham)).BeginInit();
@@ -537,55 +537,6 @@
             this.guna2GroupBox2.TabIndex = 48;
             this.guna2GroupBox2.Text = "Danh sách sản phẩm";
             // 
-            // btn_Tim
-            // 
-            this.btn_Tim.Animated = true;
-            this.btn_Tim.BackColor = System.Drawing.Color.AliceBlue;
-            this.btn_Tim.BorderRadius = 15;
-            this.btn_Tim.BorderThickness = 1;
-            this.btn_Tim.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_Tim.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_Tim.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_Tim.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_Tim.FillColor = System.Drawing.Color.White;
-            this.btn_Tim.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Tim.ForeColor = System.Drawing.Color.Black;
-            this.btn_Tim.HoverState.BorderColor = System.Drawing.SystemColors.HotTrack;
-            this.btn_Tim.HoverState.FillColor = System.Drawing.Color.LightSkyBlue;
-            this.btn_Tim.HoverState.ForeColor = System.Drawing.Color.White;
-            this.btn_Tim.Location = new System.Drawing.Point(1380, 43);
-            this.btn_Tim.Name = "btn_Tim";
-            this.btn_Tim.Size = new System.Drawing.Size(125, 32);
-            this.btn_Tim.TabIndex = 29;
-            this.btn_Tim.Text = "TÌM";
-            // 
-            // txt_Tim
-            // 
-            this.txt_Tim.Animated = true;
-            this.txt_Tim.BackColor = System.Drawing.Color.AliceBlue;
-            this.txt_Tim.BorderColor = System.Drawing.Color.Black;
-            this.txt_Tim.BorderRadius = 5;
-            this.txt_Tim.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_Tim.DefaultText = "";
-            this.txt_Tim.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txt_Tim.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txt_Tim.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_Tim.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_Tim.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_Tim.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.txt_Tim.ForeColor = System.Drawing.Color.Black;
-            this.txt_Tim.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_Tim.HoverState.PlaceholderForeColor = System.Drawing.Color.DodgerBlue;
-            this.txt_Tim.IconRight = ((System.Drawing.Image)(resources.GetObject("txt_Tim.IconRight")));
-            this.txt_Tim.Location = new System.Drawing.Point(8, 44);
-            this.txt_Tim.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txt_Tim.Name = "txt_Tim";
-            this.txt_Tim.PasswordChar = '\0';
-            this.txt_Tim.PlaceholderText = "Tìm kiếm";
-            this.txt_Tim.SelectedText = "";
-            this.txt_Tim.Size = new System.Drawing.Size(1368, 31);
-            this.txt_Tim.TabIndex = 28;
-            // 
             // dgv_sanpham
             // 
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
@@ -638,6 +589,55 @@
             this.dgv_sanpham.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgv_sanpham.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
+            // btn_Tim
+            // 
+            this.btn_Tim.Animated = true;
+            this.btn_Tim.BackColor = System.Drawing.Color.AliceBlue;
+            this.btn_Tim.BorderRadius = 15;
+            this.btn_Tim.BorderThickness = 1;
+            this.btn_Tim.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Tim.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Tim.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_Tim.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_Tim.FillColor = System.Drawing.Color.White;
+            this.btn_Tim.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Tim.ForeColor = System.Drawing.Color.Black;
+            this.btn_Tim.HoverState.BorderColor = System.Drawing.SystemColors.HotTrack;
+            this.btn_Tim.HoverState.FillColor = System.Drawing.Color.LightSkyBlue;
+            this.btn_Tim.HoverState.ForeColor = System.Drawing.Color.White;
+            this.btn_Tim.Location = new System.Drawing.Point(1380, 43);
+            this.btn_Tim.Name = "btn_Tim";
+            this.btn_Tim.Size = new System.Drawing.Size(125, 32);
+            this.btn_Tim.TabIndex = 29;
+            this.btn_Tim.Text = "TÌM";
+            // 
+            // txt_Tim
+            // 
+            this.txt_Tim.Animated = true;
+            this.txt_Tim.BackColor = System.Drawing.Color.AliceBlue;
+            this.txt_Tim.BorderColor = System.Drawing.Color.Black;
+            this.txt_Tim.BorderRadius = 5;
+            this.txt_Tim.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_Tim.DefaultText = "";
+            this.txt_Tim.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txt_Tim.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txt_Tim.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_Tim.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_Tim.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_Tim.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.txt_Tim.ForeColor = System.Drawing.Color.Black;
+            this.txt_Tim.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_Tim.HoverState.PlaceholderForeColor = System.Drawing.Color.DodgerBlue;
+            this.txt_Tim.IconRight = ((System.Drawing.Image)(resources.GetObject("txt_Tim.IconRight")));
+            this.txt_Tim.Location = new System.Drawing.Point(8, 44);
+            this.txt_Tim.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_Tim.Name = "txt_Tim";
+            this.txt_Tim.PasswordChar = '\0';
+            this.txt_Tim.PlaceholderText = "Tìm kiếm";
+            this.txt_Tim.SelectedText = "";
+            this.txt_Tim.Size = new System.Drawing.Size(1368, 31);
+            this.txt_Tim.TabIndex = 28;
+            // 
             // Frm_SanPham_GU
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -670,6 +670,7 @@
             this.Name = "Frm_SanPham_GU";
             this.Text = "Frm_SanPham_GU";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.Frm_SanPham_GU_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pb_SanPham)).EndInit();
             this.guna2GroupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_sanpham)).EndInit();

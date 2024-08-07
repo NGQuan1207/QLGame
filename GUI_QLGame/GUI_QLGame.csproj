@@ -220,6 +220,12 @@
     <Compile Include="Frm_ThayDoiMatKhau.Designer.cs">
       <DependentUpon>Frm_ThayDoiMatKhau.cs</DependentUpon>
     </Compile>
+    <Compile Include="Frm_ThayDoiMatKhau_GU.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_ThayDoiMatKhau_GU.Designer.cs">
+      <DependentUpon>Frm_ThayDoiMatKhau_GU.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Bill.resx">
@@ -305,6 +311,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_ThayDoiMatKhau.resx">
       <DependentUpon>Frm_ThayDoiMatKhau.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_ThayDoiMatKhau_GU.resx">
+      <DependentUpon>Frm_ThayDoiMatKhau_GU.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
