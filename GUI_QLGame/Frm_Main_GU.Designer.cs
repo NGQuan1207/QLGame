@@ -44,9 +44,9 @@
             this.đăngNhậpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.đổiMậtKhẩuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.đăngXuấtToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.hướngDẫnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.thôngTinToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.thoátToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.hướngDẫnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_logo)).BeginInit();
             this.menuStrip1.SuspendLayout();
@@ -67,11 +67,13 @@
             this.btn_DSkhachhang.HoverState.BorderColor = System.Drawing.Color.Black;
             this.btn_DSkhachhang.HoverState.FillColor = System.Drawing.Color.LightSkyBlue;
             this.btn_DSkhachhang.HoverState.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.btn_DSkhachhang.Location = new System.Drawing.Point(48, 69);
+            this.btn_DSkhachhang.Location = new System.Drawing.Point(64, 85);
+            this.btn_DSkhachhang.Margin = new System.Windows.Forms.Padding(4);
             this.btn_DSkhachhang.Name = "btn_DSkhachhang";
-            this.btn_DSkhachhang.Size = new System.Drawing.Size(262, 76);
+            this.btn_DSkhachhang.Size = new System.Drawing.Size(349, 94);
             this.btn_DSkhachhang.TabIndex = 0;
             this.btn_DSkhachhang.Text = "DANH SÁCH KHÁCH HÀNG";
+            this.btn_DSkhachhang.Click += new System.EventHandler(this.btn_DSkhachhang_Click);
             // 
             // guna2Panel1
             // 
@@ -84,9 +86,10 @@
             this.guna2Panel1.Controls.Add(this.btn_Hoadon);
             this.guna2Panel1.Controls.Add(this.btn_SanPham);
             this.guna2Panel1.Controls.Add(this.btn_DSkhachhang);
-            this.guna2Panel1.Location = new System.Drawing.Point(302, 164);
+            this.guna2Panel1.Location = new System.Drawing.Point(403, 202);
+            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(678, 637);
+            this.guna2Panel1.Size = new System.Drawing.Size(904, 784);
             this.guna2Panel1.TabIndex = 1;
             this.guna2Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel1_Paint);
             // 
@@ -105,11 +108,13 @@
             this.btn_LenDon.HoverState.BorderColor = System.Drawing.Color.Black;
             this.btn_LenDon.HoverState.FillColor = System.Drawing.Color.LightSkyBlue;
             this.btn_LenDon.HoverState.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.btn_LenDon.Location = new System.Drawing.Point(364, 495);
+            this.btn_LenDon.Location = new System.Drawing.Point(485, 609);
+            this.btn_LenDon.Margin = new System.Windows.Forms.Padding(4);
             this.btn_LenDon.Name = "btn_LenDon";
-            this.btn_LenDon.Size = new System.Drawing.Size(262, 76);
+            this.btn_LenDon.Size = new System.Drawing.Size(349, 94);
             this.btn_LenDon.TabIndex = 7;
             this.btn_LenDon.Text = "LÊN ĐƠN";
+            this.btn_LenDon.Click += new System.EventHandler(this.btn_LenDon_Click);
             // 
             // button2
             // 
@@ -126,11 +131,13 @@
             this.button2.HoverState.BorderColor = System.Drawing.Color.Black;
             this.button2.HoverState.FillColor = System.Drawing.Color.LightSkyBlue;
             this.button2.HoverState.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.button2.Location = new System.Drawing.Point(364, 211);
+            this.button2.Location = new System.Drawing.Point(485, 260);
+            this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(262, 76);
+            this.button2.Size = new System.Drawing.Size(349, 94);
             this.button2.TabIndex = 6;
             this.button2.Text = "BẢO HÀNH";
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // btn_BaocaoThongKe
             // 
@@ -147,11 +154,13 @@
             this.btn_BaocaoThongKe.HoverState.BorderColor = System.Drawing.Color.Black;
             this.btn_BaocaoThongKe.HoverState.FillColor = System.Drawing.Color.LightSkyBlue;
             this.btn_BaocaoThongKe.HoverState.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.btn_BaocaoThongKe.Location = new System.Drawing.Point(364, 352);
+            this.btn_BaocaoThongKe.Location = new System.Drawing.Point(485, 433);
+            this.btn_BaocaoThongKe.Margin = new System.Windows.Forms.Padding(4);
             this.btn_BaocaoThongKe.Name = "btn_BaocaoThongKe";
-            this.btn_BaocaoThongKe.Size = new System.Drawing.Size(262, 76);
+            this.btn_BaocaoThongKe.Size = new System.Drawing.Size(349, 94);
             this.btn_BaocaoThongKe.TabIndex = 5;
             this.btn_BaocaoThongKe.Text = "BÁO CÁO THỐNG KÊ";
+            this.btn_BaocaoThongKe.Click += new System.EventHandler(this.btn_BaocaoThongKe_Click);
             // 
             // btn_QLnhanvien
             // 
@@ -168,11 +177,13 @@
             this.btn_QLnhanvien.HoverState.BorderColor = System.Drawing.Color.Black;
             this.btn_QLnhanvien.HoverState.FillColor = System.Drawing.Color.LightSkyBlue;
             this.btn_QLnhanvien.HoverState.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.btn_QLnhanvien.Location = new System.Drawing.Point(364, 69);
+            this.btn_QLnhanvien.Location = new System.Drawing.Point(485, 85);
+            this.btn_QLnhanvien.Margin = new System.Windows.Forms.Padding(4);
             this.btn_QLnhanvien.Name = "btn_QLnhanvien";
-            this.btn_QLnhanvien.Size = new System.Drawing.Size(262, 76);
+            this.btn_QLnhanvien.Size = new System.Drawing.Size(349, 94);
             this.btn_QLnhanvien.TabIndex = 4;
             this.btn_QLnhanvien.Text = "QUẢN LÍ NHÂN VIÊN";
+            this.btn_QLnhanvien.Click += new System.EventHandler(this.btn_QLnhanvien_Click);
             // 
             // btn_SanPhamchothue
             // 
@@ -189,11 +200,13 @@
             this.btn_SanPhamchothue.HoverState.BorderColor = System.Drawing.Color.Black;
             this.btn_SanPhamchothue.HoverState.FillColor = System.Drawing.Color.LightSkyBlue;
             this.btn_SanPhamchothue.HoverState.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.btn_SanPhamchothue.Location = new System.Drawing.Point(48, 495);
+            this.btn_SanPhamchothue.Location = new System.Drawing.Point(64, 609);
+            this.btn_SanPhamchothue.Margin = new System.Windows.Forms.Padding(4);
             this.btn_SanPhamchothue.Name = "btn_SanPhamchothue";
-            this.btn_SanPhamchothue.Size = new System.Drawing.Size(262, 76);
+            this.btn_SanPhamchothue.Size = new System.Drawing.Size(349, 94);
             this.btn_SanPhamchothue.TabIndex = 3;
             this.btn_SanPhamchothue.Text = "SẢN PHẨM CHO THUÊ";
+            this.btn_SanPhamchothue.Click += new System.EventHandler(this.btn_SanPhamchothue_Click);
             // 
             // btn_Hoadon
             // 
@@ -210,11 +223,13 @@
             this.btn_Hoadon.HoverState.BorderColor = System.Drawing.Color.Black;
             this.btn_Hoadon.HoverState.FillColor = System.Drawing.Color.LightSkyBlue;
             this.btn_Hoadon.HoverState.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.btn_Hoadon.Location = new System.Drawing.Point(48, 211);
+            this.btn_Hoadon.Location = new System.Drawing.Point(64, 260);
+            this.btn_Hoadon.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Hoadon.Name = "btn_Hoadon";
-            this.btn_Hoadon.Size = new System.Drawing.Size(262, 76);
+            this.btn_Hoadon.Size = new System.Drawing.Size(349, 94);
             this.btn_Hoadon.TabIndex = 2;
             this.btn_Hoadon.Text = "HÓA ĐƠN";
+            this.btn_Hoadon.Click += new System.EventHandler(this.btn_Hoadon_Click);
             // 
             // btn_SanPham
             // 
@@ -231,21 +246,23 @@
             this.btn_SanPham.HoverState.BorderColor = System.Drawing.Color.Black;
             this.btn_SanPham.HoverState.FillColor = System.Drawing.Color.LightSkyBlue;
             this.btn_SanPham.HoverState.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.btn_SanPham.Location = new System.Drawing.Point(48, 352);
+            this.btn_SanPham.Location = new System.Drawing.Point(64, 433);
+            this.btn_SanPham.Margin = new System.Windows.Forms.Padding(4);
             this.btn_SanPham.Name = "btn_SanPham";
-            this.btn_SanPham.Size = new System.Drawing.Size(262, 76);
+            this.btn_SanPham.Size = new System.Drawing.Size(349, 94);
             this.btn_SanPham.TabIndex = 1;
             this.btn_SanPham.Text = "SẢN PHẨM";
+            this.btn_SanPham.Click += new System.EventHandler(this.btn_SanPham_Click);
             // 
             // pb_logo
             // 
             this.pb_logo.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pb_logo.BackColor = System.Drawing.Color.Transparent;
             this.pb_logo.Image = ((System.Drawing.Image)(resources.GetObject("pb_logo.Image")));
-            this.pb_logo.Location = new System.Drawing.Point(1158, 282);
-            this.pb_logo.Margin = new System.Windows.Forms.Padding(2);
+            this.pb_logo.Location = new System.Drawing.Point(1377, 377);
+            this.pb_logo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pb_logo.Name = "pb_logo";
-            this.pb_logo.Size = new System.Drawing.Size(389, 341);
+            this.pb_logo.Size = new System.Drawing.Size(519, 420);
             this.pb_logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pb_logo.TabIndex = 37;
             this.pb_logo.TabStop = false;
@@ -259,8 +276,8 @@
             this.hướngDẫnToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(1832, 24);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
+            this.menuStrip1.Size = new System.Drawing.Size(1924, 28);
             this.menuStrip1.TabIndex = 38;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -272,7 +289,7 @@
             this.thôngTinToolStripMenuItem,
             this.thoátToolStripMenuItem});
             this.hToolStripMenuItem.Name = "hToolStripMenuItem";
-            this.hToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
+            this.hToolStripMenuItem.Size = new System.Drawing.Size(88, 24);
             this.hToolStripMenuItem.Text = "Hệ Thống";
             // 
             // đăngNhậpToolStripMenuItem
@@ -280,53 +297,59 @@
             this.đăngNhậpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.đổiMậtKhẩuToolStripMenuItem});
             this.đăngNhậpToolStripMenuItem.Name = "đăngNhậpToolStripMenuItem";
-            this.đăngNhậpToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
+            this.đăngNhậpToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.đăngNhậpToolStripMenuItem.Text = "Đăng Nhập";
+            this.đăngNhậpToolStripMenuItem.Click += new System.EventHandler(this.đăngNhậpToolStripMenuItem_Click);
             // 
             // đổiMậtKhẩuToolStripMenuItem
             // 
             this.đổiMậtKhẩuToolStripMenuItem.Name = "đổiMậtKhẩuToolStripMenuItem";
-            this.đổiMậtKhẩuToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.đổiMậtKhẩuToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.đổiMậtKhẩuToolStripMenuItem.Text = "Đổi Mật Khẩu";
+            this.đổiMậtKhẩuToolStripMenuItem.Click += new System.EventHandler(this.đổiMậtKhẩuToolStripMenuItem_Click);
             // 
             // đăngXuấtToolStripMenuItem
             // 
             this.đăngXuấtToolStripMenuItem.Name = "đăngXuấtToolStripMenuItem";
-            this.đăngXuấtToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
+            this.đăngXuấtToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.đăngXuấtToolStripMenuItem.Text = "Đăng Xuất";
-            // 
-            // hướngDẫnToolStripMenuItem
-            // 
-            this.hướngDẫnToolStripMenuItem.Name = "hướngDẫnToolStripMenuItem";
-            this.hướngDẫnToolStripMenuItem.Size = new System.Drawing.Size(80, 20);
-            this.hướngDẫnToolStripMenuItem.Text = "Hướng Dẫn";
+            this.đăngXuấtToolStripMenuItem.Click += new System.EventHandler(this.đăngXuấtToolStripMenuItem_Click);
             // 
             // thôngTinToolStripMenuItem
             // 
             this.thôngTinToolStripMenuItem.Name = "thôngTinToolStripMenuItem";
-            this.thôngTinToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.thôngTinToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.thôngTinToolStripMenuItem.Text = "Thông tin";
+            this.thôngTinToolStripMenuItem.Click += new System.EventHandler(this.thôngTinToolStripMenuItem_Click);
             // 
             // thoátToolStripMenuItem
             // 
             this.thoátToolStripMenuItem.Name = "thoátToolStripMenuItem";
-            this.thoátToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.thoátToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.thoátToolStripMenuItem.Text = "Thoát";
+            // 
+            // hướngDẫnToolStripMenuItem
+            // 
+            this.hướngDẫnToolStripMenuItem.Name = "hướngDẫnToolStripMenuItem";
+            this.hướngDẫnToolStripMenuItem.Size = new System.Drawing.Size(100, 24);
+            this.hướngDẫnToolStripMenuItem.Text = "Hướng Dẫn";
             // 
             // Frm_Main_GU
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.AliceBlue;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ClientSize = new System.Drawing.Size(1832, 958);
+            this.ClientSize = new System.Drawing.Size(1924, 1055);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.pb_logo);
             this.Controls.Add(this.guna2Panel1);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Frm_Main_GU";
             this.Text = "Frm_Main_GU";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.Frm_Main_GU_Load);
             this.guna2Panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pb_logo)).EndInit();
             this.menuStrip1.ResumeLayout(false);
