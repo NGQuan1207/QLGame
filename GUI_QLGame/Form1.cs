@@ -31,14 +31,14 @@ namespace GUI_QLGame
 
             try
             {
-                txt_MaNV.Text = busNV.GetNhanVienByEmail(Frm_DangNhap.mail).Rows[0][0].ToString();
-                txt_TenNV.Text = busNV.GetNhanVienByEmail(Frm_DangNhap.mail).Rows[0][1].ToString();
-                txt_gender.Text = busNV.GetNhanVienByEmail(Frm_DangNhap.mail).Rows[0][2].ToString();
-                txt_ngaysinh.Text = busNV.GetNhanVienByEmail(Frm_DangNhap.mail).Rows[0][3].ToString();
-                txt_CCCDnv.Text = busNV.GetNhanVienByEmail(Frm_DangNhap.mail).Rows[0][4].ToString();
-                txt_sdtNV.Text = busNV.GetNhanVienByEmail(Frm_DangNhap.mail).Rows[0][5].ToString();
-                txt_diachiNV.Text = busNV.GetNhanVienByEmail(Frm_DangNhap.mail).Rows[0][6].ToString();
-                txt_ChuavuNV.Text = busNV.GetNhanVienByEmail(Frm_DangNhap.mail).Rows[0][7].ToString();
+                txt_MaNV.Text = busNV.GetNhanVienByEmail(Frm_DangNhap_GU.mail).Rows[0][0].ToString();
+                txt_TenNV.Text = busNV.GetNhanVienByEmail(Frm_DangNhap_GU.mail).Rows[0][1].ToString();
+                txt_gender.Text = busNV.GetNhanVienByEmail(Frm_DangNhap_GU.mail).Rows[0][2].ToString();
+                txt_ngaysinh.Text = busNV.GetNhanVienByEmail(Frm_DangNhap_GU.mail).Rows[0][3].ToString();
+                txt_CCCDnv.Text = busNV.GetNhanVienByEmail(Frm_DangNhap_GU.mail).Rows[0][4].ToString();
+                txt_sdtNV.Text = busNV.GetNhanVienByEmail(Frm_DangNhap_GU.mail).Rows[0][5].ToString();
+                txt_diachiNV.Text = busNV.GetNhanVienByEmail(Frm_DangNhap_GU.mail).Rows[0][6].ToString();
+                txt_ChuavuNV.Text = busNV.GetNhanVienByEmail(Frm_DangNhap_GU.mail).Rows[0][7].ToString();
 
             }
             catch (ApplicationException ex)
