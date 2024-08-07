@@ -126,7 +126,7 @@ namespace GUI_QLGame
 
         private void btn_thoat_Click(object sender, EventArgs e)
         {
-
+            Application.Exit();
         }
 
         private void txt_dienthoai_TextChanged(object sender, EventArgs e)
@@ -134,13 +134,117 @@ namespace GUI_QLGame
 
         }
 
-        private void btn_QuayLai_Click(object sender, EventArgs e)
+        private void txt_hoadon_TextChanged(object sender, EventArgs e)
         {
-            frm_DanhSachKH khachhang = new frm_DanhSachKH();
-            khachhang.ShowDialog();
-            this.Hide();
+
         }
-        private void btn_xoaphieu_Click(object sender, EventArgs e)
+
+        private void guna2HtmlLabel2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2HtmlLabel3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2HtmlLabel4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2GroupBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2HtmlLabel5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt_tenkh_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2HtmlLabel6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt_diachi_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2HtmlLabel7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt_mathue_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2GroupBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_timMaKH_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt_TimBaoHanh_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2HtmlLabel8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dtgv_hoadon_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void btn_QuayLai_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2HtmlLabel1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2TextBox6_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2HtmlLabel9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dtgv_phieuthue_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void btn_xoaphieu_Click_1(object sender, EventArgs e)
         {
             string maphieuthue = txt_mathue.Text;
             if (BUS_PhieuThue.XoaPhieuThue(maphieuthue))
@@ -153,7 +257,8 @@ namespace GUI_QLGame
                 MessageBox.Show("Xóa thất bại", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-        private void btn_xoa_Click(object sender, EventArgs e)
+
+        private void btn_xoa_Click_1(object sender, EventArgs e)
         {
             string mahoadon = txt_hoadon.Text;
             if (BUS_HoaDon.XoaHoaDon(mahoadon))
@@ -165,6 +270,21 @@ namespace GUI_QLGame
             {
                 MessageBox.Show("Xóa thất bại", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void btn_QuayLai_Click(object sender, EventArgs e)
+        {
+            frm_DanhSachKH khachhang = new frm_DanhSachKH();
+            khachhang.ShowDialog();
+            this.Hide();
+        }
+        private void btn_xoaphieu_Click(object sender, EventArgs e)
+        {
+           
+        }
+        private void btn_xoa_Click(object sender, EventArgs e)
+        {
+          
 
         }
     }

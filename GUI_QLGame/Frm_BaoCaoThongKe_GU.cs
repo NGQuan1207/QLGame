@@ -83,7 +83,7 @@ namespace GUI_QLGame
 
         private void guna2TextBox2_TextChanged(object sender, EventArgs e)
         {
-            string maspt = txt_maspt.Text;
+            dstring maspt = txt_maspt.Text;
             if (!string.IsNullOrEmpty(maspt))
             {
                 // Thực hiện lọc sản phẩm
@@ -118,6 +118,21 @@ namespace GUI_QLGame
         }
 
         private void dtgv_hoadon_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void txt_Thunhap_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt_TongSP_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dtgv_spthue_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }
