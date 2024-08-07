@@ -184,6 +184,12 @@
     <Compile Include="Frm_LenDon.Designer.cs">
       <DependentUpon>Frm_LenDon.cs</DependentUpon>
     </Compile>
+    <Compile Include="frm_QuanLyNhanVien_GU.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_QuanLyNhanVien_GU.Designer.cs">
+      <DependentUpon>frm_QuanLyNhanVien_GU.cs</DependentUpon>
+    </Compile>
     <Compile Include="Frm_SanPham.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -269,6 +275,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_LenDon.resx">
       <DependentUpon>Frm_LenDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_QuanLyNhanVien_GU.resx">
+      <DependentUpon>frm_QuanLyNhanVien_GU.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_SanPham.resx">
       <DependentUpon>Frm_SanPham.cs</DependentUpon>
