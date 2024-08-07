@@ -202,6 +202,12 @@
     <Compile Include="Frm_SanPhamThue.Designer.cs">
       <DependentUpon>Frm_SanPhamThue.cs</DependentUpon>
     </Compile>
+    <Compile Include="Frm_SanPham_GU.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_SanPham_GU.Designer.cs">
+      <DependentUpon>Frm_SanPham_GU.cs</DependentUpon>
+    </Compile>
     <Compile Include="Frm_ThayDoiMatKhau.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -284,6 +290,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_SanPhamThue.resx">
       <DependentUpon>Frm_SanPhamThue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_SanPham_GU.resx">
+      <DependentUpon>Frm_SanPham_GU.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_ThayDoiMatKhau.resx">
       <DependentUpon>Frm_ThayDoiMatKhau.cs</DependentUpon>

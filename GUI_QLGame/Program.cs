@@ -19,7 +19,7 @@ namespace GUI_QLGame
             /*Application.Run(new Frm_SanPham());*/
             /*Application.Run(new frm_QuanLyNhanVien());*/
 
-            Application.Run(new frm_QuanLyNhanVien_GU());
+            Application.Run(new Frm_SanPham_GU());
             /*Application.Run(new Frm_ChiTietSanPhamThue());*/
 
 
