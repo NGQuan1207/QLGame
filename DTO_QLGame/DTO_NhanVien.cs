@@ -87,11 +87,10 @@ namespace DTO_QLGame
             set { trangthai = value; }
         }
 
-        public DTO_NhanVien (string manv
-            ,string tenNV, string phai, string ngaySinh, string email, 
+        public DTO_NhanVien (
+            string tenNV, string phai, string ngaySinh, string email, 
             string cCCD, string sDT, string diaChi, string chucVu)
         {
-            this.MaNV = manv;
             this.TenNV = tenNV;
             this.Phai = phai;
             this.NgaySinh = ngaySinh;

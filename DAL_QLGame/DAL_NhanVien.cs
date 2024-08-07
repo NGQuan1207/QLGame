@@ -147,7 +147,6 @@ namespace DAL_QLGame
                 cmd.Connection = _conn;
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.CommandText = "themNhanVien";
-                cmd.Parameters.AddWithValue("@MaNV", nv.Manv);
                 cmd.Parameters.AddWithValue("@TenNV", nv.Tennv);
                 cmd.Parameters.AddWithValue("@Phai", nv.phai);
                 cmd.Parameters.AddWithValue("@NgaySinh", nv.ngaysinh);
