@@ -201,5 +201,22 @@ namespace GUI_QLGame
 
             }
         }
+
+        private void btn_loc_Click(object sender, EventArgs e)
+        {
+            DataTable danhsach = BUS_SanPhamThue.TimSanPhamThue(txt_Tim.Text);
+            if (danhsach.Rows.Count > 0)
+            {
+                dgv_thue.DataSource = danhsach;
+                HienThongTin();
+
+            }
+            else
+            {
+                MessageBox.Show("Không tìm thấy khách hàng", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+
+            GiaTriBanDau();
+        }
     }
 }
