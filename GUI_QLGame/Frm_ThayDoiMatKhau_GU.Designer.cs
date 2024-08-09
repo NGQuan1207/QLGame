@@ -45,9 +45,10 @@
             // 
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(12, 12);
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(16, 15);
+            this.guna2HtmlLabel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(315, 35);
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(384, 42);
             this.guna2HtmlLabel1.TabIndex = 5;
             this.guna2HtmlLabel1.Text = "THAY ĐỔI MẬT KHẨU";
             // 
@@ -56,9 +57,10 @@
             this.guna2HtmlLabel2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(66, 114);
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(88, 140);
+            this.guna2HtmlLabel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            this.guna2HtmlLabel2.Size = new System.Drawing.Size(198, 31);
+            this.guna2HtmlLabel2.Size = new System.Drawing.Size(241, 38);
             this.guna2HtmlLabel2.TabIndex = 24;
             this.guna2HtmlLabel2.Text = "Email đăng nhập";
             // 
@@ -83,14 +85,14 @@
             this.txt_email.HoverState.ForeColor = System.Drawing.SystemColors.ControlText;
             this.txt_email.HoverState.PlaceholderForeColor = System.Drawing.SystemColors.Highlight;
             this.txt_email.IconRight = ((System.Drawing.Image)(resources.GetObject("txt_email.IconRight")));
-            this.txt_email.Location = new System.Drawing.Point(66, 154);
-            this.txt_email.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.txt_email.Location = new System.Drawing.Point(88, 190);
+            this.txt_email.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
             this.txt_email.Name = "txt_email";
             this.txt_email.PasswordChar = '\0';
             this.txt_email.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.txt_email.PlaceholderText = "mã sản phẩm";
+            this.txt_email.PlaceholderText = "Nhập Email";
             this.txt_email.SelectedText = "";
-            this.txt_email.Size = new System.Drawing.Size(441, 38);
+            this.txt_email.Size = new System.Drawing.Size(588, 47);
             this.txt_email.TabIndex = 23;
             // 
             // btn_DoiMK
@@ -111,21 +113,24 @@
             this.btn_DoiMK.HoverState.BorderColor = System.Drawing.Color.Black;
             this.btn_DoiMK.HoverState.FillColor = System.Drawing.Color.LightBlue;
             this.btn_DoiMK.HoverState.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.btn_DoiMK.Location = new System.Drawing.Point(157, 594);
+            this.btn_DoiMK.Location = new System.Drawing.Point(209, 731);
+            this.btn_DoiMK.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_DoiMK.Name = "btn_DoiMK";
-            this.btn_DoiMK.Size = new System.Drawing.Size(256, 60);
+            this.btn_DoiMK.Size = new System.Drawing.Size(341, 74);
             this.btn_DoiMK.TabIndex = 44;
             this.btn_DoiMK.Text = "THAY ĐỔI MẬT KHẨU";
             this.btn_DoiMK.TextOffset = new System.Drawing.Point(0, -2);
+            this.btn_DoiMK.Click += new System.EventHandler(this.btn_DoiMK_Click);
             // 
             // guna2HtmlLabel3
             // 
             this.guna2HtmlLabel3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel3.Location = new System.Drawing.Point(66, 228);
+            this.guna2HtmlLabel3.Location = new System.Drawing.Point(88, 281);
+            this.guna2HtmlLabel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
-            this.guna2HtmlLabel3.Size = new System.Drawing.Size(141, 31);
+            this.guna2HtmlLabel3.Size = new System.Drawing.Size(176, 38);
             this.guna2HtmlLabel3.TabIndex = 46;
             this.guna2HtmlLabel3.Text = "Mật khẩu cũ";
             // 
@@ -150,14 +155,14 @@
             this.txt_matkhaucu.HoverState.ForeColor = System.Drawing.SystemColors.ControlText;
             this.txt_matkhaucu.HoverState.PlaceholderForeColor = System.Drawing.SystemColors.Highlight;
             this.txt_matkhaucu.IconRight = ((System.Drawing.Image)(resources.GetObject("txt_matkhaucu.IconRight")));
-            this.txt_matkhaucu.Location = new System.Drawing.Point(66, 268);
-            this.txt_matkhaucu.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.txt_matkhaucu.Location = new System.Drawing.Point(88, 330);
+            this.txt_matkhaucu.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
             this.txt_matkhaucu.Name = "txt_matkhaucu";
             this.txt_matkhaucu.PasswordChar = '\0';
             this.txt_matkhaucu.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.txt_matkhaucu.PlaceholderText = "mã sản phẩm";
+            this.txt_matkhaucu.PlaceholderText = "Nhập Mật Khẩu Cũ";
             this.txt_matkhaucu.SelectedText = "";
-            this.txt_matkhaucu.Size = new System.Drawing.Size(441, 38);
+            this.txt_matkhaucu.Size = new System.Drawing.Size(588, 47);
             this.txt_matkhaucu.TabIndex = 45;
             // 
             // guna2HtmlLabel4
@@ -165,9 +170,10 @@
             this.guna2HtmlLabel4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel4.Location = new System.Drawing.Point(66, 344);
+            this.guna2HtmlLabel4.Location = new System.Drawing.Point(88, 423);
+            this.guna2HtmlLabel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
-            this.guna2HtmlLabel4.Size = new System.Drawing.Size(157, 31);
+            this.guna2HtmlLabel4.Size = new System.Drawing.Size(192, 38);
             this.guna2HtmlLabel4.TabIndex = 48;
             this.guna2HtmlLabel4.Text = "Mật khẩu mới";
             // 
@@ -192,14 +198,14 @@
             this.txt_nhapmatkhaumoi.HoverState.ForeColor = System.Drawing.SystemColors.ControlText;
             this.txt_nhapmatkhaumoi.HoverState.PlaceholderForeColor = System.Drawing.SystemColors.Highlight;
             this.txt_nhapmatkhaumoi.IconRight = ((System.Drawing.Image)(resources.GetObject("txt_nhapmatkhaumoi.IconRight")));
-            this.txt_nhapmatkhaumoi.Location = new System.Drawing.Point(66, 384);
-            this.txt_nhapmatkhaumoi.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.txt_nhapmatkhaumoi.Location = new System.Drawing.Point(88, 473);
+            this.txt_nhapmatkhaumoi.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
             this.txt_nhapmatkhaumoi.Name = "txt_nhapmatkhaumoi";
             this.txt_nhapmatkhaumoi.PasswordChar = '\0';
             this.txt_nhapmatkhaumoi.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.txt_nhapmatkhaumoi.PlaceholderText = "mã sản phẩm";
+            this.txt_nhapmatkhaumoi.PlaceholderText = "Nhập Mật Khẩu Mới";
             this.txt_nhapmatkhaumoi.SelectedText = "";
-            this.txt_nhapmatkhaumoi.Size = new System.Drawing.Size(441, 38);
+            this.txt_nhapmatkhaumoi.Size = new System.Drawing.Size(588, 47);
             this.txt_nhapmatkhaumoi.TabIndex = 47;
             // 
             // guna2HtmlLabel5
@@ -207,9 +213,10 @@
             this.guna2HtmlLabel5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.guna2HtmlLabel5.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel5.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel5.Location = new System.Drawing.Point(66, 463);
+            this.guna2HtmlLabel5.Location = new System.Drawing.Point(88, 570);
+            this.guna2HtmlLabel5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2HtmlLabel5.Name = "guna2HtmlLabel5";
-            this.guna2HtmlLabel5.Size = new System.Drawing.Size(261, 31);
+            this.guna2HtmlLabel5.Size = new System.Drawing.Size(317, 38);
             this.guna2HtmlLabel5.TabIndex = 50;
             this.guna2HtmlLabel5.Text = "Nhập lại mật khẩu mới";
             // 
@@ -234,22 +241,22 @@
             this.txt_nhaplaimatkhaumoi.HoverState.ForeColor = System.Drawing.SystemColors.ControlText;
             this.txt_nhaplaimatkhaumoi.HoverState.PlaceholderForeColor = System.Drawing.SystemColors.Highlight;
             this.txt_nhaplaimatkhaumoi.IconRight = ((System.Drawing.Image)(resources.GetObject("txt_nhaplaimatkhaumoi.IconRight")));
-            this.txt_nhaplaimatkhaumoi.Location = new System.Drawing.Point(66, 503);
-            this.txt_nhaplaimatkhaumoi.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.txt_nhaplaimatkhaumoi.Location = new System.Drawing.Point(88, 619);
+            this.txt_nhaplaimatkhaumoi.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
             this.txt_nhaplaimatkhaumoi.Name = "txt_nhaplaimatkhaumoi";
             this.txt_nhaplaimatkhaumoi.PasswordChar = '\0';
             this.txt_nhaplaimatkhaumoi.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.txt_nhaplaimatkhaumoi.PlaceholderText = "mã sản phẩm";
+            this.txt_nhaplaimatkhaumoi.PlaceholderText = "Nhập Lại Mật Khẩu Mới";
             this.txt_nhaplaimatkhaumoi.SelectedText = "";
-            this.txt_nhaplaimatkhaumoi.Size = new System.Drawing.Size(441, 38);
+            this.txt_nhaplaimatkhaumoi.Size = new System.Drawing.Size(588, 47);
             this.txt_nhaplaimatkhaumoi.TabIndex = 49;
             // 
             // Frm_ThayDoiMatKhau_GU
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.AliceBlue;
-            this.ClientSize = new System.Drawing.Size(586, 692);
+            this.ClientSize = new System.Drawing.Size(781, 852);
             this.Controls.Add(this.guna2HtmlLabel5);
             this.Controls.Add(this.txt_nhaplaimatkhaumoi);
             this.Controls.Add(this.guna2HtmlLabel4);
@@ -260,6 +267,7 @@
             this.Controls.Add(this.guna2HtmlLabel2);
             this.Controls.Add(this.txt_email);
             this.Controls.Add(this.guna2HtmlLabel1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Frm_ThayDoiMatKhau_GU";
             this.Text = "Frm_ThayDoiMatKhau_GU";
             this.ResumeLayout(false);
