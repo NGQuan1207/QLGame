@@ -106,6 +106,13 @@ namespace BUS_QLGame
         {
             return dalNhanvien.UpdateMatKhau(email, matkhaucu, matkhaumoi);
         }
-
+        public DataTable VaiTroNhanVien(string email)
+        {
+            return dalNhanvien.VaiTroNhanVien(email);
+        }
+        //public int GetVaiTroNhanVien(string email)
+        //{
+        //    return dalNhanvien.GetVaiTroNhanVien(email) ;
+        //}
     }
 }

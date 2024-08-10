@@ -282,6 +282,43 @@ namespace DAL_QLGame
             }
             finally { _conn.Close(); }
         }
+        public DataTable VaiTroNhanVien(string email)
+        {
+            try
+            {
+                //Kết nối 
+                _conn.Open();
+
+                SqlCommand cmd = new SqlCommand();
+
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.CommandText = "[LayVaiTroNV]";
+                cmd.Parameters.AddWithValue("Email", email);
+                cmd.Connection = _conn;
+
+                DataTable dtNhanVien = new DataTable();
+                dtNhanVien.Load(cmd.ExecuteReader());
+                return dtNhanVien;
+            }
+            finally
+            {
+                _conn.Close();
+            }
+        }
+        //public int GetVaiTroNhanVien(string email)
+        //{
+        //    SqlCommand command = new SqlCommand("LayVaiTroNV", _conn);
+        //    command.CommandType = CommandType.StoredProcedure;
+
+        //    command.Parameters.AddWithValue("@email", email);
+
+        //    _conn.Open();
+        //    int result = (int)command.ExecuteScalar();
+        //    _conn.Close();
+
+        //    return result;
+        //}
+
 
     }
 }

@@ -51,17 +51,6 @@ namespace GUI_QLGame
                 cbb_chucvu.Text = row.Cells["ChucVu"].Value.ToString();
                 txt_diachi.Text = row.Cells["DiaChi"].Value.ToString();
                 cbb_gioitinh.Text = row.Cells["Phai"].Value.ToString();
-                //txt_email.Text = row.Cells["Email"].Value.ToString();
-                //Conf nam nữ   
-                //if (dgv_nv.CurrentRow.Cells["Phai"].Value.ToString() == "Nam")
-                //{
-                //    rdbNam.Checked = true;
-                //}
-                //else
-                //{
-                //    rdbNu.Checked = true;
-                //}
-
             }
 
         }

@@ -68,11 +68,16 @@ namespace GUI_QLGame
                 }
             }
         }
-        /*private void VaiTroNv()
+        private void VaiTroNv()
         {
-            quảnLýNhânViênToolStripMenuItem.Visible = false;
-            thốngKêToolStripMenuItem.Visible = false;
-        }*/
+            hToolStripMenuItem.Visible = false;
+            btn_QLnhanvien.Visible = true;
+        }
+        private void vaitroql()
+        {
+            hToolStripMenuItem.Visible = false;
+            btn_QLnhanvien.Visible=false;
+        }
 
         private void ResetValue()
         {
@@ -80,17 +85,14 @@ namespace GUI_QLGame
             {
                 guna2Panel1.Visible = true;
                 đổiMậtKhẩuToolStripMenuItem.Enabled = true;
-                //if (int.Parse(dn.vaitro) == 0)
-                //{
-                //    VaiTroNv();
-                //}
-
-
+                if (int.Parse(dn.vaitro) == 0)
+                {
+                    VaiTroNv();
+                }
             }
             else
             {
-
-                // đăngNhậpToolStripMenuItem.Enabled = true;
+              //  đăngNhậpToolStripMenuItem.Enabled = true;
                 guna2Panel1.Visible = false;
                 đổiMậtKhẩuToolStripMenuItem.Enabled = false;
 
@@ -143,9 +145,7 @@ namespace GUI_QLGame
 
             ResetValue();
             if (profile == 1) // Nếu vừa cập nhật mật khẩu thì 
-                              // phải login lại, mục 'thông tin nhân viên ẩn'
             {
-                //thôngTinToolStripMenuItem.Text = null;
                 profile = 0;
             }
         }

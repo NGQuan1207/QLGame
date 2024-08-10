@@ -51,13 +51,12 @@ namespace GUI_QLGame
 
                 if (busnv.NhanVienDangNhap(nv)) // successfull login
                 {
-                    ////login = true
-                    //FmMain. = nv.EmailNv; // truyền email đăng nhập cho frmMain
-                    //DataTable dt = busNV.VaiTroNhanVien(nv.EmailNv);
-                    //vaitro = dt.Rows[0][0].ToString();  // lấy vai trò của nhân viên, hiển thị các chức năng mã nhân viên có thể thao tác
-                    //MessageBox.Show("Đăng nhập thành công");
-                    //FmMain.session = 1; // cập nhật trạng thái đã đăng nhập thành công
-                    //this.Close();
+                    //login = true
+                    Frm_Main.mail = nv.email; // truyền email đăng nhập cho frmMain
+                    DataTable dt = busnv.VaiTroNhanVien(nv.email);
+                    vaitro = dt.Rows[0][0].ToString();  // lấy vai trò của nhân viên, hiển thị các chức năng mã nhân viên có thể thao tác
+                    Frm_Main.session = 1; // cập nhật trạng thái đã đăng nhập thành công
+                    this.Close();
                     MessageBox.Show("Đăng nhập thành công", "Thông Báo");
                     this.Close();
                 }

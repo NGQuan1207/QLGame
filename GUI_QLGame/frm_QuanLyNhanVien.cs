@@ -91,8 +91,8 @@ namespace GUI_QLGame
             rdbNu.Enabled = true;
 
             btn_luu.Enabled = true;
-            btnSua.Enabled = true;
-            btnXoa.Enabled = true;
+            btnSua.Enabled = false;
+            btnXoa.Enabled = false;
             txt_tennv.Focus();
         }
 
