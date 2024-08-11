@@ -70,15 +70,9 @@ namespace GUI_QLGame
         }
         private void VaiTroNv()
         {
-            hToolStripMenuItem.Visible = false;
-            btn_QLnhanvien.Visible = true;
+            hToolStripMenuItem.Visible = true;
+            btn_QLnhanvien.Visible = false;
         }
-        private void vaitroql()
-        {
-            hToolStripMenuItem.Visible = false;
-            btn_QLnhanvien.Visible=false;
-        }
-
         private void ResetValue()
         {
             if (session == 1)
@@ -95,7 +89,6 @@ namespace GUI_QLGame
               //  đăngNhậpToolStripMenuItem.Enabled = true;
                 guna2Panel1.Visible = false;
                 đổiMậtKhẩuToolStripMenuItem.Enabled = false;
-
             }
         }
         private void Frm_DangNhap_FormClosed(object sender, FormClosedEventArgs e)

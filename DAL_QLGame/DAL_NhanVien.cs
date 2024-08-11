@@ -292,8 +292,8 @@ namespace DAL_QLGame
                 SqlCommand cmd = new SqlCommand();
 
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.CommandText = "[LayVaiTroNV]";
-                cmd.Parameters.AddWithValue("Email", email);
+                cmd.CommandText = "LayVaiTroNV";
+                cmd.Parameters.AddWithValue("@email", email);
                 cmd.Connection = _conn;
 
                 DataTable dtNhanVien = new DataTable();
