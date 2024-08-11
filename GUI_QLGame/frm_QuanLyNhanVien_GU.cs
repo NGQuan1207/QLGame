@@ -135,7 +135,7 @@ namespace GUI_QLGame
                 else
                 {
                     // Tạo 1 DTO
-                    DTO_NhanVien nv = new DTO_NhanVien( txt_tennv.Text, cbb_gioitinh.Text, txt_ngaysinh.Text, txt_email.Text,
+                    DTO_NhanVien nv = new DTO_NhanVien( txt_manv.Text,txt_tennv.Text, cbb_gioitinh.Text, txt_ngaysinh.Text, txt_email.Text,
              txt_cccd.Text, txt_sdt.Text, txt_diachi.Text, cbb_chucvu.Text);
 
                     if (busNhanVIen.InsertNhanVien(nv))
@@ -254,21 +254,20 @@ namespace GUI_QLGame
                 txt_sdt.Focus();
                 return;
             }
-            else if (cbb_gioitinh.Text.Trim().Length > 0)
+            else if (cbb_gioitinh.Text.Trim().Length == 0)
             {
                 MessageBox.Show("Bạn phải chọn  giới tính", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 cbb_chucvu.Focus();
                 return;
             }
-            else if (cbb_chucvu.Text.Trim().Length > 0)
+            else if (cbb_chucvu.Text.Trim().Length == 0)
             {
                 MessageBox.Show("Bạn phải chọn chức vụ", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 cbb_chucvu.Focus();
                 return;
             }
 
-
-            DTO_NhanVien nv = new DTO_NhanVien( txt_tennv.Text, cbb_gioitinh.Text, txt_ngaysinh.Text, txt_email.Text,
+            DTO_NhanVien nv = new DTO_NhanVien( txt_manv.Text,txt_tennv.Text, cbb_gioitinh.Text, txt_ngaysinh.Text, txt_email.Text,
                         txt_cccd.Text, txt_sdt.Text, txt_diachi.Text, cbb_chucvu.Text);
             if (MessageBox.Show("Bạn có chắc muốn chỉnh sửa", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
@@ -288,6 +287,5 @@ namespace GUI_QLGame
                 ResetValues();
             }
         }
-
     }
 }

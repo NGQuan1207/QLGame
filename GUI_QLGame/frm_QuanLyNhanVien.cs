@@ -147,7 +147,7 @@ namespace GUI_QLGame
                 else
                 {
                    // Tạo 1 DTO
-                               DTO_NhanVien nv = new DTO_NhanVien( txt_tennv.Text, gioitinh, txt_ngaysinh.Text, txt_email.Text,
+                               DTO_NhanVien nv = new DTO_NhanVien( txt_manv.Text,txt_tennv.Text, gioitinh, txt_ngaysinh.Text, txt_email.Text,
                         txt_cccd.Text, txt_sdt.Text, txt_diachi.Text, txt_chucvu.Text);
 
                     if (busNhanVIen.InsertNhanVien(nv))
@@ -270,7 +270,7 @@ namespace GUI_QLGame
                 gioitinh = "Nam";
             }
 
-            DTO_NhanVien nv = new DTO_NhanVien(txt_tennv.Text, gioitinh, txt_ngaysinh.Text, txt_email.Text,
+            DTO_NhanVien nv = new DTO_NhanVien(txt_manv.Text,txt_tennv.Text, gioitinh, txt_ngaysinh.Text, txt_email.Text,
                         txt_cccd.Text, txt_sdt.Text, txt_diachi.Text, txt_chucvu.Text);
             if (MessageBox.Show("Bạn có chắc muốn chỉnh sửa", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {

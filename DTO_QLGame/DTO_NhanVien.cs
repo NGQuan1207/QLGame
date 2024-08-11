@@ -88,9 +88,11 @@ namespace DTO_QLGame
         }
 
         public DTO_NhanVien (
+            string manv,
             string tenNV, string phai, string ngaySinh, string email, 
             string cCCD, string sDT, string diaChi, string chucVu)
         {
+            this.MaNV = manv;
             this.TenNV = tenNV;
             this.Phai = phai;
             this.NgaySinh = ngaySinh;
@@ -101,6 +103,7 @@ namespace DTO_QLGame
             this.ChucVu = chucVu;
             //this.TrangThai = trangThai;
         }
+
 
         public DTO_NhanVien() { }
     }
