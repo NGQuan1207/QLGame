@@ -139,7 +139,7 @@ namespace DAL_QLGame
             // Private constructor to prevent instantiation from outside
             private DataProvider()
             {
-                connectionString = "Data Source=DUONGPX;Initial Catalog=QL_ThietBiGame123;Integrated Security=True;Encrypt=False";
+                connectionString = "Data Source=DUONGPX;Initial Catalog=QL_ThietBiGame1234;Integrated Security=True;Encrypt=False";
             }
 
             // Public property to access the single instance

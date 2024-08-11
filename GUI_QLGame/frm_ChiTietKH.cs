@@ -77,20 +77,6 @@ namespace GUI_QLGame
                 dtgv_hoadon.Columns[4].HeaderText = "Thành Tiền";
                 dtgv_hoadon.Columns[5].HeaderText = "Trạng Thái";
             }
-            string maphieuthue = txt_makh.Text;
-            if (!string.IsNullOrEmpty(maphieuthue))
-            {
-                DataTable dtPhieuThue = BUS_PhieuThue.TimPhieuthue(maphieuthue);
-                dtgv_phieuthue.DataSource = dtPhieuThue;
-                // Điều chỉnh lại tên cột nếu cần thiết
-                dtgv_phieuthue.Columns[0].HeaderText = "Mã Phiếu Thuê";
-                dtgv_phieuthue.Columns[1].HeaderText = "Mã SP Thuê";
-                dtgv_phieuthue.Columns[2].HeaderText = "Mã Khách Hàng";
-                dtgv_phieuthue.Columns[3].HeaderText = " Ngày Đầu";
-                dtgv_phieuthue.Columns[4].HeaderText = " Ngày Trả";
-                dtgv_phieuthue.Columns[5].HeaderText = "Tiền Cọc";
-
-            }
 
         }
         /* private void LoadCustomerData(string maKH)
@@ -218,16 +204,7 @@ namespace GUI_QLGame
 
         private void btn_xoaphieu_Click(object sender, EventArgs e)
         {
-            string maphieuthue = txt_mathue.Text;
-            if (BUS_PhieuThue.XoaPhieuThue(maphieuthue))
-            {
-                MessageBox.Show("Xóa thành công", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                TaiPhieuThue(); // Cập nhật lại danh sách bảo hành
-            }
-            else
-            {
-                MessageBox.Show("Xóa thất bại", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+          
         }
 
         private void dtgv_kh_CellClick(object sender, DataGridViewCellEventArgs e)

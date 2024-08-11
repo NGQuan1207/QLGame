@@ -55,7 +55,6 @@
     <Compile Include="BUS_KhachHang.cs" />
     <Compile Include="BUS_LenDon.cs" />
     <Compile Include="BUS_Nhanvien.cs" />
-    <Compile Include="BUS_PhieuThue.cs" />
     <Compile Include="BUS_SanPham.cs" />
     <Compile Include="BUS_SanPhamThue.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
