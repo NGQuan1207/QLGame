@@ -1,4 +1,5 @@
 ﻿using BUS_QLGame;
+using DAL_QLGame;
 using DTO_QLGame;
 using System;
 using System.Collections.Generic;
@@ -15,6 +16,8 @@ namespace GUI_QLGame
 {
     public partial class Frm_LenDon_GU : Form
     {
+        private DAL_SanPham dalSanPham = new DAL_SanPham();
+        private Frm_SanPham_GU frmSanPham; // Đối tượng Frm_SanPham
         public event EventHandler<DTO_HoaDon> HoaDonAdded;
         private BUS_LenDon lendon = new BUS_LenDon();
         private BUS_ChiTietSanPham chitietSP = new BUS_ChiTietSanPham();
@@ -23,6 +26,29 @@ namespace GUI_QLGame
         {
             InitializeComponent();
             Load += Frm_LenDon_GU_Load;
+        }
+        public Frm_LenDon_GU(Frm_SanPham_GU sanPhamForm)
+        {
+            InitializeComponent();
+            frmSanPham = sanPhamForm;
+        }
+        private void updatesoluongsanpham()
+        {
+            foreach (DataGridViewRow row in dgv_SanphamLenDon.Rows)
+            {
+                if (row.IsNewRow) continue;
+
+                string maSP = row.Cells["MaSP"].Value.ToString();
+                int soLuong = Convert.ToInt32(row.Cells["SoLuong"].Value);
+
+                // Gọi phương thức cập nhật số lượng từ DAL
+                bool result = dalSanPham.updateSoLuong(soLuong, maSP);
+
+                if (!result)
+                {
+                    MessageBox.Show($"Lỗi cập nhật số lượng cho sản phẩm mã {maSP}");
+                }
+            }
         }
         private void LoadGridView_SanPham()
         {
@@ -179,9 +205,11 @@ namespace GUI_QLGame
                 {
                     MessageBox.Show("Lên đơn thành công.");
                     HoaDonAdded?.Invoke(this, hoaDon);
+                    updatesoluongsanpham();
                     ShowBill(hoaDon);
                     ShowDanhSachKH();
                     ShowHoaDon();
+                    ShowSanPham();
                     // Update product quantity
                     UpdateProductQuantityInGrid();
 
@@ -208,7 +236,12 @@ namespace GUI_QLGame
             frm_DanhSachKH danhSachKH = new frm_DanhSachKH();
             danhSachKH.Show(); // hoặc ShowDialog() nếu bạn muốn form này là modal
         }
-
+        private void ShowSanPham()
+        {
+            // Tạo và hiển thị frm_DanhSachKH
+            Frm_SanPham_GU danhSachSP = new Frm_SanPham_GU();
+            danhSachSP.Show(); // hoặc ShowDialog() nếu bạn muốn form này là modal
+        }
         private void ShowHoaDon()
         {
             // Tạo và hiển thị frm_HoaDon
@@ -254,7 +287,7 @@ namespace GUI_QLGame
             }
 
             Bill billForm = new Bill();
-            billForm.SetBillDetails(hoaDon.TenKH, hoaDon.SDT, hoaDon.DiaChi, chiTietHoaDons);
+            billForm.SetBillDetails( hoaDon.MaHD ,hoaDon.TenKH, hoaDon.SDT, hoaDon.DiaChi, chiTietHoaDons);
             billForm.Show();
         }
         private string InsertKhachHang(DTO_KhachHang kh)
@@ -348,10 +381,11 @@ namespace GUI_QLGame
                             if (r.Cells["MaSP"].Value != null && r.Cells["MaSP"].Value.ToString() == maSP)
                             {
                                 int currentQuantity = int.Parse(r.Cells["SoLuong"].Value.ToString());
-                                if (currentQuantity < soLuongSanPham)
+                                if (soLuongSanPham > 0) // Kiểm tra số lượng sản phẩm còn lại
                                 {
                                     r.Cells["SoLuong"].Value = (currentQuantity + 1).ToString();
                                     r.Cells["ThanhTien"].Value = (currentQuantity + 1) * decimal.Parse(gia);
+                                    row.Cells["SoLuong"].Value = soLuongSanPham - 1; // Trừ số lượng trong dgv_SanphamLenDon
                                 }
                                 else
                                 {
@@ -364,9 +398,10 @@ namespace GUI_QLGame
 
                         if (!exists)
                         {
-                            if (soLuongSanPham > 0)
+                            if (soLuongSanPham > 0) // Kiểm tra số lượng sản phẩm còn lại
                             {
                                 dgv_GioHang.Rows.Add(maSP, tenSP, loaiSP, gia, "1", gia);
+                                row.Cells["SoLuong"].Value = soLuongSanPham - 1; // Trừ số lượng trong dgv_SanphamLenDon
                             }
                             else
                             {
@@ -393,16 +428,39 @@ namespace GUI_QLGame
             if (e.ColumnIndex == dgv_GioHang.Columns["Giảm"].Index && e.RowIndex >= 0)
             {
                 DataGridViewRow row = dgv_GioHang.Rows[e.RowIndex];
+                string maSP = row.Cells["MaSP"].Value.ToString();
                 int currentQuantity = int.Parse(row.Cells["SoLuong"].Value.ToString());
 
                 if (currentQuantity > 1)
                 {
                     row.Cells["SoLuong"].Value = (currentQuantity - 1).ToString();
                     row.Cells["ThanhTien"].Value = (currentQuantity - 1) * decimal.Parse(row.Cells["Gia"].Value.ToString());
+
+                    // Cập nhật số lượng sản phẩm trong dgv_SanphamLenDon
+                    foreach (DataGridViewRow sanPhamRow in dgv_SanphamLenDon.Rows)
+                    {
+                        if (sanPhamRow.Cells["MaSP"].Value != null && sanPhamRow.Cells["MaSP"].Value.ToString() == maSP)
+                        {
+                            int currentSanPhamQuantity = int.Parse(sanPhamRow.Cells["SoLuong"].Value.ToString());
+                            sanPhamRow.Cells["SoLuong"].Value = currentSanPhamQuantity + 1;
+                            break;
+                        }
+                    }
                 }
                 else
                 {
                     dgv_GioHang.Rows.RemoveAt(e.RowIndex);
+
+                    // Trả lại số lượng sản phẩm trong dgv_SanphamLenDon
+                    foreach (DataGridViewRow sanPhamRow in dgv_SanphamLenDon.Rows)
+                    {
+                        if (sanPhamRow.Cells["MaSP"].Value != null && sanPhamRow.Cells["MaSP"].Value.ToString() == maSP)
+                        {
+                            int currentSanPhamQuantity = int.Parse(sanPhamRow.Cells["SoLuong"].Value.ToString());
+                            sanPhamRow.Cells["SoLuong"].Value = currentSanPhamQuantity + 1;
+                            break;
+                        }
+                    }
                 }
 
                 UpdateTongTien();

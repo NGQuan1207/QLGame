@@ -344,6 +344,10 @@
       <Project>{b8d9a8b2-d6f2-4571-ba2b-cf2477b275d2}</Project>
       <Name>BUS_QLGame</Name>
     </ProjectReference>
+    <ProjectReference Include="..\DAL_QLGame\DAL_QLGame.csproj">
+      <Project>{a1842bd7-f9c1-4f0f-9697-bf7f8b2ab10d}</Project>
+      <Name>DAL_QLGame</Name>
+    </ProjectReference>
     <ProjectReference Include="..\DTO_QLGame\DTO_QLGame.csproj">
       <Project>{6af12bd4-f9b4-4936-949c-dbefad3bee35}</Project>
       <Name>DTO_QLGame</Name>

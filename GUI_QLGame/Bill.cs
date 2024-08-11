@@ -20,7 +20,7 @@ namespace GUI_QLGame
 
         void SetBillInfo(DTO_HoaDon hoaDon)
         {
-
+            lbl_maHD.Text = hoaDon.MaHD;
             lbl_TenKhachHang.Text = hoaDon.TenKH;
             lbl_SDT.Text = hoaDon.SDT;
             lbl_DiaChi.Text = hoaDon.DiaChi;
@@ -34,8 +34,9 @@ namespace GUI_QLGame
             // For now, just display the total amount
         }
 
-        public void SetBillDetails(string tenKH, string sdt, string diaChi, List<DTO_HoaDon> chiTietHoaDons)
+        public void SetBillDetails(string maHD,string tenKH, string sdt, string diaChi, List<DTO_HoaDon> chiTietHoaDons)
         {
+            lbl_maHD.Text = maHD;
             lbl_TenKhachHang.Text = tenKH;
             lbl_SDT.Text = sdt;
             lbl_DiaChi.Text = diaChi;

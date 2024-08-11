@@ -72,6 +72,32 @@ namespace DAL_QLGame
             }
             return tong;
         }
+        /*public bool updateSoLuong(int soluong, string masp)
+        {
+            try
+            {
+                _conn.Open();
+                SqlCommand cmd = new SqlCommand
+                {
+                    CommandType = CommandType.StoredProcedure,
+                    CommandText = "updatesoluong",
+                    Connection = _conn
+                };
+
+                cmd.Parameters.AddWithValue("@soluong", soluong);
+                cmd.Parameters.AddWithValue("@masp", masp);
+
+                return cmd.ExecuteNonQuery() > 0;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+            finally
+            {
+                _conn.Close();
+            }
+        }*/
         public bool ThemHoaDon(DTO_HoaDon hd, string tenkh, string diachi, string sdt)
         {
             using (SqlCommand cmd = new SqlCommand("ThemHoaDon", _conn))

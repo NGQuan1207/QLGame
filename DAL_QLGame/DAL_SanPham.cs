@@ -158,7 +158,32 @@ namespace DAL_QLGame
                 return ListSPT;
             }
         }
+        public bool updateSoLuong(int soluong, string masp)
+        {
+            try
+            {
+                _conn.Open();
+                SqlCommand cmd = new SqlCommand
+                {
+                    CommandType = CommandType.StoredProcedure,
+                    CommandText = "updatesoluong",
+                    Connection = _conn
+                };
 
+                cmd.Parameters.AddWithValue("@soluong", soluong);
+                cmd.Parameters.AddWithValue("@masp", masp);
+
+                return cmd.ExecuteNonQuery() > 0;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+            finally
+            {
+                _conn.Close();
+            }
+        }
         public DataTable TimSanPhamThue(string maSPThue)
         {
             using (SqlConnection con = _conn)

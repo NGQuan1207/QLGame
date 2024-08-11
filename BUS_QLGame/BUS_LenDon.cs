@@ -22,7 +22,11 @@ namespace BUS_QLGame
         {
             return dalld.GetTong();
         }
-
+        /*public bool updateSoLuong(int soluong, string masp)
+        {
+            // You can add any business logic or validation here if needed
+            return dalld.updateSoLuong(soluong, masp);
+        }*/
         public string CheckIfCustomerExists(string tenKH, string diaChi, string sdt)
         {
             try

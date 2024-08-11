@@ -51,6 +51,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.lbl_maHD = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lbl_TongTien
@@ -271,11 +272,21 @@
             this.label1.TabIndex = 23;
             this.label1.Text = "WE GAME";
             // 
+            // lbl_maHD
+            // 
+            this.lbl_maHD.AutoSize = true;
+            this.lbl_maHD.Location = new System.Drawing.Point(450, 165);
+            this.lbl_maHD.Name = "lbl_maHD";
+            this.lbl_maHD.Size = new System.Drawing.Size(60, 20);
+            this.lbl_maHD.TabIndex = 46;
+            this.lbl_maHD.Text = "label10";
+            // 
             // Bill
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(771, 854);
+            this.Controls.Add(this.lbl_maHD);
             this.Controls.Add(this.lbl_TongTien);
             this.Controls.Add(this.lbl_ThanhTien3);
             this.Controls.Add(this.lbl_SoLuong3);
@@ -333,5 +344,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lbl_maHD;
     }
 }

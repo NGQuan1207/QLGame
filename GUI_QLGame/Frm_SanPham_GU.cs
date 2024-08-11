@@ -10,17 +10,28 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using DAL_QLGame;
 
 namespace GUI_QLGame
 {
     public partial class Frm_SanPham_GU : Form
     {
         DTO_SanPham sanpham = new DTO_SanPham();
+        private DAL_SanPham dalSanPham = new DAL_SanPham();
         public Frm_SanPham_GU()
         {
             InitializeComponent();
+            LoadSanPham();
         }
-
+        private void LoadSanPham()
+        {
+            DataTable dt = dalSanPham.LoadListSanPham();
+            dgv_sanpham.DataSource = dt;
+        }
+        public void RefreshData()
+        {
+            LoadSanPham();
+        }
         private void Frm_SanPham_GU_Load(object sender, EventArgs e)
         {
             taibaohanh();

@@ -36,7 +36,12 @@ namespace BUS_QLGame
             DAL_SanPham dalSanPham = new DAL_SanPham();
             return dalSanPham.XoaSanPham(masanpham);
         }
-
+        public bool updateSoLuong(int soluong, string masp)
+        {
+            DAL_SanPham dalSanPham = new DAL_SanPham();
+            // You can add any business logic or validation here if needed
+            return dalSanPham.updateSoLuong(soluong, masp);
+        }
         public static bool SuaSanPham(string masp, string tensp, string loaisp, int soluong, int gia, string hinhanh, string ghichu)
         {
             DAL_SanPham dalSanPham = new DAL_SanPham();

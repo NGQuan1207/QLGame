@@ -372,7 +372,7 @@ namespace GUI_QLGame
             }
 
             Bill billForm = new Bill();
-            billForm.SetBillDetails(hoaDon.TenKH, hoaDon.SDT, hoaDon.DiaChi, chiTietHoaDons);
+            billForm.SetBillDetails( hoaDon.MaHD ,hoaDon.TenKH, hoaDon.SDT, hoaDon.DiaChi, chiTietHoaDons);
             billForm.Show();
         }
 
