@@ -19,15 +19,7 @@ namespace GUI_QLGame
         {
             InitializeComponent();
         }
-        void taibaocao()
-        {
-            dtgv_spthue.DataSource = BUS_SanPham.ListSPThue();
-            dtgv_spthue.Columns[0].HeaderText = "Mã Sản Phẩm Thue";
-            dtgv_spthue.Columns[1].HeaderText = "Tên Sản Phẩm Thue ";
-            dtgv_spthue.Columns[2].HeaderText = "Loại Sản Phẩm";
-            dtgv_spthue.Columns[3].HeaderText = "Ghi Chu";
-            dtgv_spthue.Columns[4].HeaderText = "Hinh Anh";
-        }
+      
         void TaiHoadonh()
         {
             dtgv_hoadon.DataSource = BUS_HoaDon.ListHoaDon();
@@ -77,7 +69,7 @@ namespace GUI_QLGame
 
         private void Frm_BaoCaoThongKe_GU_Load(object sender, EventArgs e)
         {
-            taibaocao();
+            
             TaiHoadonh();
             tinhTongThuNhap();
             tinhTongHoaDon();
@@ -85,21 +77,7 @@ namespace GUI_QLGame
 
         private void guna2TextBox2_TextChanged(object sender, EventArgs e)
         {
-            string maspt = txt_maspt.Text;
-            if (!string.IsNullOrEmpty(maspt))
-            {
-                // Thực hiện lọc sản phẩm
-
-
-                DataTable dtsanpham = BUS_SanPham.TimSanPhamThue(maspt);
-                dtgv_spthue.DataSource = dtsanpham;
-                // Điều chỉnh lại tên cột nếu cần thiết
-                dtgv_spthue.Columns[0].HeaderText = "Mã Sản Phẩm Thue";
-                dtgv_spthue.Columns[1].HeaderText = "Tên Sản Phẩm Thue ";
-                dtgv_spthue.Columns[2].HeaderText = "Loại Sản Phẩm";
-                dtgv_spthue.Columns[3].HeaderText = "Ghi Chu";
-                dtgv_spthue.Columns[4].HeaderText = "Hinh Anh";
-            }
+          
         }
 
         private void txt_hoadon_TextChanged(object sender, EventArgs e)
@@ -154,26 +132,7 @@ namespace GUI_QLGame
                 string filePath = saveFileDialog.FileName;
 
                 // Sử dụng StringBuilder để tích lũy nội dung sẽ ghi vào file
-                StringBuilder sb = new StringBuilder();
-
-                // Xuất nội dung của DataGridView Sản Phẩm Thuê
-                sb.AppendLine("Báo Cáo Sản Phẩm Thuê:");
-                for (int i = 0; i < dtgv_spthue.Columns.Count; i++)
-                {
-                    sb.Append(dtgv_spthue.Columns[i].HeaderText + "\t");
-                }
-                sb.AppendLine();
-
-                foreach (DataGridViewRow row in dtgv_spthue.Rows)
-                {
-                    for (int i = 0; i < dtgv_spthue.Columns.Count; i++)
-                    {
-                        sb.Append(row.Cells[i].Value?.ToString() + "\t");
-                    }
-                    sb.AppendLine();
-                }
-                sb.AppendLine();
-
+                StringBuilder sb = new StringBuilder();             
                 // Xuất nội dung của DataGridView Hóa Đơn
                 sb.AppendLine("Báo Cáo Hóa Đơn:");
                 for (int i = 0; i < dtgv_hoadon.Columns.Count; i++)

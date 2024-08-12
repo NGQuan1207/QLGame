@@ -36,10 +36,10 @@ namespace GUI_QLGame
 
         private void txt_MaHoaDon_TextChanged(object sender, EventArgs e)
         {
-            string manv = txt_MaHoaDon.Text;
-            if (!string.IsNullOrEmpty(manv))
+           string makh = txt_MaHoaDon.Text;
+            if (!string.IsNullOrEmpty(makh))
             {
-                DataTable dtHoaDon = BUS_HoaDon.SearchHoaDon(manv);
+                DataTable dtHoaDon = BUS_HoaDon.TimHoaDon(makh);
                 dtgv_hoadon.DataSource = dtHoaDon;
                 // Điều chỉnh lại tên cột nếu cần thiết
                 dtgv_hoadon.Columns[0].HeaderText = "Mã Hóa Đơn";
@@ -47,6 +47,7 @@ namespace GUI_QLGame
                 dtgv_hoadon.Columns[2].HeaderText = "Mã Nhân Viên";
                 dtgv_hoadon.Columns[3].HeaderText = "Ngày Lập";
                 dtgv_hoadon.Columns[4].HeaderText = "Thành Tiền";
+                
             }
         }
         private void ShowBill(DTO_HoaDon hoaDon)
