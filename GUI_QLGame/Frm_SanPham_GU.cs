@@ -46,7 +46,6 @@ namespace GUI_QLGame
             dgv_sanpham.Columns[2].HeaderText = "Loại Sản Phẩm";
             dgv_sanpham.Columns[3].HeaderText = "Số Lượng";
             dgv_sanpham.Columns[4].HeaderText = "Giá";
-          
             dgv_sanpham.Columns[5].HeaderText = "Hình ảnh";
             dgv_sanpham.Columns[6].HeaderText = "Ghi chú";
 
@@ -61,11 +60,8 @@ namespace GUI_QLGame
                 txt_loaisp.Text = dgv_sanpham.CurrentRow.Cells["LoaiSP"].Value.ToString();
                 txt_SoLuong.Text = dgv_sanpham.CurrentRow.Cells["SoLuong"].Value.ToString();
                 txt_Gia.Text = dgv_sanpham.CurrentRow.Cells["Gia"].Value.ToString();
-              
                 txt_HinhAnh.Text = dgv_sanpham.CurrentRow.Cells["HinhAnh"].Value.ToString();
                 txt_ghichu.Text = dgv_sanpham.CurrentRow.Cells["GhiChu"].Value.ToString();
-
-
             }
             string imagePath = dgv_sanpham.CurrentRow.Cells["HinhAnh"].Value.ToString();
             if (!string.IsNullOrEmpty(imagePath) && File.Exists(imagePath))
@@ -74,7 +70,7 @@ namespace GUI_QLGame
             }
             else
             {
-                pb_SanPham.Image = null; // Hoặc một hình ảnh mặc định nếu không tìm thấy tệp
+                pb_SanPham.Image = null; 
             }
         }
         void GiaTriBanDau()
@@ -84,7 +80,6 @@ namespace GUI_QLGame
             txt_loaisp.Text = null;
             txt_SoLuong.Text = null;
             txt_Gia.Text = null;
-           
             txt_HinhAnh.Text = null;
             txt_ghichu.Text = null;
 

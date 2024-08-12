@@ -31,7 +31,7 @@ namespace BUS_QLGame
         {
             try
             {
-                using (SqlConnection conn = new SqlConnection("Data Source=DUONGPX;Initial Catalog=QL_ThietBiGame1234;Integrated Security=True;Encrypt=False"))
+                using (SqlConnection conn = new SqlConnection("Data Source=LOIBACH\\NVB;Initial Catalog=QL_ThietBiGame;Integrated Security=True;Encrypt=False"))
                 {
                     SqlCommand cmd = new SqlCommand("SELECT MaKH FROM KhachHang WHERE TenKH = @tenKH AND DiaChi = @diaChi AND SDT = @sdt", conn);
                     cmd.Parameters.AddWithValue("@tenKH", tenKH);

@@ -107,7 +107,7 @@ namespace DAL_QLGame
 
         public bool ThemHoaDon(DTO_HoaDon hd)
         {
-            using (SqlConnection conn = new SqlConnection("Data Source=DUONGPX;Initial Catalog=QL_ThietBiGame1234;Integrated Security=True;Encrypt=False"))
+            using (SqlConnection conn = new SqlConnection("Data Source=LOIBACH\\NVB;Initial Catalog=QL_ThietBiGame;Integrated Security=True;Encrypt=False"))
             {
                 SqlCommand cmd = new SqlCommand("ThemHoaDon", conn);
                 cmd.CommandType = CommandType.StoredProcedure;
