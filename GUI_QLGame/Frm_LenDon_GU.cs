@@ -207,9 +207,9 @@ namespace GUI_QLGame
                     HoaDonAdded?.Invoke(this, hoaDon);
                     updatesoluongsanpham();
                     ShowBill(hoaDon);
-                    ShowDanhSachKH();
+                   /* ShowDanhSachKH();
                     ShowHoaDon();
-                    ShowSanPham();
+                    ShowSanPham();*/
                     // Update product quantity
                     UpdateProductQuantityInGrid();
 

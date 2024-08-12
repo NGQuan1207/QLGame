@@ -94,6 +94,11 @@ namespace GUI_QLGame
 
         private void dtgv_hoadon_CellClick(object sender, DataGridViewCellEventArgs e)
         {
+            
+        }
+
+        private void dtgv_hoadon_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
             if (e.RowIndex >= 0) // Kiểm tra xem một hàng hợp lệ có được chọn
             {
                 DataGridViewRow selectedRow = dtgv_hoadon.Rows[e.RowIndex];

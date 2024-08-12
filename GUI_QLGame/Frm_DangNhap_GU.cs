@@ -33,6 +33,7 @@ namespace GUI_QLGame
         private void Frm_DangNhap_GU_Load(object sender, EventArgs e)
         {
             guna2Panel1.BackColor = Color.FromArgb(150,0,0,0);
+            label1.BackColor = Color.FromArgb(150, 0, 0, 0);
 
 
             btn_quenmatkhau.FillColor = Color.FromArgb(170, 0, 0, 0);
@@ -165,6 +166,11 @@ namespace GUI_QLGame
                 pb_matkhau.Image = Image.FromFile("img/hide.png");
             }
             isPasswordHidden = !isPasswordHidden;
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
 
         }
     }

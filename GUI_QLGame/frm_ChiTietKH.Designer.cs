@@ -37,21 +37,16 @@
             this.txt_diachi = new System.Windows.Forms.TextBox();
             this.txt_hoadon = new System.Windows.Forms.TextBox();
             this.txt_dienthoai = new System.Windows.Forms.TextBox();
-            this.txt_mathue = new System.Windows.Forms.TextBox();
             this.btn_QuayLai = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
             this.btn_xoa = new System.Windows.Forms.Button();
-            this.dtgv_phieuthue = new System.Windows.Forms.DataGridView();
-            this.btn_xoaphieu = new System.Windows.Forms.Button();
             this.btn_thoat = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgv_hoadon)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgv_phieuthue)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -82,7 +77,7 @@
             this.dtgv_hoadon.Name = "dtgv_hoadon";
             this.dtgv_hoadon.RowHeadersWidth = 51;
             this.dtgv_hoadon.RowTemplate.Height = 24;
-            this.dtgv_hoadon.Size = new System.Drawing.Size(456, 227);
+            this.dtgv_hoadon.Size = new System.Drawing.Size(914, 227);
             this.dtgv_hoadon.TabIndex = 2;
             this.dtgv_hoadon.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgv_hoadon_CellClick);
             // 
@@ -147,20 +142,10 @@
             this.txt_dienthoai.TabIndex = 8;
             this.txt_dienthoai.TextChanged += new System.EventHandler(this.textBox6_TextChanged);
             // 
-            // txt_mathue
-            // 
-            this.txt_mathue.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_mathue.Location = new System.Drawing.Point(711, 164);
-            this.txt_mathue.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.txt_mathue.Name = "txt_mathue";
-            this.txt_mathue.Size = new System.Drawing.Size(190, 23);
-            this.txt_mathue.TabIndex = 11;
-            this.txt_mathue.TextChanged += new System.EventHandler(this.textBox7_TextChanged);
-            // 
             // btn_QuayLai
             // 
             this.btn_QuayLai.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_QuayLai.Location = new System.Drawing.Point(301, 464);
+            this.btn_QuayLai.Location = new System.Drawing.Point(364, 467);
             this.btn_QuayLai.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btn_QuayLai.Name = "btn_QuayLai";
             this.btn_QuayLai.Size = new System.Drawing.Size(155, 51);
@@ -229,18 +214,6 @@
             this.label6.TabIndex = 19;
             this.label6.Text = "Mã hóa đơn";
             // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label7.Location = new System.Drawing.Point(609, 164);
-            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(73, 18);
-            this.label7.TabIndex = 20;
-            this.label7.Text = "Mã Thuê";
-            // 
             // btn_xoa
             // 
             this.btn_xoa.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -252,30 +225,6 @@
             this.btn_xoa.Text = "Xóa";
             this.btn_xoa.UseVisualStyleBackColor = true;
             this.btn_xoa.Click += new System.EventHandler(this.btn_xoa_Click);
-            // 
-            // dtgv_phieuthue
-            // 
-            this.dtgv_phieuthue.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgv_phieuthue.Location = new System.Drawing.Point(466, 204);
-            this.dtgv_phieuthue.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.dtgv_phieuthue.Name = "dtgv_phieuthue";
-            this.dtgv_phieuthue.RowHeadersWidth = 51;
-            this.dtgv_phieuthue.RowTemplate.Height = 24;
-            this.dtgv_phieuthue.Size = new System.Drawing.Size(448, 227);
-            this.dtgv_phieuthue.TabIndex = 31;
-            this.dtgv_phieuthue.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgv_phieuthue_CellClick);
-            // 
-            // btn_xoaphieu
-            // 
-            this.btn_xoaphieu.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_xoaphieu.Location = new System.Drawing.Point(466, 464);
-            this.btn_xoaphieu.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.btn_xoaphieu.Name = "btn_xoaphieu";
-            this.btn_xoaphieu.Size = new System.Drawing.Size(171, 51);
-            this.btn_xoaphieu.TabIndex = 32;
-            this.btn_xoaphieu.Text = "Xóa Phiếu Thuê";
-            this.btn_xoaphieu.UseVisualStyleBackColor = true;
-            this.btn_xoaphieu.Click += new System.EventHandler(this.btn_xoaphieu_Click);
             // 
             // btn_thoat
             // 
@@ -295,17 +244,13 @@
             this.BackColor = System.Drawing.Color.LightSkyBlue;
             this.ClientSize = new System.Drawing.Size(914, 527);
             this.Controls.Add(this.btn_thoat);
-            this.Controls.Add(this.btn_xoaphieu);
-            this.Controls.Add(this.dtgv_phieuthue);
             this.Controls.Add(this.btn_xoa);
-            this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btn_QuayLai);
-            this.Controls.Add(this.txt_mathue);
             this.Controls.Add(this.txt_hoadon);
             this.Controls.Add(this.txt_dienthoai);
             this.Controls.Add(this.txt_diachi);
@@ -322,7 +267,6 @@
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgv_hoadon)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgv_phieuthue)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -339,17 +283,13 @@
         private System.Windows.Forms.TextBox txt_diachi;
         private System.Windows.Forms.TextBox txt_hoadon;
         private System.Windows.Forms.TextBox txt_dienthoai;
-        private System.Windows.Forms.TextBox txt_mathue;
         private System.Windows.Forms.Button btn_QuayLai;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button btn_xoa;
-        private System.Windows.Forms.DataGridView dtgv_phieuthue;
-        private System.Windows.Forms.Button btn_xoaphieu;
         private System.Windows.Forms.Button btn_thoat;
     }
 }

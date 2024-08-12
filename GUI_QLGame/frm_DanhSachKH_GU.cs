@@ -37,7 +37,7 @@ namespace GUI_QLGame
             dtgDanhSachKH.Enabled = true;
 
             btnThem.Enabled = true;
-            btnLoc.Enabled = false;
+            
             btnChiTietKhachHang.Enabled = false;
             btnSua.Enabled = false;
             btnXoa.Enabled = false;

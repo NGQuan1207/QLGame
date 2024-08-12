@@ -35,7 +35,6 @@
             this.button2 = new Guna.UI2.WinForms.Guna2Button();
             this.btn_BaocaoThongKe = new Guna.UI2.WinForms.Guna2Button();
             this.btn_QLnhanvien = new Guna.UI2.WinForms.Guna2Button();
-            this.btn_SanPhamchothue = new Guna.UI2.WinForms.Guna2Button();
             this.btn_Hoadon = new Guna.UI2.WinForms.Guna2Button();
             this.btn_SanPham = new Guna.UI2.WinForms.Guna2Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
@@ -82,14 +81,13 @@
             this.guna2Panel1.Controls.Add(this.button2);
             this.guna2Panel1.Controls.Add(this.btn_BaocaoThongKe);
             this.guna2Panel1.Controls.Add(this.btn_QLnhanvien);
-            this.guna2Panel1.Controls.Add(this.btn_SanPhamchothue);
             this.guna2Panel1.Controls.Add(this.btn_Hoadon);
             this.guna2Panel1.Controls.Add(this.btn_SanPham);
             this.guna2Panel1.Controls.Add(this.btn_DSkhachhang);
             this.guna2Panel1.ForeColor = System.Drawing.Color.Transparent;
             this.guna2Panel1.Location = new System.Drawing.Point(302, 164);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(678, 637);
+            this.guna2Panel1.Size = new System.Drawing.Size(678, 615);
             this.guna2Panel1.TabIndex = 1;
             this.guna2Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel1_Paint);
             // 
@@ -108,7 +106,7 @@
             this.btn_LenDon.HoverState.BorderColor = System.Drawing.Color.Black;
             this.btn_LenDon.HoverState.FillColor = System.Drawing.Color.LightSkyBlue;
             this.btn_LenDon.HoverState.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.btn_LenDon.Location = new System.Drawing.Point(364, 495);
+            this.btn_LenDon.Location = new System.Drawing.Point(364, 69);
             this.btn_LenDon.Name = "btn_LenDon";
             this.btn_LenDon.Size = new System.Drawing.Size(262, 76);
             this.btn_LenDon.TabIndex = 7;
@@ -174,34 +172,12 @@
             this.btn_QLnhanvien.HoverState.BorderColor = System.Drawing.Color.Black;
             this.btn_QLnhanvien.HoverState.FillColor = System.Drawing.Color.LightSkyBlue;
             this.btn_QLnhanvien.HoverState.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.btn_QLnhanvien.Location = new System.Drawing.Point(364, 69);
+            this.btn_QLnhanvien.Location = new System.Drawing.Point(207, 488);
             this.btn_QLnhanvien.Name = "btn_QLnhanvien";
             this.btn_QLnhanvien.Size = new System.Drawing.Size(262, 76);
             this.btn_QLnhanvien.TabIndex = 4;
             this.btn_QLnhanvien.Text = "QUẢN LÍ NHÂN VIÊN";
             this.btn_QLnhanvien.Click += new System.EventHandler(this.btn_QLnhanvien_Click);
-            // 
-            // btn_SanPhamchothue
-            // 
-            this.btn_SanPhamchothue.Animated = true;
-            this.btn_SanPhamchothue.BorderRadius = 3;
-            this.btn_SanPhamchothue.BorderThickness = 2;
-            this.btn_SanPhamchothue.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_SanPhamchothue.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_SanPhamchothue.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_SanPhamchothue.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_SanPhamchothue.FillColor = System.Drawing.Color.White;
-            this.btn_SanPhamchothue.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold);
-            this.btn_SanPhamchothue.ForeColor = System.Drawing.Color.Black;
-            this.btn_SanPhamchothue.HoverState.BorderColor = System.Drawing.Color.Black;
-            this.btn_SanPhamchothue.HoverState.FillColor = System.Drawing.Color.LightSkyBlue;
-            this.btn_SanPhamchothue.HoverState.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.btn_SanPhamchothue.Location = new System.Drawing.Point(48, 495);
-            this.btn_SanPhamchothue.Name = "btn_SanPhamchothue";
-            this.btn_SanPhamchothue.Size = new System.Drawing.Size(262, 76);
-            this.btn_SanPhamchothue.TabIndex = 3;
-            this.btn_SanPhamchothue.Text = "SẢN PHẨM CHO THUÊ";
-            this.btn_SanPhamchothue.Click += new System.EventHandler(this.btn_SanPhamchothue_Click);
             // 
             // btn_Hoadon
             // 
@@ -360,7 +336,6 @@
         private Guna.UI2.WinForms.Guna2Button button2;
         private Guna.UI2.WinForms.Guna2Button btn_BaocaoThongKe;
         private Guna.UI2.WinForms.Guna2Button btn_QLnhanvien;
-        private Guna.UI2.WinForms.Guna2Button btn_SanPhamchothue;
         private Guna.UI2.WinForms.Guna2Button btn_Hoadon;
         private Guna.UI2.WinForms.Guna2Button btn_SanPham;
         private System.Windows.Forms.MenuStrip menuStrip1;
