@@ -52,24 +52,9 @@ namespace GUI_QLGame
         }
         private void ShowBill(DTO_HoaDon hoaDon)
         {
-            List<DTO_HoaDon> chiTietHoaDons = new List<DTO_HoaDon>();
-
-            foreach (DataGridViewRow row in dtgv_hoadon.Rows)
-            {
-                if (row.Cells["MaHD"].Value != null)
-                {
-                    chiTietHoaDons.Add(new DTO_HoaDon
-                    {
-                        MaHD = row.Cells["MaHD"].Value.ToString(),
-                        MaKH = row.Cells["MaKH"].Value.ToString(),
-
-                    });
-                }
-            }
             BillHD billForm = new BillHD();
-            billForm.Billshow(hoaDon.MaHD, hoaDon.MaKH, chiTietHoaDons);
+            billForm.Billshow(hoaDon);
             billForm.Show();
-
         }
         private void btn_InHoaDon_Click(object sender, EventArgs e)
         {
@@ -89,27 +74,11 @@ namespace GUI_QLGame
                     ThanhTien = Convert.ToDecimal(selectedRow.Cells["ThanhTien"].Value)
                 };
 
-                List<DTO_HoaDon> chiTietHoaDons = new List<DTO_HoaDon>();
-                foreach (DataGridViewRow row in dtgv_hoadon.Rows)
-                {
-                    if (row.Cells["MaHD"].Value != null)
-                    {
-                        chiTietHoaDons.Add(new DTO_HoaDon
-                        {
-                            MaHD = row.Cells["MaHD"].Value.ToString(),
-                            MaKH = row.Cells["MaKH"].Value.ToString(),
-                            ThanhTien = Convert.ToDecimal(row.Cells["ThanhTien"].Value)
-                        });
-                    }
-                }
-
-                BillHD billForm = new BillHD();
-                billForm.Billshow(hoaDon.MaKH, hoaDon.MaHD, chiTietHoaDons);
-                billForm.Show();
+                ShowBill(hoaDon); // Sử dụng ShowBill để hiển thị hóa đơn
             }
             else
             {
-                MessageBox.Show("Vui lòng chọn hóa đơn để in.", "Thông Báo");
+                MessageBox.Show("Vui lòng chọn hóa đơn để in.");
             }
         }
 
@@ -121,6 +90,25 @@ namespace GUI_QLGame
         private void dtgv_hoadon_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void dtgv_hoadon_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0) // Kiểm tra xem một hàng hợp lệ có được chọn
+            {
+                DataGridViewRow selectedRow = dtgv_hoadon.Rows[e.RowIndex];
+
+                // Tạo DTO_HoaDon từ hàng đã chọn
+                DTO_HoaDon selectedHoaDon = new DTO_HoaDon
+                {
+                    MaHD = selectedRow.Cells["MaHD"].Value.ToString(),
+                    MaKH = selectedRow.Cells["MaKH"].Value.ToString(),
+                    ThanhTien = Convert.ToDecimal(selectedRow.Cells["ThanhTien"].Value)
+                };
+
+                // Gọi ShowBill để hiển thị hóa đơn
+                ShowBill(selectedHoaDon);
+            }
         }
     }
 }

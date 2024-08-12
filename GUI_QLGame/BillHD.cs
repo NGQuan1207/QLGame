@@ -32,38 +32,21 @@ namespace GUI_QLGame
             // This requires that you have the chi tiết of the invoice
             // For now, just display the total amount
         }
-        public void Billshow(string makh, string mahd, List<DTO_HoaDon> chiTietHoaDons)
+        public void Billshow(DTO_HoaDon selectedHoaDon)
         {
-            lbl_mahoadon.Text = mahd;
-            lbl_makh.Text = makh;
+            // Hiển thị thông tin hóa đơn được chọn
+            lbl_mahoadon.Text = selectedHoaDon.MaHD;
+            lbl_makh.Text = selectedHoaDon.MaKH;
 
             ClearPreviousProductLabels();
 
-            for (int i = 0; i < chiTietHoaDons.Count; i++)
-            {
-                DTO_HoaDon chiTiet = chiTietHoaDons[i];
+            // Hiển thị chi tiết của hóa đơn được chọn
+            lbl_mahd1.Text = selectedHoaDon.MaHD;
+            lbl_makh1.Text = selectedHoaDon.MaKH;
+            lbl_thanhtien1.Text = selectedHoaDon.ThanhTien.ToString("N0");
 
-                switch (i)
-                {
-                    case 0:
-                        lbl_mahd1.Text = chiTiet.MaHD;
-                        lbl_makh1.Text = chiTiet.MaKH;
-                        lbl_thanhtien1.Text = chiTiet.ThanhTien.ToString("N0");
-                        break;
-                    case 1:
-                        lbl_mahd2.Text = chiTiet.MaHD;
-                        lbl_makh2.Text = chiTiet.MaKH;
-                        lbl_thanhtien2.Text = chiTiet.ThanhTien.ToString("N0");
-                        break;
-                    case 2:
-                        lbl_mahd3.Text = chiTiet.MaHD;
-                        lbl_makh3.Text = chiTiet.MaKH;
-                        lbl_thanhtien3.Text = chiTiet.ThanhTien.ToString("N0");
-                        break;
-                }
-            }
-
-            lbl_totalAmount.Text = chiTietHoaDons.Sum(x => x.ThanhTien).ToString("N0");
+            // Hiển thị tổng số tiền (chỉ có một hóa đơn, nên tổng là thành tiền của chính hóa đơn đó)
+            lbl_totalAmount.Text = selectedHoaDon.ThanhTien.ToString("N0");
 
             // Tính và hiển thị tổng số tiền nếu cần
             /* lbl_totalAmount.Text = chiTietHoaDons.Sum(x => x.ThanhTien).ToString("N0");*/
