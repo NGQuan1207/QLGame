@@ -60,7 +60,7 @@ namespace GUI_QLGame
             }
         }
         private void ShowBill(DTO_HoaDon hoaDon)
-        {
+        {/*
             List<DTO_HoaDon> chiTietHoaDons = new List<DTO_HoaDon>();
 
             foreach (DataGridViewRow row in dtgv_hoadon.Rows)
@@ -74,9 +74,9 @@ namespace GUI_QLGame
 
                     });
                 }
-            }
+            }*/
             BillHD billForm = new BillHD();
-            billForm.Billshow(hoaDon.MaHD, hoaDon.MaKH, chiTietHoaDons);
+            billForm.Billshow(hoaDon);
             billForm.Show();
 
         }
@@ -108,7 +108,7 @@ namespace GUI_QLGame
                 }
 
                 BillHD billForm = new BillHD();
-                billForm.Billshow(hoaDon.MaKH, hoaDon.MaHD, chiTietHoaDons);
+                billForm.Billshow(hoaDon);
                 billForm.Show();
             }
             else
