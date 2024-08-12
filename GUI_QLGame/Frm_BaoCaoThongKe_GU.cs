@@ -3,7 +3,9 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -83,7 +85,7 @@ namespace GUI_QLGame
 
         private void guna2TextBox2_TextChanged(object sender, EventArgs e)
         {
-          string maspt = txt_maspt.Text;
+            string maspt = txt_maspt.Text;
             if (!string.IsNullOrEmpty(maspt))
             {
                 // Thực hiện lọc sản phẩm
@@ -135,6 +137,70 @@ namespace GUI_QLGame
         private void dtgv_spthue_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            // Tạo hộp thoại lưu file
+            SaveFileDialog saveFileDialog = new SaveFileDialog();
+            saveFileDialog.Filter = "Text File|*.txt"; // Chỉ cho phép lưu dưới định dạng .txt
+            saveFileDialog.Title = "Lưu báo cáo";
+            saveFileDialog.FileName = "BaoCaoThongKe.txt"; // Tên file mặc định
+
+            // Nếu người dùng nhấn "Save" và chọn một đường dẫn hợp lệ
+            if (saveFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                // Lấy đường dẫn do người dùng chọn
+                string filePath = saveFileDialog.FileName;
+
+                // Sử dụng StringBuilder để tích lũy nội dung sẽ ghi vào file
+                StringBuilder sb = new StringBuilder();
+
+                // Xuất nội dung của DataGridView Sản Phẩm Thuê
+                sb.AppendLine("Báo Cáo Sản Phẩm Thuê:");
+                for (int i = 0; i < dtgv_spthue.Columns.Count; i++)
+                {
+                    sb.Append(dtgv_spthue.Columns[i].HeaderText + "\t");
+                }
+                sb.AppendLine();
+
+                foreach (DataGridViewRow row in dtgv_spthue.Rows)
+                {
+                    for (int i = 0; i < dtgv_spthue.Columns.Count; i++)
+                    {
+                        sb.Append(row.Cells[i].Value?.ToString() + "\t");
+                    }
+                    sb.AppendLine();
+                }
+                sb.AppendLine();
+
+                // Xuất nội dung của DataGridView Hóa Đơn
+                sb.AppendLine("Báo Cáo Hóa Đơn:");
+                for (int i = 0; i < dtgv_hoadon.Columns.Count; i++)
+                {
+                    sb.Append(dtgv_hoadon.Columns[i].HeaderText + "\t");
+                }
+                sb.AppendLine();
+
+                foreach (DataGridViewRow row in dtgv_hoadon.Rows)
+                {
+                    for (int i = 0; i < dtgv_hoadon.Columns.Count; i++)
+                    {
+                        sb.Append(row.Cells[i].Value?.ToString() + "\t");
+                    }
+                    sb.AppendLine();
+                }
+                sb.AppendLine();
+
+                // Ghi nội dung đã tích lũy vào file
+                File.WriteAllText(filePath, sb.ToString());
+
+                // Thông báo cho người dùng rằng file đã được xuất thành công
+                MessageBox.Show("Báo cáo đã được xuất ra file thành công! File nằm tại: " + filePath, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                // Mở file sau khi xuất
+                Process.Start("explorer.exe", filePath);
+            }
         }
     }
 }
