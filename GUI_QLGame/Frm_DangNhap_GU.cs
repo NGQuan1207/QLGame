@@ -112,7 +112,7 @@ namespace GUI_QLGame
 
                 client.Credentials = new NetworkCredential("tuongdgps38065@gmail.com", "bkgi fhuh sscy dcog");
                 client.Send(Msg);
-                MessageBox.Show("Gửi mail thành công");
+                MessageBox.Show("Gửi mail thành công", "Thông Báo");
             }
             catch (Exception ex)
             {

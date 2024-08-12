@@ -71,7 +71,7 @@ namespace GUI_QLGame
             else
             {
                 // Xử lý lỗi khi chuyển đổi thất bại
-                MessageBox.Show("Số lượng không hợp lệ.");
+                MessageBox.Show("Số lượng không hợp lệ.", "Thông Báo");
             }
 
             // Kiểm tra và chuyển đổi giá
@@ -82,7 +82,7 @@ namespace GUI_QLGame
             else
             {
                 // Xử lý lỗi khi chuyển đổi thất bại
-                MessageBox.Show("Giá không hợp lệ.");
+                MessageBox.Show("Giá không hợp lệ.", "Thông Báo");
             }
 
             DTO_ChiTietSPThue sanphamthue = new DTO_ChiTietSPThue();

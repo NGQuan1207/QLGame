@@ -109,7 +109,7 @@ namespace GUI_QLGame
             }
             else
             {
-                MessageBox.Show("Vui lòng chọn hóa đơn để in.");
+                MessageBox.Show("Vui lòng chọn hóa đơn để in.", "Thông Báo");
             }
         }
 

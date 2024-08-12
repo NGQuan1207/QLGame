@@ -140,14 +140,14 @@ namespace GUI_QLGame
 
                     if (busNhanVIen.InsertNhanVien(nv))
                     {
-                        MessageBox.Show("Thêm thành công");
+                        MessageBox.Show("Thêm thành công", "Thông Báo");
                         ResetValues();
                         LoadData();
                         SendMail(nv.email);
                     }
                     else
                     {
-                        MessageBox.Show("Thêm ko thành công");
+                        MessageBox.Show("Thêm ko thành công", "Thông Báo");
                     }
                 }
             }
@@ -172,7 +172,7 @@ namespace GUI_QLGame
 
                 client.Credentials = new NetworkCredential("tuongdgps38065@gmail.com", "bkgi fhuh sscy dcog");
                 client.Send(Msg);
-                MessageBox.Show("Gửi mail thành công");
+                MessageBox.Show("Gửi mail thành công", "Thông Báo");
             }
             catch (Exception ex)
             {
@@ -218,13 +218,13 @@ namespace GUI_QLGame
 
                 if (busNhanVIen.DeleteNhanVien(ma))
                 {
-                    MessageBox.Show("Xoá thành công");
+                    MessageBox.Show("Xoá thành công", "Thông Báo");
                     ResetValues();
                     LoadData();
                 }
                 else
                 {
-                    MessageBox.Show("Xoá không thành công");
+                    MessageBox.Show("Xoá không thành công", "Thông Báo");
                 }
             }
             else
@@ -273,19 +273,29 @@ namespace GUI_QLGame
             {
                 if (busNhanVIen.UpdateNhanVien(nv))
                 {
-                    MessageBox.Show("Sửa thành công");
+                    MessageBox.Show("Sửa thành công", "Thông Báo");
                     ResetValues();
                     LoadData();
                 }
                 else
                 {
-                    MessageBox.Show("Sửa ko thành công");
+                    MessageBox.Show("Sửa ko thành công", "Thông Báo");
                 }
             }
             else
             {
                 ResetValues();
             }
+        }
+
+        private void txt_manv_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2GroupBox1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

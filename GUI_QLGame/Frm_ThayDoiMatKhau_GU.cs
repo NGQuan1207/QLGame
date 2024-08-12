@@ -55,13 +55,13 @@ namespace GUI_QLGame
                             Frm_Main.profile = 1;
                             Frm_Main.session = 0;
                             DN.SendMail(Frm_DangNhap.mail, txt_nhapmatkhaumoi.Text);
-                            MessageBox.Show("Cập nhật mật khẩu thành công, bạn cần phải đăng nhập lại");
+                            MessageBox.Show("Cập nhật mật khẩu thành công, bạn cần phải đăng nhập lại", "Thông Báo");
                             this.Close();
 
                         }
                         else
                         {
-                            MessageBox.Show("Mật khẩu cũ không đúng, Cập nhật mật khẩu không thành công");
+                            MessageBox.Show("Mật khẩu cũ không đúng, Cập nhật mật khẩu không thành công", "Thông Báo");
                             txt_matkhaucu.Text = null;
                             txt_nhapmatkhaumoi.Text = null;
                             txt_nhaplaimatkhaumoi.Text = null;

@@ -46,7 +46,7 @@ namespace GUI_QLGame
 
                 if (!result)
                 {
-                    MessageBox.Show($"Lỗi cập nhật số lượng cho sản phẩm mã {maSP}");
+                    MessageBox.Show($"Lỗi cập nhật số lượng cho sản phẩm mã {maSP}", "Thông Báo");
                 }
             }
         }
@@ -131,22 +131,22 @@ namespace GUI_QLGame
             // Kiểm tra thông tin bắt buộc
             if (string.IsNullOrEmpty(txt_tenKH.Text))
             {
-                MessageBox.Show("Vui lòng nhập tên khách hàng.");
+                MessageBox.Show("Vui lòng nhập tên khách hàng.","Thông Báo");
                 return;
             }
             if (string.IsNullOrEmpty(txtDiaChi.Text))
             {
-                MessageBox.Show("Vui lòng nhập địa chỉ.");
+                MessageBox.Show("Vui lòng nhập địa chỉ.", "Thông Báo");
                 return;
             }
             if (string.IsNullOrEmpty(txtSDT.Text))
             {
-                MessageBox.Show("Vui lòng nhập số điện thoại.");
+                MessageBox.Show("Vui lòng nhập số điện thoại.", "Thông Báo");
                 return;
             }
             if (dgv_GioHang.Rows.Count == 0)
             {
-                MessageBox.Show("Vui lòng chọn ít nhất một sản phẩm.");
+                MessageBox.Show("Vui lòng chọn ít nhất một sản phẩm.", "Thông Báo");
                 return;
             }
 
@@ -171,7 +171,7 @@ namespace GUI_QLGame
                 }
                 else
                 {
-                    MessageBox.Show("Giá trị tổng tiền không hợp lệ.");
+                    MessageBox.Show("Giá trị tổng tiền không hợp lệ.", "Thông Báo");
                     return;
                 }
 
@@ -191,7 +191,7 @@ namespace GUI_QLGame
                     }
                     else
                     {
-                        MessageBox.Show("Thêm khách hàng thất bại.");
+                        MessageBox.Show("Thêm khách hàng thất bại.", "Thông Báo");
                         return;
                     }
                 }
@@ -203,7 +203,7 @@ namespace GUI_QLGame
                 bool result = ThemHoaDon(hoaDon);
                 if (result)
                 {
-                    MessageBox.Show("Lên đơn thành công.");
+                    MessageBox.Show("Lên đơn thành công.", "Thông Báo");
                     HoaDonAdded?.Invoke(this, hoaDon);
                     updatesoluongsanpham();
                     ShowBill(hoaDon);
@@ -222,12 +222,12 @@ namespace GUI_QLGame
                 }
                 else
                 {
-                    MessageBox.Show("Thêm hóa đơn thất bại.");
+                    MessageBox.Show("Thêm hóa đơn thất bại.", "Thông Báo");
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Đã xảy ra lỗi: {ex.Message}");
+                MessageBox.Show($"Đã xảy ra lỗi: {ex.Message}", "Thông Báo");
             }
         }
         private void ShowDanhSachKH()
@@ -312,7 +312,7 @@ namespace GUI_QLGame
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Lỗi khi thêm khách hàng: {ex.Message}");
+                MessageBox.Show($"Lỗi khi thêm khách hàng: {ex.Message}", "Thông Báo");
                 return null;
             }
         }
@@ -331,7 +331,7 @@ namespace GUI_QLGame
                     int nvExists = (int)checkMaNV.ExecuteScalar();
                     if (nvExists == 0)
                     {
-                        MessageBox.Show("Nhân viên không tồn tại.");
+                        MessageBox.Show("Nhân viên không tồn tại.", "Thông Báo");
                         return false;
                     }
 
@@ -351,7 +351,7 @@ namespace GUI_QLGame
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Lỗi khi thêm hóa đơn: {ex.Message}");
+                MessageBox.Show($"Lỗi khi thêm hóa đơn: {ex.Message}", "Thông Báo");
                 return false;
             }
         }
@@ -389,7 +389,7 @@ namespace GUI_QLGame
                                 }
                                 else
                                 {
-                                    MessageBox.Show("Số lượng trong giỏ hàng không được vượt quá số lượng hiện có.");
+                                    MessageBox.Show("Số lượng trong giỏ hàng không được vượt quá số lượng hiện có.", "Thông Báo");
                                 }
                                 exists = true;
                                 break;
@@ -405,7 +405,7 @@ namespace GUI_QLGame
                             }
                             else
                             {
-                                MessageBox.Show("Sản phẩm đã hết hàng.");
+                                MessageBox.Show("Sản phẩm đã hết hàng.", "Thông Báo");
                             }
                         }
 
@@ -413,12 +413,12 @@ namespace GUI_QLGame
                     }
                     else
                     {
-                        MessageBox.Show("Không tìm thấy giá cho sản phẩm đã chọn.");
+                        MessageBox.Show("Không tìm thấy giá cho sản phẩm đã chọn.", "Thông Báo");
                     }
                 }
                 else
                 {
-                    MessageBox.Show("Không thể lấy thông tin sản phẩm. Vui lòng thử lại.");
+                    MessageBox.Show("Không thể lấy thông tin sản phẩm. Vui lòng thử lại.", "Thông Báo");
                 }
             }
         }
